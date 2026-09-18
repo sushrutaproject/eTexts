@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title"><a href="{{ '/' | relative_url }}">e-Suśruta</a></div>
+    <p class="site-tagline">{{ site.tagline }}</p>
+    <nav class="site-nav">
+      {% for s in site.data.sthanas %}
+        <a href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">{{ s[1].name }}</a>
+      {% endfor %}
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+  </div>
+</header>

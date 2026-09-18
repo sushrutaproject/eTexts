@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% assign info = site.data.sthanas[page.sthana_slug] %}
+{% assign chapters = site[page.sthana_slug] | sort: 'order' %}
+{% assign chapter_count = chapters | size %}
+{% for c in chapters %}
+  {% if c.url == page.url %}
+    {% assign this_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+{% assign prev_index = this_index | minus: 1 %}
+{% assign next_index = this_index | plus: 1 %}
+
+<nav class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+  <a href="{{ page.sthana_slug | prepend: '/' | append: '/' | relative_url }}">{{ info.name }}</a> &rsaquo;
+  {{ page.adhyaya }}
+</nav>
+
+<div class="chapter-header">
+  <h1>{{ page.title }}</h1>
+</div>
+
+<article class="chapter-text">
+  {{ content }}
+</article>
+
+<nav class="chapter-nav">
+  {% if this_index > 0 %}
+    {% assign prev = chapters[prev_index] %}
+    <a href="{{ prev.url | relative_url }}" class="prev">
+      <span class="dir">&larr; Previous</span>{{ prev.title }}
+    </a>
+  {% else %}
+    <span></span>
+  {% endif %}
+  {% if next_index < chapter_count %}
+    {% assign next = chapters[next_index] %}
+    <a href="{{ next.url | relative_url }}" class="next">
+      <span class="dir">Next &rarr;</span>{{ next.title }}
+    </a>
+  {% endif %}
+</nav>

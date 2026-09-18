@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+<div class="home-intro">
+  <h1>e-Suśruta</h1>
+  <p class="subtitle">A reading edition of the Suśrutasaṃhitā, in IAST</p>
+  <p>
+    The Suśrutasaṃhitā is organized into six sthānas (sections), read here
+    with Ḍalhaṇa's commentary (Nibandhasaṅgraha) and, in places, Gayadāsa's
+    (Nyāyacandrikā). Choose a sthāna below to browse its adhyāyas
+    (chapters).
+  </p>
+</div>
+
+<div class="sthana-grid">
+  {% for s in site.data.sthanas %}
+    <a class="sthana-card" href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">
+      <div class="num">Sthāna {{ forloop.index }}</div>
+      <h2>{{ s[1].name }}</h2>
+      <p class="subtitle">{{ s[1].subtitle }}</p>
+      <p class="count">{{ s[1].count }} adhyāyas</p>
+    </a>
+  {% endfor %}
+</div>

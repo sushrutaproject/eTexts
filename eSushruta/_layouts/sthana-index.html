@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign info = site.data.sthanas[page.sthana_slug] %}
+<nav class="breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> &rsaquo; {{ info.name }}</nav>
+
+<div class="sthana-header">
+  <h1>{{ info.name }}</h1>
+  <p class="subtitle">{{ info.subtitle }} &middot; {{ info.count }} adhyāyas</p>
+</div>
+
+{{ content }}
+
+{% assign chapters = site[page.sthana_slug] | sort: 'order' %}
+<ul class="chapter-list">
+  {% for c in chapters %}
+    <li>
+      <span class="badge">{{ c.adhyaya }}</span>
+      <a href="{{ c.url | relative_url }}">{{ c.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

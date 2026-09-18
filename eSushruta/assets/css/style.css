@@ -1,0 +1,302 @@
+/* ---------------------------------------------------------------
+   e-Suśruta -- design tokens
+   Palette drawn from palm-leaf manuscripts: aged-paper ground,
+   warm ink, and the terracotta "rubrication" red traditionally
+   used for chapter/verse numbering.
+   Type: Gentium Book Plus throughout (SIL font built for full
+   IAST diacritic coverage) -- one family, two weights, so long
+   Sanskrit passages never risk a missing-glyph fallback.
+   ------------------------------------------------------------- */
+
+:root {
+  --paper: #f5eedc;
+  --paper-alt: #efe4c8;
+  --ink: #2b2013;
+  --rubric: #9b3a2b;
+  --rubric-dark: #7c2e22;
+  --gold: #8a6b24;
+  --muted: #6e5f49;
+  --line: #d9cba3;
+  --max-width: 44rem;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Gentium Book Plus", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--rubric); text-decoration: none; }
+a:hover, a:focus { color: var(--rubric-dark); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--rubric); outline-offset: 2px; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+/* ---------------------------------------------------------------
+   Site chrome
+   ------------------------------------------------------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-alt);
+}
+
+.site-header-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1.5rem;
+}
+
+.site-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-title a { color: var(--ink); }
+.site-title a:hover { color: var(--rubric); text-decoration: none; }
+
+.site-tagline {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--rubric); }
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.site-footer a { color: var(--muted); text-decoration: underline; }
+
+/* ---------------------------------------------------------------
+   Home page
+   ------------------------------------------------------------- */
+
+.home-intro {
+  max-width: var(--max-width);
+  margin: 0 auto 3rem;
+}
+
+.home-intro h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.home-intro .subtitle {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.sthana-grid {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.1rem;
+}
+
+.sthana-card {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--rubric);
+  background: var(--paper-alt);
+  padding: 1.1rem 1.3rem;
+  display: block;
+  color: var(--ink);
+}
+
+.sthana-card:hover {
+  border-left-color: var(--rubric-dark);
+  background: #ece0c1;
+  text-decoration: none;
+}
+
+.sthana-card .num {
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.sthana-card h2 {
+  font-size: 1.3rem;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.sthana-card .subtitle {
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.sthana-card .count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ---------------------------------------------------------------
+   Sthāna index page
+   ------------------------------------------------------------- */
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--rubric); }
+
+.sthana-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.sthana-header .subtitle {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0;
+}
+
+.chapter-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  max-width: var(--max-width);
+}
+
+.chapter-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.chapter-list .badge {
+  flex: 0 0 auto;
+  min-width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  background: var(--rubric);
+  color: var(--paper);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.chapter-list a { color: var(--ink); font-size: 1.05rem; }
+.chapter-list a:hover { color: var(--rubric); }
+
+/* ---------------------------------------------------------------
+   Chapter reading page
+   ------------------------------------------------------------- */
+
+.chapter-header {
+  max-width: var(--max-width);
+  margin: 0 auto 2rem;
+}
+
+.chapter-header h1 {
+  font-size: 1.7rem;
+}
+
+.chapter-text {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.chapter-text p {
+  margin: 0 0 1.3rem;
+}
+
+.verse-marker {
+  color: var(--rubric);
+  font-weight: 700;
+  font-size: 0.92em;
+}
+
+.chapter-nav {
+  max-width: var(--max-width);
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.chapter-nav .dir {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.chapter-nav a { max-width: 45%; }
+.chapter-nav .next { text-align: right; margin-left: auto; }
+
+/* ---------------------------------------------------------------
+   About / generic content page
+   ------------------------------------------------------------- */
+
+.prose {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.prose h1 { font-size: 1.9rem; }
+.prose h2 { font-size: 1.3rem; margin-top: 2rem; }
+.prose p { margin: 0 0 1.2rem; }
+
+/* ---------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------- */
+
+@media (max-width: 30rem) {
+  body { font-size: 1.05rem; }
+  .chapter-nav { flex-direction: column; }
+  .chapter-nav .next { text-align: left; margin-left: 0; }
+  .chapter-nav a { max-width: 100%; }
+}
