@@ -1,12 +1,12 @@
 title: "e-Suśruta"
 tagline: "The Suśrutasaṃhitā, in IAST"
 description: >
-  A digital reading edition of the Suśrutasaṃhitā, with the commentaries of
-  Ḍalhaṇa (Nibandhasaṅgraha) and, where present, Gayadāsa (Nyāyacandrikā).
+  A digital reading edition of the Suśrutasaṃhitā, a Sanskrit treatise on
+  medicine and surgery, with Ḍalhaṇa's commentary, the Nibandhasaṅgraha.
   Text and translit. conversion sourced from the NIIMH e-Samhita
   (niimh.res.in); see the About page for scope and known limitations.
 
-baseurl: "/eSushruta"
+baseurl: ""
 url: ""
 
 markdown: kramdown
@@ -80,4 +80,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - build_site.py
+  - build_site_v2.py
   - esushruta_data
+  - esushruta_data_v2

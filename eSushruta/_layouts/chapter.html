@@ -22,7 +22,15 @@ layout: default
   <h1>{{ page.title }}</h1>
 </div>
 
-<article class="chapter-text">
+<div class="text-controls">
+  <label>
+    <input type="checkbox" id="toggle-bhasya" checked>
+    Show commentary
+  </label>
+  <span class="legend">Larger type: Suśrutasaṃhitā &middot; indented: Ḍalhaṇa's Nibandhasaṅgraha</span>
+</div>
+
+<article class="chapter-text" id="chapter-text">
   {{ content }}
 </article>
 
@@ -151,5 +159,33 @@ layout: default
   } catch (err) {
     /* Highlighting is a convenience; never let it break the page. */
   }
+})();
+</script>
+
+<script>
+/* Show/hide Ḍalhaṇa's commentary. The choice is remembered across
+   chapters and visits, since reading the mūla straight through is a
+   mode you stay in rather than toggle constantly. */
+(function () {
+  "use strict";
+  var KEY = "esushruta:hide-bhasya";
+  var box = document.getElementById("toggle-bhasya");
+  var text = document.getElementById("chapter-text");
+  if (!box || !text) return;
+
+  function apply(hide) {
+    text.classList.toggle("hide-bhasya", hide);
+    box.checked = !hide;
+  }
+
+  var stored = null;
+  try { stored = localStorage.getItem(KEY); } catch (e) { /* private mode */ }
+  apply(stored === "1");
+
+  box.addEventListener("change", function () {
+    var hide = !box.checked;
+    apply(hide);
+    try { localStorage.setItem(KEY, hide ? "1" : "0"); } catch (e) { /* ignore */ }
+  });
 })();
 </script>

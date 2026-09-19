@@ -3,4 +3,13 @@ permalink: /search-index/kalpasthana.json
 layout: null
 sitemap: false
 ---
-[{% for c in site.kalpasthana %}{"title": {{ c.title | jsonify }},"adhyaya": {{ c.adhyaya }},"url": {{ c.url | relative_url | jsonify }},"text": {{ c.content | strip_html | normalize_whitespace | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+{%- comment -%}
+Strip inline footnote references before indexing: their digits would
+otherwise land in the middle of the text ("sahasrākṣaṃ 1 gaṇādhīśaṃ")
+and break phrase searches. Liquid has no regex, so we split on the
+<sup> markup and keep only what follows each closing tag. The notes
+themselves stay indexed, so variant readings remain searchable.
+{%- endcomment -%}
+[{% for c in site.kalpasthana %}{%- assign parts = c.content | split: '<sup' -%}
+{%- capture body -%}{{ parts[0] }}{% for p in parts offset:1 %}{{ p | split: '</sup>' | last }}{% endfor %}{%- endcapture -%}
+{"title": {{ c.title | jsonify }},"adhyaya": {{ c.adhyaya }},"url": {{ c.url | relative_url | jsonify }},"text": {{ body | strip_html | normalize_whitespace | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
