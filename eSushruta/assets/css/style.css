@@ -300,3 +300,221 @@ main {
   .chapter-nav .next { text-align: left; margin-left: 0; }
   .chapter-nav a { max-width: 100%; }
 }
+
+/* ---------------------------------------------------------------
+   Search
+   ------------------------------------------------------------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Header search box */
+
+.header-search {
+  display: flex;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+}
+
+.header-search input[type="search"] {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  width: 12rem;
+  max-width: 100%;
+}
+
+.header-search input[type="search"]:focus {
+  outline: 2px solid var(--rubric);
+  outline-offset: 1px;
+}
+
+.header-search button,
+.search-form button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--rubric);
+  background: var(--rubric);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.header-search button:hover,
+.search-form button:hover { background: var(--rubric-dark); }
+
+/* Search page */
+
+.search-page { max-width: var(--max-width); margin: 0 auto; }
+.search-page h1 { font-size: 1.9rem; margin-bottom: 1.2rem; }
+
+.search-form { margin-bottom: 1.5rem; }
+
+.search-row { display: flex; gap: 0.5rem; }
+
+.search-row input[type="search"] {
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--line);
+  background: var(--paper-alt);
+  color: var(--ink);
+}
+
+.search-row input[type="search"]:focus {
+  outline: 2px solid var(--rubric);
+  outline-offset: 1px;
+}
+
+.search-row button { font-size: 1rem; padding: 0.5rem 1.1rem; }
+
+.search-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 0.9rem;
+}
+
+.search-options fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.search-options legend {
+  float: left;
+  padding: 0;
+  margin-right: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.search-options label {
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.search-options select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--line);
+  background: var(--paper-alt);
+  color: var(--ink);
+}
+
+.search-hint {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  margin: 0.6rem 0 0;
+  min-height: 1.2em;
+}
+
+.search-status {
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 0.5rem 0 1rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+}
+
+.result-sthana { margin-bottom: 2.5rem; }
+
+.result-sthana h2 {
+  font-size: 1.15rem;
+  color: var(--gold);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.result-chapter { margin-bottom: 1.6rem; }
+
+.result-chapter h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.result-chapter h3 a { color: var(--ink); }
+.result-chapter h3 a:hover { color: var(--rubric); }
+
+.hit-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hit-list li {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  padding: 0.45rem 0 0.45rem 0.9rem;
+  border-left: 2px solid var(--line);
+  margin-bottom: 0.3rem;
+}
+
+.hit-list li.more {
+  border-left-color: transparent;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+mark, .hit-list mark {
+  background: #f0d9a8;
+  color: var(--ink);
+  padding: 0 0.1em;
+}
+
+mark.search-hit { background: #f5cf8d; }
+
+.search-truncated {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.92rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+/* Banner shown on a chapter page arrived at from search */
+
+.search-banner {
+  font-size: 0.92rem;
+  color: var(--muted);
+  background: var(--paper-alt);
+  border-left: 3px solid var(--rubric);
+  padding: 0.5rem 0.8rem;
+  margin: 0.8rem 0 0;
+}
+
+@media (max-width: 46rem) {
+  .header-search { width: 100%; }
+  .header-search input[type="search"] { width: 100%; }
+}

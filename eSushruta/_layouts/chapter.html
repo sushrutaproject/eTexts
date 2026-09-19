@@ -42,3 +42,114 @@ layout: default
     </a>
   {% endif %}
 </nav>
+
+<script>
+/* When arriving from a search result (?q=…&mode=…), highlight the hits in
+   this chapter and jump to the first one. Chapters run to 180,000+
+   characters, so landing at the top of one is no help on its own.
+   Note: only matches that sit within a single text node are found -- a
+   match spanning a line break or a verse-number span won't highlight. */
+(function () {
+  "use strict";
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get("q");
+    if (!q) return;
+    var mode = params.get("mode") === "regex" ? "regex" : "plain";
+    var fold = params.get("fold") === "1";
+
+    // Folding is length-preserving here (every accented character in this
+    // corpus folds to exactly one plain one), so a match found in the
+    // folded string can be sliced straight out of the original node text.
+    var foldCache = {};
+    function foldChar(c) {
+      if (foldCache[c] !== undefined) return foldCache[c];
+      var f = c.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      if (f.length !== 1) f = c;
+      foldCache[c] = f;
+      return f;
+    }
+    function foldText(s) {
+      var out = "";
+      var plainFrom = 0;
+      for (var i = 0; i < s.length; i++) {
+        if (s.charCodeAt(i) < 128) continue;
+        out += s.slice(plainFrom, i) + foldChar(s[i]);
+        plainFrom = i + 1;
+      }
+      return plainFrom === 0 ? s : out + s.slice(plainFrom);
+    }
+
+    var source = (mode === "regex")
+      ? q
+      : q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (fold) source = foldText(source);
+    var re;
+    try {
+      re = new RegExp(source, "gi");
+    } catch (e) {
+      return;   // invalid pattern: leave the page untouched
+    }
+
+    var root = document.querySelector(".chapter-text");
+    if (!root) return;
+
+    // Collect text nodes first; we mutate the DOM afterwards.
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+    var nodes = [];
+    var n;
+    while ((n = walker.nextNode())) nodes.push(n);
+
+    var first = null;
+    var count = 0;
+
+    nodes.forEach(function (node) {
+      var text = node.nodeValue;
+      var haystack = fold ? foldText(text) : text;
+      re.lastIndex = 0;
+      if (!re.test(haystack)) return;
+      re.lastIndex = 0;
+
+      var frag = document.createDocumentFragment();
+      var last = 0;
+      var m;
+      var guard = 0;
+      while ((m = re.exec(haystack)) !== null) {
+        if (m.index === re.lastIndex) re.lastIndex++;
+        if (m[0].length === 0) continue;
+        if (++guard > 1000) break;
+
+        if (m.index > last) {
+          frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+        }
+        var mark = document.createElement("mark");
+        mark.className = "search-hit";
+        // Slice from the ORIGINAL text so the real spelling is shown.
+        mark.textContent = text.slice(m.index, m.index + m[0].length);
+        frag.appendChild(mark);
+        if (!first) first = mark;
+        count++;
+        last = m.index + m[0].length;
+      }
+      if (last < text.length) {
+        frag.appendChild(document.createTextNode(text.slice(last)));
+      }
+      node.parentNode.replaceChild(frag, node);
+    });
+
+    if (first) {
+      first.scrollIntoView({ block: "center" });
+      var banner = document.createElement("p");
+      banner.className = "search-banner";
+      banner.innerHTML = count + (count === 1 ? " match" : " matches") +
+        ' for <strong></strong> in this chapter. ' +
+        '<a href="' + window.location.pathname + '">Clear highlighting</a>';
+      banner.querySelector("strong").textContent = q;
+      var header = document.querySelector(".chapter-header");
+      if (header) header.appendChild(banner);
+    }
+  } catch (err) {
+    /* Highlighting is a convenience; never let it break the page. */
+  }
+})();
+</script>
