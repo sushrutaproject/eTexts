@@ -233,16 +233,36 @@ permalink: /search/
       : "Loading " + STHANA_NAMES[scope] + "…";
     resultsEl.innerHTML = "";
 
-    Promise.all(slugs.map(loadIndex)).then(function (indexes) {
+    // Load each index independently: one missing or unreadable file should
+    // degrade the search, not abort it. Failures are collected and reported
+    // by name, so a problem is self-diagnosing rather than showing whichever
+    // index happened to fail first.
+    var attempts = slugs.map(function (slug) {
+      return loadIndex(slug).then(
+        function (data) { return { slug: slug, data: data }; },
+        function (err) { return { slug: slug, error: err }; }
+      );
+    });
+
+    Promise.all(attempts).then(function (settled) {
+      var failed = settled.filter(function (r) { return r.error; });
+      var loaded = settled.filter(function (r) { return !r.error; });
+
+      if (loaded.length === 0) {
+        statusEl.textContent = "Could not load the text to search: " +
+          failed.map(function (r) { return STHANA_NAMES[r.slug]; }).join(", ") +
+          ". The search index may be missing from the site.";
+        return;
+      }
+
       var groups = [];
       var totalHits = 0;
       var shownHits = 0;
       var truncated = false;
 
-      indexes.forEach(function (chapters, i) {
-        var slug = slugs[i];
-        var group = { name: STHANA_NAMES[slug], chapters: [] };
-        chapters.forEach(function (chapter) {
+      loaded.forEach(function (entry) {
+        var group = { name: STHANA_NAMES[entry.slug], chapters: [] };
+        entry.data.forEach(function (chapter) {
           var res = searchChapter(chapter, re, fold);
           if (res.total === 0) return;
           totalHits += res.total;
@@ -267,8 +287,14 @@ permalink: /search/
       });
 
       render(query, mode, fold, groups, totalHits, shownHits, truncated);
-    }).catch(function (err) {
-      statusEl.textContent = "Search failed: " + err.message;
+
+      if (failed.length) {
+        var warn = document.createElement("p");
+        warn.className = "search-warning";
+        warn.textContent = "Not searched (index could not be loaded): " +
+          failed.map(function (r) { return STHANA_NAMES[r.slug]; }).join(", ") + ".";
+        resultsEl.insertBefore(warn, resultsEl.firstChild);
+      }
     });
   }
 

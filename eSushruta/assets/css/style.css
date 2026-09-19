@@ -518,3 +518,12 @@ mark.search-hit { background: #f5cf8d; }
   .header-search { width: 100%; }
   .header-search input[type="search"] { width: 100%; }
 }
+
+.search-warning {
+  background: var(--paper-alt);
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 1.5rem;
+}
