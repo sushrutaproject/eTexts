@@ -1,0 +1,32 @@
+sutrasthanam:
+  name: "sūtrasthānam"
+  subtitle: "General Principles"
+  count: 30
+nidanasthanam:
+  name: "nidānasthānam"
+  subtitle: "Pathology of the Major Diseases"
+  count: 8
+vimanasthanam:
+  name: "vimānasthānam"
+  subtitle: "Methodology and Epistemology"
+  count: 8
+sarirasthanam:
+  name: "śārīrasthānam"
+  subtitle: "Anatomy and Embryology"
+  count: 8
+indriyasthanam:
+  name: "indriyasthānam"
+  subtitle: "Prognosis through the Senses"
+  count: 12
+cikitsasthanam:
+  name: "cikitsāsthānam"
+  subtitle: "Therapeutics"
+  count: 36
+kalpasthanam:
+  name: "kalpasthānam"
+  subtitle: "Pharmaceutical Preparations"
+  count: 12
+siddhisthanam:
+  name: "siddhisthānam"
+  subtitle: "Principles of Successful Treatment"
+  count: 12
