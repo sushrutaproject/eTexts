@@ -6,7 +6,7 @@ description: >
   Text and translit. conversion sourced from the NIIMH e-Samhita
   (niimh.res.in); see the About page for scope and known limitations.
 
-baseurl: ""
+baseurl: "/eSushruta"
 url: ""
 
 markdown: kramdown
