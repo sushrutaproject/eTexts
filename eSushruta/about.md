@@ -34,13 +34,13 @@ Their own commentaries are not separate layers in this text.
 The notes at the foot of each chapter (*pāṭhāntarāḥ*) record variant
 readings and comments from the source edition.
 
-## Source
+## Acknowledgements
 
-The text and its transliteration was drawn from the
+The Sanskrit text was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/esushruta/), a project of the
 National Institute of Indian Medical Heritage (NIIMH), part of the Central
 Council for Research in Ayurvedic Sciences (CCRAS), Government of India.
-The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term preservation, stability, and ease of consultation. 
+The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation. 
 
 ### Known limitations
 
@@ -50,6 +50,6 @@ The NIIHM website is extremely well designed and implemented, and users are reco
   (sub-chapter) navigation is not reproduced.
 - Verse and chapter divisions follow the source edition.
 - If you notice missing or garbled passages, please compare against the
-  [original site](http://niimh.res.in/ebooks/esushruta/) and open an issue at GitHub.
+  [original site](http://niimh.res.in/ebooks/esushruta/) and open an issue at [GitHub](https://github.com/sushrutaproject/eSushruta/issues).
 
 </div>
