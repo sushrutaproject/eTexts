@@ -40,7 +40,7 @@ The Sanskrit text was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/esushruta/), a project of the
 National Institute of Indian Medical Heritage (NIIMH), part of the Central
 Council for Research in Ayurvedic Sciences (CCRAS), Government of India.
-The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation. 
+The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation. 
 
 ### Known limitations
 
