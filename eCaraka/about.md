@@ -43,7 +43,7 @@ Vājīkaraṇa — are each divided into four pādas in this e-text (numbered
 are presented here as eight separate pages rather than two, in that
 numbering.
 
-## Acknmowledgements
+## Acknowledgements
 
 The Sanskrit text was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/ecaraka/), a project of the
