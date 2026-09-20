@@ -3,13 +3,14 @@ layout: default
 title: About
 permalink: /about/
 ---
-<div class="prose">
+<div class="prose" markdown="1">
 
 # About this site
 
 This site presents the **Carakasaṃhitā**, a Sanskrit treatise on
 medicine, together with **Cakrapāṇidatta's** commentary on it, the
-*Āyurvedadīpikā*, in IAST (romanized, diacritic) transliteration.
+*Āyurvedadīpikā*, in IAST (romanized, diacritic) transliteration.  It is based on the 
+1941 printed edition edited by Yādavaśarman Trivikarma Ācārya. 
 
 ## The two texts
 
@@ -42,28 +43,16 @@ Vājīkaraṇa — are each divided into four pādas in this e-text (numbered
 are presented here as eight separate pages rather than two, in that
 numbering.
 
-## Source
+## Acknmowledgements
 
-The text and its transliteration are drawn from the
+The Sanskrit text was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/ecaraka/), a project of the
 National Institute of Indian Medical Heritage (NIIMH), part of the
 Central Council for Research in Ayurvedic Sciences (CCRAS), Government
-of India. This site is a static, IAST-only mirror of that resource's
-Carakasaṃhitā text, restructured for offline reading, searching and
-hosting.
+of India. 
+The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation. 
 
-## How it was made
-
-The original site serves its text through a form-driven interface backed
-by client-side JavaScript, rather than through static, linkable pages. Its
-content was extracted with a headless browser (chapter by chapter, in
-"full chapter" mode) and converted to this static Jekyll site, following
-the same procedure used for the companion e-Suśruta site. The extraction
-was checked chapter by chapter against the number of word-level text
-nodes actually rendered, to catch silently dropped content, and every
-footnote reference was verified to have a matching note.
-
-## Known limitations
+### Known limitations
 
 - Only the IAST (diacritical) rendering is included here; the original
   site also offers Devanagari and several other Indic scripts.
@@ -73,6 +62,6 @@ footnote reference was verified to have a matching note.
   Rasāyana/Vājīkaraṇa pāda-numbering noted above.
 - If you notice missing or garbled passages, please compare against the
   [original site](http://niimh.res.in/ebooks/ecaraka/) and open an
-  issue.
+  issue at [GitHub](https://github.com/sushrutaproject/eCaraka/issues).
 
 </div>
