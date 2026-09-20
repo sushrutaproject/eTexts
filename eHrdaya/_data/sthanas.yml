@@ -1,0 +1,24 @@
+sutrasthana:
+  name: "Sūtrasthāna"
+  subtitle: "General Principles"
+  count: 30
+sharirasthana:
+  name: "Śārīrasthāna"
+  subtitle: "Anatomy"
+  count: 6
+nidanasthana:
+  name: "Nidānasthāna"
+  subtitle: "Diagnosis"
+  count: 16
+cikitsasthana:
+  name: "Cikitsāsthāna"
+  subtitle: "Therapeutics"
+  count: 22
+kalpasiddhisthana:
+  name: "Kalpasiddhisthāna"
+  subtitle: "Pharmaceutics"
+  count: 6
+uttarasthana:
+  name: "Uttarasthāna"
+  subtitle: "Supplementary Section"
+  count: 40
