@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
-<div class="prose">
+<div class="prose" markdown="1">
 
 # About this site
 
