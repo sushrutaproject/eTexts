@@ -48,7 +48,7 @@ The Sanskrit text was drawn from
 [vedotpatti.in](https://vedotpatti.in/samhita/Vag/ehrudayam/), which uses
 the same underlying e-Samhita reading-room software as the NIIMH sites
 (e-Suśruta, e-Caraka) this site's sibling projects are built from. 
-The Vedotpatti website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation. 
+The Vedotpatti website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation. 
 
 
 ### Known limitations
