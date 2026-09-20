@@ -11,6 +11,8 @@ This site presents the **Suśrutasaṃhitā**, a Sanskrit treatise on medicine
 and surgery, together with **Ḍalhaṇa's** commentary on it, the
 *Nibandhasaṅgraha*, in IAST (romanized, diacritic) transliteration.
 
+The text is based on the 1938 printed edition and thus, in the terminology of the Suśruta Project, it represents the “vulgate” version of the text. 
+
 ## The two texts
 
 The root text and the commentary are the work of different authors,
@@ -34,25 +36,13 @@ readings and comments from the source edition.
 
 ## Source
 
-The text and its transliteration are drawn from the
+The text and its transliteration was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/esushruta/), a project of the
 National Institute of Indian Medical Heritage (NIIMH), part of the Central
 Council for Research in Ayurvedic Sciences (CCRAS), Government of India.
-This site is a static, IAST-only mirror of that resource's Suśrutasaṃhitā
-text, restructured for offline reading, searching and hosting.
+The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term preservation, stability, and ease of consultation. 
 
-## How it was made
-
-The original site serves its text through a form-driven interface backed
-by client-side JavaScript, rather than through static, linkable pages. Its
-content was extracted with a headless browser (chapter by chapter, in
-"full chapter" mode) and converted to this static Jekyll site. The
-extraction was checked chapter by chapter against the number of
-word-level text nodes actually rendered, to catch silently dropped
-content, and every footnote reference was verified to have a matching
-note.
-
-## Known limitations
+### Known limitations
 
 - Only the IAST (diacritical) rendering is included here; the original
   site also offers Devanagari and several other Indic scripts.
@@ -60,7 +50,6 @@ note.
   (sub-chapter) navigation is not reproduced.
 - Verse and chapter divisions follow the source edition.
 - If you notice missing or garbled passages, please compare against the
-  [original site](http://niimh.res.in/ebooks/esushruta/) and open an
-  issue.
+  [original site](http://niimh.res.in/ebooks/esushruta/) and open an issue at GitHub.
 
 </div>
