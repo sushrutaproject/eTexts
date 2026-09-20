@@ -3,13 +3,14 @@ layout: default
 title: About
 permalink: /about/
 ---
-<div class="prose">
+<div class="prose" markdown="1">
 
 # About this site
 
 This site presents the **Aṣṭāṅgahṛdaya** of **Vāgbhaṭa**, a Sanskrit
 treatise on medicine, together with two commentaries, in IAST (romanized,
-diacritic) transliteration.
+diacritic) transliteration.  The Sanskrit text is derived from the 
+1939 edition of Kunte et al.
 
 ## The three texts
 
@@ -43,28 +44,14 @@ catalogue information on the text if you rely on it.
 
 ## Source
 
-The text and its transliteration are drawn from
+The Sanskrit text was drawn from
 [vedotpatti.in](https://vedotpatti.in/samhita/Vag/ehrudayam/), which uses
 the same underlying e-Samhita reading-room software as the NIIMH sites
-(e-Suśruta, e-Caraka) this site's sibling projects are built from. This
-site is a static, IAST-only mirror of that resource's Aṣṭāṅgahṛdaya text,
-restructured for offline reading, searching and hosting.
+(e-Suśruta, e-Caraka) this site's sibling projects are built from. 
+The Vedotpatti website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation. 
 
-## How it was made
 
-The original site serves its text through a form-driven interface backed
-by client-side JavaScript, rather than through static, linkable pages. Its
-content was extracted with a headless browser (chapter by chapter, in
-"full chapter" mode) and converted to this static Jekyll site. Root text
-and the two commentaries share a single stream of word-spans in the
-source markup; the split between them was recovered from the print-style
-abbreviation ("Sa." / "Ā. rā.") that the source embeds at the start of
-each comment. The extraction was checked chapter by chapter against the
-number of word-level text nodes actually rendered, to catch silently
-dropped content, and checked again for any leftover abbreviation text
-that would indicate a missed split.
-
-## Known limitations
+### Known limitations
 
 - Only the IAST (diacritical) rendering is included here; the original
   site also offers Devanagari and several other Indic scripts.
@@ -75,6 +62,6 @@ that would indicate a missed split.
   source, so none is reproduced here.
 - If you notice missing or garbled passages, please compare against the
   [original site](https://vedotpatti.in/samhita/Vag/ehrudayam/) and open
-  an issue.
+  an issue at [GitHub](https://github.com/sushrutaproject/eHrdaya/issues).
 
 </div>
