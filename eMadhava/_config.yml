@@ -7,7 +7,7 @@ description: >
   sourced from the NIIMH e-Samhita (niimh.res.in); see the About page for
   scope and known limitations.
 
-baseurl: "/madhava"
+baseurl: "/eMadhava"
 url: ""
 
 markdown: kramdown
