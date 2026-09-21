@@ -17,8 +17,8 @@
   --gold: #8a6b24;
   --muted: #6e5f49;
   --line: #d9cba3;
-  --comm-madhukosha: #4f6b76;
-  --comm-atankadarpana: #6a7a45;
+  --comm-madhukosha: #00ff00; /* #4f6b76*/
+  --comm-atankadarpana: #3399ff; /*#6a7a45*/
   --max-width: 44rem;
 }
 
