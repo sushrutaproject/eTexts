@@ -9,10 +9,10 @@ permalink: /about/
 
 This site presents the **Mādhavanidāna**, a Sanskrit compendium on the
 diagnosis of disease traditionally attributed to **Mādhavakara**, together
-with two commentaries on it — the **Madhukośa** of Jayarakṣita and the
-**Ātaṅkadarpaṇa** of Śrīkaṇṭhadatta — in IAST (romanized, diacritic) transliteration.
+with two commentaries on it — the **Madhukośa** and the
+**Ātaṅkadarpaṇa** — in IAST (romanized, diacritic) transliteration.
 
-The Sanskrit text is from the [1955 edition of the Mādhavanidāna](http://n2t.net/ ark:/13960/s218hd9qx7t) edited by Yādavaśarman Trivikrama Ācārya. 
+The Sanskrit text is from the 1955 edition of the Mādhavanidāna edited by Yādavaśarman Trivikrama Ācārya. 
 
 ## The three registers
 
