@@ -1,0 +1,38 @@
+title: "e-Mādhavanidāna"
+tagline: "The Mādhavanidāna, in IAST"
+description: >
+  A digital reading edition of the Mādhavanidāna, Mādhavakara's Sanskrit
+  compendium of disease diagnosis and nosology, together with the
+  Madhukośa and Ātaṅkadarpaṇa commentaries. Text and translit. conversion
+  sourced from the NIIMH e-Samhita (niimh.res.in); see the About page for
+  scope and known limitations.
+
+baseurl: "/madhava"
+url: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  nidanas:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: nidanas
+    values:
+      layout: chapter
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - build_madhavanidana_site.py
+  - madhavanidana_data

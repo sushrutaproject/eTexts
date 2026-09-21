@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+<div class="home-intro">
+  <h1>e-Mādhavanidāna</h1>
+  <p class="subtitle">A reading edition of the Mādhavanidāna, in IAST</p>
+  <p>
+    The Mādhavanidāna, attributed to Mādhavakara, is a Sanskrit compendium
+    organized around the diagnosis (nidāna) of disease, in 70 chapters. It
+    is read here alongside two commentaries, the Madhukośa and the
+    Ātaṅkadarpaṇa, with all three registers distinguished typographically.
+    Unlike the Suśrutasaṃhitā and Carakasaṃhitā, this text has no sthāna
+    (sectional) division — the chapters below run continuously.
+  </p>
+</div>
+
+<ul class="chapter-list">
+  {% assign chapters = site.nidanas | sort: 'order' %}
+  {% for c in chapters %}
+    <li>
+      <span class="badge">{{ c.adhyaya }}</span>
+      <a href="{{ c.url | relative_url }}">{{ c.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title"><a href="{{ '/' | relative_url }}">e-Mādhavanidāna</a></div>
+    <p class="site-tagline">{{ site.tagline }}</p>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Chapters</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+    <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+      <label for="header-q" class="sr-only">Search the text</label>
+      <input type="search" id="header-q" name="q" placeholder="Search…">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>
