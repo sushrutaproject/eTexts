@@ -55,6 +55,8 @@ defaults:
       layout: default
 
 exclude:
+  - build_tei.py
+  - LICENSE
   - README.md
   - Gemfile
   - Gemfile.lock

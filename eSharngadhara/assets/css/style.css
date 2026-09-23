@@ -678,3 +678,44 @@ mark.search-hit { background: #f5cf8d; }
 
 .noteref a:target,
 .noteref:target { background: var(--paper-alt); }
+
+/* ---------------------------------------------------------------
+   TEI download (home page)
+   ------------------------------------------------------------- */
+
+.tei-download {
+  margin-top: 1.75rem;
+  padding: 0.9rem 1.1rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--rubric);
+  background: var(--paper-alt);
+}
+
+.tei-download p {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.tei-download .tei-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tei-button {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--rubric);
+  border-radius: 3px;
+  font-size: 0.95rem;
+  color: var(--rubric);
+  background: var(--paper);
+}
+
+.tei-button:hover,
+.tei-button:focus {
+  background: var(--rubric);
+  color: var(--paper);
+  text-decoration: none;
+}

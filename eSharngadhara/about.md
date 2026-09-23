@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
-<div class="prose" markdown="1">
+<div class="prose">
 
 # About this site
 
@@ -24,7 +24,14 @@ In the source each comment already opens with its commentator's
 abbreviation (*dīpikā* / *dī0*, *gū0*); this site uses those to tell the
 two apart, removes them, and supplies its own label in their place.
 
-
+A handful of comments in the source lack the abbreviation. Where their
+place in the sequence (the source gives the *Dīpikā* before the
+*Gūḍhārthadīpikā*) or a colophon naming the author settles the matter,
+they are assigned accordingly; two that remain uncertain (Uttarakhaṇḍa 3
+and 4) are shown in commentary type without a label. One passage of root
+text misfiled among the comments (Uttarakhaṇḍa 11) has been restored to
+the root text, and a stray line from the *Carakasaṃhitā* at the end of
+Pūrvakhaṇḍa 7 has been omitted.
 
 ## Editor's notes
 
@@ -35,27 +42,22 @@ gathered at the foot of each chapter.
 
 ## Source
 
-The Sanskrit text is taken from text is drawn from 
-Śāstrī, Paraśurāma, ed. 1931. दामोदरसूनुशार्ङ्गधराचार्यविरचिता शार्ङ्गधरसंहिता। भिषग्वराढमल्लविरचितदीपिकाकाशीरामवैद्यविरचितगूढार्थदीपिकाभ्यां, टीकाभ्यां, संवलिता. 2 ed. Muṃbai. Nirṇayasāgara Press, transcribed by scholars at the Central Council for
+The text is drawn from the e-book reading room of the Central Council for
 Research in Ayurvedic Sciences (CCRAS), Ministry of Ayush, Government of
-India: <http://ccras.res.in/ccras_ebooks/readSam>. The CCRAS website is extremely well designed and implemented, and users 
-are recommended to use it.  The present, simplified derivative is created for 
-long-term archival preservation, stability, and ease of local consultation. 
+India: <http://ccras.res.in/ccras_ebooks/readSam>. This site is a static,
+IAST-only mirror of that resource's Śārṅgadharasaṃhitā, restructured for
+offline reading, searching and hosting.
 
-### Known limitations
+## Known limitations
 
+- The source stores the text in a romanization of its own; it has been
+  converted mechanically to IAST. The conversion was checked against the
+  Devanagari chapter titles that the source also supplies.
 - Occasional oddities of the source (e.g. a colon for visarga, stray
   spaces) are kept as found.
+- Verse and chapter divisions follow the source.
 - If you notice missing or garbled passages, please compare against the
   [original site](http://ccras.res.in/ccras_ebooks/readSam) and open an
   issue.
-- A handful of comments in the source lack the abbreviation. Where their
-place in the sequence (the source gives the *Dīpikā* before the
-*Gūḍhārthadīpikā*) or a colophon naming the author settles the matter,
-they are assigned accordingly; two that remain uncertain (Uttarakhaṇḍa 3
-and 4) are shown in commentary type without a label. One passage of root
-text misfiled among the comments (Uttarakhaṇḍa 11) has been restored to
-the root text, and a stray line from the *Carakasaṃhitā* at the end of
-Pūrvakhaṇḍa 7 has been omitted.
 
 </div>

@@ -13,7 +13,6 @@ title: Home
     are distinguished typographically. Choose a khaṇḍa below to browse
     its adhyāyas (chapters).
   </p>
-</div>
 
 <div class="sthana-grid">
   {% for s in site.data.sthanas %}
@@ -24,4 +23,13 @@ title: Home
       <p class="count">{{ s[1].count }} adhyāyas</p>
     </a>
   {% endfor %}
+</div>
+
+  <div class="tei-download">
+    <p>Download the complete text as a single, validating TEI&nbsp;P5 XML file:</p>
+    <div class="tei-buttons">
+      <a class="tei-button" href="{{ '/assets/tei/sarngadharasamhita-mula.xml' | relative_url }}" download>&#8595; Mūla only</a>
+      <a class="tei-button" href="{{ '/assets/tei/sarngadharasamhita-full.xml' | relative_url }}" download>&#8595; Mūla with Āḍhamalla's and Kāśīrāma's commentaries</a>
+    </div>
+  </div>
 </div>

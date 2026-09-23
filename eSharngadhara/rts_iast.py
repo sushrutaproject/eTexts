@@ -29,9 +29,9 @@ _MAP = dict(_TOKENS)
 
 def rts_to_iast(text):
     text = text.replace("^^", "")          # hiatus marker, e.g. varShA^^Rutu
-    text = text.replace("0", ".")          # abbreviation point: dI0, pA0
-    # ...but keep real numerals (verse numbers etc.) intact
-    text = re.sub(r"(?<=\d)\.|\.(?=\d)", "0", text)
+    # abbreviation point: dI0, pA0 -> dī., pā. -- but a 0 inside a real
+    # numeral (verse numbers such as 100) is left alone
+    text = re.sub(r"(?<!\d)0(?!\d)", ".", text)
     return unicodedata.normalize("NFC", _TOKEN_RE.sub(lambda m: _MAP[m.group(0)], text))
 
 

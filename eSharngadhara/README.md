@@ -36,6 +36,21 @@ a plain form-POST API behind the CCRAS Angular reading room.
 - Editor's notes embedded in the source (`#foot@…#`) become numbered
   notes at the foot of each chapter.
 
+## TEI download
+
+The home page offers the complete text as two unified TEI P5 files, in
+`assets/tei/`: root text only (`sarngadharasamhita-mula.xml`) and root
+text with both commentaries (`sarngadharasamhita-full.xml`). They are
+generated from the chapter files by `build_tei.py` (the same script as
+the sibling sites). After any change to the text, regenerate and
+re-validate:
+
+    python3 build_sharngadhara.py
+    python3 build_tei.py --validate path/to/tei_all.rng
+
+(`pip install jingtrang` provides the validator; `tei_all.rng` is in the
+TEI release at https://github.com/TEIC/TEI/releases.)
+
 ## Deploying
 
 Push to `main`; GitHub Pages builds it. `baseurl` is `/eSarngadhara` —
