@@ -7,7 +7,7 @@ description: >
   the CCRAS e-book reading room; see the About page for scope and
   known limitations.
 
-baseurl: "eSarngadhara/"
+baseurl: "/eSharngadhara"
 url: ""
 
 # Commentator labels shown at the head of each comment block.
