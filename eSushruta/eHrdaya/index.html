@@ -1,0 +1,37 @@
+---
+layout: default
+title: Home
+---
+<div class="home-intro">
+  <h1>e-Vāgbhaṭa</h1>
+  <p class="subtitle">A reading edition of the Aṣṭāṅgahṛdaya, in IAST</p>
+  <p>
+    The Aṣṭāṅgahṛdaya of Vāgbhaṭa, a Sanskrit treatise on medicine, is
+    organized into six sthānas (sections). It is read here alongside two
+    commentaries: Aruṇadatta's <em>Sarvāṅgasundarā</em>, preserved
+    throughout, and Hemādri's <em>Āyurvedarasāyana</em>, preserved for
+    part of the text. All three are distinguished typographically.
+    Choose a sthāna below to browse its adhyāyas (chapters).
+  </p>
+
+<p>Transcribed from the <a href="https://n2t.net/ark:/13960/t12p44f4h/">1939 edition edited by Kunte et al.</a>.</p>
+
+  <div class="tei-download">
+    <p>Download the complete text as a single, validating TEI&nbsp;P5 XML file:</p>
+    <div class="tei-buttons">
+      <a class="tei-button" href="{{ '/assets/tei/astangahrdaya-mula.xml' | relative_url }}" download>&#8595; Mūla only</a>
+      <a class="tei-button" href="{{ '/assets/tei/astangahrdaya-full.xml' | relative_url }}" download>&#8595; Mūla with Aruṇadatta's and Hemādri's commentaries</a>
+    </div>
+  </div>
+</div>
+
+<div class="sthana-grid">
+  {% for s in site.data.sthanas %}
+    <a class="sthana-card" href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">
+      <div class="num">Sthāna {{ forloop.index }}</div>
+      <h2>{{ s[1].name }}</h2>
+      <p class="subtitle">{{ s[1].subtitle }}</p>
+      <p class="count">{{ s[1].count }} adhyāyas</p>
+    </a>
+  {% endfor %}
+</div>
