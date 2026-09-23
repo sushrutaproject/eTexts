@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 build_tei.py -- generate unified TEI P5 downloads for the Suśruta Project
-e-text sites (eSushruta, eCaraka, eHrdaya, eMadhava, eSarngadhara).
+e-text sites (eSushruta, eCaraka, eHrdaya, eMadhava, eSharngadhara).
 
 Run from the root of any of the four repositories:
 
@@ -132,10 +132,10 @@ CONFIGS = {
                "could not be transliterated; it is kept in the source's ASCII romanization "
                "as seg[@type='untransliterated']."],
     ),
-    "/eSarngadhara": dict(
+    "/eSharngadhara": dict(
         slug="sarngadharasamhita", idprefix="sd",
-        site="e-Śārṅgadhara", site_url="https://sushrutaproject.github.io/eSarngadhara/",
-        repo="https://github.com/sushrutaproject/eSarngadhara",
+        site="e-Śārṅgadhara", site_url="https://sushrutaproject.github.io/eSharngadhara/",
+        repo="https://github.com/sushrutaproject/eSharngadhara",
         work="Śārṅgadharasaṃhitā",
         authors=[("sarngadhara", "Śārṅgadhara")],
         comm_title="with Āḍhamalla's Dīpikā and Kāśīrāma's Gūḍhārthadīpikā",

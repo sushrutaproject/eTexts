@@ -22,7 +22,7 @@
       <extent>32 adhyāyas in 3 khaṇḍas</extent>
       <publicationStmt>
         <publisher>The Suśruta Project</publisher>
-        <pubPlace><ref target="https://sushrutaproject.github.io/eSarngadhara/">https://sushrutaproject.github.io/eSarngadhara/</ref></pubPlace>
+        <pubPlace><ref target="https://sushrutaproject.github.io/eSharngadhara/">https://sushrutaproject.github.io/eSharngadhara/</ref></pubPlace>
         <date when="2026-09-23">2026-09-23</date>
         <availability>
           <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (public domain dedication) -- see LICENSE in the repository.</licence>
@@ -39,7 +39,7 @@
     <encodingDesc>
       <projectDesc>
         <p>A plain, archival TEI rendering of the text published on e-Śārṅgadhara
-          (https://github.com/sushrutaproject/eSarngadhara), itself built from the digital edition named in the sourceDesc.
+          (https://github.com/sushrutaproject/eSharngadhara), itself built from the digital edition named in the sourceDesc.
           The file is generated automatically from the site's chapter pages.</p>
       </projectDesc>
       <editorialDecl>
