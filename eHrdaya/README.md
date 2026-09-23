@@ -49,3 +49,15 @@ Push to `main`; GitHub Pages builds it with the `github-pages` gem pinned
 in the `Gemfile`. No plugins beyond Jekyll's built-ins are used.
 `baseurl` is set to `/eVagbhata` for the project-page URL — update both
 it and this README's local-preview URL if the repo is named differently.
+
+## TEI download
+
+The home page offers the complete text as two unified TEI P5 files, in
+`assets/tei/`: root text only (`*-mula.xml`) and root text with commentary
+(`*-full.xml`). They are generated from the chapter files by
+`build_tei.py`. After any change to the text, regenerate and re-validate:
+
+    python3 build_tei.py --validate path/to/tei_all.rng
+
+(`pip install jingtrang` provides the validator; `tei_all.rng` is in the
+TEI release at https://github.com/TEIC/TEI/releases.)
