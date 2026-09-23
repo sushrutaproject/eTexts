@@ -45,3 +45,15 @@ unstyled text. Leave it blank only for a user/org page repo
 Adhyāyas 44 (bhagnanidāna) and 58 (nāsāroganidāna) currently have no
 extracted text — confirmed empty across repeated scrape attempts, but not
 yet confirmed by eye against the live NIIMH site. See `about.md`.
+
+## TEI download
+
+The home page offers the complete text as two unified TEI P5 files, in
+`assets/tei/`: root text only (`*-mula.xml`) and root text with commentary
+(`*-full.xml`). They are generated from the chapter files by
+`build_tei.py`. After any change to the text, regenerate and re-validate:
+
+    python3 build_tei.py --validate path/to/tei_all.rng
+
+(`pip install jingtrang` provides the validator; `tei_all.rng` is in the
+TEI release at https://github.com/TEIC/TEI/releases.)
