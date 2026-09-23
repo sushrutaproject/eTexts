@@ -12,8 +12,8 @@ url: ""
 
 # Commentator labels shown at the head of each comment block.
 # The source's own abbreviations (dī0 / gū0), normalized.
-label_adhamalla: "Dīpikā."
-label_kasirama: "Gūḍhārthadīpikā."
+label_adhamalla: "Āḍhamalla."
+label_kasirama: "Kāśīrāma Vaidya."
 
 markdown: kramdown
 kramdown:
