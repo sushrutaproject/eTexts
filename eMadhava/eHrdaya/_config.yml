@@ -1,0 +1,86 @@
+title: "e-Vāgbhaṭa"
+tagline: "The Aṣṭāṅgahṛdaya, with two commentaries, in IAST"
+description: >
+  A digital reading edition of the Aṣṭāṅgahṛdaya of Vāgbhaṭa, a Sanskrit
+  treatise on medicine, with the commentaries of Aruṇadatta
+  (Sarvāṅgasundarā) and, where the source preserves it, Hemādri
+  (Āyurvedarasāyana). Text and translit. conversion sourced from
+  vedotpatti.in; see the About page for scope and known limitations.
+
+baseurl: "/eHrdaya"
+url: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  sutrasthana:
+    output: true
+    permalink: /:collection/:name/
+  sharirasthana:
+    output: true
+    permalink: /:collection/:name/
+  nidanasthana:
+    output: true
+    permalink: /:collection/:name/
+  cikitsasthana:
+    output: true
+    permalink: /:collection/:name/
+  kalpasiddhisthana:
+    output: true
+    permalink: /:collection/:name/
+  uttarasthana:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: sutrasthana
+    values:
+      layout: chapter
+      sthana_slug: sutrasthana
+  - scope:
+      path: ""
+      type: sharirasthana
+    values:
+      layout: chapter
+      sthana_slug: sharirasthana
+  - scope:
+      path: ""
+      type: nidanasthana
+    values:
+      layout: chapter
+      sthana_slug: nidanasthana
+  - scope:
+      path: ""
+      type: cikitsasthana
+    values:
+      layout: chapter
+      sthana_slug: cikitsasthana
+  - scope:
+      path: ""
+      type: kalpasiddhisthana
+    values:
+      layout: chapter
+      sthana_slug: kalpasiddhisthana
+  - scope:
+      path: ""
+      type: uttarasthana
+    values:
+      layout: chapter
+      sthana_slug: uttarasthana
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - build_tei.py
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scrape_evagbhata.py
+  - build_evagbhata.py
+  - evagbhata_data
