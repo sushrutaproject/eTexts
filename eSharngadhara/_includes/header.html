@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title"><a href="{{ '/' | relative_url }}">e-Śārṅgadhara</a></div>
+    <p class="site-tagline">{{ site.tagline }}</p>
+    <nav class="site-nav">
+      {% for s in site.data.sthanas %}
+        <a href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">{{ s[1].name }}</a>
+      {% endfor %}
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+    <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+      <label for="header-q" class="sr-only">Search the text</label>
+      <input type="search" id="header-q" name="q"
+             placeholder="{% if page.sthana_slug %}Search {{ site.data.sthanas[page.sthana_slug].name }}…{% else %}Search…{% endif %}">
+      {% comment %}
+        Default the scope to whichever sthāna the reader is currently in;
+        fall back to the whole corpus elsewhere. The search page itself
+        lets them widen or narrow it.
+      {% endcomment %}
+      <input type="hidden" name="scope" value="{{ page.sthana_slug | default: 'all' }}">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>

@@ -1,0 +1,67 @@
+title: "e-Śārṅgadhara"
+tagline: "The Śārṅgadharasaṃhitā, with two commentaries, in IAST"
+description: >
+  A digital reading edition of the Śārṅgadharasaṃhitā of Śārṅgadhara, a
+  Sanskrit treatise on medicine and pharmacy, with the commentaries of
+  Āḍhamalla (Dīpikā) and Kāśīrāma (Gūḍhārthadīpikā). Text sourced from
+  the CCRAS e-book reading room; see the About page for scope and
+  known limitations.
+
+baseurl: "/eSarngadhara"
+url: ""
+
+# Commentator labels shown at the head of each comment block.
+# The source's own abbreviations (dī0 / gū0), normalized.
+label_adhamalla: "Dī."
+label_kasirama: "Gū."
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  purvakhanda:
+    output: true
+    permalink: /:collection/:name/
+  madhyamakhanda:
+    output: true
+    permalink: /:collection/:name/
+  uttarakhanda:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: purvakhanda
+    values:
+      layout: chapter
+      sthana_slug: purvakhanda
+  - scope:
+      path: ""
+      type: madhyamakhanda
+    values:
+      layout: chapter
+      sthana_slug: madhyamakhanda
+  - scope:
+      path: ""
+      type: uttarakhanda
+    values:
+      layout: chapter
+      sthana_slug: uttarakhanda
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - probe_ccras.py
+  - rts_iast.py
+  - __pycache__
+  - scrape_sharngadhara.py
+  - build_sharngadhara.py
+  - sharngadhara_data
+  - ccras_diag

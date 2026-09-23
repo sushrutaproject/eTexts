@@ -1,0 +1,12 @@
+purvakhanda:
+  name: "Pūrvakhaṇḍa"
+  subtitle: "Fundamentals and Diagnosis"
+  count: 7
+madhyamakhanda:
+  name: "Madhyamakhaṇḍa"
+  subtitle: "Pharmaceutical Preparations"
+  count: 12
+uttarakhanda:
+  name: "Uttarakhaṇḍa"
+  subtitle: "Therapeutic Procedures"
+  count: 13

@@ -1,0 +1,680 @@
+/* ---------------------------------------------------------------
+   e-Vāgbhaṭa -- design tokens
+   Palette drawn from palm-leaf manuscripts: aged-paper ground,
+   warm ink, and the terracotta "rubrication" red traditionally
+   used for chapter/verse numbering. Same tokens as the e-Suśruta
+   and e-Caraka sites in this family, for a consistent look.
+   Type: Gentium Book Plus throughout (SIL font built for full
+   IAST diacritic coverage) -- one family, two weights, so long
+   Sanskrit passages never risk a missing-glyph fallback.
+   ------------------------------------------------------------- */
+
+:root {
+  --paper: #f5eedc;
+  --paper-alt: #efe4c8;
+  --ink: #2b2013;
+  --rubric: #9b3a2b;
+  --rubric-dark: #7c2e22;
+  --gold: #8a6b24;
+  --muted: #6e5f49;
+  --line: #d9cba3;
+  --max-width: 44rem;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Gentium Book Plus", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--rubric); text-decoration: none; }
+a:hover, a:focus { color: var(--rubric-dark); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--rubric); outline-offset: 2px; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+/* ---------------------------------------------------------------
+   Site chrome
+   ------------------------------------------------------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-alt);
+}
+
+.site-header-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1.5rem;
+}
+
+.site-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-title a { color: var(--ink); }
+.site-title a:hover { color: var(--rubric); text-decoration: none; }
+
+.site-tagline {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--rubric); }
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.site-footer a { color: var(--muted); text-decoration: underline; }
+
+/* ---------------------------------------------------------------
+   Home page
+   ------------------------------------------------------------- */
+
+.home-intro {
+  max-width: var(--max-width);
+  margin: 0 auto 3rem;
+}
+
+.home-intro h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.home-intro .subtitle {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.sthana-grid {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.1rem;
+}
+
+.sthana-card {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--rubric);
+  background: var(--paper-alt);
+  padding: 1.1rem 1.3rem;
+  display: block;
+  color: var(--ink);
+}
+
+.sthana-card:hover {
+  border-left-color: var(--rubric-dark);
+  background: #ece0c1;
+  text-decoration: none;
+}
+
+.sthana-card .num {
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.sthana-card h2 {
+  font-size: 1.3rem;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.sthana-card .subtitle {
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.sthana-card .count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ---------------------------------------------------------------
+   Sthāna index page
+   ------------------------------------------------------------- */
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--rubric); }
+
+.sthana-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.sthana-header .subtitle {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0;
+}
+
+.chapter-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  max-width: var(--max-width);
+}
+
+.chapter-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.chapter-list .badge {
+  flex: 0 0 auto;
+  min-width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  background: var(--rubric);
+  color: var(--paper);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.chapter-list a { color: var(--ink); font-size: 1.05rem; }
+.chapter-list a:hover { color: var(--rubric); }
+
+/* ---------------------------------------------------------------
+   Chapter reading page
+   ------------------------------------------------------------- */
+
+.chapter-header {
+  max-width: var(--max-width);
+  margin: 0 auto 2rem;
+}
+
+.chapter-header h1 {
+  font-size: 1.7rem;
+}
+
+.chapter-text {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.chapter-text p {
+  margin: 0 0 1.3rem;
+}
+
+.verse-marker {
+  color: var(--rubric);
+  font-weight: 700;
+  font-size: 0.92em;
+}
+
+.chapter-nav {
+  max-width: var(--max-width);
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.chapter-nav .dir {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.chapter-nav a { max-width: 45%; }
+.chapter-nav .next { text-align: right; margin-left: auto; }
+
+/* ---------------------------------------------------------------
+   About / generic content page
+   ------------------------------------------------------------- */
+
+.prose {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.prose h1 { font-size: 1.9rem; }
+.prose h2 { font-size: 1.3rem; margin-top: 2rem; }
+.prose p { margin: 0 0 1.2rem; }
+
+/* ---------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------- */
+
+@media (max-width: 30rem) {
+  body { font-size: 1.05rem; }
+  .chapter-nav { flex-direction: column; }
+  .chapter-nav .next { text-align: left; margin-left: 0; }
+  .chapter-nav a { max-width: 100%; }
+}
+
+/* ---------------------------------------------------------------
+   Search
+   ------------------------------------------------------------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Header search box */
+
+.header-search {
+  display: flex;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+}
+
+.header-search input[type="search"] {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  width: 12rem;
+  max-width: 100%;
+}
+
+.header-search input[type="search"]:focus {
+  outline: 2px solid var(--rubric);
+  outline-offset: 1px;
+}
+
+.header-search button,
+.search-form button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--rubric);
+  background: var(--rubric);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.header-search button:hover,
+.search-form button:hover { background: var(--rubric-dark); }
+
+/* Search page */
+
+.search-page { max-width: var(--max-width); margin: 0 auto; }
+.search-page h1 { font-size: 1.9rem; margin-bottom: 1.2rem; }
+
+.search-form { margin-bottom: 1.5rem; }
+
+.search-row { display: flex; gap: 0.5rem; }
+
+.search-row input[type="search"] {
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--line);
+  background: var(--paper-alt);
+  color: var(--ink);
+}
+
+.search-row input[type="search"]:focus {
+  outline: 2px solid var(--rubric);
+  outline-offset: 1px;
+}
+
+.search-row button { font-size: 1rem; padding: 0.5rem 1.1rem; }
+
+.search-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 0.9rem;
+}
+
+.search-options fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.search-options legend {
+  float: left;
+  padding: 0;
+  margin-right: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.search-options label {
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.search-options select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--line);
+  background: var(--paper-alt);
+  color: var(--ink);
+}
+
+.search-hint {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  margin: 0.6rem 0 0;
+  min-height: 1.2em;
+}
+
+.search-status {
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding: 0.5rem 0 1rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+}
+
+.result-sthana { margin-bottom: 2.5rem; }
+
+.result-sthana h2 {
+  font-size: 1.15rem;
+  color: var(--gold);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.result-chapter { margin-bottom: 1.6rem; }
+
+.result-chapter h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.result-chapter h3 a { color: var(--ink); }
+.result-chapter h3 a:hover { color: var(--rubric); }
+
+.hit-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hit-list li {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  padding: 0.45rem 0 0.45rem 0.9rem;
+  border-left: 2px solid var(--line);
+  margin-bottom: 0.3rem;
+}
+
+.hit-list li.more {
+  border-left-color: transparent;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+mark, .hit-list mark {
+  background: #f0d9a8;
+  color: var(--ink);
+  padding: 0 0.1em;
+}
+
+mark.search-hit { background: #f5cf8d; }
+
+.search-truncated {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.92rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+/* Banner shown on a chapter page arrived at from search */
+
+.search-banner {
+  font-size: 0.92rem;
+  color: var(--muted);
+  background: var(--paper-alt);
+  border-left: 3px solid var(--rubric);
+  padding: 0.5rem 0.8rem;
+  margin: 0.8rem 0 0;
+}
+
+@media (max-width: 46rem) {
+  .header-search { width: 100%; }
+  .header-search input[type="search"] { width: 100%; }
+}
+
+.search-warning {
+  background: var(--paper-alt);
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 1.5rem;
+}
+
+/* ---------------------------------------------------------------
+   Textual registers
+   Root text (Śārṅgadharasaṃhitā) is set larger at the full measure.
+   The two commentaries are both set smaller and indented behind a
+   rule, matching print convention, but the rule colour differs
+   (muted tan for Āḍhamalla, gold for Kāśīrāma) so the two are
+   distinguishable at a glance even before reading the commentator
+   label, since the two often sit one after the other.
+   ------------------------------------------------------------- */
+
+.mula {
+  font-size: 1.15em;
+  line-height: 1.65;
+  margin: 1.8rem 0 1.2rem;
+}
+
+.mula:first-child { margin-top: 0; }
+
+.adhamalla,
+.kasirama,
+.vyakhya {
+  font-size: 0.92em;
+  line-height: 1.7;
+  margin: 1.2rem 0 1.2rem 1.5rem;
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--line);
+}
+
+.kasirama {
+  border-left-color: var(--gold);
+}
+
+@media (max-width: 34rem) {
+  .adhamalla, .kasirama { margin-left: 0.4rem; padding-left: 0.8rem; }
+}
+
+/* Small inline label  at the head of each comment,
+   matching the print edition's own abbreviations. */
+
+.commentator-label {
+  display: inline-block;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 0.82em;
+  margin-right: 0.4em;
+}
+
+.adhamalla .commentator-label { color: var(--muted); }
+.kasirama .commentator-label { color: var(--gold); }
+
+/* Reading controls */
+
+.text-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0;
+  margin: 0 0 1.8rem;
+}
+
+.text-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.text-controls .legend {
+  margin-left: auto;
+  font-style: italic;
+}
+
+/* Commentary hidden -- each toggled independently */
+
+.chapter-text.hide-adhamalla .adhamalla { display: none; }
+.chapter-text.hide-kasirama .kasirama { display: none; }
+
+.chapter-text.hide-adhamalla.hide-kasirama .mula {
+  font-size: 1.05em;
+  margin: 0 0 1.1rem;
+}
+
+/* Footnote references and notes: the editor's notes (variant readings,
+   remarks on the Calcutta printing, etc.) that the source embeds in the
+   commentaries and root text, gathered at the foot of each chapter. */
+
+.noteref {
+  font-size: 0.72em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.noteref a {
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+
+.noteref a:hover { text-decoration: underline; }
+
+.notes {
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.88em;
+}
+
+.notes h2 {
+  font-size: 1.05rem;
+  color: var(--gold);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 0.8rem;
+}
+
+.notes ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notes li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  padding-left: 2.2rem;
+  text-indent: -2.2rem;
+}
+
+.notes li:target {
+  background: var(--paper-alt);
+  outline: 2px solid var(--line);
+  outline-offset: 3px;
+}
+
+.note-num {
+  color: var(--rubric);
+  font-weight: 700;
+  min-width: 1.6rem;
+  display: inline-block;
+}
+
+.note-back { text-decoration: none; font-size: 0.9em; }
+
+.noteref a:target,
+.noteref:target { background: var(--paper-alt); }

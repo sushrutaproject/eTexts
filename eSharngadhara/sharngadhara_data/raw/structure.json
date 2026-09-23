@@ -1,0 +1,230 @@
+{
+ "samhita": [
+  {
+   "title_itrans": "SAr~ggadharasaMhitA ",
+   "long_title_top_itrans": "|| SrIdhanvantaraye namaH | BiShagvareNa SrIdAmodarasUnunA SrISAr~ggadhareNa viracitA ||",
+   "long_title_bottom_itrans": "|| BiShagvarADhamallaviracitadIpikAKyaTIkayA tathA SrIkASIrAmavaidyaviracitagUDhArthadIpikAKyaTIkayA ca samuddIpitA ||"
+  }
+ ],
+ "khandas": [
+  {
+   "rec_id": 16,
+   "sthana_id": 1,
+   "sth_order": 1,
+   "sth_itrans": "prathamaKaNDaH",
+   "sth_unic": "प्रथमखण्डः",
+   "chapters": [
+    {
+     "rec_id": 385,
+     "adhyaya_id": 1,
+     "adh_itrans": "atha mAnapariBAShAdhyAyaH",
+     "adh_unic": "अथ मानपरिभाषाध्यायः"
+    },
+    {
+     "rec_id": 386,
+     "adhyaya_id": 2,
+     "adh_itrans": "atha BaiShajyAKyAnakAdhyAyaH",
+     "adh_unic": "अथ भैषज्याख़्यानकाध्यायः"
+    },
+    {
+     "rec_id": 387,
+     "adhyaya_id": 3,
+     "adh_itrans": "atha nADIparIkShAdividhiradhyAyaH",
+     "adh_unic": "अथ नाडीपरीक्षादिविधिरध्यायः"
+    },
+    {
+     "rec_id": 388,
+     "adhyaya_id": 4,
+     "adh_itrans": "atha dIpanapAcanAdhyAyaH",
+     "adh_unic": "अथ दीपनपाचनाध्यायः"
+    },
+    {
+     "rec_id": 389,
+     "adhyaya_id": 5,
+     "adh_itrans": "atha kalAdikAKyAnAdhyAyaH",
+     "adh_unic": "अथ कलादिकाख़्यानाध्यायः"
+    },
+    {
+     "rec_id": 390,
+     "adhyaya_id": 6,
+     "adh_itrans": "athAhArAdigatiradhyAyaH",
+     "adh_unic": "अथाहारादिगतिरध्यायः"
+    },
+    {
+     "rec_id": 391,
+     "adhyaya_id": 7,
+     "adh_itrans": "atha rogagaNanAdhyAyaH",
+     "adh_unic": "अथ रॊगगणनाध्यायः"
+    }
+   ]
+  },
+  {
+   "rec_id": 17,
+   "sthana_id": 2,
+   "sth_order": 2,
+   "sth_itrans": "madhyamaKaNDaH",
+   "sth_unic": "मध्यमख़ण्डः",
+   "chapters": [
+    {
+     "rec_id": 392,
+     "adhyaya_id": 1,
+     "adh_itrans": "atha svarasAdhyAyaH",
+     "adh_unic": "अथ स्वरसाध्यायः"
+    },
+    {
+     "rec_id": 393,
+     "adhyaya_id": 2,
+     "adh_itrans": "atha kvAthakalpanAdhyAyaH",
+     "adh_unic": "अथ क्वाथकल्पनाध्यायः"
+    },
+    {
+     "rec_id": 394,
+     "adhyaya_id": 3,
+     "adh_itrans": "atha PANTAdikalpanAdhyAyaH",
+     "adh_unic": "अथ फाण्टादिकल्पनाध्यायः"
+    },
+    {
+     "rec_id": 395,
+     "adhyaya_id": 4,
+     "adh_itrans": "atha himakalpanAdhyAyaH",
+     "adh_unic": "अथ हिमकल्पनाध्यायः"
+    },
+    {
+     "rec_id": 396,
+     "adhyaya_id": 5,
+     "adh_itrans": "atha kalkakalpanAdhyAyaH",
+     "adh_unic": "अथ कल्ककल्पनाध्यायः"
+    },
+    {
+     "rec_id": 397,
+     "adhyaya_id": 6,
+     "adh_itrans": "atha cUrNakalpanAdhyAyaH",
+     "adh_unic": "अथ चूर्णकल्पनाध्यायः"
+    },
+    {
+     "rec_id": 398,
+     "adhyaya_id": 7,
+     "adh_itrans": "atha guTikAdhikArAdhyAyaH",
+     "adh_unic": "अथ गुटिकाधिकाराध्यायः"
+    },
+    {
+     "rec_id": 399,
+     "adhyaya_id": 8,
+     "adh_itrans": "atha avalehAdhikArAdhyAyaH",
+     "adh_unic": "अथ अवलॆहाधिकाराध्यायः"
+    },
+    {
+     "rec_id": 400,
+     "adhyaya_id": 9,
+     "adh_itrans": "atha tailAdhikArAdhyAyaH",
+     "adh_unic": "अथ तैलाधिकाराध्यायः"
+    },
+    {
+     "rec_id": 401,
+     "adhyaya_id": 10,
+     "adh_itrans": "atha AsavAriShTakalpanAdhyAyaH",
+     "adh_unic": "अथ आसवारिष्टकल्पनाध्यायः"
+    },
+    {
+     "rec_id": 402,
+     "adhyaya_id": 11,
+     "adh_itrans": "atha dhAtuSodhanamAraNakalpanAdhyAyaH",
+     "adh_unic": "अथ धातुशॊधनमारणकल्पनाध्यायः"
+    },
+    {
+     "rec_id": 403,
+     "adhyaya_id": 12,
+     "adh_itrans": "atha rasakalpanAdhyAyaH",
+     "adh_unic": "अथ रसकल्पनाध्यायः"
+    }
+   ]
+  },
+  {
+   "rec_id": 18,
+   "sthana_id": 3,
+   "sth_order": 3,
+   "sth_itrans": "uttaraKaNDaH",
+   "sth_unic": "उत्तरख़ण्डः",
+   "chapters": [
+    {
+     "rec_id": 404,
+     "adhyaya_id": 1,
+     "adh_itrans": "atha snehAdhyAyaH",
+     "adh_unic": "अथ स्नॆहाध्यायः"
+    },
+    {
+     "rec_id": 405,
+     "adhyaya_id": 2,
+     "adh_itrans": "atha svedavidhiradhyAyaH",
+     "adh_unic": "अथ स्वॆदविधिरध्यायः"
+    },
+    {
+     "rec_id": 406,
+     "adhyaya_id": 3,
+     "adh_itrans": "atha vamanavidhiradhyAyaH",
+     "adh_unic": "अथ वमनविधिरध्यायः"
+    },
+    {
+     "rec_id": 407,
+     "adhyaya_id": 4,
+     "adh_itrans": "atha virecanavidhiradhyAyaH",
+     "adh_unic": "अथ विरॆचनविधिरध्यायः"
+    },
+    {
+     "rec_id": 408,
+     "adhyaya_id": 5,
+     "adh_itrans": "atha snehabastividhiradhyAyaH",
+     "adh_unic": "अथ स्नॆहबस्तिविधिरध्यायः"
+    },
+    {
+     "rec_id": 409,
+     "adhyaya_id": 6,
+     "adh_itrans": "atha nirUhabastividhiradhyAyaH",
+     "adh_unic": "अथ निरूहबस्तिविधिरध्यायः"
+    },
+    {
+     "rec_id": 410,
+     "adhyaya_id": 7,
+     "adh_itrans": "atha uttarabastividhiradhyAyaH",
+     "adh_unic": "अथ उत्तरबस्तिविधिरध्यायः"
+    },
+    {
+     "rec_id": 411,
+     "adhyaya_id": 8,
+     "adh_itrans": "atha nasyavidhiradhyAyaH",
+     "adh_unic": "अथ नस्यविधिरध्यायः"
+    },
+    {
+     "rec_id": 412,
+     "adhyaya_id": 9,
+     "adh_itrans": "atha dhUmapAnavidhiradhyAyaH",
+     "adh_unic": "अथ धूमपानविधिरध्यायः"
+    },
+    {
+     "rec_id": 413,
+     "adhyaya_id": 10,
+     "adh_itrans": "atha gaNDUShavidhiradhyAyaH",
+     "adh_unic": "अथ गण्डूषविधिरध्यायः"
+    },
+    {
+     "rec_id": 414,
+     "adhyaya_id": 11,
+     "adh_itrans": "atha lepanAdividhiradhyAyaH",
+     "adh_unic": "अथ लॆपनादिविधिरध्यायः"
+    },
+    {
+     "rec_id": 415,
+     "adhyaya_id": 12,
+     "adh_itrans": "atha raktamokShavidhiradhyAyaH",
+     "adh_unic": "अथ रक्तमॊक्षविधिरध्यायः"
+    },
+    {
+     "rec_id": 416,
+     "adhyaya_id": 13,
+     "adh_itrans": "atha netrakarmavidhiradhyAyaH",
+     "adh_unic": "अथ नॆत्रकर्मविधिरध्यायः"
+    }
+   ]
+  }
+ ]
+}

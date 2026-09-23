@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+---
+<div class="home-intro">
+  <h1>e-Śārṅgadhara</h1>
+  <p class="subtitle">A reading edition of the Śārṅgadharasaṃhitā, in IAST</p>
+  <p>
+    The Śārṅgadharasaṃhitā of Śārṅgadhara, a Sanskrit treatise on
+    medicine and pharmacy, is organized into three khaṇḍas (sections).
+    It is read here alongside two commentaries: Āḍhamalla's
+    <em>Dīpikā</em> and Kāśīrāma's <em>Gūḍhārthadīpikā</em>. All three
+    are distinguished typographically. Choose a khaṇḍa below to browse
+    its adhyāyas (chapters).
+  </p>
+</div>
+
+<div class="sthana-grid">
+  {% for s in site.data.sthanas %}
+    <a class="sthana-card" href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">
+      <div class="num">Khaṇḍa {{ forloop.index }}</div>
+      <h2>{{ s[1].name }}</h2>
+      <p class="subtitle">{{ s[1].subtitle }}</p>
+      <p class="count">{{ s[1].count }} adhyāyas</p>
+    </a>
+  {% endfor %}
+</div>
