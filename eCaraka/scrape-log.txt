@@ -1,0 +1,166 @@
+=== Preflight: checking e-Caraka markup against e-Suśruta's ===
+  doIast() present: True
+  All four form fields (selSthana/selAdhyaya/selAdhi/scriptName) present
+  Devanagari->IAST fallback active for any sthāna/chapter titles the site hands back unconverted
+  Discovered 8 sthānas:
+    value='1'  label='sūtrasthānam'
+    value='2'  label='nidānasthānam'
+    value='3'  label='vimānasthānam'
+    value='4'  label='śārīrasthānam'
+    value='5'  label='indriyasthānam'
+    value='6'  label='cikitsāsthānam'
+    value='7'  label='kalpasthānam'
+    value='8'  label='siddhisthānam'
+  Test chapter ('sūtrasthānam', "1. dīrghañjīvitīyō'dhyāyaḥ"): root 87 / comm 175 / notes 444, 2 empty spans
+=== Preflight passed -- proceeding to full scrape ===
+
+=== Sthāna 1: sūtrasthānam ===
+  Found 30 adhyāyas
+    Adhyāya 1: "1. dīrghañjīvitīyō'dhyāyaḥ" -- 116309 chars, root 87 / comm 175 / notes 444  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 2: "2. apāmārgataṇḍulīyō'dhyāyaḥ" -- 16225 chars, root 18 / comm 20 / notes 42
+    Adhyāya 3: "3. āragvadhīyō'dhyāyaḥ" -- 9646 chars, root 6 / comm 8 / notes 6
+    Adhyāya 4: "4. ṣaḍvirēcanaśatāśritīyō'dhyāyaḥ" -- 30338 chars, root 29 / comm 38 / notes 75
+    Adhyāya 5: "5. mātrāśitīyō'dhyāyaḥ" -- 37959 chars, root 63 / comm 62 / notes 135
+    Adhyāya 6: "6. tasyāśitīyō'dhyāyaḥ" -- 25087 chars, root 23 / comm 28 / notes 51
+    Adhyāya 7: "7. navēgāndhāraṇīyō'dhyāyaḥ" -- 30279 chars, root 44 / comm 49 / notes 117
+    Adhyāya 8: "8. indriyōpakramaṇīyō'dhyāyaḥ" -- 32941 chars, root 57 / comm 49 / notes 138
+    Adhyāya 9: "9. khuḍḍākacatuṣpādō'dhyāyaḥ" -- 15235 chars, root 21 / comm 27 / notes 24
+    Adhyāya 10: "10. mahācatuṣpādō'dhyāyaḥ" -- 14634 chars, root 24 / comm 16 / notes 39  *** 1 EMPTY SPANS -- REVIEW ***
+    Adhyāya 11: "11. tisraiṣaṇīyō'dhyāyaḥ" -- 54775 chars, root 64 / comm 78 / notes 135  *** 4 EMPTY SPANS -- REVIEW ***
+    Adhyāya 12: "12. vātakalākalīyō'dhyāyaḥ" -- 13005 chars, root 19 / comm 18 / notes 39
+    Adhyāya 13: '13. snēhādhyāyaḥ' -- 31177 chars, root 52 / comm 52 / notes 78
+    Adhyāya 14: '14. svēdādhyāyaḥ' -- 23094 chars, root 49 / comm 44 / notes 63
+    Adhyāya 15: "15. upakalpanīyō'dhyāyaḥ" -- 17954 chars, root 24 / comm 21 / notes 39
+    Adhyāya 16: "16. cikitsāprābhr̥tīyō'dhyāyaḥ" -- 13875 chars, root 21 / comm 25 / notes 36
+    Adhyāya 17: "17. kiyantaḥśirasīyō'dhyāyaḥ" -- 34159 chars, root 59 / comm 41 / notes 138
+    Adhyāya 18: "18. triśōthīyō'dhyāyaḥ" -- 17615 chars, root 44 / comm 22 / notes 84
+    Adhyāya 19: "19. aṣṭōdarīyō'dhyāyaḥ" -- 12375 chars, root 10 / comm 9 / notes 15
+    Adhyāya 20: '20. mahārōgādhyāyaḥ' -- 18096 chars, root 45 / comm 21 / notes 108
+    Adhyāya 21: "21. aṣṭauninditīyō'dhyāyaḥ" -- 18223 chars, root 39 / comm 29 / notes 72
+    Adhyāya 22: "22. laṅghanabr̥ṁhaṇīyō'dhyāyaḥ" -- 10899 chars, root 26 / comm 17 / notes 45
+    Adhyāya 23: "23. santarpaṇīyō'dhyāyaḥ" -- 8242 chars, root 11 / comm 10 / notes 21
+    Adhyāya 24: "24. vidhiśōṇitīyō'dhyāyaḥ" -- 14094 chars, root 28 / comm 24 / notes 42
+    Adhyāya 25: "25. yajjaḥpuruṣīyō'dhyāyaḥ" -- 40238 chars, root 53 / comm 57 / notes 174
+    Adhyāya 26: "26. ātrēyabhadrakāpyīyō'dhyāyaḥ" -- 87845 chars, root 99 / comm 109 / notes 297
+    Adhyāya 27: '27. annapānavidhyadhyāyaḥ' -- 110138 chars, root 164 / comm 130 / notes 330
+    Adhyāya 28: "28. vividhāśitapītīyō'dhyāyaḥ" -- 36049 chars, root 43 / comm 53 / notes 120
+    Adhyāya 29: "29. daśaprāṇāyatanīyō'dhyāyaḥ" -- 10463 chars, root 18 / comm 10 / notes 42
+    Adhyāya 30: "30. arthēdaśamahāmūlīyō'dhyāyaḥ" -- 48779 chars, root 77 / comm 61 / notes 225
+  Saved ecaraka_data/sthana_1_sutrasthanam.json
+=== Sthāna 2: nidānasthānam ===
+  Found 8 adhyāyas
+    Adhyāya 31: '1. jvaranidānam' -- 60729 chars, root 55 / comm 92 / notes 195  *** 3 EMPTY SPANS -- REVIEW ***
+    Adhyāya 32: '2. raktapittanidānam' -- 15351 chars, root 36 / comm 22 / notes 78  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 33: '3. gulmanidānam' -- 15316 chars, root 28 / comm 19 / notes 69  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 34: '4. pramēhanidānam' -- 19448 chars, root 23 / comm 23 / notes 36  *** 3 EMPTY SPANS -- REVIEW ***
+    Adhyāya 35: '5. kuṣṭhanidānam' -- 15013 chars, root 22 / comm 18 / notes 54  *** 16 EMPTY SPANS -- REVIEW ***
+    Adhyāya 36: '6. śōṣanidānam' -- 15071 chars, root 27 / comm 18 / notes 57  *** 5 EMPTY SPANS -- REVIEW ***
+    Adhyāya 37: '7. unmādanidānam' -- 15383 chars, root 29 / comm 24 / notes 57  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 38: '8. apasmāranidānam' -- 19683 chars, root 43 / comm 34 / notes 75  *** 2 EMPTY SPANS -- REVIEW ***
+  Saved ecaraka_data/sthana_2_nidanasthanam.json
+=== Sthāna 3: vimānasthānam ===
+  Found 8 adhyāyas
+    Adhyāya 39: '1. rasavimānam' -- 33771 chars, root 62 / comm 62 / notes 120  *** 1 EMPTY SPANS -- REVIEW ***
+    Adhyāya 40: '2. trividhakukṣīyavimānam' -- 10676 chars, root 19 / comm 18 / notes 39
+    Adhyāya 41: '3. janapadōddhvaṁsanīyavimānam' -- 33158 chars, root 49 / comm 35 / notes 90  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 42: '4. trividharōgaviśēṣavijñānīyavimānam' -- 12468 chars, root 19 / comm 12 / notes 39
+    Adhyāya 43: '5. srōtōvimānam' -- 13208 chars, root 19 / comm 17 / notes 30
+    Adhyāya 44: '6. rōgānīkavimānam' -- 20773 chars, root 32 / comm 33 / notes 87
+    Adhyāya 45: '7. vyādhitarūpīyavimānam' -- 19074 chars, root 40 / comm 26 / notes 66
+    Adhyāya 46: '8. rōgabhiṣagjitīyavimānam' -- 119613 chars, root 200 / comm 196 / notes 480
+  Saved ecaraka_data/sthana_3_vimanasthanam.json
+=== Sthāna 4: śārīrasthānam ===
+  Found 8 adhyāyas
+    Adhyāya 47: '1. katidhāpuruṣīyaśārīram' -- 73964 chars, root 110 / comm 164 / notes 336
+    Adhyāya 48: '2. atulyagōtrīyaśārīram' -- 26665 chars, root 40 / comm 40 / notes 96
+    Adhyāya 49: '3. khuḍḍikāgarbhāvakrāntiśārīram' -- 40162 chars, root 46 / comm 54 / notes 132
+    Adhyāya 50: '4. mahatīgarbhāvakrāntiśārīram' -- 42140 chars, root 67 / comm 74 / notes 183
+    Adhyāya 51: '5. puruṣavicayaśārīram' -- 18540 chars, root 19 / comm 28 / notes 51
+    Adhyāya 52: '6. śarīravicayaśārīram' -- 39321 chars, root 47 / comm 61 / notes 150
+    Adhyāya 53: '7. śarīrasaṅkhyāśārīram' -- 17549 chars, root 29 / comm 30 / notes 81  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 54: '8. jātisūtrīyaśārīram' -- 57688 chars, root 103 / comm 71 / notes 252
+  Saved ecaraka_data/sthana_4_sarirasthanam.json
+=== Sthāna 5: indriyasthānam ===
+  Found 12 adhyāyas
+    Adhyāya 55: '1. varṇasvarīyamindriyam' -- 18946 chars, root 36 / comm 37 / notes 111
+    Adhyāya 56: '2. puṣpitakamindriyam' -- 8109 chars, root 14 / comm 13 / notes 33
+    Adhyāya 57: '3. parimarśanīyamindriyam' -- 5709 chars, root 13 / comm 6 / notes 27
+    Adhyāya 58: '4. indriyānīkamindriyam' -- 8277 chars, root 29 / comm 19 / notes 36
+    Adhyāya 59: '5. pūrvarūpīyamindriyam' -- 10331 chars, root 28 / comm 16 / notes 42
+    Adhyāya 60: '6. katamāniśarīrīyamindriyam' -- 6315 chars, root 19 / comm 12 / notes 45
+    Adhyāya 61: '7. pannarūpīyamindriyam' -- 8866 chars, root 26 / comm 16 / notes 48
+    Adhyāya 62: '8. avākśirasīyamindriyam' -- 4987 chars, root 14 / comm 8 / notes 24
+    Adhyāya 63: '9. yasyaśyāvanimittīyamindriyam' -- 5183 chars, root 13 / comm 6 / notes 21
+    Adhyāya 64: '10. sadyōmaraṇīyamindriyam' -- 4001 chars, root 9 / comm 6 / notes 21
+    Adhyāya 65: '11. aṇujyōtīyamindriyam' -- 7410 chars, root 24 / comm 17 / notes 27
+    Adhyāya 66: '12. gōmayacūrṇīyamindriyam' -- 17036 chars, root 28 / comm 20 / notes 48
+  Saved ecaraka_data/sthana_5_indriyasthanam.json
+=== Sthāna 6: cikitsāsthānam ===
+  Found 36 adhyāyas
+    Adhyāya 121: '1/1. rasāyanādhyāyaḥ - abhayāmalakīyarasāyanapād' -- 22296 chars, root 35 / comm 31 / notes 72  *** 1 EMPTY SPANS -- REVIEW ***
+    Adhyāya 122: '1/2. rasāyanādhyāyaḥ - prāṇakāmīyō rasāyanapādaḥ' -- 13792 chars, root 25 / comm 20 / notes 39
+    Adhyāya 123: '1/3. rasāyanādhyāyaḥ - karapracitīyō rasāyanapād' -- 14764 chars, root 30 / comm 19 / notes 57
+    Adhyāya 124: '1/4. rasāyanādhyāyaḥ - āyurvēdasamutthānīyō rasā' -- 16299 chars, root 32 / comm 20 / notes 60
+    Adhyāya 125: "2/1. vājīkaraṇā'dhyāyaḥ - saṁyōgaśaramūlīyō vājī" -- 11396 chars, root 21 / comm 14 / notes 33
+    Adhyāya 126: "2/2. vājīkaraṇā'dhyāyaḥ - āsiktakṣīrīyō vājīkara" -- 6971 chars, root 18 / comm 10 / notes 24
+    Adhyāya 127: "2/3. vājīkaraṇā'dhyāyaḥ - māṣaparṇabhr̥tīyō vājī" -- 7811 chars, root 19 / comm 14 / notes 21
+    Adhyāya 128: "2/4. vājīkaraṇā'dhyāyaḥ - pumāñjātabalādikō vājī" -- 11827 chars, root 24 / comm 19 / notes 33
+    Adhyāya 69: '3. jvaracikitsitam' -- 145788 chars, root 184 / comm 230 / notes 534
+    Adhyāya 70: '4. raktapittacikitsitam' -- 31670 chars, root 50 / comm 41 / notes 63
+    Adhyāya 71: '5. gulmacikitsitam' -- 41391 chars, root 87 / comm 66 / notes 75
+    Adhyāya 72: '6. pramēhacikitsitam' -- 21288 chars, root 42 / comm 36 / notes 54
+    Adhyāya 73: '7. kuṣṭhacikitsitam' -- 40279 chars, root 75 / comm 57 / notes 120
+    Adhyāya 74: '8. rājayakṣmacikitsitam' -- 36872 chars, root 68 / comm 43 / notes 105
+    Adhyāya 75: '9. unmādacikitsitam' -- 31727 chars, root 53 / comm 44 / notes 87
+    Adhyāya 76: '10. apasmāracikitsitam' -- 14924 chars, root 37 / comm 27 / notes 54
+    Adhyāya 77: '11. kṣatakṣīṇacikitsitam' -- 20583 chars, root 34 / comm 27 / notes 27
+    Adhyāya 78: '12. śvayathucikitsitam' -- 32675 chars, root 89 / comm 60 / notes 117
+    Adhyāya 79: '13. udaracikitsitam' -- 41832 chars, root 68 / comm 48 / notes 90
+    Adhyāya 80: '14. arśaścikitsitam' -- 47264 chars, root 79 / comm 47 / notes 108
+    Adhyāya 81: '15. grahaṇīdōṣacikitsitam' -- 66779 chars, root 107 / comm 73 / notes 186  *** 1 EMPTY SPANS -- REVIEW ***
+    Adhyāya 82: '16. pāṇḍurōgacikitsitam' -- 28630 chars, root 57 / comm 41 / notes 54
+    Adhyāya 83: '17. hikkāśvāsacikitsitam' -- 30462 chars, root 49 / comm 41 / notes 42
+    Adhyāya 84: '18. kāsacikitsitam' -- 33265 chars, root 61 / comm 47 / notes 72
+    Adhyāya 85: '19. atisāracikitsitam' -- 33926 chars, root 53 / comm 52 / notes 51
+    Adhyāya 86: '20. chardicikitsitam' -- 15090 chars, root 28 / comm 29 / notes 39
+    Adhyāya 87: '21. visarpacikitsitam' -- 34951 chars, root 52 / comm 37 / notes 69
+    Adhyāya 88: '22. tr̥ṣṇācikitsitam' -- 20086 chars, root 39 / comm 32 / notes 69
+    Adhyāya 89: '23. viṣacikitsitam' -- 53425 chars, root 111 / comm 63 / notes 234
+    Adhyāya 90: '24. madātyayacikitsitam' -- 42519 chars, root 78 / comm 38 / notes 150
+    Adhyāya 91: '25. dvivraṇīyacikitsitam' -- 24091 chars, root 61 / comm 42 / notes 87
+    Adhyāya 92: '26. trimarmīyacikitsitam' -- 60980 chars, root 101 / comm 64 / notes 141
+    Adhyāya 93: '27. ūrustambhacikitsitam' -- 13347 chars, root 27 / comm 14 / notes 45
+    Adhyāya 94: '28. vātavyādhicikitsitam' -- 52554 chars, root 100 / comm 63 / notes 189
+    Adhyāya 95: '29. vātaśōṇitacikitsitam' -- 30746 chars, root 53 / comm 35 / notes 90
+    Adhyāya 96: '30. yōnivyāpaccikitsitam' -- 71780 chars, root 142 / comm 76 / notes 258
+  Saved ecaraka_data/sthana_6_cikitsasthanam.json
+=== Sthāna 7: kalpasthānam ===
+  Found 12 adhyāyas
+    Adhyāya 97: '1. madanakalpaḥ' -- 26425 chars, root 53 / comm 38 / notes 111  *** 1 EMPTY SPANS -- REVIEW ***
+    Adhyāya 98: '2. jīmūtakakalpaḥ' -- 4818 chars, root 17 / comm 11 / notes 24
+    Adhyāya 99: '3. ikṣvākukalpaḥ' -- 7247 chars, root 24 / comm 16 / notes 36
+    Adhyāya 100: '4. dhāmārgavakalpaḥ' -- 5675 chars, root 23 / comm 17 / notes 24
+    Adhyāya 101: '5. vatsakakalpaḥ' -- 2927 chars, root 14 / comm 7 / notes 21
+    Adhyāya 102: '6. kr̥tavēdhanakalpaḥ' -- 5060 chars, root 20 / comm 11 / notes 27
+    Adhyāya 103: '7. śyāmātrivr̥tkalpaḥ' -- 16462 chars, root 61 / comm 32 / notes 93
+    Adhyāya 104: '8. caturaṅgulakalpaḥ' -- 4455 chars, root 23 / comm 15 / notes 30
+    Adhyāya 105: '9. tilvakakalpaḥ' -- 4481 chars, root 17 / comm 11 / notes 24
+    Adhyāya 106: '10. sudhākalpaḥ' -- 5870 chars, root 22 / comm 15 / notes 27
+    Adhyāya 107: '11. saptalāśaṅkhinīkalpaḥ' -- 5277 chars, root 16 / comm 9 / notes 27
+    Adhyāya 108: '12. dantīdravantīkalpaḥ' -- 31749 chars, root 94 / comm 61 / notes 165  *** 3 EMPTY SPANS -- REVIEW ***
+  Saved ecaraka_data/sthana_7_kalpasthanam.json
+=== Sthāna 8: siddhisthānam ===
+  Found 12 adhyāyas
+    Adhyāya 109: '1. kalpanāsiddhiḥ' -- 44337 chars, root 90 / comm 76 / notes 210  *** 3 EMPTY SPANS -- REVIEW ***
+    Adhyāya 110: '2. pañcakarmīyā siddhiḥ' -- 18813 chars, root 33 / comm 23 / notes 78
+    Adhyāya 111: '3. bastisūtrīyā siddhiḥ' -- 31402 chars, root 64 / comm 60 / notes 216
+    Adhyāya 112: '4. snēhavyāpatsiddhiḥ' -- 14929 chars, root 38 / comm 34 / notes 84
+    Adhyāya 113: '5. nētrabastivyāpatsiddhiḥ' -- 6511 chars, root 20 / comm 16 / notes 36
+    Adhyāya 114: '6. vamanavirēcanavyāpatsiddhiḥ' -- 28761 chars, root 75 / comm 57 / notes 144
+    Adhyāya 115: '7. bastivyāpatsiddhiḥ' -- 15990 chars, root 49 / comm 21 / notes 96
+    Adhyāya 116: '8. prāsr̥tayōgīyā siddhiḥ' -- 13200 chars, root 47 / comm 32 / notes 81
+    Adhyāya 117: '9. trimarmīyā siddhiḥ' -- 38120 chars, root 92 / comm 50 / notes 231  *** 2 EMPTY SPANS -- REVIEW ***
+    Adhyāya 118: '10. bastisiddhiḥ' -- 12214 chars, root 40 / comm 25 / notes 63
+    Adhyāya 119: '11. phalamātrāsiddhiḥ' -- 10706 chars, root 30 / comm 13 / notes 69
+    Adhyāya 120: '12. uttarabastisiddhiḥ' -- 38613 chars, root 55 / comm 34 / notes 87
+  Saved ecaraka_data/sthana_8_siddhisthanam.json
