@@ -11,7 +11,7 @@ layout: default
 {% endfor %}
 {% assign prev_index = this_index | minus: 1 %}
 {% assign next_index = this_index | plus: 1 %}
-{% assign has_hemadri = content contains 'class="hemadri"' %}
+{% assign has_hemadri = false %}{% if content contains 'class="hemadri"' %}{% assign has_hemadri = true %}{% endif %}
 
 <nav class="breadcrumb">
   <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;

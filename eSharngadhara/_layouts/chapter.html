@@ -11,8 +11,8 @@ layout: default
 {% endfor %}
 {% assign prev_index = this_index | minus: 1 %}
 {% assign next_index = this_index | plus: 1 %}
-{% assign has_adhamalla = content contains 'class="adhamalla"' %}
-{% assign has_kasirama = content contains 'class="kasirama"' %}
+{% assign has_adhamalla = false %}{% if content contains 'class="adhamalla"' %}{% assign has_adhamalla = true %}{% endif %}
+{% assign has_kasirama = false %}{% if content contains 'class="kasirama"' %}{% assign has_kasirama = true %}{% endif %}
 
 <nav class="breadcrumb">
   <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
