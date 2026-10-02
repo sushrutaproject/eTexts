@@ -1,0 +1,7 @@
+# The Mādhavanidāna has no sthāna division: its 70 chapters form a single
+# collection. This one-entry register exists so that the combined eTexts
+# search (see ../texts.yml and ../build.rb) can find its search index.
+nidanas:
+  name: "Mādhavanidāna"
+  subtitle: "Diagnosis"
+  count: 70

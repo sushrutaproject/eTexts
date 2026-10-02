@@ -721,3 +721,8 @@ mark.search-hit { background: #f5cf8d; }
   color: var(--paper);
   text-decoration: none;
 }
+
+/* "eTexts /" link to the collection, in front of the site title */
+.corpus-link { color: var(--muted); font-weight: 400; }
+.corpus-link:hover { color: var(--rubric); }
+.corpus-sep { color: var(--line); font-weight: 400; }

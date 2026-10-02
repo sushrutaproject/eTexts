@@ -1,5 +1,7 @@
 # e-Mādhavanidāna
 
+> **Now part of eTexts.** This text is built and published as one sub-site of the combined eTexts repository; its search is the combined eTexts search. For building, deployment and URLs see the [top-level README](../README.md). Notes below about `baseurl`, GitHub Pages settings and `search.html` describe the original standalone repository and are kept for reference.
+
 A static Jekyll reading edition of the **Mādhavanidāna**, a Sanskrit
 compendium on the diagnosis of disease attributed to Mādhavakara, with
 the **Madhukośa** and **Ātaṅkadarpaṇa** commentaries, in IAST. Content

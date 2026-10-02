@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------------
-   e-Suśruta -- design tokens
+   eTexts portal -- design tokens (shared with the individual texts)
    Palette drawn from palm-leaf manuscripts: aged-paper ground,
    warm ink, and the terracotta "rubrication" red traditionally
    used for chapter/verse numbering.
@@ -692,7 +692,121 @@ mark.search-hit { background: #f5cf8d; }
   text-decoration: none;
 }
 
-/* "eTexts /" link to the collection, in front of the site title */
+/* ---------------------------------------------------------------
+   eTexts portal: home page cards and combined-search additions
+   ------------------------------------------------------------- */
+
+.portal-search { margin-top: 1.6rem; }
+
+.portal-search select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--paper-alt);
+  color: var(--ink);
+  max-width: 14rem;
+}
+
+.text-grid {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 1.2rem;
+}
+
+.text-card {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--rubric);
+  background: var(--paper-alt);
+  padding: 1.1rem 1.3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-card h2 { font-size: 1.4rem; margin: 0 0 0.15rem; }
+.text-card h2 a { color: var(--ink); }
+.text-card h2 a:hover { color: var(--rubric); }
+
+.text-card .commentary {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
+}
+
+.text-card .blurb { font-size: 0.98rem; margin: 0 0 0.6rem; }
+
+.text-card .count {
+  color: var(--gold);
+  font-size: 0.85rem;
+  margin: 0 0 0.9rem;
+}
+
+.text-card .card-links {
+  margin: auto 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.7rem;
+}
+
+.text-card .tei-link { font-size: 0.85rem; color: var(--muted); }
+.text-card .tei-link:hover { color: var(--rubric); }
+
+.collection-count {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Combined search results: text > sthāna > chapter */
+
+.result-tally ul {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  font-size: 0.95rem;
+}
+
+.result-text { margin-bottom: 3rem; }
+
+.result-text > h2 {
+  font-size: 1.4rem;
+  color: var(--ink);
+  border-bottom: 2px solid var(--rubric);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.result-text .result-sthana h3 {
+  font-size: 1.1rem;
+  color: var(--gold);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.result-chapter h4 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.result-chapter h4 a { color: var(--ink); }
+.result-chapter h4 a:hover { color: var(--rubric); }
+
+/* "eTexts /" link in front of each text's own title */
+
 .corpus-link { color: var(--muted); font-weight: 400; }
-.corpus-link:hover { color: var(--rubric); }
-.corpus-sep { color: var(--line); font-weight: 400; }
+
+@media (max-width: 40rem) {
+  .portal-search .search-row { flex-wrap: wrap; }
+  .portal-search input[type="search"] { flex: 1 1 100%; min-width: 0; }
+  .portal-search select { flex: 1 1 auto; max-width: none; }
+}
+.search-row input[type="search"] { min-width: 0; }

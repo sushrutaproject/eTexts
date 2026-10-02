@@ -1,0 +1,87 @@
+# ------------------------------------------------------------------
+# eTexts -- the register of texts in this collection.
+#
+# Each entry is one sub-site living in its own directory of this repo.
+# The directory name (`id`) is also its URL segment, e.g.
+#   https://sushrutaproject.github.io/eTexts/eSushruta/
+#
+# The order here is the order on the home page and in the search menu.
+#
+# Searchable sections are NOT listed here: they are read automatically
+# from each text's own  <id>/_data/sthanas.yml  at build time, and each
+# section is expected to publish  <id>/search-index/<section>.json .
+#
+# To add a new text: put its Jekyll site in a new directory, then add
+# an entry below (see README.md, "Adding a new text").
+# ------------------------------------------------------------------
+
+- id: eCaraka
+  site_title: "e-Caraka"
+  work: "Carakasaṃhitā"
+  commentary: "with Cakrapāṇidatta's Āyurvedadīpikā"
+  blurb: >
+    The foundational treatise of internal medicine, read with
+    Cakrapāṇidatta's eleventh-century commentary.
+  source: "NIIMH e-Samhita"
+  tei:
+    - label: "Mūla only"
+      file: assets/tei/carakasamhita-mula.xml
+    - label: "Mūla with commentary"
+      file: assets/tei/carakasamhita-full.xml
+
+- id: eSushruta
+  site_title: "e-Suśruta"
+  work: "Suśrutasaṃhitā"
+  commentary: "with Ḍalhaṇa's Nibandhasaṅgraha"
+  blurb: >
+    The classical treatise on medicine and surgery, read with Ḍalhaṇa's
+    twelfth-century commentary. Based on the 1938 edition of
+    Yādavaśarman Trivikrama Ācārya.
+  source: "NIIMH e-Samhita"
+  tei:
+    - label: "Mūla only"
+      file: assets/tei/susrutasamhita-mula.xml
+    - label: "Mūla with commentary"
+      file: assets/tei/susrutasamhita-full.xml
+
+- id: eHrdaya
+  site_title: "e-Vāgbhaṭa"
+  work: "Aṣṭāṅgahṛdaya"
+  commentary: "with Aruṇadatta's Sarvāṅgasundarā and Hemādri's Āyurvedarasāyana"
+  blurb: >
+    Vāgbhaṭa's verse synthesis of the medical tradition. Hemādri's
+    commentary is present only where the source preserves it.
+  source: "vedotpatti.in"
+  tei:
+    - label: "Mūla only"
+      file: assets/tei/astangahrdaya-mula.xml
+    - label: "Mūla with commentaries"
+      file: assets/tei/astangahrdaya-full.xml
+
+- id: eMadhava
+  site_title: "e-Mādhavanidāna"
+  work: "Mādhavanidāna"
+  commentary: "with the Madhukośa and Ātaṅkadarpaṇa"
+  blurb: >
+    Mādhavakara's compendium of disease diagnosis, in 70 chapters.
+    Based on the 1955 edition of Yādavaśarman Trivikrama Ācārya.
+  source: "NIIMH e-Samhita"
+  tei:
+    - label: "Mūla only"
+      file: assets/tei/madhavanidana-mula.xml
+    - label: "Mūla with commentaries"
+      file: assets/tei/madhavanidana-full.xml
+
+- id: eSharngadhara
+  site_title: "e-Śārṅgadhara"
+  work: "Śārṅgadharasaṃhitā"
+  commentary: "with Āḍhamalla's Dīpikā and Kāśīrāma's Gūḍhārthadīpikā"
+  blurb: >
+    Śārṅgadhara's handbook of pharmacy and therapeutics, in three
+    khaṇḍas.
+  source: "CCRAS e-book reading room"
+  tei:
+    - label: "Mūla only"
+      file: assets/tei/sarngadharasamhita-mula.xml
+    - label: "Mūla with commentaries"
+      file: assets/tei/sarngadharasamhita-full.xml

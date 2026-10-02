@@ -1,0 +1,26 @@
+# eTexts portal: the collection's home page, combined search and About.
+# Built by ../build.rb, which also supplies `baseurl` and generates
+# _data/corpus.json from ../texts.yml and each text's _data/sthanas.yml.
+
+title: "eTexts"
+tagline: "Sanskrit medical classics, in IAST"
+description: >
+  Digital reading editions of classical Sanskrit medical treatises with
+  their commentaries, searchable singly or all together. A Suśruta
+  Project resource.
+
+baseurl: "/eTexts"
+url: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
