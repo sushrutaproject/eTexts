@@ -3,59 +3,78 @@ layout: default
 title: Home
 hide_header_search: true
 ---
+
 <div class="home-intro">
   <h1>{{ site.title }}</h1>
   <p class="subtitle">{{ site.tagline }}</p>
   <p>
-    Digital reading editions of classical Sanskrit medical treatises, each
-    with its commentaries, in IAST. Every text can be read and searched on
-    its own; the search below also runs across the whole collection at once.
+    Digital reading editions of classical Sanskrit medical treatises, each with
+    its commentaries, in IAST. Every text can be read and searched on its own;
+    the search below also runs across the whole collection at once.
   </p>
 
-  <form class="search-form portal-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+  <form
+    class="search-form portal-search"
+    action="{{ '/search/' | relative_url }}"
+    method="get"
+    role="search"
+  >
     <div class="search-row">
       <label for="home-q" class="sr-only">Search terms</label>
-      <input type="search" id="home-q" name="q" placeholder="Search the collection…">
+      <input
+        type="search"
+        id="home-q"
+        name="q"
+        placeholder="Search the collection…"
+      />
       <label for="home-scope" class="sr-only">Search in</label>
       <select id="home-scope" name="scope">
         <option value="all">All texts</option>
         {% for t in site.data.corpus %}
-          <option value="{{ t.id }}">{{ t.work }}</option>
+        <option value="{{ t.id }}">{{ t.work }}</option>
         {% endfor %}
       </select>
       <button type="submit">Search</button>
     </div>
     <p class="search-hint">
-      More options (regular expressions, ignoring diacritics, single
-      sthānas) on the <a href="{{ '/search/' | relative_url }}">search page</a>.
+      More options (regular expressions, ignoring diacritics, single sthānas) on
+      the <a href="{{ '/search/' | relative_url }}">search page</a>.
     </p>
   </form>
 </div>
 
-{% assign total_chapters = 0 %}
-{% for t in site.data.corpus %}{% assign total_chapters = total_chapters | plus: t.chapters %}{% endfor %}
+{% assign total_chapters = 0 %} {% for t in site.data.corpus %}{% assign
+total_chapters = total_chapters | plus: t.chapters %}{% endfor %}
 
 <div class="text-grid">
-  {% for t in site.data.corpus %}
-    {% assign root = t.id | prepend: '/' | append: '/' | relative_url %}
-    <article class="text-card">
-      <h2><a href="{{ root }}">{{ t.work }}</a></h2>
-      <p class="commentary">{{ t.commentary }}</p>
-      <p class="blurb">{{ t.blurb }}</p>
-      <p class="count">
-        {% assign nsec = t.sections | size %}
-        {% if nsec > 1 %}{{ nsec }} sections &middot; {% endif %}{{ t.chapters }} adhyāyas
-        &middot; source: {{ t.source }}
-      </p>
-      <p class="card-links">
-        <a class="tei-button" href="{{ root }}">Read</a>
-        <a class="tei-button" href="{{ '/search/' | relative_url }}?scope={{ t.id }}">Search</a>
-        {% for f in t.tei %}
-          <a class="tei-link" href="{{ root }}{{ f.file }}" download>&#8595; TEI: {{ f.label }}</a>
-        {% endfor %}
-      </p>
-    </article>
+  {% for t in site.data.corpus %} {% assign root = t.id | prepend: '/' | append:
+  '/' | relative_url %}
+  <article class="text-card">
+    <h2><a href="{{ root }}">{{ t.work }}</a></h2>
+    <p class="commentary">{{ t.commentary }}</p>
+    <p class="blurb">{{ t.blurb }}</p>
+    <p class="count">
+      {% assign nsec = t.sections | size %} {% if nsec > 1 %}{{ nsec }} sections
+      &middot; {% endif %}{{ t.chapters }} adhyāyas &middot; source: {{ t.source
+      }}
+    </p>
+    <p class="card-links">
+      <a class="tei-button" href="{{ root }}">Read</a>
+      <a
+        class="tei-button"
+        href="{{ '/search/' | relative_url }}?scope={{ t.id }}"
+        >Search</a
+      >
+      {% for f in t.tei %}
+      <a class="tei-link" href="{{ root }}{{ f.file }}" download
+        >&#8595; TEI: {{ f.label }}</a
+      >
+      {% endfor %}
+    </p>
+  </article>
   {% endfor %}
 </div>
 
-<p class="collection-count">{{ site.data.corpus | size }} texts &middot; {{ total_chapters }} adhyāyas</p>
+<p class="collection-count">
+  {{ site.data.corpus | size }} texts &middot; {{ total_chapters }} adhyāyas
+</p>

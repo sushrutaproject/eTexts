@@ -1,23 +1,41 @@
 <header class="site-header">
   <div class="site-header-inner">
-    <div class="site-title"><a class="corpus-link" href="{{ site.corpus_root }}/">eTexts</a> <span class="corpus-sep">/</span> <a href="{{ '/' | relative_url }}">e-Suśruta</a></div>
+    <div class="site-title">
+      <a class="corpus-link" href="{{ site.corpus_root }}/">eTexts</a>
+      <span class="corpus-sep">/</span>
+      <a href="{{ '/' | relative_url }}">e-Suśruta</a>
+    </div>
     <p class="site-tagline">{{ site.tagline }}</p>
     <nav class="site-nav">
       {% for s in site.data.sthanas %}
-        <a href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">{{ s[1].name }}</a>
+      <a href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}"
+        >{{ s[1].name }}</a
+      >
       {% endfor %}
       <a href="{{ '/about/' | relative_url }}">About</a>
     </nav>
-    <form class="header-search" action="{{ site.corpus_root }}/search/" method="get" role="search">
+    <form
+      class="header-search"
+      action="{{ site.corpus_root }}/search/"
+      method="get"
+      role="search"
+    >
       <label for="header-q" class="sr-only">Search the text</label>
-      <input type="search" id="header-q" name="q"
-             placeholder="{% if page.sthana_slug %}Search {{ site.data.sthanas[page.sthana_slug].name }}…{% else %}Search this text…{% endif %}">
-      {% comment %}
-        Searches go to the combined eTexts search page, scoped by default to
-        the sthāna being read, or else to this whole text. The search page
-        itself lets the reader widen it to the whole collection.
-      {% endcomment %}
-      <input type="hidden" name="scope" value="{{ site.text_id }}{% if page.sthana_slug %}/{{ page.sthana_slug }}{% endif %}">
+      <input
+        type="search"
+        id="header-q"
+        name="q"
+        placeholder="{% if page.sthana_slug %}Search {{ site.data.sthanas[page.sthana_slug].name }}…{% else %}Search this text…{% endif %}"
+      />
+      {% comment %} Searches go to the combined eTexts search page, scoped by
+      default to the sthāna being read, or else to this whole text. The search
+      page itself lets the reader widen it to the whole collection. {%
+      endcomment %}
+      <input
+        type="hidden"
+        name="scope"
+        value="{{ site.text_id }}{% if page.sthana_slug %}/{{ page.sthana_slug }}{% endif %}"
+      />
       <button type="submit">Go</button>
     </form>
   </div>

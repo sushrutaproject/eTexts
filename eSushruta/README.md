@@ -4,7 +4,7 @@
 
 A static Jekyll reading edition of the **Suśrutasaṃhitā**, a Sanskrit
 treatise on medicine and surgery, with **Ḍalhaṇa's** commentary, the
-*Nibandhasaṅgraha*, in IAST. Content drawn from the
+_Nibandhasaṅgraha_, in IAST. Content drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/esushruta/); see `about.md`
 for provenance and limitations.
 

@@ -5,13 +5,13 @@ their commentaries, in IAST, published at
 **https://sushrutaproject.github.io/eTexts/** with one combined search
 across the whole collection.
 
-| Directory | Text | Published at |
-|---|---|---|
-| `eCaraka/` | Carakasaṃhitā, with Cakrapāṇidatta | `/eTexts/eCaraka/` |
-| `eSushruta/` | Suśrutasaṃhitā, with Ḍalhaṇa | `/eTexts/eSushruta/` |
-| `eHrdaya/` | Aṣṭāṅgahṛdaya, with Aruṇadatta and Hemādri | `/eTexts/eHrdaya/` |
-| `eMadhava/` | Mādhavanidāna, with the Madhukośa and Ātaṅkadarpaṇa | `/eTexts/eMadhava/` |
-| `eSharngadhara/` | Śārṅgadharasaṃhitā, with Āḍhamalla and Kāśīrāma | `/eTexts/eSharngadhara/` |
+| Directory        | Text                                                | Published at             |
+| ---------------- | --------------------------------------------------- | ------------------------ |
+| `eCaraka/`       | Carakasaṃhitā, with Cakrapāṇidatta                  | `/eTexts/eCaraka/`       |
+| `eSushruta/`     | Suśrutasaṃhitā, with Ḍalhaṇa                        | `/eTexts/eSushruta/`     |
+| `eHrdaya/`       | Aṣṭāṅgahṛdaya, with Aruṇadatta and Hemādri          | `/eTexts/eHrdaya/`       |
+| `eMadhava/`      | Mādhavanidāna, with the Madhukośa and Ātaṅkadarpaṇa | `/eTexts/eMadhava/`      |
+| `eSharngadhara/` | Śārṅgadharasaṃhitā, with Āḍhamalla and Kāśīrāma     | `/eTexts/eSharngadhara/` |
 
 Each directory was formerly its own repository in the `sushrutaproject`
 organization; their full commit histories were carried over
@@ -37,7 +37,7 @@ link and the header search box) and `text_id` (its directory name).
 ### Search
 
 There is a single search page, `portal/search.html` (at `/eTexts/search/`).
-Its *Search in* menu offers all texts, any single text, or any single
+Its _Search in_ menu offers all texts, any single text, or any single
 sthāna of a text. The header box on every text page searches that text
 (or the sthāna being read) and lands on this page, where the scope can be
 widened. Each text's old `search/` URL now forwards there, so existing

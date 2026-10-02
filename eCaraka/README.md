@@ -4,7 +4,7 @@
 
 A static Jekyll reading edition of the **Carakasaṃhitā**, a Sanskrit
 treatise on medicine, with **Cakrapāṇidatta's** commentary, the
-*Āyurvedadīpikā*, in IAST. Content drawn from the
+_Āyurvedadīpikā_, in IAST. Content drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/ecaraka/); see `about.md`
 for provenance and limitations. Built the same way as the companion
 e-Suśruta site.

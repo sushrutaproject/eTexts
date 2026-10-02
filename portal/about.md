@@ -3,6 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
+
 <div class="prose" markdown="1">
 
 # About eTexts
@@ -26,7 +27,7 @@ the top of every text page searches that text (or the sthāna you are
 reading) by default; the scope can be widened on the results page.
 
 Plain-text and regular-expression matching are both available, and
-diacritics can optionally be ignored (so *dosa* finds *doṣa*). Root text,
+diacritics can optionally be ignored (so _dosa_ finds _doṣa_). Root text,
 commentaries and editorial notes are all searched. Clicking a result opens
 the chapter with the matches highlighted.
 

@@ -3,20 +3,35 @@ layout: default
 title: Search
 permalink: /search/
 ---
-{%- comment -%}
-Searching now happens on the combined eTexts search page. This page only
-forwards old links and bookmarks (…/search/?q=…&scope=<sthāna>) there,
-translating the scope into the combined form "<text>/<sthāna>".
-{%- endcomment -%}
-<div class="prose">
-  <p>Search has moved to the
-  <a id="search-forward" href="{{ site.corpus_root }}/search/?scope={{ site.text_id }}">combined eTexts search</a>.</p>
-</div>
-<script>
-(function () {
-  var p = new URLSearchParams(window.location.search);
-  var s = p.get("scope");
-  p.set("scope", (s && s !== "all") ? "{{ site.text_id }}/" + s : "{{ site.text_id }}");
-  window.location.replace("{{ site.corpus_root }}/search/?" + p.toString());
-})();
-</script>
+
+{%- comment -%} Searching now happens on the combined eTexts search page. This
+page only forwards old links and bookmarks (…/search/?q=…&scope=<sthāna
+  >) there, translating the scope into the combined form "<text
+    >/<sthāna
+      >". {%- endcomment -%}
+      <div class="prose">
+        <p>
+          Search has moved to the
+          <a
+            id="search-forward"
+            href="{{ site.corpus_root }}/search/?scope={{ site.text_id }}"
+            >combined eTexts search</a
+          >.
+        </p>
+      </div>
+      <script>
+        (function () {
+          var p = new URLSearchParams(window.location.search);
+          var s = p.get("scope");
+          p.set(
+            "scope",
+            s && s !== "all" ? "{{ site.text_id }}/" + s : "{{ site.text_id }}",
+          );
+          window.location.replace(
+            "{{ site.corpus_root }}/search/?" + p.toString(),
+          );
+        })();
+      </script>
+    </sthāna></text
+  ></sthāna
+>

@@ -4,6 +4,7 @@ This replaces the chapter files and several site files. **`.gitignore` is
 deliberately not included** — yours is correct and untouched.
 
 ## What to do
+
 Copy everything here over your repo, preserving paths, then commit and
 push. Check locally first with `bundle exec jekyll serve`.
 
@@ -29,7 +30,7 @@ themselves remain searchable.
 
 **`about.md`, `index.html`, `_config.yml`** — corrected: earlier copy
 claimed the text carries Gayadāsa's Nyāyacandrikā. It does not. Gayadāsa
-(and Cakrapāṇidatta, Bhāskara, Hāraṇacandra) appear as citations *within*
+(and Cakrapāṇidatta, Bhāskara, Hāraṇacandra) appear as citations _within_
 Ḍalhaṇa's commentary. The About page now also documents the register
 distinction and its provenance.
 
@@ -42,6 +43,7 @@ built site; included here for reproducibility. Skip it if you'd rather
 not carry 5.7 MB in the repo.
 
 ## Checks run
+
 - 186/186 chapters have identifiable root text.
 - Every footnote reference in the corpus has a matching note. (Two notes
   in Sūtrasthāna 1 are mis-delimited in NIIMH's own data; the parser keys

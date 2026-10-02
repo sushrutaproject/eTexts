@@ -3,6 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
+
 <div class="prose" markdown="1">
 
 # About this site
@@ -12,7 +13,7 @@ diagnosis of disease traditionally attributed to **Mādhavakara**, together
 with two commentaries on it — the **Madhukośa** and the
 **Ātaṅkadarpaṇa** — in IAST (romanized, diacritic) transliteration.
 
-The Sanskrit text is from the 1955 edition of the Mādhavanidāna edited by Yādavaśarman Trivikrama Ācārya. 
+The Sanskrit text is from the 1955 edition of the Mādhavanidāna edited by Yādavaśarman Trivikrama Ācārya.
 
 ## The three registers
 
@@ -22,7 +23,7 @@ two commentaries are set smaller and indented, each behind its own quiet
 rule. The commentaries can be hidden entirely with the control at the
 head of each chapter, leaving the root text to be read continuously.
 
-The notes at the foot of each chapter (*pāṭhāntarāḥ*) record variant
+The notes at the foot of each chapter (_pāṭhāntarāḥ_) record variant
 readings from the source edition.
 
 ## Source
@@ -31,7 +32,7 @@ The Sanskrit text is drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/madhavanidana/), a project of
 the National Institute of Indian Medical Heritage (NIIMH), part of the
 Central Council for Research in Ayurvedic Sciences (CCRAS), Government of
-India. The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation. 
+India. The NIIHM website is extremely well designed and implemented, and users are recommended to use it. The present, simplified derivative is created for long-term archival preservation, stability, and ease of local consultation.
 
 ### Known limitations
 

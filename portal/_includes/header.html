@@ -1,19 +1,33 @@
 <header class="site-header">
   <div class="site-header-inner">
-    <div class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+    <div class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </div>
     <p class="site-tagline">{{ site.tagline }}</p>
     <nav class="site-nav">
       {% for t in site.data.corpus %}
-        <a href="{{ t.id | prepend: '/' | append: '/' | relative_url }}">{{ t.work }}</a>
+      <a href="{{ t.id | prepend: '/' | append: '/' | relative_url }}"
+        >{{ t.work }}</a
+      >
       {% endfor %}
       <a href="{{ '/search/' | relative_url }}">Search</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
     </nav>
     {% unless page.hide_header_search %}
-    <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+    <form
+      class="header-search"
+      action="{{ '/search/' | relative_url }}"
+      method="get"
+      role="search"
+    >
       <label for="header-q" class="sr-only">Search all texts</label>
-      <input type="search" id="header-q" name="q" placeholder="Search all texts…">
-      <input type="hidden" name="scope" value="all">
+      <input
+        type="search"
+        id="header-q"
+        name="q"
+        placeholder="Search all texts…"
+      />
+      <input type="hidden" name="scope" value="all" />
       <button type="submit">Go</button>
     </form>
     {% endunless %}

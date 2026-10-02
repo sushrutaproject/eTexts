@@ -4,7 +4,7 @@
 
 A static Jekyll reading edition of the **Aṣṭāṅgahṛdaya** of Vāgbhaṭa, a
 Sanskrit treatise on medicine, with the commentaries of **Aruṇadatta**
-(*Sarvāṅgasundarā*, throughout) and **Hemādri** (*Āyurvedarasāyana*,
+(_Sarvāṅgasundarā_, throughout) and **Hemādri** (_Āyurvedarasāyana_,
 preserved for part of the text — see `about.md`). Content drawn from
 [vedotpatti.in](https://vedotpatti.in/samhita/Vag/ehrudayam/); see
 `about.md` for provenance and limitations.

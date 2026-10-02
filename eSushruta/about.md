@@ -3,15 +3,16 @@ layout: default
 title: About
 permalink: /about/
 ---
+
 <div class="prose" markdown="1">
 
 # About this site
 
 This site presents the **Suśrutasaṃhitā**, a Sanskrit treatise on medicine
 and surgery, together with **Ḍalhaṇa's** commentary on it, the
-*Nibandhasaṅgraha*, in IAST (romanized, diacritic) transliteration.
+_Nibandhasaṅgraha_, in IAST (romanized, diacritic) transliteration.
 
-The text is based on the 1938 printed edition and thus, in the terminology of the Suśruta Project, it represents the “vulgate” version of the text. 
+The text is based on the 1938 printed edition and thus, in the terminology of the Suśruta Project, it represents the “vulgate” version of the text.
 
 ## The two texts
 
@@ -31,7 +32,7 @@ Other commentators — Cakrapāṇidatta, Gayadāsa, Bhāskara, Hāraṇacandra 
 are frequently named, but as **citations within** Ḍalhaṇa's commentary.
 Their own commentaries are not separate layers in this text.
 
-The notes at the foot of each chapter (*pāṭhāntarāḥ*) record variant
+The notes at the foot of each chapter (_pāṭhāntarāḥ_) record variant
 readings and comments from the source edition.
 
 ## Acknowledgements
@@ -40,7 +41,7 @@ The Sanskrit text was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/esushruta/), a project of the
 National Institute of Indian Medical Heritage (NIIMH), part of the Central
 Council for Research in Ayurvedic Sciences (CCRAS), Government of India.
-The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation. 
+The NIIHM website is extremely well designed and implemented, and users are recommended to use it. The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation.
 
 ### Known limitations
 

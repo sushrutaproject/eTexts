@@ -3,14 +3,15 @@ layout: default
 title: About
 permalink: /about/
 ---
+
 <div class="prose" markdown="1">
 
 # About this site
 
 This site presents the **Carakasaṃhitā**, a Sanskrit treatise on
 medicine, together with **Cakrapāṇidatta's** commentary on it, the
-*Āyurvedadīpikā*, in IAST (romanized, diacritic) transliteration.  It is based on the 
-1941 printed edition edited by Yādavaśarman Trivikarma Ācārya. 
+_Āyurvedadīpikā_, in IAST (romanized, diacritic) transliteration. It is based on the
+1941 printed edition edited by Yādavaśarman Trivikarma Ācārya.
 
 ## The two texts
 
@@ -30,7 +31,7 @@ Other authorities — Hāraṇacandra among them — are occasionally named,
 but as **citations within** Cakrapāṇidatta's commentary, typically to
 record a variant reading. They are not separate layers in this text.
 
-The notes at the foot of each chapter (*pāṭhāntarāḥ*) record variant
+The notes at the foot of each chapter (_pāṭhāntarāḥ_) record variant
 readings and comments from the source edition.
 
 ## Structure
@@ -49,8 +50,8 @@ The Sanskrit text was drawn from the
 [NIIMH e-Samhita](http://niimh.res.in/ebooks/ecaraka/), a project of the
 National Institute of Indian Medical Heritage (NIIMH), part of the
 Central Council for Research in Ayurvedic Sciences (CCRAS), Government
-of India. 
-The NIIHM website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation. 
+of India.
+The NIIHM website is extremely well designed and implemented, and users are recommended to use it. The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation.
 
 ### Known limitations
 

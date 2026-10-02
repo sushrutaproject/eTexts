@@ -3,13 +3,14 @@ layout: default
 title: About
 permalink: /about/
 ---
+
 <div class="prose" markdown="1">
 
 # About this site
 
 This site presents the **Aṣṭāṅgahṛdaya** of **Vāgbhaṭa**, a Sanskrit
 treatise on medicine, together with two commentaries, in IAST (romanized,
-diacritic) transliteration.  The Sanskrit text is derived from the 
+diacritic) transliteration. The Sanskrit text is derived from the
 1939 edition of Kunte et al.
 
 ## The three texts
@@ -17,7 +18,7 @@ diacritic) transliteration.  The Sanskrit text is derived from the
 The root text is set in larger type at the full measure. Two commentaries
 follow it, each set smaller and indented behind a rule, labelled with the
 same abbreviations used in print: **Sa.** for **Aruṇadatta's**
-*Sarvāṅgasundarā*, and **Ā. rā.** for **Hemādri's** *Āyurvedarasāyana*.
+_Sarvāṅgasundarā_, and **Ā. rā.** for **Hemādri's** _Āyurvedarasāyana_.
 Each commentary can be hidden independently with the controls at the
 head of a chapter.
 
@@ -27,7 +28,7 @@ distinction has been carried through directly.
 
 ## Hemādri's commentary is only preserved for part of the text
 
-Unlike Aruṇadatta's, which runs throughout, Hemādri's *Āyurvedarasāyana*
+Unlike Aruṇadatta's, which runs throughout, Hemādri's _Āyurvedarasāyana_
 is present in this source only for:
 
 - all of **Sūtrasthāna** and **Kalpasiddhisthāna**,
@@ -47,9 +48,8 @@ catalogue information on the text if you rely on it.
 The Sanskrit text was drawn from
 [vedotpatti.in](https://vedotpatti.in/samhita/Vag/ehrudayam/), which uses
 the same underlying e-Samhita reading-room software as the NIIMH sites
-(e-Suśruta, e-Caraka) this site's sibling projects are built from. 
-The Vedotpatti website is extremely well designed and implemented, and users are recommended to use it.  The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation. 
-
+(e-Suśruta, e-Caraka) this site's sibling projects are built from.
+The Vedotpatti website is extremely well designed and implemented, and users are recommended to use it. The present, simplified presentation of the Sanskrit text is created for long-term archival preservation, stability, and ease of local consultation.
 
 ### Known limitations
 

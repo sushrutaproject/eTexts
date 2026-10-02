@@ -3,8 +3,8 @@
 > **Now part of eTexts.** This text is built and published as one sub-site of the combined eTexts repository; its search is the combined eTexts search. For building, deployment and URLs see the [top-level README](../README.md). Notes below about `baseurl`, GitHub Pages settings and `search.html` describe the original standalone repository and are kept for reference.
 
 A static Jekyll reading edition of the **Śārṅgadharasaṃhitā** of
-Śārṅgadhara, with the commentaries of **Āḍhamalla** (*Dīpikā*) and
-**Kāśīrāma** (*Gūḍhārthadīpikā*), in IAST. Content drawn from the CCRAS
+Śārṅgadhara, with the commentaries of **Āḍhamalla** (_Dīpikā_) and
+**Kāśīrāma** (_Gūḍhārthadīpikā_), in IAST. Content drawn from the CCRAS
 e-book reading room (<http://ccras.res.in/ccras_ebooks/readSam>).
 
 ## Rebuilding the text
