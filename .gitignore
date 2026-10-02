@@ -1,0 +1,20 @@
+# Build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Generated at build time by build.rb from texts.yml
+portal/_data/corpus.json
+
+# Ruby / Bundler
+.bundle/
+vendor/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors / OS
+*.swp
+.DS_Store
