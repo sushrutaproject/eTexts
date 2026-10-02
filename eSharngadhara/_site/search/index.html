@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search &middot; e-Śārṅgadhara</title>
+  <meta name="description" content="A digital reading edition of the Śārṅgadharasaṃhitā of Śārṅgadhara, a Sanskrit treatise on medicine and pharmacy, with the commentaries of Āḍhamalla (Dīpikā)...">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/eSarngadhara/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title"><a href="/eSarngadhara/">e-Śārṅgadhara</a></div>
+    <p class="site-tagline">The Śārṅgadharasaṃhitā, with two commentaries, in IAST</p>
+    <nav class="site-nav">
+      
+        <a href="/eSarngadhara/purvakhanda/">Pūrvakhaṇḍa</a>
+      
+        <a href="/eSarngadhara/madhyamakhanda/">Madhyamakhaṇḍa</a>
+      
+        <a href="/eSarngadhara/uttarakhanda/">Uttarakhaṇḍa</a>
+      
+      <a href="/eSarngadhara/about/">About</a>
+    </nav>
+    <form class="header-search" action="/eSarngadhara/search/" method="get" role="search">
+      <label for="header-q" class="sr-only">Search the text</label>
+      <input type="search" id="header-q" name="q"
+             placeholder="Search…">
+      
+      <input type="hidden" name="scope" value="all">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>
+
+  <main>
+    <div class="search-page">
+  <h1>Search</h1>
+
+  <form class="search-form" id="search-form" autocomplete="off">
+    <div class="search-row">
+      <input type="search" id="q" name="q" placeholder="Search the text…" aria-label="Search terms">
+      <button type="submit">Search</button>
+    </div>
+
+    <div class="search-options">
+      <fieldset>
+        <legend>Match</legend>
+        <label><input type="radio" name="mode" value="plain" checked> Plain text</label>
+        <label><input type="radio" name="mode" value="regex"> Regular expression</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Search in</legend>
+        <label for="scope" class="sr-only">Scope</label>
+        <select id="scope" name="scope">
+          
+            <option value="purvakhanda">Pūrvakhaṇḍa</option>
+          
+            <option value="madhyamakhanda">Madhyamakhaṇḍa</option>
+          
+            <option value="uttarakhanda">Uttarakhaṇḍa</option>
+          
+          <option value="all">All three khaṇḍas</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Diacritics</legend>
+        <label><input type="checkbox" id="fold" name="fold"> Ignore diacritics</label>
+      </fieldset>
+    </div>
+    <p class="search-hint" id="search-hint"></p>
+  </form>
+
+  <div id="search-status" class="search-status" role="status" aria-live="polite"></div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var STHANA_NAMES = {
+    "purvakhanda": "Pūrvakhaṇḍa",
+    "madhyamakhanda": "Madhyamakhaṇḍa",
+    "uttarakhanda": "Uttarakhaṇḍa"
+    
+  };
+  var ALL_SLUGS = Object.keys(STHANA_NAMES);
+  var INDEX_BASE = "/eSarngadhara/search-index/";
+
+  var MAX_MATCHES_PER_CHAPTER = 25;   // keep one dense chapter from flooding the page
+  var MAX_TOTAL_MATCHES = 500;        // hard cap on rendered hits
+  var CONTEXT = 70;                   // chars of context each side of a hit
+
+  var form = document.getElementById("search-form");
+  var qInput = document.getElementById("q");
+  var scopeSelect = document.getElementById("scope");
+  var foldBox = document.getElementById("fold");
+  var statusEl = document.getElementById("search-status");
+  var resultsEl = document.getElementById("search-results");
+  var hintEl = document.getElementById("search-hint");
+
+  var cache = {};   // slug -> array of chapter objects
+
+  // --- diacritic folding -------------------------------------------
+  // Every non-ASCII character in this corpus folds to exactly one ASCII
+  // character (ā->a, ṣ->s, ṛ->r, ...). That makes folding
+  // length-preserving, so an index found in the folded text points at the
+  // same position in the original -- which is why snippets below can be
+  // sliced straight from the original text with no offset mapping.
+  // Anything that would NOT fold to a single character is left as-is,
+  // precisely to keep that guarantee.
+  var foldCache = {};
+
+  function foldChar(c) {
+    if (foldCache[c] !== undefined) return foldCache[c];
+    var f = c.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (f.length !== 1) f = c;
+    foldCache[c] = f;
+    return f;
+  }
+
+  function foldText(s) {
+    var out = "";
+    var plainFrom = 0;
+    for (var i = 0; i < s.length; i++) {
+      if (s.charCodeAt(i) < 128) continue;        // ASCII: copy in bulk later
+      out += s.slice(plainFrom, i) + foldChar(s[i]);
+      plainFrom = i + 1;
+    }
+    return plainFrom === 0 ? s : out + s.slice(plainFrom);
+  }
+
+  function foldedTextOf(chapter) {
+    if (chapter._folded === undefined) chapter._folded = foldText(chapter.text);
+    return chapter._folded;
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function escapeRegex(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function getMode() {
+    var checked = form.querySelector('input[name="mode"]:checked');
+    return checked ? checked.value : "plain";
+  }
+
+  function buildRegex(query, mode, fold) {
+    var source = (mode === "regex") ? query : escapeRegex(query);
+    // In regex mode, folding the pattern only ever turns an accented
+    // letter into its plain form (ś -> s), so the syntax stays intact.
+    if (fold) source = foldText(source);
+    return new RegExp(source, "gi");
+  }
+
+  function loadIndex(slug) {
+    if (cache[slug]) return Promise.resolve(cache[slug]);
+    return fetch(INDEX_BASE + slug + ".json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("Could not load index for " + slug + " (" + r.status + ")");
+        return r.json();
+      })
+      .then(function (data) {
+        cache[slug] = data;
+        return data;
+      });
+  }
+
+  function makeSnippet(text, start, end) {
+    var from = Math.max(0, start - CONTEXT);
+    var to = Math.min(text.length, end + CONTEXT);
+    var before = (from > 0 ? "… " : "") + escapeHtml(text.slice(from, start));
+    var hit = escapeHtml(text.slice(start, end));
+    var after = escapeHtml(text.slice(end, to)) + (to < text.length ? " …" : "");
+    return before + "<mark>" + hit + "</mark>" + after;
+  }
+
+  function searchChapter(chapter, re, fold) {
+    // Match against the folded text when ignoring diacritics, but always
+    // build snippets from chapter.text -- the two are the same length, so
+    // the indices line up exactly and the reader sees the real spelling.
+    var haystack = fold ? foldedTextOf(chapter) : chapter.text;
+    re.lastIndex = 0;
+    var matches = [];
+    var m;
+    var guard = 0;
+    while ((m = re.exec(haystack)) !== null) {
+      // A pattern that can match the empty string (e.g. "a*") would loop
+      // forever without this nudge.
+      if (m.index === re.lastIndex) re.lastIndex++;
+      if (m[0].length === 0) continue;
+
+      if (matches.length < MAX_MATCHES_PER_CHAPTER) {
+        matches.push(makeSnippet(chapter.text, m.index, m.index + m[0].length));
+      }
+      guard++;
+      if (guard > 5000) break;   // pathological pattern safety valve
+    }
+    return { snippets: matches, total: guard };
+  }
+
+  function render(query, mode, fold, groups, totalHits, shownHits, truncated) {
+    if (totalHits === 0) {
+      resultsEl.innerHTML = "";
+      statusEl.textContent = "No matches.";
+      return;
+    }
+
+    var summary = totalHits + (totalHits === 1 ? " match" : " matches");
+    if (shownHits < totalHits) summary += " (showing first " + shownHits + ")";
+    if (fold) summary += ", ignoring diacritics";
+    statusEl.textContent = summary;
+
+    var html = "";
+    groups.forEach(function (g) {
+      html += '<section class="result-sthana">';
+      html += "<h2>" + escapeHtml(g.name) + "</h2>";
+      g.chapters.forEach(function (c) {
+        var link = c.url + "?q=" + encodeURIComponent(query) + "&mode=" + mode +
+                   (fold ? "&fold=1" : "");
+        html += '<article class="result-chapter">';
+        html += '<h3><a href="' + link + '">' + escapeHtml(c.title) + "</a>";
+        html += ' <span class="hit-count">' + c.total +
+                (c.total === 1 ? " hit" : " hits") + "</span></h3>";
+        html += '<ul class="hit-list">';
+        c.snippets.forEach(function (s) {
+          html += "<li>" + s + "</li>";
+        });
+        if (c.total > c.snippets.length) {
+          html += '<li class="more">… and ' + (c.total - c.snippets.length) +
+                  " more in this chapter</li>";
+        }
+        html += "</ul></article>";
+      });
+      html += "</section>";
+    });
+
+    if (truncated) {
+      html += '<p class="search-truncated">Result list truncated at ' +
+              MAX_TOTAL_MATCHES + " snippets. Narrow your search to see the rest.</p>";
+    }
+    resultsEl.innerHTML = html;
+  }
+
+  function runSearch(query, mode, scope, fold) {
+    if (!query) {
+      resultsEl.innerHTML = "";
+      statusEl.textContent = "";
+      return;
+    }
+
+    var re;
+    try {
+      re = buildRegex(query, mode, fold);
+    } catch (err) {
+      resultsEl.innerHTML = "";
+      statusEl.textContent = "Invalid regular expression: " + err.message;
+      return;
+    }
+
+    var slugs = (scope === "all") ? ALL_SLUGS : [scope];
+    statusEl.textContent = (scope === "all")
+      ? "Loading all six sthānas…"
+      : "Loading " + STHANA_NAMES[scope] + "…";
+    resultsEl.innerHTML = "";
+
+    // Load each index independently: one missing or unreadable file should
+    // degrade the search, not abort it. Failures are collected and reported
+    // by name, so a problem is self-diagnosing rather than showing whichever
+    // index happened to fail first.
+    var attempts = slugs.map(function (slug) {
+      return loadIndex(slug).then(
+        function (data) { return { slug: slug, data: data }; },
+        function (err) { return { slug: slug, error: err }; }
+      );
+    });
+
+    Promise.all(attempts).then(function (settled) {
+      var failed = settled.filter(function (r) { return r.error; });
+      var loaded = settled.filter(function (r) { return !r.error; });
+
+      if (loaded.length === 0) {
+        statusEl.textContent = "Could not load the text to search: " +
+          failed.map(function (r) { return STHANA_NAMES[r.slug]; }).join(", ") +
+          ". The search index may be missing from the site.";
+        return;
+      }
+
+      var groups = [];
+      var totalHits = 0;
+      var shownHits = 0;
+      var truncated = false;
+
+      loaded.forEach(function (entry) {
+        var group = { name: STHANA_NAMES[entry.slug], chapters: [] };
+        entry.data.forEach(function (chapter) {
+          var res = searchChapter(chapter, re, fold);
+          if (res.total === 0) return;
+          totalHits += res.total;
+
+          var snippets = res.snippets;
+          if (shownHits + snippets.length > MAX_TOTAL_MATCHES) {
+            snippets = snippets.slice(0, Math.max(0, MAX_TOTAL_MATCHES - shownHits));
+            truncated = true;
+          }
+          shownHits += snippets.length;
+
+          if (snippets.length > 0) {
+            group.chapters.push({
+              title: chapter.title,
+              url: chapter.url,
+              total: res.total,
+              snippets: snippets
+            });
+          }
+        });
+        if (group.chapters.length) groups.push(group);
+      });
+
+      render(query, mode, fold, groups, totalHits, shownHits, truncated);
+
+      if (failed.length) {
+        var warn = document.createElement("p");
+        warn.className = "search-warning";
+        warn.textContent = "Not searched (index could not be loaded): " +
+          failed.map(function (r) { return STHANA_NAMES[r.slug]; }).join(", ") + ".";
+        resultsEl.insertBefore(warn, resultsEl.firstChild);
+      }
+    });
+  }
+
+  function updateHint() {
+    var bits = [];
+    if (getMode() === "regex") {
+      bits.push("JavaScript regex syntax, case-insensitive. e.g. vāt[aā] or ka[sś]āya");
+    }
+    if (foldBox.checked) {
+      bits.push("Typing plain letters matches accented ones: dosa finds doṣa, sarira finds śarīra.");
+    }
+    hintEl.textContent = bits.join(" ");
+  }
+
+  // --- wire up ------------------------------------------------------
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var query = qInput.value.trim();
+    var mode = getMode();
+    var scope = scopeSelect.value;
+    var fold = foldBox.checked;
+    // Keep the URL shareable/bookmarkable and back-button friendly.
+    var url = "?q=" + encodeURIComponent(query) + "&mode=" + mode + "&scope=" + scope +
+              (fold ? "&fold=1" : "");
+    history.replaceState(null, "", url);
+    runSearch(query, mode, scope, fold);
+  });
+
+  Array.prototype.forEach.call(form.querySelectorAll('input[name="mode"]'), function (el) {
+    el.addEventListener("change", updateHint);
+  });
+  foldBox.addEventListener("change", updateHint);
+
+  // Run from URL params if present (so header-box searches and shared
+  // links land on results directly).
+  var params = new URLSearchParams(window.location.search);
+  var q0 = params.get("q") || "";
+  var mode0 = params.get("mode") === "regex" ? "regex" : "plain";
+  var scope0 = params.get("scope") || "all";
+  var fold0 = params.get("fold") === "1";
+
+  qInput.value = q0;
+  var modeEl = form.querySelector('input[name="mode"][value="' + mode0 + '"]');
+  if (modeEl) modeEl.checked = true;
+  if (STHANA_NAMES[scope0] || scope0 === "all") scopeSelect.value = scope0;
+  foldBox.checked = fold0;
+  updateHint();
+
+  if (q0) runSearch(q0, mode0, scopeSelect.value, fold0);
+  qInput.focus();
+})();
+</script>
+
+  </main>
+  <footer class="site-footer">
+  <p>
+    Text and IAST conversion sourced from
+    the <a href="http://ccras.res.in/ccras_ebooks/readSam" target="_blank" rel="noopener">CCRAS e-book reading room</a>.
+    See the <a href="/eSarngadhara/about/">About</a> page for scope and known limitations.
+  </p>
+</footer>
+
+</body>
+</html>

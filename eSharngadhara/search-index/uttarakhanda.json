@@ -1,0 +1,14 @@
+---
+permalink: /search-index/uttarakhanda.json
+layout: null
+sitemap: false
+---
+{%- comment -%}
+Liquid template, regenerated at Jekyll build time from site.uttarakhanda so
+edits to the chapter text are picked up automatically -- no separate
+index-build step. The <sup> note-reference numbers are stripped so they
+do not break up words in the searchable text.
+{%- endcomment -%}
+[{% for c in site.uttarakhanda %}{%- assign parts = c.content | split: '<sup' -%}
+{%- capture body -%}{{ parts[0] }}{% for p in parts offset:1 %}{{ p | split: '</sup>' | last }}{% endfor %}{%- endcapture -%}
+{"title": {{ c.title | jsonify }},"adhyaya": {{ c.adhyaya }},"url": {{ c.url | relative_url | jsonify }},"text": {{ body | strip_html | normalize_whitespace | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
