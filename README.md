@@ -5,13 +5,13 @@ their commentaries, in IAST, published at
 **https://sushrutaproject.github.io/eTexts/** with one combined search
 across the whole collection.
 
-| Directory        | Text                                                | Published at             |
-| ---------------- | --------------------------------------------------- | ------------------------ |
-| `eCaraka/`       | Carakasaṃhitā, with Cakrapāṇidatta                  | `/eTexts/eCaraka/`       |
-| `eSushruta/`     | Suśrutasaṃhitā, with Ḍalhaṇa                        | `/eTexts/eSushruta/`     |
-| `eHrdaya/`       | Aṣṭāṅgahṛdaya, with Aruṇadatta and Hemādri          | `/eTexts/eHrdaya/`       |
-| `eMadhava/`      | Mādhavanidāna, with the Madhukośa and Ātaṅkadarpaṇa | `/eTexts/eMadhava/`      |
-| `eSharngadhara/` | Śārṅgadharasaṃhitā, with Āḍhamalla and Kāśīrāma     | `/eTexts/eSharngadhara/` |
+| Directory | Text | Published at |
+|---|---|---|
+| `eCaraka/` | Carakasaṃhitā, with Cakrapāṇidatta | `/eTexts/eCaraka/` |
+| `eSushruta/` | Suśrutasaṃhitā, with Ḍalhaṇa | `/eTexts/eSushruta/` |
+| `eHrdaya/` | Aṣṭāṅgahṛdaya, with Aruṇadatta and Hemādri | `/eTexts/eHrdaya/` |
+| `eMadhava/` | Mādhavanidāna, with the Madhukośa and Ātaṅkadarpaṇa | `/eTexts/eMadhava/` |
+| `eSharngadhara/` | Śārṅgadharasaṃhitā, with Āḍhamalla and Kāśīrāma | `/eTexts/eSharngadhara/` |
 
 Each directory was formerly its own repository in the `sushrutaproject`
 organization; their full commit histories were carried over
@@ -37,16 +37,26 @@ link and the header search box) and `text_id` (its directory name).
 ### Search
 
 There is a single search page, `portal/search.html` (at `/eTexts/search/`).
-Its _Search in_ menu offers all texts, any single text, or any single
+Its *Search in* menu offers all texts, any single text, or any single
 sthāna of a text. The header box on every text page searches that text
 (or the sthāna being read) and lands on this page, where the scope can be
 widened. Each text's old `search/` URL now forwards there, so existing
 links and bookmarks keep working.
 
-The search reads the per-sthāna index files that every text already
-produces (`<id>/search-index/<sthāna>.json`); the list of sthānas comes
-from each text's `_data/sthanas.yml`. Searching runs in the browser. The
-first all-texts search downloads about 16 MB of index (much less over
+The search reads the per-sthāna index files that every text produces
+(`<id>/search-index/<sthāna>.json`); the list of sthānas comes from each
+text's `_data/sthanas.yml`. Each chapter in an index is a list of
+segments in reading order, tagged `m` (mūla: `<div class="mula">`), `c`
+(commentary: any other top-level `<div>`) or `n` (note: each item of
+`<section class="notes">`), which is what lets the search look in the
+mūla, commentaries and notes separately. The segments are made by
+`_includes/search-entry.json`, one identical copy in each text.
+
+Shared by every text and served from the portal: `assets/css/shared.css`
+(search-hit highlight colour, `--hit-bg`) and
+`assets/js/search-highlight.js` (highlighting hits on a chapter page).
+
+Searching runs in the browser. The first all-texts search downloads about 14 MB of index (much less over
 the wire, compressed), after which searches are instant.
 
 ## Adding a new text
@@ -57,8 +67,14 @@ the wire, compressed), after which searches are instant.
    - `_data/sthanas.yml`: one entry per section collection
      (`slug: {name, subtitle, count}`); a text with no sthāna division
      has a single entry, as in `eMadhava/`;
-   - `search-index/<slug>.json` for each section (copy one from another
+   - its chapter HTML as top-level `<div class="mula">` blocks, other
+     top-level `<div>`s for commentary, and an optional
+     `<section class="notes">` list, as in the existing texts;
+   - `_includes/search-entry.json` (copy it from another text) and
+     `search-index/<slug>.json` for each section (copy one from another
      text and change the collection name);
+   - in `_layouts/default.html` and `_layouts/chapter.html`, the links to
+     the shared `shared.css` and `search-highlight.js`, as in the others;
    - in `_includes/header.html`, the "eTexts /" link and the header search
      form pointing at `{{ site.corpus_root }}/search/` with
      `scope` = `{{ site.text_id }}`, as in the existing texts;

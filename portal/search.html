@@ -4,19 +4,12 @@ title: Search
 permalink: /search/
 hide_header_search: true
 ---
-
 <div class="search-page">
   <h1>Search</h1>
 
   <form class="search-form" id="search-form" autocomplete="off">
     <div class="search-row">
-      <input
-        type="search"
-        id="q"
-        name="q"
-        placeholder="Search the texts…"
-        aria-label="Search terms"
-      />
+      <input type="search" id="q" name="q" placeholder="Search the texts…" aria-label="Search terms">
       <button type="submit">Search</button>
     </div>
 
@@ -27,436 +20,502 @@ hide_header_search: true
         <select id="scope" name="scope">
           <option value="all">All texts ({{ site.data.corpus | size }})</option>
           {% for t in site.data.corpus %}
-          <optgroup label="{{ t.work }}">
-            <option value="{{ t.id }}">
-              {{ t.work }}{% if t.sections.size > 1 %} — whole text{% endif %}
-            </option>
-            {% if t.sections.size > 1 %} {% for s in t.sections %}
-            <option value="{{ t.id }}/{{ s.slug }}">
-              &nbsp;&nbsp;{{ s.name }}
-            </option>
-            {% endfor %} {% endif %}
-          </optgroup>
+            <optgroup label="{{ t.work }}">
+              <option value="{{ t.id }}">{{ t.work }}{% if t.sections.size > 1 %} — whole text{% endif %}</option>
+              {% if t.sections.size > 1 %}
+                {% for s in t.sections %}
+                  <option value="{{ t.id }}/{{ s.slug }}">&nbsp;&nbsp;{{ s.name }}</option>
+                {% endfor %}
+              {% endif %}
+            </optgroup>
           {% endfor %}
         </select>
       </fieldset>
 
+      <fieldset id="parts-set">
+        <legend>Look in</legend>
+        <label><input type="checkbox" name="part" value="m" checked> Mūla</label>
+        <label><input type="checkbox" name="part" value="c" checked> Commentaries</label>
+        <label><input type="checkbox" name="part" value="n" checked> Notes</label>
+      </fieldset>
+
       <fieldset>
         <legend>Match</legend>
-        <label
-          ><input type="radio" name="mode" value="plain" checked /> Plain
-          text</label
-        >
-        <label
-          ><input type="radio" name="mode" value="regex" /> Regular
-          expression</label
-        >
+        <label><input type="radio" name="mode" value="plain" checked> Plain text</label>
+        <label><input type="radio" name="mode" value="regex"> Regular expression</label>
       </fieldset>
 
       <fieldset>
         <legend>Diacritics</legend>
-        <label
-          ><input type="checkbox" id="fold" name="fold" /> Ignore
-          diacritics</label
-        >
+        <label><input type="checkbox" id="fold" name="fold"> Ignore diacritics</label>
       </fieldset>
     </div>
     <p class="search-hint" id="search-hint"></p>
   </form>
 
-  <div
-    id="search-status"
-    class="search-status"
-    role="status"
-    aria-live="polite"
-  ></div>
+  <div id="search-status" class="search-status" role="status" aria-live="polite"></div>
   <div id="search-results" class="search-results"></div>
 </div>
 
 <script>
-  (function () {
-    "use strict";
+(function () {
+  "use strict";
 
-    // The collection register, generated at build time from texts.yml and
-    // each text's _data/sthanas.yml. Each text publishes one search index
-    // per section at <root><id>/search-index/<slug>.json.
-    var CORPUS = {{ site.data.corpus | jsonify }};
-    var ROOT = "{{ '/' | relative_url }}".replace(/\/?$/, "/");
+  // The collection register, generated at build time from texts.yml and
+  // each text's _data/sthanas.yml. Each text publishes one search index
+  // per section at <root><id>/search-index/<slug>.json.
+  var CORPUS = {{ site.data.corpus | jsonify }};
+  var ROOT = "{{ '/' | relative_url }}".replace(/\/?$/, "/");
 
-    var MAX_MATCHES_PER_CHAPTER = 25;   // keep one dense chapter from flooding the page
-    var MAX_TOTAL_MATCHES = 500;        // cap on rendered snippets (counts stay complete)
-    var CONTEXT = 70;                   // chars of context each side of a hit
+  var MAX_MATCHES_PER_CHAPTER = 25;   // keep one dense chapter from flooding the page
+  var MAX_TOTAL_MATCHES = 500;        // cap on rendered snippets (counts stay complete)
+  var CONTEXT = 70;                   // chars of context each side of a hit
 
-    var TEXTS = {};                     // id -> text record
-    CORPUS.forEach(function (t) {
-      t.sectionNames = {};
-      t.sections.forEach(function (s) { t.sectionNames[s.slug] = s.name; });
-      TEXTS[t.id] = t;
-    });
+  var TEXTS = {};                     // id -> text record
+  CORPUS.forEach(function (t) {
+    t.sectionNames = {};
+    t.sections.forEach(function (s) { t.sectionNames[s.slug] = s.name; });
+    TEXTS[t.id] = t;
+  });
 
-    var form = document.getElementById("search-form");
-    var qInput = document.getElementById("q");
-    var scopeSelect = document.getElementById("scope");
-    var foldBox = document.getElementById("fold");
-    var statusEl = document.getElementById("search-status");
-    var resultsEl = document.getElementById("search-results");
-    var hintEl = document.getElementById("search-hint");
+  var form = document.getElementById("search-form");
+  var qInput = document.getElementById("q");
+  var scopeSelect = document.getElementById("scope");
+  var foldBox = document.getElementById("fold");
+  var statusEl = document.getElementById("search-status");
+  var resultsEl = document.getElementById("search-results");
+  var hintEl = document.getElementById("search-hint");
 
-    var cache = {};   // "id/slug" -> array of chapter objects
-    var searchSerial = 0;
+  var cache = {};   // "id/slug" -> array of chapter objects
+  var searchSerial = 0;
 
-    // --- diacritic folding -------------------------------------------
-    // Every non-ASCII character in these texts folds to exactly one ASCII
-    // character (ā->a, ṣ->s, ṛ->r, ...). Folding is therefore
-    // length-preserving, so an index found in the folded text points at the
-    // same position in the original, and snippets can be sliced straight
-    // from the original. Anything that would NOT fold to a single character
-    // is left as-is, precisely to keep that guarantee.
-    var foldCache = {};
+  // --- diacritic folding -------------------------------------------
+  // Every non-ASCII character in these texts folds to exactly one ASCII
+  // character (ā->a, ṣ->s, ṛ->r, ...). Folding is therefore
+  // length-preserving, so an index found in the folded text points at the
+  // same position in the original, and snippets can be sliced straight
+  // from the original. Anything that would NOT fold to a single character
+  // is left as-is, precisely to keep that guarantee.
+  var foldCache = {};
 
-    function foldChar(c) {
-      if (foldCache[c] !== undefined) return foldCache[c];
-      var f = c.normalize("NFD").replace(/[̀-ͯ]/g, "");
-      if (f.length !== 1) f = c;
-      foldCache[c] = f;
-      return f;
+  function foldChar(c) {
+    if (foldCache[c] !== undefined) return foldCache[c];
+    var f = c.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (f.length !== 1) f = c;
+    foldCache[c] = f;
+    return f;
+  }
+
+  function foldText(s) {
+    var out = "";
+    var plainFrom = 0;
+    for (var i = 0; i < s.length; i++) {
+      if (s.charCodeAt(i) < 128) continue;
+      out += s.slice(plainFrom, i) + foldChar(s[i]);
+      plainFrom = i + 1;
     }
+    return plainFrom === 0 ? s : out + s.slice(plainFrom);
+  }
 
-    function foldText(s) {
-      var out = "";
-      var plainFrom = 0;
-      for (var i = 0; i < s.length; i++) {
-        if (s.charCodeAt(i) < 128) continue;
-        out += s.slice(plainFrom, i) + foldChar(s[i]);
-        plainFrom = i + 1;
-      }
-      return plainFrom === 0 ? s : out + s.slice(plainFrom);
+  // --- registers ------------------------------------------------------
+  // Each chapter in the index is a list of segments in reading order,
+  // tagged "m" (mūla), "c" (commentary) or "n" (note); see
+  // _includes/search-entry.json in each text. A search runs over the
+  // selected registers only, joined in reading order.
+  var ALL_PARTS = "mcn";
+  var PART_LABEL = { m: "mūla", c: "comm.", n: "note" };
+  var PART_NAME = { m: "mūla", c: "commentaries", n: "notes" };
+
+  function partsLabel(parts) {
+    if (parts === ALL_PARTS) return "";
+    var names = parts.split("").map(function (p) { return PART_NAME[p]; });
+    return names.length === 1 ? names[0] + " only" : names.join(" and ");
+  }
+
+  function hayOf(chapter, parts, fold) {
+    var all = chapter._hay || (chapter._hay = {});
+    var h = all[parts];
+    if (!h) {
+      var texts = [], starts = [], ends = [], regs = [], pos = 0;
+      chapter.segs.forEach(function (seg) {
+        if (parts.indexOf(seg[0]) < 0) return;
+        if (texts.length) pos += 1;            // the joining space
+        starts.push(pos);
+        regs.push(seg[0]);
+        texts.push(seg[1]);
+        pos += seg[1].length;
+        ends.push(pos);
+      });
+      h = all[parts] = { text: texts.join(" "), starts: starts, ends: ends, regs: regs };
     }
+    if (fold && h.folded === undefined) h.folded = foldText(h.text);
+    return h;
+  }
 
-    function foldedTextOf(chapter) {
-      if (chapter._folded === undefined) chapter._folded = foldText(chapter.text);
-      return chapter._folded;
+  function segmentAt(h, i) {               // index of the segment holding offset i
+    var lo = 0, hi = h.starts.length - 1;
+    while (lo < hi) {
+      var mid = (lo + hi + 1) >> 1;
+      if (h.starts[mid] <= i) lo = mid; else hi = mid - 1;
     }
+    return lo;
+  }
 
-    function escapeHtml(s) {
-      return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-                      .replace(/"/g, "&quot;");
-    }
+  function escapeHtml(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;");
+  }
 
-    function escapeRegex(s) {
-      return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    }
+  function escapeRegex(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
 
-    function getMode() {
-      var checked = form.querySelector('input[name="mode"]:checked');
-      return checked ? checked.value : "plain";
-    }
+  function getMode() {
+    var checked = form.querySelector('input[name="mode"]:checked');
+    return checked ? checked.value : "plain";
+  }
 
-    function buildRegex(query, mode, fold) {
-      var source = (mode === "regex") ? query : escapeRegex(query);
-      if (fold) source = foldText(source);
-      return new RegExp(source, "gi");
-    }
+  function buildRegex(query, mode, fold) {
+    var source = (mode === "regex") ? query : escapeRegex(query);
+    if (fold) source = foldText(source);
+    return new RegExp(source, "gi");
+  }
 
-    // --- scope ---------------------------------------------------------
-    // "all" | "<id>" | "<id>/<section>"  ->  [{text, slug}, ...]
-    function isValidScope(scope) {
-      if (scope === "all") return true;
-      var parts = scope.split("/");
-      var t = TEXTS[parts[0]];
-      if (!t) return false;
-      return parts.length === 1 || (parts.length === 2 && t.sectionNames[parts[1]] !== undefined);
-    }
+  // --- scope ---------------------------------------------------------
+  // "all" | "<id>" | "<id>/<section>"  ->  [{text, slug}, ...]
+  function isValidScope(scope) {
+    if (scope === "all") return true;
+    var parts = scope.split("/");
+    var t = TEXTS[parts[0]];
+    if (!t) return false;
+    return parts.length === 1 || (parts.length === 2 && t.sectionNames[parts[1]] !== undefined);
+  }
 
-    function targetsFor(scope) {
-      var out = [];
-      if (scope === "all") {
-        CORPUS.forEach(function (t) {
-          t.sections.forEach(function (s) { out.push({ text: t, slug: s.slug }); });
-        });
-        return out;
-      }
-      var parts = scope.split("/");
-      var t = TEXTS[parts[0]];
-      if (parts.length === 2) return [{ text: t, slug: parts[1] }];
-      t.sections.forEach(function (s) { out.push({ text: t, slug: s.slug }); });
+  function targetsFor(scope) {
+    var out = [];
+    if (scope === "all") {
+      CORPUS.forEach(function (t) {
+        t.sections.forEach(function (s) { out.push({ text: t, slug: s.slug }); });
+      });
       return out;
     }
+    var parts = scope.split("/");
+    var t = TEXTS[parts[0]];
+    if (parts.length === 2) return [{ text: t, slug: parts[1] }];
+    t.sections.forEach(function (s) { out.push({ text: t, slug: s.slug }); });
+    return out;
+  }
 
-    function scopeLabel(scope) {
-      if (scope === "all") return "all texts";
-      var parts = scope.split("/");
-      var t = TEXTS[parts[0]];
-      return parts.length === 2 ? t.work + ", " + t.sectionNames[parts[1]] : t.work;
-    }
+  function scopeLabel(scope) {
+    if (scope === "all") return "all texts";
+    var parts = scope.split("/");
+    var t = TEXTS[parts[0]];
+    return parts.length === 2 ? t.work + ", " + t.sectionNames[parts[1]] : t.work;
+  }
 
-    function loadIndex(target) {
-      var key = target.text.id + "/" + target.slug;
-      if (cache[key]) return Promise.resolve(cache[key]);
-      return fetch(ROOT + target.text.id + "/search-index/" + target.slug + ".json")
-        .then(function (r) {
-          if (!r.ok) throw new Error("HTTP " + r.status);
-          return r.json();
-        })
-        .then(function (data) {
-          cache[key] = data;
-          return data;
-        });
-    }
+  function loadIndex(target) {
+    var key = target.text.id + "/" + target.slug;
+    if (cache[key]) return Promise.resolve(cache[key]);
+    return fetch(ROOT + target.text.id + "/search-index/" + target.slug + ".json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        cache[key] = data;
+        return data;
+      });
+  }
 
-    // --- matching --------------------------------------------------------
+  // --- matching --------------------------------------------------------
 
-    function makeSnippet(text, start, end) {
-      var from = Math.max(0, start - CONTEXT);
-      var to = Math.min(text.length, end + CONTEXT);
-      var before = (from > 0 ? "… " : "") + escapeHtml(text.slice(from, start));
-      var hit = escapeHtml(text.slice(start, end));
-      var after = escapeHtml(text.slice(end, to)) + (to < text.length ? " …" : "");
-      return before + "<mark>" + hit + "</mark>" + after;
-    }
+  // Context is taken from the hit's own segment only, so a snippet never
+  // runs from the mūla into the commentary or vice versa.
+  function makeSnippet(h, start, end) {
+    var k = segmentAt(h, start);
+    var segStart = h.starts[k], segEnd = Math.max(h.ends[k], end);
+    var text = h.text;
+    var from = Math.max(segStart, start - CONTEXT);
+    var to = Math.min(segEnd, end + CONTEXT);
+    var before = (from > segStart ? "… " : "") + escapeHtml(text.slice(from, start));
+    var hit = escapeHtml(text.slice(start, end));
+    var after = escapeHtml(text.slice(end, to)) + (to < segEnd ? " …" : "");
+    return { reg: h.regs[k], html: before + "<mark>" + hit + "</mark>" + after };
+  }
 
-    function searchChapter(chapter, re, fold, wantSnippets) {
-      var haystack = fold ? foldedTextOf(chapter) : chapter.text;
-      re.lastIndex = 0;
-      var snippets = [];
-      var total = 0;
-      var m;
-      while ((m = re.exec(haystack)) !== null) {
-        if (m.index === re.lastIndex) re.lastIndex++;   // empty-match guard
-        if (m[0].length === 0) continue;
-        if (wantSnippets && snippets.length < MAX_MATCHES_PER_CHAPTER) {
-          snippets.push(makeSnippet(chapter.text, m.index, m.index + m[0].length));
-        }
-        total++;
-        if (total > 5000) break;   // pathological pattern safety valve
+  function searchChapter(chapter, re, parts, fold, wantSnippets) {
+    var h = hayOf(chapter, parts, fold);
+    var haystack = fold ? h.folded : h.text;
+    re.lastIndex = 0;
+    var snippets = [];
+    var total = 0;
+    var m;
+    while ((m = re.exec(haystack)) !== null) {
+      if (m.index === re.lastIndex) re.lastIndex++;   // empty-match guard
+      if (m[0].length === 0) continue;
+      if (wantSnippets && snippets.length < MAX_MATCHES_PER_CHAPTER) {
+        snippets.push(makeSnippet(h, m.index, m.index + m[0].length));
       }
-      return { snippets: snippets, total: total };
+      total++;
+      if (total > 5000) break;   // pathological pattern safety valve
+    }
+    return { snippets: snippets, total: total };
+  }
+
+  // --- rendering ---------------------------------------------------------
+
+  function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
+
+  function render(ctx) {
+    var textGroups = ctx.textGroups;
+    if (ctx.totalHits === 0) {
+      resultsEl.innerHTML = "";
+      statusEl.textContent = "No matches in " + scopeLabel(ctx.scope) +
+        (ctx.parts === ALL_PARTS ? "" : " (" + partsLabel(ctx.parts) + ")") + ".";
+      return;
     }
 
-    // --- rendering ---------------------------------------------------------
+    var summary = plural(ctx.totalHits, "match", "matches") + " in " +
+                  plural(ctx.chapterCount, "chapter", "chapters") + " of " +
+                  scopeLabel(ctx.scope);
+    if (ctx.parts !== ALL_PARTS) summary += ", " + partsLabel(ctx.parts);
+    if (ctx.shownHits < ctx.totalHits) summary += " (showing " + ctx.shownHits + " snippets)";
+    if (ctx.fold) summary += ", ignoring diacritics";
+    statusEl.textContent = summary + ".";
 
-    function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
+    var html = "";
 
-    function render(ctx) {
-      var textGroups = ctx.textGroups;
-      if (ctx.totalHits === 0) {
-        resultsEl.innerHTML = "";
-        statusEl.textContent = "No matches in " + scopeLabel(ctx.scope) + ".";
-        return;
-      }
-
-      var summary = plural(ctx.totalHits, "match", "matches") + " in " +
-                    plural(ctx.chapterCount, "chapter", "chapters") + " of " +
-                    scopeLabel(ctx.scope);
-      if (ctx.shownHits < ctx.totalHits) summary += " (showing " + ctx.shownHits + " snippets)";
-      if (ctx.fold) summary += ", ignoring diacritics";
-      statusEl.textContent = summary + ".";
-
-      var html = "";
-
-      // Per-text tally, so the distribution across the collection is
-      // visible even when the snippet list is truncated.
-      if (textGroups.length > 1) {
-        html += '<nav class="result-tally" aria-label="Matches by text"><ul>';
-        textGroups.forEach(function (g) {
-          html += '<li><a href="#res-' + g.text.id + '">' + escapeHtml(g.text.work) + "</a> " +
-                  '<span class="hit-count">' + g.total + "</span></li>";
-        });
-        html += "</ul></nav>";
-      }
-
+    // Per-text tally, so the distribution across the collection is
+    // visible even when the snippet list is truncated.
+    if (textGroups.length > 1) {
+      html += '<nav class="result-tally" aria-label="Matches by text"><ul>';
       textGroups.forEach(function (g) {
-        var multiSection = g.text.sections.length > 1;
-        html += '<section class="result-text" id="res-' + g.text.id + '">';
-        html += "<h2>" + escapeHtml(g.text.work) +
-                ' <span class="hit-count">' + plural(g.total, "match", "matches") + "</span></h2>";
-        g.sections.forEach(function (sec) {
-          html += '<section class="result-sthana">';
-          if (multiSection) html += "<h3>" + escapeHtml(g.text.sectionNames[sec.slug]) + "</h3>";
-          sec.chapters.forEach(function (c) {
-            var link = c.url + "?q=" + encodeURIComponent(ctx.query) + "&mode=" + ctx.mode +
-                       (ctx.fold ? "&fold=1" : "");
-            html += '<article class="result-chapter">';
-            html += '<h4><a href="' + escapeHtml(link) + '">' + escapeHtml(c.title) + "</a>";
-            html += ' <span class="hit-count">' + plural(c.total, "hit", "hits") + "</span></h4>";
-            if (c.snippets.length) {
-              html += '<ul class="hit-list">';
-              c.snippets.forEach(function (s) { html += "<li>" + s + "</li>"; });
-              if (c.total > c.snippets.length) {
-                html += '<li class="more">… and ' + (c.total - c.snippets.length) +
-                        " more in this chapter</li>";
-              }
-              html += "</ul>";
+        html += '<li><a href="#res-' + g.text.id + '">' + escapeHtml(g.text.work) + "</a> " +
+                '<span class="hit-count">' + g.total + "</span></li>";
+      });
+      html += "</ul></nav>";
+    }
+
+    textGroups.forEach(function (g) {
+      var multiSection = g.text.sections.length > 1;
+      html += '<section class="result-text" id="res-' + g.text.id + '">';
+      html += "<h2>" + escapeHtml(g.text.work) +
+              ' <span class="hit-count">' + plural(g.total, "match", "matches") + "</span></h2>";
+      g.sections.forEach(function (sec) {
+        html += '<section class="result-sthana">';
+        if (multiSection) html += "<h3>" + escapeHtml(g.text.sectionNames[sec.slug]) + "</h3>";
+        sec.chapters.forEach(function (c) {
+          var link = c.url + "?q=" + encodeURIComponent(ctx.query) + "&mode=" + ctx.mode +
+                     (ctx.fold ? "&fold=1" : "") +
+                     (ctx.parts === ALL_PARTS ? "" : "&parts=" + ctx.parts);
+          html += '<article class="result-chapter">';
+          html += '<h4><a href="' + escapeHtml(link) + '">' + escapeHtml(c.title) + "</a>";
+          html += ' <span class="hit-count">' + plural(c.total, "hit", "hits") + "</span></h4>";
+          if (c.snippets.length) {
+            html += '<ul class="hit-list">';
+            c.snippets.forEach(function (s) {
+              var tag = ctx.parts.length > 1
+                ? '<span class="reg reg-' + s.reg + '">' + PART_LABEL[s.reg] + "</span> " : "";
+              html += "<li>" + tag + s.html + "</li>";
+            });
+            if (c.total > c.snippets.length) {
+              html += '<li class="more">… and ' + (c.total - c.snippets.length) +
+                      " more in this chapter</li>";
             }
-            html += "</article>";
-          });
-          html += "</section>";
+            html += "</ul>";
+          }
+          html += "</article>";
         });
         html += "</section>";
       });
+      html += "</section>";
+    });
 
-      if (ctx.truncated) {
-        html += '<p class="search-truncated">Snippets stop after the first ' + MAX_TOTAL_MATCHES +
-                "; chapters after that are listed with their hit counts only. " +
-                "Narrow the search to see more context.</p>";
-      }
-      resultsEl.innerHTML = html;
+    if (ctx.truncated) {
+      html += '<p class="search-truncated">Snippets stop after the first ' + MAX_TOTAL_MATCHES +
+              "; chapters after that are listed with their hit counts only. " +
+              "Narrow the search to see more context.</p>";
     }
+    resultsEl.innerHTML = html;
+  }
 
-    function runSearch(query, mode, scope, fold) {
-      var serial = ++searchSerial;
-      if (!query) {
-        resultsEl.innerHTML = "";
-        statusEl.textContent = "";
-        return;
-      }
-
-      var re;
-      try {
-        re = buildRegex(query, mode, fold);
-      } catch (err) {
-        resultsEl.innerHTML = "";
-        statusEl.textContent = err.message;
-        return;
-      }
-
-      var targets = targetsFor(scope);
-      var pending = targets.filter(function (t) { return !cache[t.text.id + "/" + t.slug]; }).length;
-      var done = 0;
+  function runSearch(query, mode, scope, fold, parts) {
+    var serial = ++searchSerial;
+    if (!query) {
       resultsEl.innerHTML = "";
-      statusEl.textContent = pending
-        ? "Loading " + scopeLabel(scope) + "…"
-        : "Searching…";
+      statusEl.textContent = "";
+      return;
+    }
+    if (!parts) {
+      resultsEl.innerHTML = "";
+      statusEl.textContent = "Tick at least one of Mūla, Commentaries or Notes.";
+      return;
+    }
 
-      // Load each index independently: one missing file should degrade the
-      // search, not abort it. Failures are reported by name.
-      var attempts = targets.map(function (target) {
-        var wasCached = !!cache[target.text.id + "/" + target.slug];
-        return loadIndex(target).then(
-          function (data) {
-            if (!wasCached && serial === searchSerial) {
-              done++;
-              statusEl.textContent = "Loading " + scopeLabel(scope) + "… (" + done + " of " + pending + ")";
-            }
-            return { target: target, data: data };
-          },
-          function (err) { return { target: target, error: err }; }
-        );
-      });
+    var re;
+    try {
+      re = buildRegex(query, mode, fold);
+    } catch (err) {
+      resultsEl.innerHTML = "";
+      statusEl.textContent = err.message;
+      return;
+    }
 
-      Promise.all(attempts).then(function (settled) {
-        if (serial !== searchSerial) return;   // a newer search has started
+    var targets = targetsFor(scope);
+    var pending = targets.filter(function (t) { return !cache[t.text.id + "/" + t.slug]; }).length;
+    var done = 0;
+    resultsEl.innerHTML = "";
+    statusEl.textContent = pending
+      ? "Loading " + scopeLabel(scope) + "…"
+      : "Searching…";
 
-        var failed = settled.filter(function (r) { return r.error; });
-        var loaded = settled.filter(function (r) { return !r.error; });
-
-        function failName(r) { return r.target.text.work + " (" + r.target.text.sectionNames[r.target.slug] + ")"; }
-
-        if (loaded.length === 0) {
-          statusEl.textContent = "Could not load the text to search: " +
-            failed.map(failName).join(", ") + ".";
-          return;
-        }
-
-        var ctx = {
-          query: query, mode: mode, scope: scope, fold: fold,
-          textGroups: [], totalHits: 0, shownHits: 0, chapterCount: 0, truncated: false
-        };
-        var byText = {};
-
-        loaded.forEach(function (entry) {
-          var t = entry.target.text;
-          var sec = { slug: entry.target.slug, chapters: [] };
-          entry.data.forEach(function (chapter) {
-            var room = ctx.shownHits < MAX_TOTAL_MATCHES;
-            var res = searchChapter(chapter, re, fold, room);
-            if (res.total === 0) return;
-
-            var snippets = res.snippets;
-            if (ctx.shownHits + snippets.length > MAX_TOTAL_MATCHES) {
-              snippets = snippets.slice(0, MAX_TOTAL_MATCHES - ctx.shownHits);
-            }
-            if (snippets.length < res.snippets.length || !room) ctx.truncated = true;
-            ctx.shownHits += snippets.length;
-            ctx.totalHits += res.total;
-            ctx.chapterCount++;
-
-            sec.chapters.push({ title: chapter.title, url: chapter.url, total: res.total, snippets: snippets });
-          });
-          if (!sec.chapters.length) return;
-
-          var g = byText[t.id];
-          if (!g) {
-            g = byText[t.id] = { text: t, sections: [], total: 0 };
-            ctx.textGroups.push(g);
+    // Load each index independently: one missing file should degrade the
+    // search, not abort it. Failures are reported by name.
+    var attempts = targets.map(function (target) {
+      var wasCached = !!cache[target.text.id + "/" + target.slug];
+      return loadIndex(target).then(
+        function (data) {
+          if (!wasCached && serial === searchSerial) {
+            done++;
+            statusEl.textContent = "Loading " + scopeLabel(scope) + "… (" + done + " of " + pending + ")";
           }
-          g.sections.push(sec);
-          sec.chapters.forEach(function (c) { g.total += c.total; });
+          return { target: target, data: data };
+        },
+        function (err) { return { target: target, error: err }; }
+      );
+    });
+
+    Promise.all(attempts).then(function (settled) {
+      if (serial !== searchSerial) return;   // a newer search has started
+
+      var failed = settled.filter(function (r) { return r.error; });
+      var loaded = settled.filter(function (r) { return !r.error; });
+
+      function failName(r) { return r.target.text.work + " (" + r.target.text.sectionNames[r.target.slug] + ")"; }
+
+      if (loaded.length === 0) {
+        statusEl.textContent = "Could not load the text to search: " +
+          failed.map(failName).join(", ") + ".";
+        return;
+      }
+
+      var ctx = {
+        query: query, mode: mode, scope: scope, fold: fold, parts: parts,
+        textGroups: [], totalHits: 0, shownHits: 0, chapterCount: 0, truncated: false
+      };
+      var byText = {};
+
+      loaded.forEach(function (entry) {
+        var t = entry.target.text;
+        var sec = { slug: entry.target.slug, chapters: [] };
+        entry.data.forEach(function (chapter) {
+          var room = ctx.shownHits < MAX_TOTAL_MATCHES;
+          var res = searchChapter(chapter, re, parts, fold, room);
+          if (res.total === 0) return;
+
+          var snippets = res.snippets;
+          if (ctx.shownHits + snippets.length > MAX_TOTAL_MATCHES) {
+            snippets = snippets.slice(0, MAX_TOTAL_MATCHES - ctx.shownHits);
+          }
+          if (snippets.length < res.snippets.length || !room) ctx.truncated = true;
+          ctx.shownHits += snippets.length;
+          ctx.totalHits += res.total;
+          ctx.chapterCount++;
+
+          sec.chapters.push({ title: chapter.title, url: chapter.url, total: res.total, snippets: snippets });
         });
+        if (!sec.chapters.length) return;
 
-        render(ctx);
-
-        if (failed.length) {
-          var warn = document.createElement("p");
-          warn.className = "search-warning";
-          warn.textContent = "Not searched (index could not be loaded): " +
-            failed.map(failName).join(", ") + ".";
-          resultsEl.insertBefore(warn, resultsEl.firstChild);
+        var g = byText[t.id];
+        if (!g) {
+          g = byText[t.id] = { text: t, sections: [], total: 0 };
+          ctx.textGroups.push(g);
         }
+        g.sections.push(sec);
+        sec.chapters.forEach(function (c) { g.total += c.total; });
       });
-    }
 
-    function updateHint() {
-      var bits = [];
-      if (getMode() === "regex") {
-        bits.push("JavaScript regex syntax, case-insensitive. e.g. vāt[aā] or ka[sṣ]āya");
-      }
-      if (foldBox.checked) {
-        bits.push("Typing plain letters matches accented ones: dosa finds doṣa, sarira finds śarīra.");
-      }
-      if (scopeSelect.value === "all") {
-        bits.push("The first search across all texts downloads the whole collection; later searches are instant.");
-      }
-      hintEl.textContent = bits.join(" ");
-    }
+      render(ctx);
 
-    // --- wire up ------------------------------------------------------
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var query = qInput.value.trim();
-      var mode = getMode();
-      var scope = scopeSelect.value;
-      var fold = foldBox.checked;
-      var url = "?q=" + encodeURIComponent(query) + "&mode=" + mode +
-                "&scope=" + encodeURIComponent(scope) + (fold ? "&fold=1" : "");
-      history.replaceState(null, "", url);
-      runSearch(query, mode, scope, fold);
+      if (failed.length) {
+        var warn = document.createElement("p");
+        warn.className = "search-warning";
+        warn.textContent = "Not searched (index could not be loaded): " +
+          failed.map(failName).join(", ") + ".";
+        resultsEl.insertBefore(warn, resultsEl.firstChild);
+      }
     });
+  }
 
-    Array.prototype.forEach.call(form.querySelectorAll('input[name="mode"]'), function (el) {
-      el.addEventListener("change", updateHint);
-    });
-    foldBox.addEventListener("change", updateHint);
-    scopeSelect.addEventListener("change", updateHint);
+  function updateHint() {
+    var bits = [];
+    if (getMode() === "regex") {
+      bits.push("JavaScript regex syntax, case-insensitive. e.g. vāt[aā] or ka[sṣ]āya");
+    }
+    if (foldBox.checked) {
+      bits.push("Typing plain letters matches accented ones: dosa finds doṣa, sarira finds śarīra.");
+    }
+    if (scopeSelect.value === "all") {
+      bits.push("The first search across all texts downloads the whole collection; later searches are instant.");
+    }
+    hintEl.textContent = bits.join(" ");
+  }
 
-    // Run from URL params if present (header boxes on every text and on the
-    // home page land here, as do shared links).
-    var params = new URLSearchParams(window.location.search);
-    var q0 = params.get("q") || "";
-    var mode0 = params.get("mode") === "regex" ? "regex" : "plain";
-    var scope0 = params.get("scope") || "all";
-    var fold0 = params.get("fold") === "1";
-    if (!isValidScope(scope0)) scope0 = "all";
+  // --- wire up ------------------------------------------------------
 
-    qInput.value = q0;
-    var modeEl = form.querySelector('input[name="mode"][value="' + mode0 + '"]');
-    if (modeEl) modeEl.checked = true;
-    scopeSelect.value = scope0;
-    foldBox.checked = fold0;
-    updateHint();
+  var partBoxes = form.querySelectorAll('input[name="part"]');
 
-    if (q0) runSearch(q0, mode0, scope0, fold0);
-    qInput.focus();
-  })();
+  function getParts() {             // e.g. "mc"; always in m, c, n order
+    var out = "";
+    Array.prototype.forEach.call(partBoxes, function (b) { if (b.checked) out += b.value; });
+    return out;
+  }
+
+  function setParts(parts) {
+    Array.prototype.forEach.call(partBoxes, function (b) { b.checked = parts.indexOf(b.value) >= 0; });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var query = qInput.value.trim();
+    var mode = getMode();
+    var scope = scopeSelect.value;
+    var fold = foldBox.checked;
+    var parts = getParts();
+    var url = "?q=" + encodeURIComponent(query) + "&mode=" + mode +
+              "&scope=" + encodeURIComponent(scope) + (fold ? "&fold=1" : "") +
+              (parts === ALL_PARTS ? "" : "&parts=" + parts);
+    history.replaceState(null, "", url);
+    runSearch(query, mode, scope, fold, parts);
+  });
+
+  Array.prototype.forEach.call(form.querySelectorAll('input[name="mode"]'), function (el) {
+    el.addEventListener("change", updateHint);
+  });
+  foldBox.addEventListener("change", updateHint);
+  scopeSelect.addEventListener("change", updateHint);
+
+  // Run from URL params if present (header boxes on every text and on the
+  // home page land here, as do shared links).
+  var params = new URLSearchParams(window.location.search);
+  var q0 = params.get("q") || "";
+  var mode0 = params.get("mode") === "regex" ? "regex" : "plain";
+  var scope0 = params.get("scope") || "all";
+  var fold0 = params.get("fold") === "1";
+  if (!isValidScope(scope0)) scope0 = "all";
+  var parts0 = ALL_PARTS.split("").filter(function (p) {
+    return (params.get("parts") || ALL_PARTS).indexOf(p) >= 0;
+  }).join("") || ALL_PARTS;
+
+  qInput.value = q0;
+  var modeEl = form.querySelector('input[name="mode"][value="' + mode0 + '"]');
+  if (modeEl) modeEl.checked = true;
+  scopeSelect.value = scope0;
+  foldBox.checked = fold0;
+  setParts(parts0);
+  updateHint();
+
+  if (q0) runSearch(q0, mode0, scope0, fold0, parts0);
+  qInput.focus();
+})();
 </script>

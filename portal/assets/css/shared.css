@@ -21,3 +21,7 @@ mark.search-hit {
   padding: 0 0.12em;
   border-radius: 2px;
 }
+
+/* Long Sanskrit compounds must wrap on narrow (phone) screens rather
+   than run off the right-hand edge of the page. */
+.chapter-text { overflow-wrap: anywhere; }

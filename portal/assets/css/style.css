@@ -805,3 +805,24 @@ main {
   .portal-search select { flex: 1 1 auto; max-width: none; }
 }
 .search-row input[type="search"] { min-width: 0; }
+
+/* Register tag in front of each snippet (mūla / comm. / note) */
+.hit-list .reg {
+  display: inline-block;
+  min-width: 3.2rem;
+  margin-right: 0.3rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0 0.3rem;
+  text-align: center;
+  vertical-align: 0.1em;
+}
+.hit-list .reg-m { color: var(--paper); background: var(--rubric); border-color: var(--rubric); }
+.hit-list .reg-c { color: var(--gold); border-color: var(--gold); }
+
+/* Long Sanskrit compounds must wrap on narrow screens */
+.hit-list li, .result-chapter h4 { overflow-wrap: anywhere; }

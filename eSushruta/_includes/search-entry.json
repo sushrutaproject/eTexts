@@ -1,0 +1,43 @@
+{%- comment -%}
+One chapter's entry in a search index (search-index/<sthāna>.json).
+Usage:  {% include search-entry.json chapter=c %}
+
+The chapter is split into "segments" in reading order, each tagged with
+its register, so the combined eTexts search can look in the mūla, the
+commentaries and the notes separately or together:
+  "m"  mūla              <div class="mula">
+  "c"  commentary        any other top-level <div> (bhasya, aruna,
+                         hemadri, adhamalla, kasirama, vyakhya, ...)
+  "n"  note              each <li> of <section class="notes">
+
+Inline footnote references are dropped first: their digits would
+otherwise land in the middle of the text ("sahasrākṣaṃ 1 gaṇādhīśaṃ")
+and break phrase searches. Liquid has no regex, so we split on the
+<sup> markup and keep only what follows each closing tag.
+
+This file is identical in every text; keep the copies in step.
+{%- endcomment -%}
+{%- assign raw = include.chapter.content | split: '<sup' -%}
+{%- capture body -%}{{ raw[0] }}{% for p in raw offset:1 %}{{ p | split: '</sup>' | last }}{% endfor %}{%- endcapture -%}
+{%- assign halves = body | split: '<section class="notes"' -%}
+{%- capture segs -%}
+{%- assign blocks = halves[0] | split: '<div class="' -%}
+{%- for b in blocks -%}
+{%- if forloop.first -%}
+{%- assign reg = "m" -%}{%- assign t = b | strip_html | normalize_whitespace -%}
+{%- else -%}
+{%- assign cls = b | split: '"' | first -%}
+{%- if cls == "mula" -%}{%- assign reg = "m" -%}{%- else -%}{%- assign reg = "c" -%}{%- endif -%}
+{%- assign t = b | prepend: '<div class="' | strip_html | normalize_whitespace -%}
+{%- endif -%}
+{%- if t != "" -%},["{{ reg }}",{{ t | jsonify }}]{%- endif -%}
+{%- endfor -%}
+{%- if halves.size > 1 -%}
+{%- assign items = halves[1] | split: '<li' -%}
+{%- for n in items offset:1 -%}
+{%- assign t = n | prepend: '<li' | strip_html | remove: '&#8617;' | normalize_whitespace -%}
+{%- if t != "" -%},["n",{{ t | jsonify }}]{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endcapture -%}
+{"title": {{ include.chapter.title | jsonify }},"adhyaya": {{ include.chapter.adhyaya | jsonify }},"url": {{ include.chapter.url | relative_url | jsonify }},"segs": [{{ segs | remove_first: ',' }}]}

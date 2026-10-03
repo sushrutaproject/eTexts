@@ -3,7 +3,6 @@ layout: default
 title: About
 permalink: /about/
 ---
-
 <div class="prose" markdown="1">
 
 # About eTexts
@@ -27,9 +26,11 @@ the top of every text page searches that text (or the sthāna you are
 reading) by default; the scope can be widened on the results page.
 
 Plain-text and regular-expression matching are both available, and
-diacritics can optionally be ignored (so _dosa_ finds _doṣa_). Root text,
-commentaries and editorial notes are all searched. Clicking a result opens
-the chapter with the matches highlighted.
+diacritics can optionally be ignored (so *dosa* finds *doṣa*). The *Look
+in* boxes choose what is searched: the mūla, the commentaries, the
+editorial notes, or any combination. When more than one is ticked, each
+result is tagged with where it was found. Clicking a result opens the
+chapter with the matches highlighted, in the same parts of the text only.
 
 Searching runs entirely in your browser: the first search across all
 texts downloads the full collection, after which further searches are
