@@ -1,0 +1,23 @@
+/* ---------------------------------------------------------------
+   eTexts -- settings shared by the whole collection.
+
+   This one file is loaded by the portal AND by every text, after
+   that site's own style.css, so a change here applies everywhere:
+   the search-results page and the highlighted hits on chapter pages.
+   It is published at <collection root>/assets/css/shared.css.
+   ------------------------------------------------------------- */
+
+:root {
+  --hit-bg: #F54927;      /* highlight colour for search hits */
+  --hit-text: #2b2013;    /* text on the highlight (dark ink; #fff for white) */
+}
+
+/* Hits in the search-results snippets and on chapter pages */
+mark,
+.hit-list mark,
+mark.search-hit {
+  background: var(--hit-bg);
+  color: var(--hit-text);
+  padding: 0 0.12em;
+  border-radius: 2px;
+}

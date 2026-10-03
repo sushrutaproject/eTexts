@@ -21,13 +21,9 @@
   --max-width: 44rem;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  -webkit-text-size-adjust: 100%;
-}
+html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -39,23 +35,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: var(--rubric);
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  color: var(--rubric-dark);
-  text-decoration: underline;
-}
-a:focus-visible {
-  outline: 2px solid var(--rubric);
-  outline-offset: 2px;
-}
+a { color: var(--rubric); text-decoration: none; }
+a:hover, a:focus { color: var(--rubric-dark); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--rubric); outline-offset: 2px; }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 700;
   line-height: 1.25;
   color: var(--ink);
@@ -86,13 +70,8 @@ h3 {
   letter-spacing: 0.01em;
 }
 
-.site-title a {
-  color: var(--ink);
-}
-.site-title a:hover {
-  color: var(--rubric);
-  text-decoration: none;
-}
+.site-title a { color: var(--ink); }
+.site-title a:hover { color: var(--rubric); text-decoration: none; }
 
 .site-tagline {
   color: var(--muted);
@@ -108,12 +87,8 @@ h3 {
   font-size: 0.95rem;
 }
 
-.site-nav a {
-  color: var(--muted);
-}
-.site-nav a:hover {
-  color: var(--rubric);
-}
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--rubric); }
 
 main {
   max-width: 64rem;
@@ -129,10 +104,7 @@ main {
   padding: 2rem 1.5rem 3rem;
 }
 
-.site-footer a {
-  color: var(--muted);
-  text-decoration: underline;
-}
+.site-footer a { color: var(--muted); text-decoration: underline; }
 
 /* ---------------------------------------------------------------
    Home page
@@ -211,12 +183,8 @@ main {
   margin-bottom: 1.2rem;
 }
 
-.breadcrumb a {
-  color: var(--muted);
-}
-.breadcrumb a:hover {
-  color: var(--rubric);
-}
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--rubric); }
 
 .sthana-header h1 {
   font-size: 2rem;
@@ -258,13 +226,8 @@ main {
   font-weight: 700;
 }
 
-.chapter-list a {
-  color: var(--ink);
-  font-size: 1.05rem;
-}
-.chapter-list a:hover {
-  color: var(--rubric);
-}
+.chapter-list a { color: var(--ink); font-size: 1.05rem; }
+.chapter-list a:hover { color: var(--rubric); }
 
 /* ---------------------------------------------------------------
    Chapter reading page
@@ -312,13 +275,8 @@ main {
   letter-spacing: 0.03em;
 }
 
-.chapter-nav a {
-  max-width: 45%;
-}
-.chapter-nav .next {
-  text-align: right;
-  margin-left: auto;
-}
+.chapter-nav a { max-width: 45%; }
+.chapter-nav .next { text-align: right; margin-left: auto; }
 
 /* ---------------------------------------------------------------
    About / generic content page
@@ -329,35 +287,19 @@ main {
   margin: 0 auto;
 }
 
-.prose h1 {
-  font-size: 1.9rem;
-}
-.prose h2 {
-  font-size: 1.3rem;
-  margin-top: 2rem;
-}
-.prose p {
-  margin: 0 0 1.2rem;
-}
+.prose h1 { font-size: 1.9rem; }
+.prose h2 { font-size: 1.3rem; margin-top: 2rem; }
+.prose p { margin: 0 0 1.2rem; }
 
 /* ---------------------------------------------------------------
    Responsive
    ------------------------------------------------------------- */
 
 @media (max-width: 30rem) {
-  body {
-    font-size: 1.05rem;
-  }
-  .chapter-nav {
-    flex-direction: column;
-  }
-  .chapter-nav .next {
-    text-align: left;
-    margin-left: 0;
-  }
-  .chapter-nav a {
-    max-width: 100%;
-  }
+  body { font-size: 1.05rem; }
+  .chapter-nav { flex-direction: column; }
+  .chapter-nav .next { text-align: left; margin-left: 0; }
+  .chapter-nav a { max-width: 100%; }
 }
 
 /* ---------------------------------------------------------------
@@ -366,10 +308,8 @@ main {
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
@@ -412,29 +352,16 @@ main {
 }
 
 .header-search button:hover,
-.search-form button:hover {
-  background: var(--rubric-dark);
-}
+.search-form button:hover { background: var(--rubric-dark); }
 
 /* Search page */
 
-.search-page {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-.search-page h1 {
-  font-size: 1.9rem;
-  margin-bottom: 1.2rem;
-}
+.search-page { max-width: var(--max-width); margin: 0 auto; }
+.search-page h1 { font-size: 1.9rem; margin-bottom: 1.2rem; }
 
-.search-form {
-  margin-bottom: 1.5rem;
-}
+.search-form { margin-bottom: 1.5rem; }
 
-.search-row {
-  display: flex;
-  gap: 0.5rem;
-}
+.search-row { display: flex; gap: 0.5rem; }
 
 .search-row input[type="search"] {
   flex: 1 1 auto;
@@ -451,10 +378,7 @@ main {
   outline-offset: 1px;
 }
 
-.search-row button {
-  font-size: 1rem;
-  padding: 0.5rem 1.1rem;
-}
+.search-row button { font-size: 1rem; padding: 0.5rem 1.1rem; }
 
 .search-options {
   display: flex;
@@ -515,9 +439,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.result-sthana {
-  margin-bottom: 2.5rem;
-}
+.result-sthana { margin-bottom: 2.5rem; }
 
 .result-sthana h2 {
   font-size: 1.15rem;
@@ -527,9 +449,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.result-chapter {
-  margin-bottom: 1.6rem;
-}
+.result-chapter { margin-bottom: 1.6rem; }
 
 .result-chapter h3 {
   font-size: 1.05rem;
@@ -537,12 +457,8 @@ main {
   font-weight: 700;
 }
 
-.result-chapter h3 a {
-  color: var(--ink);
-}
-.result-chapter h3 a:hover {
-  color: var(--rubric);
-}
+.result-chapter h3 a { color: var(--ink); }
+.result-chapter h3 a:hover { color: var(--rubric); }
 
 .hit-count {
   color: var(--muted);
@@ -572,16 +488,8 @@ main {
   font-size: 0.9rem;
 }
 
-mark,
-.hit-list mark {
-  background: #f0d9a8;
-  color: var(--ink);
-  padding: 0 0.1em;
-}
-
-mark.search-hit {
-  background: #f5cf8d;
-}
+/* Search-hit highlighting is set for the whole collection in
+   portal/assets/css/shared.css (loaded after this file). */
 
 .search-truncated {
   color: var(--muted);
@@ -603,12 +511,8 @@ mark.search-hit {
 }
 
 @media (max-width: 46rem) {
-  .header-search {
-    width: 100%;
-  }
-  .header-search input[type="search"] {
-    width: 100%;
-  }
+  .header-search { width: 100%; }
+  .header-search input[type="search"] { width: 100%; }
 }
 
 .search-warning {
@@ -638,9 +542,7 @@ mark.search-hit {
   margin: 1.8rem 0 1.2rem;
 }
 
-.mula:first-child {
-  margin-top: 0;
-}
+.mula:first-child { margin-top: 0; }
 
 .aruna,
 .hemadri {
@@ -656,11 +558,7 @@ mark.search-hit {
 }
 
 @media (max-width: 34rem) {
-  .aruna,
-  .hemadri {
-    margin-left: 0.4rem;
-    padding-left: 0.8rem;
-  }
+  .aruna, .hemadri { margin-left: 0.4rem; padding-left: 0.8rem; }
 }
 
 /* Small inline label ("Sa." / "Ā. rā.") at the head of each comment,
@@ -674,12 +572,8 @@ mark.search-hit {
   margin-right: 0.4em;
 }
 
-.aruna .commentator-label {
-  color: var(--muted);
-}
-.hemadri .commentator-label {
-  color: var(--gold);
-}
+.aruna .commentator-label { color: var(--muted); }
+.hemadri .commentator-label { color: var(--gold); }
 
 /* Reading controls */
 
@@ -710,12 +604,8 @@ mark.search-hit {
 
 /* Commentary hidden -- each toggled independently */
 
-.chapter-text.hide-aruna .aruna {
-  display: none;
-}
-.chapter-text.hide-hemadri .hemadri {
-  display: none;
-}
+.chapter-text.hide-aruna .aruna { display: none; }
+.chapter-text.hide-hemadri .hemadri { display: none; }
 
 .chapter-text.hide-aruna.hide-hemadri .mula {
   font-size: 1.05em;
@@ -738,9 +628,7 @@ mark.search-hit {
   padding: 0 0.1em;
 }
 
-.noteref a:hover {
-  text-decoration: underline;
-}
+.noteref a:hover { text-decoration: underline; }
 
 .notes {
   margin-top: 3rem;
@@ -783,15 +671,10 @@ mark.search-hit {
   display: inline-block;
 }
 
-.note-back {
-  text-decoration: none;
-  font-size: 0.9em;
-}
+.note-back { text-decoration: none; font-size: 0.9em; }
 
 .noteref a:target,
-.noteref:target {
-  background: var(--paper-alt);
-}
+.noteref:target { background: var(--paper-alt); }
 
 /* ---------------------------------------------------------------
    TEI download (home page)
@@ -835,14 +718,6 @@ mark.search-hit {
 }
 
 /* "eTexts /" link to the collection, in front of the site title */
-.corpus-link {
-  color: var(--muted);
-  font-weight: 400;
-}
-.corpus-link:hover {
-  color: var(--rubric);
-}
-.corpus-sep {
-  color: var(--line);
-  font-weight: 400;
-}
+.corpus-link { color: var(--muted); font-weight: 400; }
+.corpus-link:hover { color: var(--rubric); }
+.corpus-sep { color: var(--line); font-weight: 400; }
