@@ -74,7 +74,8 @@ hide_header_search: true
   var TEXTS = {};                     // id -> text record
   CORPUS.forEach(function (t) {
     t.sectionNames = {};
-    t.sections.forEach(function (s) { t.sectionNames[s.slug] = s.name; });
+    t.sectionV = {};
+    t.sections.forEach(function (s) { t.sectionNames[s.slug] = s.name; t.sectionV[s.slug] = s.v; });
     TEXTS[t.id] = t;
   });
 
@@ -213,18 +214,104 @@ hide_header_search: true
     return parts.length === 2 ? t.work + ", " + t.sectionNames[parts[1]] : t.work;
   }
 
-  function loadIndex(target) {
-    var key = target.text.id + "/" + target.slug;
-    if (cache[key]) return Promise.resolve(cache[key]);
-    return fetch(ROOT + target.text.id + "/search-index/" + target.slug + ".json")
-      .then(function (r) {
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        return r.json();
-      })
-      .then(function (data) {
-        cache[key] = data;
-        return data;
+  // --- loading the indexes -------------------------------------------
+  // The indexes are large (the whole collection is ~17 MB, ~5 MB as sent),
+  // so three things keep searching quick:
+  //  * they are kept in the browser's Cache Storage, so each is downloaded
+  //    once per version of the site, not once per visit;
+  //  * they are fetched a few at a time in reading order, and results are
+  //    shown as each one arrives, top of the list first;
+  //  * on this page, loading starts as soon as the page opens, while the
+  //    reader is still typing.
+  // Each index URL carries a fingerprint of its contents (?v=..., made by
+  // build.rb), so a stored copy is used until that text actually changes;
+  // adding or correcting one text does not make readers re-download the rest.
+  var STORE_NAME = "etexts-index";
+  var MAX_PARALLEL = 4;
+
+  var storeReady = (function () {
+    try {
+      if (!window.caches) return Promise.resolve(null);
+      return caches.open(STORE_NAME).then(function (store) {
+        // forget stored indexes that are no longer current
+        var current = {};
+        targetsFor("all").forEach(function (t) { current[new URL(indexUrl(t), location.href).href] = true; });
+        store.keys().then(function (reqs) {
+          reqs.forEach(function (rq) { if (!current[rq.url]) store.delete(rq); });
+        }).catch(function () {});
+        return store;
+      }).catch(function () { return null; });
+    } catch (e) {
+      return Promise.resolve(null);
+    }
+  })();
+
+  var jobs = {};      // key -> pending job
+  var queue = [];
+  var active = 0;
+  var jobSeq = 0;
+
+  function indexKey(target) { return target.text.id + "/" + target.slug; }
+  function indexUrl(target) {
+    return ROOT + target.text.id + "/search-index/" + target.slug + ".json?v=" + (target.text.sectionV[target.slug] || "");
+  }
+
+  function fetchIndex(url) {
+    return storeReady.then(function (store) {
+      var fromStore = store ? store.match(url).catch(function () { return null; }) : Promise.resolve(null);
+      return fromStore.then(function (hit) {
+        if (hit) return hit.json();
+        return fetch(url).then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          if (store) {
+            try { store.put(url, r.clone()).catch(function () {}); } catch (e) { /* ignore */ }
+          }
+          return r.json();
+        });
       });
+    });
+  }
+
+  function pump() {
+    queue.sort(function (a, b) { return (a.prio - b.prio) || (a.seq - b.seq); });
+    while (active < MAX_PARALLEL && queue.length) {
+      var job = queue.shift();
+      active++;
+      (function (job) {
+        fetchIndex(indexUrl(job.target)).then(function (data) {
+          cache[job.key] = data;
+          job.resolve(data);
+        }, function (err) {
+          job.reject(err);
+        }).then(function () {
+          delete jobs[job.key];
+          active--;
+          pump();
+        });
+      })(job);
+    }
+  }
+
+  // urgent = needed by the search being run now (goes ahead of warm-up loads)
+  function loadIndex(target, urgent) {
+    var key = indexKey(target);
+    if (cache[key]) return Promise.resolve(cache[key]);
+    var job = jobs[key];
+    if (job) {
+      if (urgent && job.prio > 0) { job.prio = 0; job.seq = ++jobSeq; pump(); }
+      return job.promise;
+    }
+    job = jobs[key] = { key: key, target: target, prio: urgent ? 0 : 1, seq: ++jobSeq };
+    job.promise = new Promise(function (resolve, reject) { job.resolve = resolve; job.reject = reject; });
+    queue.push(job);
+    pump();
+    return job.promise;
+  }
+
+  function warmUp(scope) {
+    targetsFor(scope).forEach(function (t) {
+      loadIndex(t, false).catch(function () { /* reported when searched */ });
+    });
   }
 
   // --- matching --------------------------------------------------------
@@ -268,20 +355,24 @@ hide_header_search: true
 
   function render(ctx) {
     var textGroups = ctx.textGroups;
+    var progress = ctx.finished ? "" :
+      "Loading " + scopeLabel(ctx.scope) + "… (" + ctx.done + " of " + ctx.of + ") — ";
     if (ctx.totalHits === 0) {
       resultsEl.innerHTML = "";
-      statusEl.textContent = "No matches in " + scopeLabel(ctx.scope) +
-        (ctx.parts === ALL_PARTS ? "" : " (" + partsLabel(ctx.parts) + ")") + ".";
+      statusEl.textContent = ctx.finished
+        ? "No matches in " + scopeLabel(ctx.scope) +
+          (ctx.parts === ALL_PARTS ? "" : " (" + partsLabel(ctx.parts) + ")") + "."
+        : progress + "no matches so far";
       return;
     }
 
     var summary = plural(ctx.totalHits, "match", "matches") + " in " +
-                  plural(ctx.chapterCount, "chapter", "chapters") + " of " +
-                  scopeLabel(ctx.scope);
+                  plural(ctx.chapterCount, "chapter", "chapters") +
+                  (ctx.finished ? " of " + scopeLabel(ctx.scope) : " so far");
     if (ctx.parts !== ALL_PARTS) summary += ", " + partsLabel(ctx.parts);
     if (ctx.shownHits < ctx.totalHits) summary += " (showing " + ctx.shownHits + " snippets)";
     if (ctx.fold) summary += ", ignoring diacritics";
-    statusEl.textContent = summary + ".";
+    statusEl.textContent = progress + summary + (ctx.finished ? "." : "");
 
     var html = "";
 
@@ -362,88 +453,95 @@ hide_header_search: true
     }
 
     var targets = targetsFor(scope);
-    var pending = targets.filter(function (t) { return !cache[t.text.id + "/" + t.slug]; }).length;
+    var results = new Array(targets.length);   // per target: {sec} or {error}
     var done = 0;
+    var renderQueued = false;
+
     resultsEl.innerHTML = "";
-    statusEl.textContent = pending
-      ? "Loading " + scopeLabel(scope) + "…"
-      : "Searching…";
+    statusEl.textContent = "Loading " + scopeLabel(scope) + "…";
 
-    // Load each index independently: one missing file should degrade the
-    // search, not abort it. Failures are reported by name.
-    var attempts = targets.map(function (target) {
-      var wasCached = !!cache[target.text.id + "/" + target.slug];
-      return loadIndex(target).then(
-        function (data) {
-          if (!wasCached && serial === searchSerial) {
-            done++;
-            statusEl.textContent = "Loading " + scopeLabel(scope) + "… (" + done + " of " + pending + ")";
-          }
-          return { target: target, data: data };
-        },
-        function (err) { return { target: target, error: err }; }
-      );
-    });
+    function failName(r) { return r.target.text.work + " (" + r.target.text.sectionNames[r.target.slug] + ")"; }
 
-    Promise.all(attempts).then(function (settled) {
-      if (serial !== searchSerial) return;   // a newer search has started
+    // Search one index as soon as it arrives. Snippets are kept for every
+    // chapter; the overall cap is applied, in reading order, when drawing.
+    function searchTarget(i, data) {
+      var sec = { slug: targets[i].slug, chapters: [] };
+      data.forEach(function (chapter) {
+        var res = searchChapter(chapter, re, parts, fold, true);
+        if (res.total === 0) return;
+        sec.chapters.push({ title: chapter.title, url: chapter.url, total: res.total, snippets: res.snippets });
+      });
+      results[i] = { target: targets[i], sec: sec };
+    }
 
-      var failed = settled.filter(function (r) { return r.error; });
-      var loaded = settled.filter(function (r) { return !r.error; });
-
-      function failName(r) { return r.target.text.work + " (" + r.target.text.sectionNames[r.target.slug] + ")"; }
-
-      if (loaded.length === 0) {
-        statusEl.textContent = "Could not load the text to search: " +
-          failed.map(failName).join(", ") + ".";
-        return;
-      }
-
+    function draw() {
+      renderQueued = false;
+      if (serial !== searchSerial) return;
       var ctx = {
         query: query, mode: mode, scope: scope, fold: fold, parts: parts,
-        textGroups: [], totalHits: 0, shownHits: 0, chapterCount: 0, truncated: false
+        textGroups: [], totalHits: 0, shownHits: 0, chapterCount: 0, truncated: false,
+        finished: done === targets.length, done: done, of: targets.length
       };
       var byText = {};
-
-      loaded.forEach(function (entry) {
-        var t = entry.target.text;
-        var sec = { slug: entry.target.slug, chapters: [] };
-        entry.data.forEach(function (chapter) {
-          var room = ctx.shownHits < MAX_TOTAL_MATCHES;
-          var res = searchChapter(chapter, re, parts, fold, room);
-          if (res.total === 0) return;
-
-          var snippets = res.snippets;
-          if (ctx.shownHits + snippets.length > MAX_TOTAL_MATCHES) {
-            snippets = snippets.slice(0, MAX_TOTAL_MATCHES - ctx.shownHits);
-          }
-          if (snippets.length < res.snippets.length || !room) ctx.truncated = true;
+      var failed = [];
+      results.forEach(function (r) {
+        if (!r) return;
+        if (r.error) { failed.push(r); return; }
+        var chapters = [];
+        r.sec.chapters.forEach(function (c) {
+          var room = Math.max(0, MAX_TOTAL_MATCHES - ctx.shownHits);
+          var snippets = c.snippets.length > room ? c.snippets.slice(0, room) : c.snippets;
+          if (snippets.length < c.snippets.length) ctx.truncated = true;
           ctx.shownHits += snippets.length;
-          ctx.totalHits += res.total;
+          ctx.totalHits += c.total;
           ctx.chapterCount++;
-
-          sec.chapters.push({ title: chapter.title, url: chapter.url, total: res.total, snippets: snippets });
+          chapters.push({ title: c.title, url: c.url, total: c.total, snippets: snippets });
         });
-        if (!sec.chapters.length) return;
-
+        if (!chapters.length) return;
+        var t = r.target.text;
         var g = byText[t.id];
         if (!g) {
           g = byText[t.id] = { text: t, sections: [], total: 0 };
           ctx.textGroups.push(g);
         }
-        g.sections.push(sec);
-        sec.chapters.forEach(function (c) { g.total += c.total; });
+        g.sections.push({ slug: r.sec.slug, chapters: chapters });
+        chapters.forEach(function (c) { g.total += c.total; });
       });
 
+      if (ctx.finished && failed.length === targets.length) {
+        resultsEl.innerHTML = "";
+        statusEl.textContent = "Could not load the text to search: " + failed.map(failName).join(", ") + ".";
+        return;
+      }
       render(ctx);
-
-      if (failed.length) {
+      if (ctx.finished && failed.length) {
         var warn = document.createElement("p");
         warn.className = "search-warning";
-        warn.textContent = "Not searched (index could not be loaded): " +
-          failed.map(failName).join(", ") + ".";
+        warn.textContent = "Not searched (index could not be loaded): " + failed.map(failName).join(", ") + ".";
         resultsEl.insertBefore(warn, resultsEl.firstChild);
       }
+    }
+
+    function queueDraw() {
+      if (renderQueued) return;
+      renderQueued = true;
+      (window.requestAnimationFrame || setTimeout)(draw);
+    }
+
+    // Load each index independently (one missing file degrades the search
+    // rather than aborting it) and show results as they come in.
+    targets.forEach(function (target, i) {
+      loadIndex(target, true).then(function (data) {
+        if (serial !== searchSerial) return;
+        searchTarget(i, data);
+        done++;
+        queueDraw();
+      }, function (err) {
+        if (serial !== searchSerial) return;
+        results[i] = { target: target, error: err };
+        done++;
+        queueDraw();
+      });
     });
   }
 
@@ -456,7 +554,7 @@ hide_header_search: true
       bits.push("Typing plain letters matches accented ones: dosa finds doṣa, sarira finds śarīra.");
     }
     if (scopeSelect.value === "all") {
-      bits.push("The first search across all texts downloads the whole collection; later searches are instant.");
+      bits.push("The texts are downloaded once and kept by your browser, so later searches are quick.");
     }
     hintEl.textContent = bits.join(" ");
   }
@@ -515,7 +613,14 @@ hide_header_search: true
   setParts(parts0);
   updateHint();
 
-  if (q0) runSearch(q0, mode0, scope0, fold0, parts0);
+  if (q0) {
+    runSearch(q0, mode0, scope0, fold0, parts0);
+  } else {
+    // Nothing to search yet: start fetching the indexes for the chosen
+    // scope while the reader types, so the first search is quick.
+    setTimeout(function () { warmUp(scopeSelect.value); }, 300);
+  }
+  scopeSelect.addEventListener("change", function () { warmUp(scopeSelect.value); });
   qInput.focus();
 })();
 </script>

@@ -58,8 +58,14 @@ Shared by every text and served from the portal: `assets/css/shared.css`
 (search-hit highlight colour, `--hit-bg`) and
 `assets/js/search-highlight.js` (highlighting hits on a chapter page).
 
-Searching runs in the browser. The first all-texts search downloads about 14 MB of index (much less over
-the wire, compressed), after which searches are instant.
+Searching runs in the browser. The indexes for the whole collection come
+to about 17 MB (about 5 MB as actually sent, compressed). To keep this
+quick: the search page starts downloading them as soon as it opens (and
+the home page as soon as the search box is used); results are shown as
+each part arrives, in reading order; and the browser keeps the indexes in
+its Cache Storage, so each is downloaded only once. Each index URL carries
+a fingerprint of its contents (`?v=…`, added by `build.rb`), so adding or
+correcting one text makes readers re-download only that text.
 
 ## Adding a new text from a TEI file (automatic)
 

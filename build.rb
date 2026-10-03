@@ -36,6 +36,7 @@ require "tmpdir"
 require "optparse"
 require "shellwords"
 require "open3"
+require "digest"
 
 ROOT = __dir__
 SITE = File.join(ROOT, "_site")
@@ -162,9 +163,11 @@ Dir.mktmpdir("etexts-build") do |tmp|
     end
 
     # Sanity check: every section must have produced a search index.
+    # Its fingerprint ("v") lets browsers keep an index until it changes.
     sections.each do |s|
       idx = File.join(SITE, id, "search-index", "#{s['slug']}.json")
       abort "#{id}: expected search index #{idx} was not built" unless File.exist?(idx)
+      s["v"] = Digest::MD5.file(idx).hexdigest[0, 12]
     end
 
     corpus << t.merge(
