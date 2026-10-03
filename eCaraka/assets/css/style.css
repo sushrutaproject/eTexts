@@ -573,7 +573,7 @@ main {
 
 mark,
 .hit-list mark {
-  background: #f0d9a8;
+  background: #F54927;
   color: var(--ink);
   padding: 0 0.1em;
 }
