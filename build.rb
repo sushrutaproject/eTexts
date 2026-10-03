@@ -17,7 +17,17 @@
 # so renaming the repository needs no change here.
 #
 # Set JEKYLL_CMD to override how Jekyll is invoked
-# (default: "bundle exec jekyll").
+# (default: "bundle exec jekyll"), and PYTHON for the TEI converter
+# (default: "python3").
+#
+# Two kinds of text are built:
+#   * hand-built Jekyll sites (a folder with its own _config.yml), and
+#   * TEI texts: a folder holding just a TEI file (plus, optionally, a
+#     text.yml). These are converted to a Jekyll site at build time by
+#     tools/tei2site.py, and found automatically: a new folder with a TEI
+#     file in it is all it takes to add a text.
+# A TEI text that cannot be converted or built is left out with an error
+# in the log; the rest of the collection is still published.
 
 require "yaml"
 require "json"
@@ -25,6 +35,7 @@ require "fileutils"
 require "tmpdir"
 require "optparse"
 require "shellwords"
+require "open3"
 
 ROOT = __dir__
 SITE = File.join(ROOT, "_site")
@@ -41,14 +52,49 @@ base = "/#{base}" unless base.empty? || base.start_with?("/")
 ENV["BUNDLE_GEMFILE"] ||= File.join(ROOT, "Gemfile")
 jekyll = Shellwords.split(ENV.fetch("JEKYLL_CMD", "bundle exec jekyll"))
 
+python = Shellwords.split(ENV.fetch("PYTHON", "python3"))
+
 def run!(cmd, chdir:)
   puts "  $ #{cmd.join(' ')}"
   ok = system(*cmd, chdir: chdir)
   abort "Build failed: #{cmd.join(' ')} (in #{chdir})" unless ok
 end
 
-texts = YAML.safe_load(File.read(File.join(ROOT, "texts.yml")))
-abort "texts.yml is empty" if texts.nil? || texts.empty?
+def run?(cmd, chdir:)
+  puts "  $ #{cmd.join(' ')}"
+  system(*cmd, chdir: chdir)
+end
+
+# Report a problem with one text without stopping the whole build.
+# On GitHub the ::error line shows as an annotation on the workflow run.
+def text_error(id, msg)
+  warn "::error title=eTexts: #{id} left out::#{msg}"
+  warn "*** #{id} was NOT added to the site: #{msg}"
+end
+
+# Folders that are not texts.
+NOT_TEXTS = %w[portal tools vendor node_modules].freeze
+
+def tei_folder?(dir)
+  return false if File.exist?(File.join(dir, "_config.yml"))
+  Dir.glob(File.join(dir, "*.xml")).any? do |f|
+    head = File.open(f, "rb") { |io| io.read(4000) }.to_s
+    head.include?("<TEI") || head.include?("tei-c.org")
+  end
+end
+
+texts = YAML.safe_load(File.read(File.join(ROOT, "texts.yml"))) || []
+
+# TEI folders not (yet) listed in texts.yml are added after the listed
+# texts, in alphabetical order. Listing one in texts.yml (just `- id: X`)
+# fixes its place in the order, and can override what is shown about it.
+listed = texts.map { |t| t["id"] }
+Dir.children(ROOT).sort.each do |name|
+  next if name.start_with?(".", "_") || NOT_TEXTS.include?(name) || listed.include?(name)
+  dir = File.join(ROOT, name)
+  texts << { "id" => name } if File.directory?(dir) && tei_folder?(dir)
+end
+abort "No texts found" if texts.empty?
 
 FileUtils.rm_rf(SITE)
 FileUtils.mkdir_p(SITE)
@@ -60,6 +106,30 @@ Dir.mktmpdir("etexts-build") do |tmp|
     id = t.fetch("id")
     src = File.join(ROOT, id)
     abort "texts.yml lists '#{id}', but there is no directory #{src}" unless Dir.exist?(src)
+
+    from_tei = tei_folder?(src)
+    if from_tei
+      # Convert the TEI file into a Jekyll site in the scratch directory.
+      gen = File.join(tmp, "gen", id)
+      meta_file = File.join(tmp, "gen", "#{id}.json")
+      FileUtils.mkdir_p(File.dirname(gen))
+      puts "Converting #{id} from TEI"
+      cmd = python + [File.join(ROOT, "tools", "tei2site.py"), src, gen, "--meta", meta_file]
+      output, status = Open3.capture2e(*cmd, chdir: ROOT)
+      puts output
+      unless status.success?
+        reason = output.lines.map(&:strip).reject(&:empty?).last || "unknown error"
+        text_error(id, "its TEI file could not be converted: #{reason}")
+        next
+      end
+      output.each_line do |line|
+        next unless line.include?("WARNING")
+        warn "::warning title=eTexts: #{id}::#{line.strip.sub(/^\s*\[[^\]]*\]\s*/, '')}"
+      end
+      # What texts.yml says about the text wins over what the TEI header says.
+      t = JSON.parse(File.read(meta_file)).merge(t.reject { |_, v| v.nil? })
+      src = gen
+    end
 
     # Sections come from the text's own sthāna register.
     sthanas_file = File.join(src, "_data", "sthanas.yml")
@@ -79,8 +149,17 @@ Dir.mktmpdir("etexts-build") do |tmp|
     }.to_yaml)
 
     puts "Building #{id} -> #{base}/#{id}/"
-    run!(jekyll + ["build", "--config", "_config.yml,#{overlay}",
-                   "--destination", File.join(SITE, id)], chdir: src)
+    cmd = jekyll + ["build", "--config", "_config.yml,#{overlay}",
+                    "--destination", File.join(SITE, id)]
+    if from_tei
+      unless run?(cmd, chdir: src)
+        FileUtils.rm_rf(File.join(SITE, id))
+        text_error(id, "Jekyll could not build the site generated from its TEI file")
+        next
+      end
+    else
+      run!(cmd, chdir: src)
+    end
 
     # Sanity check: every section must have produced a search index.
     sections.each do |s|
@@ -113,4 +192,4 @@ end
 # GitHub Pages: serve the files as-is (no second Jekyll pass).
 FileUtils.touch(File.join(SITE, ".nojekyll"))
 
-puts "Done: #{texts.size} texts built into #{SITE}"
+puts "Done: #{corpus.size} of #{texts.size} texts built into #{SITE}"

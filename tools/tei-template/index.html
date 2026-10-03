@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+---
+<div class="home-intro">
+  <h1>{{ site.title }}</h1>
+  <p class="subtitle">{{ site.tagline }}</p>
+  <p>{{ site.description }}</p>
+  {% if site.commentary_line != "" %}<p>The {{ site.work }} is shown {{ site.commentary_line }}, distinguished typographically from the root text.</p>{% endif %}
+</div>
+
+{% if site.single_section %}
+  {% for s in site.data.sthanas %}{% assign slug = s[0] %}{% endfor %}
+  <ul class="chapter-list">
+    {% assign chapters = site[slug] | sort: 'order' %}
+    {% for c in chapters %}
+      <li>
+        <span class="badge">{{ c.adhyaya }}</span>
+        <a href="{{ c.url | relative_url }}">{{ c.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <div class="sthana-grid">
+    {% for s in site.data.sthanas %}
+      <a class="sthana-card" href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">
+        <div class="num">{{ forloop.index }}</div>
+        <h2>{{ s[1].name }}</h2>
+        <p class="count">{{ s[1].count }} chapters</p>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<div class="tei-download">
+  <p>This edition is generated from a TEI file, which you can download:</p>
+  <div class="tei-buttons">
+    <a class="tei-button" href="{{ site.tei_file | prepend: '/' | relative_url }}" download>&#8595; TEI source file</a>
+  </div>
+</div>

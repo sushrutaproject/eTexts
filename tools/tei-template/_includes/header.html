@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title"><a class="corpus-link" href="{{ site.corpus_root }}/">eTexts</a> <span class="corpus-sep">/</span> <a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+    <p class="site-tagline">{{ site.tagline }}</p>
+    <nav class="site-nav">
+      {% if site.single_section %}
+        <a href="{{ '/' | relative_url }}">Chapters</a>
+      {% else %}
+        {% for s in site.data.sthanas %}
+          <a href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">{{ s[1].name }}</a>
+        {% endfor %}
+      {% endif %}
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+    <form class="header-search" action="{{ site.corpus_root }}/search/" method="get" role="search">
+      <label for="header-q" class="sr-only">Search the text</label>
+      <input type="search" id="header-q" name="q"
+             placeholder="{% if page.sthana_slug and site.single_section != true %}Search {{ site.data.sthanas[page.sthana_slug].name }}…{% else %}Search this text…{% endif %}">
+      <input type="hidden" name="scope" value="{{ site.text_id }}{% if page.sthana_slug and site.single_section != true %}/{{ page.sthana_slug }}{% endif %}">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>

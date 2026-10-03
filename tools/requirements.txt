@@ -1,0 +1,4 @@
+# Python packages for tools/tei2site.py (the TEI-to-site converter)
+lxml>=5.0
+PyYAML>=6.0
+indic_transliteration==2.3.82

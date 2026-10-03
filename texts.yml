@@ -11,8 +11,12 @@
 # from each text's own  <id>/_data/sthanas.yml  at build time, and each
 # section is expected to publish  <id>/search-index/<section>.json .
 #
-# To add a new text: put its Jekyll site in a new directory, then add
-# an entry below (see README.md, "Adding a new text").
+# Texts made from a TEI file (a folder holding just the TEI file) are found
+# automatically and need no entry here; listing one (`- id: eBhela`) only
+# fixes its place in the order or overrides what its TEI header says.
+#
+# To add a hand-built Jekyll site instead: put it in a new directory, then add
+# an entry below (see README.md, "Adding a hand-built text").
 # ------------------------------------------------------------------
 
 - id: eCaraka

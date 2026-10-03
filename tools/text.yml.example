@@ -1,0 +1,39 @@
+# text.yml -- optional settings for a text made from a TEI file.
+#
+# Put a copy of this file, named text.yml, in the text's folder next to
+# the TEI file. Every line is optional: anything left out is taken from
+# the TEI file itself (mostly from its <teiHeader>). Delete what you
+# don't need. Lines starting with # are ignored.
+
+# Which file to use, if the folder holds more than one .xml file:
+# tei: bhelasamhita.xml
+
+# How the text is named on the collection home page and in its own header:
+# work: "Bhelasaṃhitā"
+# site_title: "e-Bhela"
+# tagline: "The Bhelasaṃhitā, in IAST"
+# commentary: "with Cakrapāṇidatta's Āyurvedadīpikā"   # shown under the title
+# blurb: >
+#   A short description, shown on the home-page card and the text's
+#   own home page.
+# source: "SARIT"                                       # 'source:' on the card
+
+# Names for the sections (sthānas, khaṇḍas...), in order, when the TEI
+# has no usable <head> for them:
+# sections:
+#   - "Sūtrasthāna"
+#   - "Nidānasthāna"
+
+# Names for the commentaries' show/hide switches, by the key printed in the
+# build log ("commentaries: ... (key)"):
+# commentaries:
+#   commentary1: "Aruṇadatta's Sarvāṅgasundarā"
+#   commentary2: "Hemādri's Āyurvedarasāyana"
+
+# Where the chapters are, if the automatic choice is wrong:
+#   0 = the top-level <div>s are the chapters (no sections)
+#   1 = the top-level <div>s are sections, the <div>s inside them chapters
+# chapter_level: 1
+
+# Devanagari text is transliterated to IAST automatically; to keep it as is:
+# transliterate: false

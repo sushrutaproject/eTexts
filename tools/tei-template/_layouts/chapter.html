@@ -1,0 +1,92 @@
+---
+layout: default
+---
+{%- comment -%}
+Chapter page of a text generated from TEI (tools/tei2site.py).
+Mūla blocks are <div class="mula">; commentary blocks are
+<div class="bhasya comm-N">, N indexing site.data.commentaries.
+{%- endcomment -%}
+{% assign info = site.data.sthanas[page.sthana_slug] %}
+{% assign chapters = site[page.sthana_slug] | sort: 'order' %}
+{% assign chapter_count = chapters | size %}
+{% for c in chapters %}
+  {% if c.url == page.url %}
+    {% assign this_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+{% assign prev_index = this_index | minus: 1 %}
+{% assign next_index = this_index | plus: 1 %}
+{% assign has_mula = false %}{% if content contains 'class="mula"' %}{% assign has_mula = true %}{% endif %}
+
+<nav class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+  {% unless site.single_section %}<a href="{{ page.sthana_slug | prepend: '/' | append: '/' | relative_url }}">{{ info.name }}</a> &rsaquo;{% endunless %}
+  {{ page.adhyaya }}
+</nav>
+
+<div class="chapter-header">
+  <h1>{{ page.title }}</h1>
+</div>
+
+{% capture toggles %}{% for cm in site.data.commentaries %}{% capture marker %}comm-{{ cm.n }}"{% endcapture %}{% if content contains marker %}
+  <label><input type="checkbox" class="comm-toggle" data-comm="{{ cm.n }}" checked> Show {{ cm.name }}</label>{% endif %}{% endfor %}{% endcapture %}
+{% assign toggles_stripped = toggles | strip %}
+{% if toggles_stripped != "" and has_mula %}
+<div class="text-controls">
+  {{ toggles }}
+  <span class="legend">Larger type: {{ site.work }} &middot; indented: commentary</span>
+</div>
+{% endif %}
+
+<article class="chapter-text{% unless has_mula %} no-mula{% endunless %}" id="chapter-text">
+  {{ content }}
+</article>
+
+<nav class="chapter-nav">
+  {% if this_index > 0 %}
+    {% assign prev = chapters[prev_index] %}
+    <a href="{{ prev.url | relative_url }}" class="prev">
+      <span class="dir">&larr; Previous</span>{{ prev.title }}
+    </a>
+  {% else %}
+    <span></span>
+  {% endif %}
+  {% if next_index < chapter_count %}
+    {% assign next = chapters[next_index] %}
+    <a href="{{ next.url | relative_url }}" class="next">
+      <span class="dir">Next &rarr;</span>{{ next.title }}
+    </a>
+  {% endif %}
+</nav>
+
+<style>
+{% for cm in site.data.commentaries %}.chapter-text.hide-comm-{{ cm.n }} .comm-{{ cm.n }} { display: none; }
+{% endfor %}</style>
+
+{%- comment -%} Search-hit highlighting is shared by the whole collection. {%- endcomment -%}
+<script src="{{ site.corpus_root }}/assets/js/search-highlight.js"></script>
+
+<script>
+/* Show/hide each commentary; each choice is remembered across chapters. */
+(function () {
+  "use strict";
+  var text = document.getElementById("chapter-text");
+  if (!text) return;
+  Array.prototype.forEach.call(document.querySelectorAll(".comm-toggle"), function (box) {
+    var n = box.getAttribute("data-comm");
+    var key = "{{ site.text_id }}:hide-comm-" + n;
+    function apply(hide) {
+      text.classList.toggle("hide-comm-" + n, hide);
+      box.checked = !hide;
+    }
+    var stored = null;
+    try { stored = localStorage.getItem(key); } catch (e) { /* private mode */ }
+    apply(stored === "1");
+    box.addEventListener("change", function () {
+      var hide = !box.checked;
+      apply(hide);
+      try { localStorage.setItem(key, hide ? "1" : "0"); } catch (e) { /* ignore */ }
+    });
+  });
+})();
+</script>
