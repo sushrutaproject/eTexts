@@ -13,12 +13,13 @@ commentaries and the notes separately or together:
 Inline footnote references are dropped first: their digits would
 otherwise land in the middle of the text ("sahasrākṣaṃ 1 gaṇādhīśaṃ")
 and break phrase searches. Liquid has no regex, so we split on the
-<sup> markup and keep only what follows each closing tag.
+<sup> markup and keep only what follows each closing tag (nothing, when
+two references stand side by side: `split` drops an empty last piece).
 
-This file is identical in every text; keep the copies in step.
+tools/tei2site.py copies this file into every text it builds.
 {%- endcomment -%}
 {%- assign raw = include.chapter.content | split: '<sup' -%}
-{%- capture body -%}{{ raw[0] }}{% for p in raw offset:1 %}{{ p | split: '</sup>' | last }}{% endfor %}{%- endcapture -%}
+{%- capture body -%}{{ raw[0] }}{% for p in raw offset:1 %}{% assign end6 = p | slice: -6, 6 %}{% unless end6 == '</sup>' %}{{ p | split: '</sup>' | last }}{% endunless %}{% endfor %}{%- endcapture -%}
 {%- assign halves = body | split: '<section class="notes"' -%}
 {%- capture segs -%}
 {%- assign blocks = halves[0] | split: '<div class="' -%}

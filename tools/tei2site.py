@@ -173,6 +173,9 @@ class Chapter:
     def __init__(self, title, n):
         self.title = title
         self.n = n
+        self.sub = None        # number of a sub-division made into its own page
+        self.parent_title = None
+        self.xml_id = None
         self.nodes = []        # (node, inherited_reg, inherited_comm) in order
 
 
@@ -184,6 +187,7 @@ class Renderer:
         self.comm_keys = collections.OrderedDict()   # key -> display name
         self.comm_names = comm_names                 # overrides from text.yml
         self.stats = collections.Counter()
+        self.notes_heading = "Notes"
 
     # ---- commentary identity -------------------------------------------
     def comm_key(self, el, word):
@@ -245,7 +249,7 @@ class Renderer:
             out.append('<div class="%s">%s</div>' % (cls, body))
             self.stats["blocks_" + reg] += 1
         if self.notes:
-            out.append('<section class="notes">\n<h2>Notes</h2>\n<ol>')
+            out.append('<section class="notes">\n<h2>%s</h2>\n<ol>' % html.escape(self.notes_heading))
             for i, (num, body) in enumerate(self.notes, 1):
                 out.append('<li id="note-%s-%d"><span class="note-num">%s</span> %s '
                            '<a class="note-back" href="#noteref-%s-%d" aria-label="Back to reference %s">&#8617;</a></li>'
@@ -452,6 +456,9 @@ class Renderer:
             return inner + "<br>" + t
         if tag in ("cell",):
             return inner + " " + t
+        if tag == "seg" and norm(el.get("type")) == "untransliterated":
+            return ('<span class="untransliterated" title="Untransliterated in source '
+                    '(shown in original ASCII romanization)">' + inner + "</span>" + t)
         if tag in ("seg", "w", "s", "c", "pc", "q", "said", "name", "persName", "placeName",
                    "orgName", "num", "date", "measure", "rs", "abbr", "expan", "corr", "reg",
                    "orig", "lem", "rdg", "bibl", "author", "editor", "span", "phr", "m",
@@ -593,6 +600,36 @@ def build_structure(body, tr, cfg, log):
         % (len(L0), len(L1), {1: "2 (sections > chapters)", 0: "1 (chapters only)", -1: "none (one chapter)"}[level]))
 
     sections = []
+    # div types inside a chapter that get pages of their own (text.yml
+    # `split_chapters: [pada]`), e.g. the pādas of a long adhyāya
+    split = {norm(x) for x in (cfg.get("split_chapters") or [])}
+
+    def make_chapter(c, i, skip_divs=()):
+        """a Chapter from the div c: everything in it except the head
+        used as its title (notes inside that head are kept, at the top)"""
+        title, heads = head_title(c, tr)
+        n = c.get("n")
+        ch = Chapter(title or label_for(c, "Chapter", i), n if n and len(n) <= 6 else i)
+        ch.xml_id = c.get("{%s}id" % XML)
+        used = [h for h in heads if plain_text(h, tr).strip(" /|[]") == title][:1]
+        skip = set(used) | set(skip_divs)
+        for h in used:
+            for nt in h.iter("{%s}note" % TEI):
+                ch.nodes.append((nt, "m", 0))
+        if c.text and c.text.strip():
+            ch.nodes.append((c.text, "m", 0))
+        for x in c:
+            if local(x) == "head" and not re.search(r"[^\W\d_]", plain_text(x, tr)):
+                skip.add(x)          # a bare number: the chapter badge shows it
+            if x in skip:
+                if x.tail and x.tail.strip():
+                    ch.nodes.append((x.tail, "m", 0))
+                continue
+            ch.nodes.append((x, "m", 0))
+            if x.tail and x.tail.strip():
+                ch.nodes.append((x.tail, "m", 0))
+        ch.container = c
+        return ch
 
     def gather(container, chapter_divs, sec, title_for_opening):
         """walk container; chapter_divs become chapters, everything else
@@ -607,29 +644,23 @@ def build_structure(body, tr, cfg, log):
             if c in chapter_divs:
                 lead_heads = False
                 i = len([x for x in sec["chapters"] if x.n]) + 1
-                title, heads = head_title(c, tr)
-                n = c.get("n")
-                ch = Chapter(title or label_for(c, "Chapter", i), n if n and len(n) <= 6 else i)
-                # chapter content: everything except the head used as its title
-                # (notes inside that head are kept, at the top of the chapter)
-                used = [h for h in heads if plain_text(h, tr).strip(" /|[]") == title][:1]
-                skip = set(used)
-                for h in used:
-                    for nt in h.iter("{%s}note" % TEI):
-                        ch.nodes.append((nt, "m", 0))
-                if c.text and c.text.strip():
-                    ch.nodes.append((c.text, "m", 0))
-                for x in c:
-                    if local(x) == "head" and not re.search(r"[^\W\d_]", plain_text(x, tr)):
-                        skip.add(x)          # a bare number: the chapter badge shows it
-                    if x in skip:
-                        if x.tail and x.tail.strip():
-                            ch.nodes.append((x.tail, "m", 0))
-                        continue
-                    ch.nodes.append((x, "m", 0))
-                    if x.tail and x.tail.strip():
-                        ch.nodes.append((x.tail, "m", 0))
-                ch.container = c
+                subs = [x for x in struct_children(c) if div_kind_words(x) & split] if split else []
+                if subs:
+                    # one page per sub-division; anything in the chapter
+                    # outside them goes at the top of the first page
+                    outer = make_chapter(c, i, skip_divs=subs)
+                    for k, sd in enumerate(subs, 1):
+                        ch = make_chapter(sd, k)
+                        ch.sub, ch.n = ch.n, outer.n
+                        ch.parent_title = outer.title
+                        if k == 1:
+                            ch.nodes[:0] = outer.nodes
+                        sec["chapters"].append(ch)
+                        current = ch
+                    log("%s: %d %s divisions made into pages of their own"
+                        % (outer.title, len(subs), "/".join(sorted(div_kind_words(subs[0])))))
+                    continue
+                ch = make_chapter(c, i)
                 sec["chapters"].append(ch)
                 current = ch
             else:
@@ -821,6 +852,78 @@ def find_tei(src, cfg):
     return teis[0]
 
 
+def remove_keep_tail(el):
+    """remove el from the tree; the text after it stays where it was"""
+    parent = el.getparent()
+    prev = el.getprevious()
+    tail = el.tail or ""
+    if tail.strip():
+        if prev is not None:
+            prev.tail = (prev.tail or "") + tail
+        else:
+            parent.text = (parent.text or "") + tail
+    elif prev is not None and el.getnext() is None:
+        prev.tail = tail            # keep the indentation before the closing tag
+    parent.remove(el)
+
+
+MULA_DECL = ("This file contains the root text only: all commentary blocks, and the notes "
+             "anchored in them, have been omitted.")
+
+
+def write_mula(tree, path, full_name):
+    """Write a root-text-only copy of the TEI: every element of <body> that
+    is marked as commentary (type/subtype/ana, see classify()) is left out,
+    with the notes inside it. The header is adjusted to say so. Returns the
+    number of commentary blocks left out."""
+    import copy
+    import datetime
+    t = copy.deepcopy(tree)
+    root = t.getroot()
+    q = lambda el, path: el.findall(path.replace("t:", "{%s}" % TEI))
+    removed = 0
+    for body in q(root, ".//t:text//t:body") or q(root, ".//t:body"):
+        for el in list(body.iter()):
+            if not isinstance(el.tag, str) or el.getparent() is None:
+                continue
+            # only outermost commentary blocks: one inside another goes with it
+            if classify(el)[0] == "c" and not any(classify(a)[0] == "c" for a in el.iterancestors()):
+                remove_keep_tail(el)
+                removed += 1
+    h = root.find("{%s}teiHeader" % TEI)
+    if h is not None:
+        for a in q(h, ".//t:fileDesc/t:titleStmt/t:author"):
+            if norm(a.get("role")) == "commentator":
+                remove_keep_tail(a)
+        for st in q(h, ".//t:fileDesc/t:titleStmt/t:title"):
+            if st.get("type") == "sub" and len(st) == 0 and st.text:
+                m = re.match(r"\s*with\s[^:]*(:.*)?$", st.text, re.S)
+                if m:
+                    st.text = "root text (mūla) only" + (m.group(1) or "")
+        for ed in q(h, ".//t:fileDesc/t:editionStmt/t:edition"):
+            if ed.text:
+                ed.text = re.sub(r"root text with commentar(y|ies)", "root text only", ed.text)
+        for p in q(h, ".//t:encodingDesc/t:editorialDecl/t:p"):
+            txt = "".join(p.itertext())
+            if re.search(r"commentary blocks are", txt):
+                for c in list(p):
+                    p.remove(c)
+                keep = re.search(r"Root-text blocks are [^;.]*", txt)
+                p.text = MULA_DECL + (" " + keep.group(0).rstrip() + "." if keep else "")
+        rev = h.find("{%s}revisionDesc" % TEI)
+        if rev is None:
+            rev = etree.SubElement(h, "{%s}revisionDesc" % TEI)
+        listc = rev.find("{%s}listChange" % TEI)
+        target = listc if listc is not None else rev
+        ch = etree.Element("{%s}change" % TEI, when=datetime.date.today().isoformat())
+        ch.text = ("Root-text-only version derived automatically from %s by tools/tei2site.py, "
+                   "leaving out the commentaries. Do not edit this file: edit %s." % (full_name, full_name))
+        ch.tail = target.text or "\n"
+        target.insert(0, ch)
+    t.write(str(path), xml_declaration=True, encoding="UTF-8")
+    return removed
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("src")
@@ -888,9 +991,17 @@ def main():
         raise SystemExit("%s: no text found in <body>" % tei_path.name)
 
     # ---- section names (text.yml may supply them) and slugs ---------------
+    # Each entry of `sections:` is a name, or {name, slug, subtitle}: the
+    # slug is the section's address (…/<slug>/), the subtitle is shown
+    # under its name on the home and section pages.
     names = cfg.get("sections") or []
     for sec, nm in zip(sections, names):
-        if nm:
+        if isinstance(nm, dict):
+            if nm.get("name"):
+                sec["name"] = str(nm["name"])
+            sec["fixed_slug"] = nm.get("slug")
+            sec["subtitle"] = str(nm.get("subtitle") or "")
+        elif nm:
             sec["name"] = str(nm)
     if names and len(names) != len(sections):
         log("WARNING: text.yml gives %d section names, but the TEI has %d sections"
@@ -898,6 +1009,15 @@ def main():
     single = len(sections) == 1
     used = set()
     for i, sec in enumerate(sections, 1):
+        if sec.get("fixed_slug"):
+            slug = str(sec["fixed_slug"])
+            if slug in used or slug in ("assets", "search", "about", "search-index"):
+                raise SystemExit("text.yml: section slug '%s' is used twice or is reserved" % slug)
+            if single:
+                sec["name"] = sec["name"] or work
+            used.add(slug)
+            sec["slug"] = slug
+            continue
         if single:
             slug = "chapters"
             sec["name"] = sec["name"] or work
@@ -908,25 +1028,66 @@ def main():
         used.add(slug)
         sec["slug"] = slug
 
+    # Page addresses: text.yml `pages:` names a file (or gives a mapping)
+    # from a chapter div's xml:id to the name of its page, so that the
+    # addresses of an existing edition stay the same whatever the heads
+    # say. Chapters not listed get a name made from their number and head.
+    pages = cfg.get("pages") or {}
+    if isinstance(pages, str):
+        pf = src / pages
+        if not pf.exists():
+            raise SystemExit("text.yml names pages: %s, which is not in the folder %s" % (pages, src.name))
+        pages = yaml.safe_load(pf.read_text(encoding="utf-8")) or {}
+    title_format = cfg.get("title_format") or "{title}"
+    sub_title_format = cfg.get("sub_title_format") or "{parent} - {title}"
+
     # ---- render ---------------------------------------------------------
     rend = Renderer(tr, cfg.get("commentaries") or {}, meta["persons"])
+    rend.notes_heading = cfg.get("notes_heading") or "Notes"
     if out.exists():
         shutil.rmtree(out)
     shutil.copytree(TEMPLATE, out)
+    unlisted = 0
     for sec in sections:
+        cids, fnames = set(), set()
         for ch in sec["chapters"]:
-            fname = "%03d-%s" % (ch.order, slugify(ch.title, "chapter"))
-            cid = "%s-%d" % (sec["slug"], ch.order)
+            fname = pages.get(ch.xml_id) if ch.xml_id else None
+            if fname:
+                fname = str(fname)
+            else:
+                fname = "%03d-%s" % (ch.order, slugify(ch.title, "chapter"))
+                unlisted += 1 if pages else 0
+            if fname in fnames:
+                raise SystemExit("two chapters of %s would have the same page name %s" % (sec["slug"], fname))
+            fnames.add(fname)
+            # ids of note anchors: <section>-<adhyāya>[-<pāda>]
+            cid = "%s-%s" % (sec["slug"], ch.n) + ("-%s" % ch.sub if ch.sub else "")
+            if not ch.n or cid in cids or not re.fullmatch(r"[\w.-]+", cid):
+                cid = "%s-%d" % (sec["slug"], ch.order)
+            cids.add(cid)
             body_html = rend.render_chapter(ch, cid)
-            fm = "---\ntitle: %s\nadhyaya: %s\norder: %d\n---\n" % (
-                yq(ch.title), yq(ch.n if ch.n else "·"), ch.order)
+            if ch.sub:
+                title = sub_title_format.format(n=ch.n, m=ch.sub, parent=ch.parent_title, title=ch.title)
+            elif ch.n:
+                title = title_format.format(n=ch.n, title=ch.title)
+            else:
+                title = ch.title
+            fm = "---\ntitle: %s\nadhyaya: %s\n%sorder: %d\n---\n" % (
+                yq(title), yq(ch.n if ch.n else "·"),
+                ("pada: %s\n" % yq(ch.sub)) if ch.sub else "", ch.order)
             write(out / ("_" + sec["slug"]) / (fname + ".html"), fm + body_html)
+    if unlisted:
+        log("WARNING: %d chapters are not listed in the pages file; their page names were made up" % unlisted)
 
     # commentary names
     comms = []
     overrides = cfg.get("commentaries") or {}
     for k, (key, name) in enumerate(rend.comm_keys.items(), 1):
-        nm = overrides.get(key) or name
+        # text.yml may give just a name, or {name, toggle, legend, absent_note}
+        ov = overrides.get(key) or {}
+        if not isinstance(ov, dict):
+            ov = {"name": ov}
+        nm = ov.get("name") or name
         if not nm and len(rend.comm_keys) == 1:
             if meta["commentators"]:
                 nm = " and ".join(meta["commentators"])
@@ -937,6 +1098,14 @@ def main():
         if not nm and meta["persons"].get(key):
             nm = meta["persons"][key]
         comms.append({"n": k, "key": key, "name": nm or "commentary %d" % k})
+        c = comms[-1]
+        c["toggle"] = str(ov.get("toggle") or "Show " + c["name"])
+        c["legend"] = str(ov.get("legend") or "indented: " + (c["name"] if len(rend.comm_keys) > 1 else "commentary"))
+        if ov.get("absent_note"):
+            c["absent_note"] = str(ov["absent_note"])
+    unknown_keys = set(overrides) - set(rend.comm_keys)
+    if unknown_keys:
+        log("WARNING: text.yml names commentaries not found in the TEI: " + ", ".join(sorted(unknown_keys)))
     if comms:
         log("commentaries: " + "; ".join("%s (%s)" % (c["name"], c["key"]) for c in comms))
     else:
@@ -952,8 +1121,31 @@ def main():
     (out / "assets" / "tei").mkdir(parents=True, exist_ok=True)
     shutil.copy(tei_path, out / "assets" / "tei" / tei_name)
 
+    # Downloads: the TEI file itself, and (text.yml `mula:`) a root-text-only
+    # version derived from it here, so that only the one file is ever edited.
+    downloads = []
+    mcfg = cfg.get("mula")
+    if mcfg:
+        if not isinstance(mcfg, dict):
+            mcfg = {"file": mcfg}
+        mname = str(mcfg.get("file") or tei_path.stem + "-mula.xml")
+        if mname == tei_name or "/" in mname:
+            raise SystemExit("text.yml: mula file name '%s' is not usable" % mname)
+        nrem = write_mula(tree, out / "assets" / "tei" / mname, tei_name)
+        log("root text only: %s derived from %s (%d commentary blocks left out)" % (mname, tei_name, nrem))
+        downloads.append({"label": str(mcfg.get("label") or "Mūla only"), "file": "assets/tei/" + mname})
+    downloads.append({"label": str(cfg.get("tei_label") or ("Mūla with commentary" if mcfg else "TEI source file")),
+                      "file": "assets/tei/" + tei_name})
+
+    # Other files of the folder to publish as they are (e.g. LICENSE)
+    for name in cfg.get("copy") or []:
+        p = src / str(name)
+        if not p.is_file() or "/" in str(name):
+            raise SystemExit("text.yml: copy names %s, which is not a file in the folder %s" % (name, src.name))
+        shutil.copy(p, out / p.name)
+
     blurb = cfg.get("blurb") or ""
-    description = blurb or (work + (" " + commentary_line if commentary_line else "") + ".")
+    description = cfg.get("description") or blurb or (work + (" " + commentary_line if commentary_line else "") + ".")
     conf = {
         "title": site_title,
         "tagline": cfg.get("tagline") or ("The %s, in IAST" % work),
@@ -962,6 +1154,14 @@ def main():
         "commentary_line": commentary_line,
         "source_note": source,
         "tei_file": "assets/tei/" + tei_name,
+        "downloads": downloads,
+        "download_note": cfg.get("download_note") or (
+            "Download the complete text as a TEI&nbsp;P5 XML file:" if mcfg else
+            "This edition is generated from a TEI file, which you can download:"),
+        "section_word": str(cfg.get("section_word") or ""),
+        "chapter_word": str(cfg.get("chapter_word") or "chapters"),
+        "legend_mula": str(cfg.get("legend_mula") or work),
+        "has_intro": bool(cfg.get("intro")),
         "single_section": single,
         "baseurl": "/" + text_id,
         "url": "",
@@ -977,9 +1177,23 @@ def main():
           + yaml.safe_dump(conf, allow_unicode=True, sort_keys=False))
     sth = {}
     for s in sections:
-        sth[s["slug"]] = {"name": s["name"], "subtitle": "", "count": len(s["chapters"])}
+        sth[s["slug"]] = {"name": s["name"], "subtitle": s.get("subtitle", ""), "count": len(s["chapters"])}
     write(out / "_data" / "sthanas.yml", yaml.safe_dump(sth, allow_unicode=True, sort_keys=False))
     write(out / "_data" / "commentaries.yml", yaml.safe_dump(comms, allow_unicode=True, sort_keys=False))
+
+    # Home-page introduction and footer written by hand in text.yml (HTML;
+    # Liquid such as {{ '/about/' | relative_url }} may be used)
+    if cfg.get("intro"):
+        write(out / "_includes" / "intro.html", str(cfg["intro"]).strip() + "\n")
+    if cfg.get("footer"):
+        write(out / "_includes" / "footer.html",
+              '<footer class="site-footer">\n  <p>\n    %s\n  </p>\n</footer>\n' % str(cfg["footer"]).strip())
+    if cfg.get("extra_css"):
+        with open(out / "assets" / "css" / "style.css", "a", encoding="utf-8") as fh:
+            fh.write("\n/* ---------------------------------------------------------------\n"
+                     "   This text only (extra_css in %s/text.yml)\n"
+                     "   ------------------------------------------------------------- */\n\n%s\n"
+                     % (text_id, str(cfg["extra_css"]).strip()))
 
     for s in sections:
         write(out / "search-index" / (s["slug"] + ".json"),
@@ -1023,13 +1237,31 @@ def main():
         a.append("<h2>Revision history</h2><ul>")
         a.extend("<li>%s %s%s</li>" % (esc(w), esc(who) + ": " if who else "", esc(t)) for w, who, t in meta["changes"])
         a.append("</ul>")
-    a.append("<h2>How this edition was made</h2><p>The TEI file was converted by the eTexts "
-             "tools (<code>tools/tei2site.py</code>). Root text (mūla), commentaries and notes "
-             "are distinguished as encoded in the TEI; where the TEI does not mark them, the "
-             "text is shown as mūla. Conversion report:</p><ul>")
-    a.extend("<li>%s</li>" % esc(r) for r in report if not r.startswith("reading "))
-    a.append("</ul></div>")
-    write(out / "about.md", "\n".join(a) + "\n")
+    how = ["<h2>How this edition was made</h2><p>The TEI file was converted by the eTexts "
+           "tools (<code>tools/tei2site.py</code>). Root text (mūla), commentaries and notes "
+           "are distinguished as encoded in the TEI; where the TEI does not mark them, the "
+           "text is shown as mūla. Conversion report:</p><ul>"]
+    how.extend("<li>%s</li>" % esc(r) for r in report if not r.startswith("reading "))
+    how.append("</ul>")
+    if cfg.get("about"):
+        # an About page written by hand (text.yml `about: about.md`); a short
+        # account of the TEI file and the conversion is added at its foot
+        ap = src / str(cfg["about"])
+        if not ap.is_file():
+            raise SystemExit("text.yml names about: %s, which is not in the folder %s" % (cfg["about"], src.name))
+        links = " and ".join('<a href="{{ \'/%s\' | relative_url }}" download>%s</a>' % (d["file"], esc(d["label"].lower()))
+                             for d in downloads)
+        tail = ['<div class="prose">',
+                "<h2>The TEI file</h2><p>Every page of this edition is generated from a single "
+                "TEI&nbsp;P5 file, which is the master copy of the text: corrections are made there, "
+                "and the reading pages, the search index and the downloads (%s) are rebuilt "
+                "from it.</p>" % links,
+                "<details><summary>How this edition was made</summary>"] + how[1:] + ["</details></div>"]
+        write(out / "about.md", ap.read_text(encoding="utf-8").rstrip() + "\n\n" + "\n".join(tail) + "\n")
+    else:
+        a.extend(how)
+        a.append("</div>")
+        write(out / "about.md", "\n".join(a) + "\n")
 
     meta_out = {
         "id": text_id,
@@ -1038,7 +1270,9 @@ def main():
         "commentary": commentary_line,
         "blurb": blurb or sub,
         "source": source,
-        "tei": [{"label": "source file", "file": conf["tei_file"]}],
+        # the collection home page has room only for short labels
+        "tei": ([dict(d, label=str(cfg.get("tei_label_short") or d["label"])) if d["file"] == conf["tei_file"] else d
+                 for d in downloads] if mcfg else [{"label": "source file", "file": conf["tei_file"]}]),
         "generated_from_tei": tei_name,
     }
     if args.meta:

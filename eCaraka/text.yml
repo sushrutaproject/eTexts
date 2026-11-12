@@ -1,0 +1,74 @@
+# Settings for e-Caraka. The text itself is carakasamhita-full.xml, the
+# master copy: the reading pages, the search index and both downloads are
+# made from it by tools/tei2site.py at every build. See tools/text.yml.example
+# for what each setting does.
+
+tei: carakasamhita-full.xml
+
+site_title: "e-Caraka"
+work: "Carakasaṃhitā"
+commentary: "with Cakrapāṇidatta's Āyurvedadīpikā"
+tagline: "The Carakasaṃhitā, in IAST"
+blurb: >
+  The foundational treatise of internal medicine, read with
+  Cakrapāṇidatta's eleventh-century commentary.
+source: "NIIMH e-Samhita"
+description: >
+  A digital reading edition of the Carakasaṃhitā, a Sanskrit treatise on
+  medicine, with Cakrapāṇidatta's commentary, the Āyurvedadīpikā.
+  Text and translit. conversion sourced from the NIIMH e-Samhita
+  (niimh.res.in); see the About page for scope and known limitations.
+
+intro: |
+  <p>
+    The Carakasaṃhitā, a Sanskrit treatise on medicine, is organized into eight
+    sthānas (sections). It is read here alongside Cakrapāṇidatta's commentary,
+    the Āyurvedadīpikā, with the two distinguished typographically. Choose a
+    sthāna below to browse its adhyāyas (chapters).
+  </p>
+  <p>
+    Transcribed from the
+    <a href="https://n2t.net/ark:/13960/t48q2f20n/">1941 edition edited by Yādavasarman Trivikrama Ācārya</a>.
+  </p>
+footer: >
+  Text and IAST conversion sourced from the
+  <a href="http://niimh.res.in/ebooks/ecaraka/" target="_blank" rel="noopener">NIIMH e-Samhita</a>
+  (National Institute of Indian Medical Heritage). See the
+  <a href="{{ '/about/' | relative_url }}">About</a> page for scope and known
+  limitations.
+about: about.md
+copy: [LICENSE]
+
+# Section addresses (…/eCaraka/<slug>/) are those of the earlier site.
+section_word: "Sthāna"
+chapter_word: "adhyāyas"
+sections:
+  - {slug: sutrasthanam, name: "Sūtrasthānam", subtitle: "General Principles"}
+  - {slug: nidanasthanam, name: "Nidānasthānam", subtitle: "Pathology of the Major Diseases"}
+  - {slug: vimanasthanam, name: "Vimānasthānam", subtitle: "Methodology and Epistemology"}
+  - {slug: sarirasthanam, name: "Śārīrasthānam", subtitle: "Anatomy and Embryology"}
+  - {slug: indriyasthanam, name: "Indriyasthānam", subtitle: "Prognosis through the Senses"}
+  - {slug: cikitsasthanam, name: "Cikitsāsthānam", subtitle: "Therapeutics"}
+  - {slug: kalpasthanam, name: "Kalpasthānam", subtitle: "Pharmaceutical Preparations"}
+  - {slug: siddhisthanam, name: "Siddhisthānam", subtitle: "Principles of Successful Treatment"}
+
+# Chapter pages: names from pages.yml; the pādas of Cikitsāsthāna 1 and 2
+# (div type="pada") each have a page of their own, numbered 1/1 … 2/4.
+pages: pages.yml
+split_chapters: [pada]
+title_format: "{n}. {title}"
+sub_title_format: "{n}/{m}. {parent} - {title}"
+notes_heading: "pāṭhāntarāḥ"
+
+commentaries:
+  ayurvedadipika:
+    name: "Cakrapāṇidatta's Āyurvedadīpikā"
+    toggle: "Show commentary"
+    legend: "indented: Cakrapāṇidatta's Āyurvedadīpikā"
+
+mula:
+  file: carakasamhita-mula.xml
+  label: "Mūla only"
+tei_label: "Mūla with Cakrapāṇidatta's commentary"
+tei_label_short: "Mūla with commentary"   # on the collection home page
+download_note: "Download the complete text as a single TEI&nbsp;P5 XML file:"

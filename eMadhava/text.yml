@@ -1,0 +1,90 @@
+# Settings for e-Mādhavanidāna. The text itself is madhavanidana-full.xml,
+# the master copy: the reading pages, the search index and both downloads
+# are made from it by tools/tei2site.py at every build. See
+# tools/text.yml.example for what each setting does.
+
+tei: madhavanidana-full.xml
+
+site_title: "e-Mādhavanidāna"
+work: "Mādhavanidāna"
+commentary: "with the Madhukośa and Ātaṅkadarpaṇa"
+tagline: "The Mādhavanidāna, in IAST"
+blurb: >
+  Mādhavakara's compendium of disease diagnosis, in 70 chapters.
+  Based on the 1955 edition of Yādavaśarman Trivikrama Ācārya.
+source: "NIIMH e-Samhita"
+description: >
+  A digital reading edition of the Mādhavanidāna, Mādhavakara's Sanskrit
+  compendium of disease diagnosis and nosology, together with the
+  Madhukośa and Ātaṅkadarpaṇa commentaries. Text and translit. conversion
+  sourced from the NIIMH e-Samhita (niimh.res.in); see the About page for
+  scope and known limitations.
+
+intro: |
+  <p>
+    The Mādhavanidāna, attributed to Mādhavakara, is a Sanskrit compendium
+    organized around the diagnosis (nidāna) of disease, in 70 chapters. It is
+    read here alongside two commentaries, the Madhukośa and the Ātaṅkadarpaṇa,
+    with all three registers distinguished typographically. Unlike the
+    Suśrutasaṃhitā and Carakasaṃhitā, this text has no sthāna (sectional)
+    division — the chapters below run continuously.
+  </p>
+  <p>
+    The text below is based on the
+    <a href="http://n2t.net/%20ark:/13960/s218hd9qx7t" target="_blank">1955 edition of the Mādhavanidāna edited by Yādavaśarman Trivikrama Ācārya</a>.
+  </p>
+footer: >
+  Text and IAST conversion sourced from the
+  <a href="http://niimh.res.in/ebooks/madhavanidana/" target="_blank" rel="noopener">NIIMH e-Samhita</a>
+  (National Institute of Indian Medical Heritage). See the
+  <a href="{{ '/about/' | relative_url }}">About</a> page for scope and known
+  limitations.
+about: about.md
+copy: [LICENSE]
+
+# No sthāna division: the 70 chapters are one section, whose address
+# (…/eMadhava/nidanas/<page>/) is that of the earlier site.
+chapter_word: "adhyāyas"
+sections:
+  - {slug: nidanas, name: "Mādhavanidāna", subtitle: "Diagnosis"}
+
+pages: pages.yml
+title_format: "{n}. {title}"
+notes_heading: "pāṭhāntarāḥ"
+
+legend_mula: "mūla (Mādhavanidāna)"
+commentaries:
+  madhukosa:
+    name: "Madhukośa"
+    legend: '<span class="comm-swatch comm-swatch-1"></span>indented: Madhukośa'
+  atankadarpana:
+    name: "Ātaṅkadarpaṇa"
+    legend: '<span class="comm-swatch comm-swatch-2"></span>indented: Ātaṅkadarpaṇa'
+
+# As on the earlier site: each commentary has a differently coloured rule
+# (echoing NIIMH's own colour-coding), with a matching dot in the legend.
+extra_css: |
+  :root {
+    --comm-madhukosha: #00ff00; /* #4f6b76*/
+    --comm-atankadarpana: #3399ff; /*#6a7a45*/
+  }
+  .bhasya.comm-1 { border-left-color: var(--comm-madhukosha); }
+  .bhasya.comm-2 { border-left-color: var(--comm-atankadarpana); }
+  .comm-swatch {
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 999px;
+    margin: 0 0.3em 0 0.6em;
+    vertical-align: middle;
+  }
+  .comm-swatch-1 { background: var(--comm-madhukosha); }
+  .comm-swatch-2 { background: var(--comm-atankadarpana); }
+  .home-intro + .chapter-list { margin: 2rem auto 0; }
+
+mula:
+  file: madhavanidana-mula.xml
+  label: "Mūla only"
+tei_label: "Mūla with the Madhukośa and Ātaṅkadarpaṇa"
+tei_label_short: "Mūla with commentaries"   # on the collection home page
+download_note: "Download the complete text as a single TEI&nbsp;P5 XML file:"

@@ -1,0 +1,90 @@
+# Settings for e-Vāgbhaṭa. The text itself is astangahrdaya-full.xml, the
+# master copy: the reading pages, the search index and both downloads are
+# made from it by tools/tei2site.py at every build. See tools/text.yml.example
+# for what each setting does.
+
+tei: astangahrdaya-full.xml
+
+site_title: "e-Vāgbhaṭa"
+work: "Aṣṭāṅgahṛdaya"
+commentary: "with Aruṇadatta's Sarvāṅgasundarā and Hemādri's Āyurvedarasāyana"
+tagline: "The Aṣṭāṅgahṛdaya, with two commentaries, in IAST"
+blurb: >
+  Vāgbhaṭa's verse synthesis of the medical tradition. Hemādri's
+  commentary is present only where the source preserves it.
+source: "vedotpatti.in"
+description: >
+  A digital reading edition of the Aṣṭāṅgahṛdaya of Vāgbhaṭa, a Sanskrit
+  treatise on medicine, with the commentaries of Aruṇadatta
+  (Sarvāṅgasundarā) and, where the source preserves it, Hemādri
+  (Āyurvedarasāyana). Text and translit. conversion sourced from
+  vedotpatti.in; see the About page for scope and known limitations.
+
+intro: |
+  <p>
+    The Aṣṭāṅgahṛdaya of Vāgbhaṭa, a Sanskrit treatise on medicine, is organized
+    into six sthānas (sections). It is read here alongside two commentaries:
+    Aruṇadatta's <em>Sarvāṅgasundarā</em>, preserved throughout, and Hemādri's
+    <em>Āyurvedarasāyana</em>, preserved for part of the text. All three are
+    distinguished typographically. Choose a sthāna below to browse its adhyāyas
+    (chapters).
+  </p>
+  <p>
+    Transcribed from the
+    <a href="https://n2t.net/ark:/13960/t12p44f4h/">1939 edition edited by Kunte et al.</a>.
+  </p>
+footer: >
+  Text and IAST conversion sourced from
+  <a href="https://vedotpatti.in/samhita/Vag/ehrudayam/" target="_blank" rel="noopener">vedotpatti.in</a>.
+  See the <a href="{{ '/about/' | relative_url }}">About</a> page for scope and
+  known limitations.
+about: about.md
+copy: [LICENSE]
+
+# Section addresses (…/eHrdaya/<slug>/) are those of the earlier site.
+section_word: "Sthāna"
+chapter_word: "adhyāyas"
+sections:
+  - {slug: sutrasthana, name: "Sūtrasthāna", subtitle: "General Principles"}
+  - {slug: sharirasthana, name: "Śārīrasthāna", subtitle: "Anatomy"}
+  - {slug: nidanasthana, name: "Nidānasthāna", subtitle: "Diagnosis"}
+  - {slug: cikitsasthana, name: "Cikitsāsthāna", subtitle: "Therapeutics"}
+  - {slug: kalpasiddhisthana, name: "Kalpasiddhisthāna", subtitle: "Pharmaceutics"}
+  - {slug: uttarasthana, name: "Uttarasthāna", subtitle: "Supplementary Section"}
+
+pages: pages.yml
+title_format: "{n}. {title}"
+
+commentaries:
+  sarvangasundara:
+    name: "Aruṇadatta's Sarvāṅgasundarā"
+    toggle: "Show Aruṇadatta"
+    legend: "Sa.: Aruṇadatta's Sarvāṅgasundarā"
+  ayurvedarasayana:
+    name: "Hemādri's Āyurvedarasāyana"
+    toggle: "Show Hemādri"
+    legend: "Ā. rā.: Hemādri's Āyurvedarasāyana"
+    absent_note: "not preserved for this chapter in the source"
+
+# As on the earlier site: both commentaries smaller and indented, but the
+# rule and the "Sa." / "Ā. rā." label are muted for Aruṇadatta and gold for
+# Hemādri, so the two can be told apart at a glance.
+extra_css: |
+  .bhasya { margin: 1.2rem 0 1.2rem 1.5rem; }
+  .bhasya.comm-2 { border-left-color: var(--gold); }
+  .chapter-text .commentator-label {
+    display: inline-block;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 0.82em;
+    margin-right: 0.4em;
+  }
+  .chapter-text .comm-1 .commentator-label { color: var(--muted); }
+  .chapter-text .comm-2 .commentator-label { color: var(--gold); }
+
+mula:
+  file: astangahrdaya-mula.xml
+  label: "Mūla only"
+tei_label: "Mūla with Aruṇadatta's and Hemādri's commentaries"
+tei_label_short: "Mūla with commentaries"   # on the collection home page
+download_note: "Download the complete text as a single TEI&nbsp;P5 XML file:"
