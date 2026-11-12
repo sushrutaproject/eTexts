@@ -9,6 +9,7 @@ site_title: "e-Mādhavanidāna"
 work: "Mādhavanidāna"
 commentary: "with the Madhukośa and Ātaṅkadarpaṇa"
 tagline: "The Mādhavanidāna, in IAST"
+home_subtitle: "A reading edition of the Mādhavanidāna, in IAST"   # under the title on the home page
 blurb: >
   Mādhavakara's compendium of disease diagnosis, in 70 chapters.
   Based on the 1955 edition of Yādavaśarman Trivikrama Ācārya.
@@ -87,4 +88,4 @@ mula:
   label: "Mūla only"
 tei_label: "Mūla with the Madhukośa and Ātaṅkadarpaṇa"
 tei_label_short: "Mūla with commentaries"   # on the collection home page
-download_note: "Download the complete text as a single TEI&nbsp;P5 XML file:"
+download_note: "Download the complete text as a single, validating TEI&nbsp;P5 XML file:"

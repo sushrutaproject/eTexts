@@ -9,6 +9,7 @@ site_title: "e-Vāgbhaṭa"
 work: "Aṣṭāṅgahṛdaya"
 commentary: "with Aruṇadatta's Sarvāṅgasundarā and Hemādri's Āyurvedarasāyana"
 tagline: "The Aṣṭāṅgahṛdaya, with two commentaries, in IAST"
+home_subtitle: "A reading edition of the Aṣṭāṅgahṛdaya, in IAST"   # under the title on the home page
 blurb: >
   Vāgbhaṭa's verse synthesis of the medical tradition. Hemādri's
   commentary is present only where the source preserves it.
@@ -87,4 +88,4 @@ mula:
   label: "Mūla only"
 tei_label: "Mūla with Aruṇadatta's and Hemādri's commentaries"
 tei_label_short: "Mūla with commentaries"   # on the collection home page
-download_note: "Download the complete text as a single TEI&nbsp;P5 XML file:"
+download_note: "Download the complete text as a single, validating TEI&nbsp;P5 XML file:"

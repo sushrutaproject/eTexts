@@ -21,7 +21,7 @@ Mūla blocks are <div class="mula">; commentary blocks are
 <nav class="breadcrumb">
   <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
   {% unless site.single_section %}<a href="{{ page.sthana_slug | prepend: '/' | append: '/' | relative_url }}">{{ info.name }}</a> &rsaquo;{% endunless %}
-  {{ page.adhyaya }}
+  {% if site.single_section %}{{ page.title }}{% else %}{{ page.adhyaya }}{% endif %}
 </nav>
 
 <div class="chapter-header">
@@ -29,7 +29,7 @@ Mūla blocks are <div class="mula">; commentary blocks are
 </div>
 
 {% capture toggles %}{% for cm in site.data.commentaries %}{% capture marker %}comm-{{ cm.n }}"{% endcapture %}{% if content contains marker %}
-  <label><input type="checkbox" class="comm-toggle" data-comm="{{ cm.n }}" checked> {{ cm.toggle | default: cm.name | prepend: "Show " }}</label>{% endif %}{% endfor %}{% endcapture %}
+  <label><input type="checkbox" class="comm-toggle" data-comm="{{ cm.n }}" checked> {% if cm.toggle %}{{ cm.toggle }}{% else %}Show {{ cm.name }}{% endif %}</label>{% endif %}{% endfor %}{% endcapture %}
 {% assign toggles_stripped = toggles | strip %}
 {% if toggles_stripped != "" and has_mula %}
 <div class="text-controls">

@@ -17,18 +17,79 @@
 #   A short description, shown on the home-page card and the text's
 #   own home page.
 # source: "SARIT"                                       # 'source:' on the card
+# description: >          # for search engines (<meta name="description">)
+#   ...
+# home_subtitle: "A reading edition of the Bhelasaṃhitā, in IAST"  # under the title
+
+# The text's home page: an introduction in HTML (instead of the blurb),
+# and the footer of every page (HTML; Liquid such as
+# {{ '/about/' | relative_url }} may be used in both):
+# intro: |
+#   <p>The Bhelasaṃhitā ...</p>
+# footer: >
+#   Transcribed from ... See the <a href="{{ '/about/' | relative_url }}">About</a> page.
+
+# A hand-written About page in the folder, used instead of the one made
+# from the TEI header (a short account of the TEI file is added at its foot);
+# and other files of the folder to publish as they are:
+# about: about.md
+# copy: [LICENSE]
 
 # Names for the sections (sthānas, khaṇḍas...), in order, when the TEI
 # has no usable <head> for them:
 # sections:
 #   - "Sūtrasthāna"
 #   - "Nidānasthāna"
+# Each can also fix the section's address (…/eBhela/<slug>/) and give a
+# subtitle shown on the home and section pages:
+#   - {slug: sutrasthana, name: "Sūtrasthāna", subtitle: "General Principles"}
+# On the home page's section cards: "Sthāna 1", "12 adhyāyas":
+# section_word: "Sthāna"
+# chapter_word: "adhyāyas"
+
+# Chapter pages. pages.yml maps the xml:id of each chapter <div> to the
+# name of its page (…/<section>/<name>/), so that addresses stay the same
+# whatever the <head>s say; chapters not listed get "001-<head>" names.
+# pages: pages.yml
+# Chapter titles, from the <head> ({title}) and the div's @n ({n}):
+# title_format: "{n}. {title}"
+# <div>s of these types inside a chapter become pages of their own, with
+# titles from sub_title_format ({n}, {m} = the sub-division's @n, {parent}
+# = the chapter's head, {title} = its own head):
+# split_chapters: [pada]
+# sub_title_format: "{n}/{m}. {parent} - {title}"
+# Heading of the notes at the foot of each chapter:
+# notes_heading: "pāṭhāntarāḥ"
 
 # Names for the commentaries' show/hide switches, by the key printed in the
 # build log ("commentaries: ... (key)"):
 # commentaries:
 #   commentary1: "Aruṇadatta's Sarvāṅgasundarā"
 #   commentary2: "Hemādri's Āyurvedarasāyana"
+# or, in full: the switch's label, the text in the legend beside the
+# switches (HTML), and a remark shown in the legend on chapters that lack it:
+#   commentary2:
+#     name: "Hemādri's Āyurvedarasāyana"
+#     toggle: "Show Hemādri"
+#     legend: "Ā. rā.: Hemādri's Āyurvedarasāyana"
+#     absent_note: "not preserved for this chapter in the source"
+# The legend's first entry ("Larger type: ..."):
+# legend_mula: "mūla (Mādhavanidāna)"
+
+# CSS added to the text's stylesheet, e.g. to colour the rule beside the
+# second commentary (commentaries are .bhasya.comm-1, .bhasya.comm-2 ...):
+# extra_css: |
+#   .bhasya.comm-2 { border-left-color: var(--gold); }
+
+# Downloads. Besides the TEI file itself, a root-text-only version can be
+# made from it at every build (all commentary blocks, and the notes in
+# them, left out); it is never stored, so only the one file is edited:
+# mula:
+#   file: bhelasamhita-mula.xml
+#   label: "Mūla only"
+# tei_label: "Mūla with commentary"          # the button for the TEI file
+# tei_label_short: "Mūla with commentary"    # the same, on the collection home page
+# download_note: "Download the complete text as a TEI&nbsp;P5 XML file:"
 
 # Where the chapters are, if the automatic choice is wrong:
 #   0 = the top-level <div>s are the chapters (no sections)

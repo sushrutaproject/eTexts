@@ -6,9 +6,10 @@ tei2site.py -- turn one TEI file into a complete eTexts reading site.
 
 SRC_DIR is a folder of the eTexts repository that holds one TEI file
 (and optionally a `text.yml` with overrides, see README). OUT_DIR is
-written from scratch as a Jekyll site in the same form as the
-hand-built texts (eSushruta etc.), ready for build.rb to build. META
+written from scratch as a Jekyll site (in the same form as the former
+hand-built sites kept in legacy/), ready for build.rb to build. META
 receives the details the collection home page needs (title, blurb...).
+Every setting text.yml can make is listed in tools/text.yml.example.
 
 The converter is deliberately tolerant: TEI from different projects
 (our own eTexts downloads, SARIT, GRETIL-style files, private
@@ -420,7 +421,10 @@ class Renderer:
         inner = self.inline_children(el)
         if tag == "l":
             return '<span class="l">' + inner + "</span>" + t
-        if tag in ("lg", "p", "ab", "head", "trailer", "quote", "cit", "div", "sp", "epigraph", "floatingText"):
+        if tag == "lg":
+            # a verse inside a block (e.g. <ab><lg>…</lg></ab>): still one line per <l>
+            return '<span class="blk lg">' + inner + "</span> " + t
+        if tag in ("p", "ab", "head", "trailer", "quote", "cit", "div", "sp", "epigraph", "floatingText"):
             return '<span class="blk">' + inner + "</span> " + t
         if tag == "label":
             if norm(el.get("type")) == "siglum" or el.getparent() is not None and classify(el.getparent())[0] == "c":
@@ -1162,6 +1166,7 @@ def main():
         "chapter_word": str(cfg.get("chapter_word") or "chapters"),
         "legend_mula": str(cfg.get("legend_mula") or work),
         "has_intro": bool(cfg.get("intro")),
+        "home_subtitle": str(cfg.get("home_subtitle") or ""),
         "single_section": single,
         "baseurl": "/" + text_id,
         "url": "",

@@ -4,7 +4,7 @@ title: Home
 ---
 <div class="home-intro">
   <h1>{{ site.title }}</h1>
-  <p class="subtitle">{{ site.tagline }}</p>
+  <p class="subtitle">{{ site.home_subtitle | default: site.tagline }}</p>
   {% if site.has_intro %}{% include intro.html %}{% else %}
   <p>{{ site.description }}</p>
   {% if site.commentary_line != "" %}<p>The {{ site.work }} is shown {{ site.commentary_line }}, distinguished typographically from the root text.</p>{% endif %}

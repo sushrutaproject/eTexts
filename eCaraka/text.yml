@@ -9,6 +9,7 @@ site_title: "e-Caraka"
 work: "Carakasaṃhitā"
 commentary: "with Cakrapāṇidatta's Āyurvedadīpikā"
 tagline: "The Carakasaṃhitā, in IAST"
+home_subtitle: "A reading edition of the Carakasaṃhitā, in IAST"   # under the title on the home page
 blurb: >
   The foundational treatise of internal medicine, read with
   Cakrapāṇidatta's eleventh-century commentary.
@@ -71,4 +72,4 @@ mula:
   label: "Mūla only"
 tei_label: "Mūla with Cakrapāṇidatta's commentary"
 tei_label_short: "Mūla with commentary"   # on the collection home page
-download_note: "Download the complete text as a single TEI&nbsp;P5 XML file:"
+download_note: "Download the complete text as a single, validating TEI&nbsp;P5 XML file:"

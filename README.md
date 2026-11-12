@@ -12,29 +12,43 @@ across the whole collection.
 | `eHrdaya/` | Aṣṭāṅgahṛdaya, with Aruṇadatta and Hemādri | `/eTexts/eHrdaya/` |
 | `eMadhava/` | Mādhavanidāna, with the Madhukośa and Ātaṅkadarpaṇa | `/eTexts/eMadhava/` |
 | `eSharngadhara/` | Śārṅgadharasaṃhitā, with Āḍhamalla and Kāśīrāma | `/eTexts/eSharngadhara/` |
+| `eSangraha/` | Aṣṭāṅgasaṅgraha | `/eTexts/eSangraha/` |
 
-Each directory was formerly its own repository in the `sushrutaproject`
-organization; their full commit histories were carried over
-(`git log -- eSushruta/` shows them).
+**The TEI file of each text is the master copy.** Every reading page,
+the search index and the downloads are generated from it at each build;
+to correct or improve a text (word division, verse markup, readings,
+notes), edit its TEI file and push. See [Editing a text](#editing-a-text).
+
+The first five directories were formerly their own repositories in the
+`sushrutaproject` organization; their full commit histories were carried
+over (`git log -- eSushruta/` shows them). They began as hand-built
+Jekyll sites, scraped from the digital editions named on their About
+pages, from which their TEI files were generated; since November 2026
+the direction is reversed and the TEI files are primary. The former
+sites, the scrapers and the HTML→TEI scripts are kept, unused, in
+`legacy/` (see `legacy/README.md`).
 
 ## How it fits together
 
 ```
-texts.yml                 register of hand-built texts (and order/overrides for TEI texts)
+texts.yml                 order of the texts on the home page and in the menus
 build.rb                  builds everything into _site/
 tools/tei2site.py         converts a folder holding a TEI file into a reading site
-tools/tei-template/       layouts, CSS etc. used for every TEI-generated text
+tools/tei-template/       layouts, CSS etc. used for every text
+tools/text.yml.example    every setting a text.yml can make
 Gemfile                   one Gemfile for every build (Jekyll 3.10)
 .github/workflows/pages.yml   builds and deploys on every push to main
 portal/                   the collection home page, combined search, About
-eCaraka/ eSushruta/ ...   one complete Jekyll site per text (unchanged in design)
+eCaraka/ eSushruta/ ...   one folder per text: its TEI file, and its settings
+legacy/                   the former hand-built sites and their scripts (not built)
 ```
 
-`build.rb` builds each text as its own Jekyll site into `_site/<id>/`,
-then builds the portal into `_site/`. Each text keeps its own layouts,
-CSS and reading controls. Two values are injected into each text at
-build time: `corpus_root` (the collection's URL, used by the "eTexts /"
-link and the header search box) and `text_id` (its directory name).
+`build.rb` converts each text's TEI file into a Jekyll site in a scratch
+directory (`tools/tei2site.py`), builds it into `_site/<id>/`, then
+builds the portal into `_site/`. Nothing generated is stored in the
+repository. Two values are injected into each text at build time:
+`corpus_root` (the collection's URL, used by the "eTexts /" link and the
+header search box) and `text_id` (its directory name).
 
 ### Search
 
@@ -47,12 +61,12 @@ links and bookmarks keep working.
 
 The search reads the per-sthāna index files that every text produces
 (`<id>/search-index/<sthāna>.json`); the list of sthānas comes from each
-text's `_data/sthanas.yml`. Each chapter in an index is a list of
+text's sections. Each chapter in an index is a list of
 segments in reading order, tagged `m` (mūla: `<div class="mula">`), `c`
 (commentary: any other top-level `<div>`) or `n` (note: each item of
 `<section class="notes">`), which is what lets the search look in the
 mūla, commentaries and notes separately. The segments are made by
-`_includes/search-entry.json`, one identical copy in each text.
+`tools/tei-template/_includes/search-entry.json`.
 
 Shared by every text and served from the portal: `assets/css/shared.css`
 (search-hit highlight colour, `--hit-bg`) and
@@ -129,26 +143,67 @@ To try a TEI file before pushing it:
 `python3 tools/tei2site.py eBhela /tmp/eBhela-site` (needs
 `pip install -r tools/requirements.txt`) prints the same report.
 
+## Editing a text
+
+Each of the six texts is a folder holding:
+
+| File | What it is |
+|---|---|
+| `<name>.xml` (e.g. `eCaraka/carakasamhita-full.xml`) | the TEI file: **the text itself, and the only file to edit for it** |
+| `text.yml` | the text's settings: title, blurb, section names, subtitles and addresses, commentary labels, home-page introduction, footer, colours… (see `tools/text.yml.example`) |
+| `pages.yml` | the address of each chapter page, by the `xml:id` of its `<div>` (first five texts only) |
+| `about.md` | the hand-written About page (first five texts only; a short account of the TEI file is added at its foot) |
+| `LICENSE` | published as it stands, where present |
+
+For the first five texts the build also writes a **mūla-only TEI file**
+(`…-mula.xml`, offered for download beside the full one): the full file
+with every commentary block, and the notes inside them, left out
+(`mula:` in `text.yml`). It is never stored or edited.
+
+Things to know when editing a TEI file:
+
+- **Page addresses don't change with the text.** They come from
+  `pages.yml`, keyed by the chapter `<div>`'s `xml:id`, so rewording a
+  `<head>` (e.g. adding word division) leaves every link working. Keep
+  the `xml:id`s; a new chapter without an entry gets an address made
+  from its number and `<head>`.
+- **Mūla and commentary** are told apart by `@type` (`mula` /
+  `commentary`, with `@subtype` naming the commentary) on block elements:
+  `ab`, `p`, `lg`, `div`… So prose and verse can be marked up as you like:
+  `<lg type="mula"><l>…</l><l>…</l></lg>`, or a `<div type="mula">`
+  holding `<p>`s and `<lg>`s, or an `<lg>` inside an `<ab type="mula">`.
+  Each `<l>` is shown on a line of its own; the search reads the lines of
+  a verse as continuous text.
+- **Chapter titles** are made from the `<head>` and the `@n` of the
+  chapter `<div>` (`title_format` in `text.yml`, e.g. "3. jvaracikitsitam").
+- In e-Caraka, the pādas of Cikitsāsthāna 1 and 2 (`div type="pada"`)
+  each get a page of their own (`split_chapters: [pada]`).
+
+Check a change before pushing with
+`python3 tools/tei2site.py eCaraka /tmp/eCaraka-site`, which prints the
+conversion report (number of chapters, blocks, notes, and any warnings).
+
 ## Adding a hand-built text
 
-A text can also be a complete Jekyll site of its own, as the first five
-are. Put the site in its own folder; it then needs:
+`build.rb` can still build a complete Jekyll site of its own, as the
+first five texts once were (`legacy/` keeps them as examples). Put the
+site in its own folder; it then needs:
 
 - `_data/sthanas.yml`: one entry per section collection
   (`slug: {name, subtitle, count}`); a text with no sthāna division has a
-  single entry, as in `eMadhava/`;
+  single entry, as in `legacy/eMadhava/`;
 - its chapter HTML as top-level `<div class="mula">` blocks, other
   top-level `<div>`s for commentary, and an optional
-  `<section class="notes">` list, as in the existing texts;
-- `_includes/search-entry.json` (copy it from another text) and
-  `search-index/<slug>.json` for each section (copy one from another text
+  `<section class="notes">` list, as in the sites in `legacy/`;
+- `_includes/search-entry.json` (copy it from `tools/tei-template/`) and
+  `search-index/<slug>.json` for each section (copy one from a site in `legacy/`
   and change the collection name);
 - in `_layouts/default.html` and `_layouts/chapter.html`, the links to
-  the shared `shared.css` and `search-highlight.js`, as in the others;
+  the shared `shared.css` and `search-highlight.js`, as in the sites in `legacy/`;
 - in `_includes/header.html`, the "eTexts /" link and the header search
   form pointing at `{{ site.corpus_root }}/search/` with
-  `scope` = `{{ site.text_id }}`, as in the existing texts;
-- `search.html` replaced by the short forwarding page used in the others;
+  `scope` = `{{ site.text_id }}`, as in the sites in `legacy/`;
+- `search.html` replaced by the short forwarding page in `tools/tei-template/`;
 - an entry in `texts.yml` (id, site_title, work, commentary, blurb,
   source, tei), since a hand-built site has no TEI header to read these
   from.
