@@ -4,9 +4,11 @@ title: Home
 ---
 <div class="home-intro">
   <h1>{{ site.title }}</h1>
-  <p class="subtitle">{{ site.tagline }}</p>
+  <p class="subtitle">{{ site.home_subtitle | default: site.tagline }}</p>
+  {% if site.has_intro %}{% include intro.html %}{% else %}
   <p>{{ site.description }}</p>
   {% if site.commentary_line != "" %}<p>The {{ site.work }} is shown {{ site.commentary_line }}, distinguished typographically from the root text.</p>{% endif %}
+  {% endif %}
 </div>
 
 {% if site.single_section %}
@@ -24,17 +26,20 @@ title: Home
   <div class="sthana-grid">
     {% for s in site.data.sthanas %}
       <a class="sthana-card" href="{{ s[0] | prepend: '/' | append: '/' | relative_url }}">
-        <div class="num">{{ forloop.index }}</div>
+        <div class="num">{% if site.section_word != "" %}{{ site.section_word }} {% endif %}{{ forloop.index }}</div>
         <h2>{{ s[1].name }}</h2>
-        <p class="count">{{ s[1].count }} chapters</p>
+        {% if s[1].subtitle != "" %}<p class="subtitle">{{ s[1].subtitle }}</p>{% endif %}
+        <p class="count">{{ s[1].count }} {{ site.chapter_word }}</p>
       </a>
     {% endfor %}
   </div>
 {% endif %}
 
 <div class="tei-download">
-  <p>This edition is generated from a TEI file, which you can download:</p>
+  <p>{{ site.download_note }}</p>
   <div class="tei-buttons">
-    <a class="tei-button" href="{{ site.tei_file | prepend: '/' | relative_url }}" download>&#8595; TEI source file</a>
+    {% for d in site.downloads %}
+    <a class="tei-button" href="{{ d.file | prepend: '/' | relative_url }}" download>&#8595; {{ d.label }}</a>
+    {% endfor %}
   </div>
 </div>

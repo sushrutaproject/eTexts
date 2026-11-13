@@ -722,3 +722,10 @@ main {
   padding-left: 0;
   border-left: none;
 }
+
+/* A word or clause the source left untransliterated, shown as it stands
+   there (TEI seg[@type='untransliterated']). */
+.chapter-text .untransliterated {
+  border-bottom: 1px dotted var(--muted);
+  cursor: help;
+}

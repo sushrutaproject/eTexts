@@ -1,0 +1,77 @@
+# Page names of eMadhava, by the xml:id of each chapter <div> in the TEI file.
+#
+# The address of a chapter page is  .../eMadhava/<section>/<page name>/
+# These names were fixed when the edition was a hand-built site, so they
+# are kept here to keep existing links, bookmarks and citations working.
+# A chapter that is not listed (e.g. a new one) gets a name made from its
+# number and <head>. Do not change a name once it is published.
+mn.1: 01-pancanidanalaksanam
+mn.2: 02-jvaranidanam
+mn.3: 03-atisaranidanam
+mn.4: 04-grahaninidanam
+mn.5: 05-arsonidanam
+mn.6: 06-agnimandyajirnavisucikalasakavilambikanidanam
+mn.7: 07-krminidanam
+mn.8: 08-pandurogakamalakumbhakamalahalimakanidanam
+mn.9: 09-raktapittanidanam
+mn.10: 10-rajayaksmaksataksinanidanam
+mn.11: 11-kasanidanam
+mn.12: 12-hikkasvasanidanam
+mn.13: 13-svarabhedanidanam
+mn.14: 14-arocakanidanam
+mn.15: 15-chardinidanam
+mn.16: 16-trsnanidanam
+mn.17: 17-murchabhramanidratandrasannyasanidanam
+mn.18: 18-panatyayaparamadapanajirnapanavibhramanidanam
+mn.19: 19-dahanidanam
+mn.20: 20-unmadanidanam
+mn.21: 21-apasmaranidanam
+mn.22: 22-vatavyadhinidanam
+mn.23: 23-vataraktanidanam
+mn.24: 24-urustambhanidanam
+mn.25: 25-amavatanidanam
+mn.26: 26-sulaparinamasulannadravasulanidanam
+mn.27: 27-udavartanahanidanam
+mn.28: 28-gulmanidanam
+mn.29: 29-hrdroganidanam
+mn.30: 30-mutrakrcchranidanam
+mn.31: 31-mutraghatanidanam
+mn.32: 32-asmarinidanam
+mn.33: 33-pramehapramehapidakanidanam
+mn.34: 34-medoroganidanam
+mn.35: 35-udaranidanam
+mn.36: 36-sothanidanam
+mn.37: 37-vrddhinidanam
+mn.38: 38-galagandagandamalapacigranthyarbudanidanam
+mn.39: 39-slipadanidanam
+mn.40: 40-vidradhinidanam
+mn.41: 41-vranasothanidanam
+mn.42: 42-sariravrananidanam
+mn.43: 43-sadyovrananidanam
+mn.44: 44-bhagnanidanam
+mn.45: 45-nadivrananidanam
+mn.46: 46-bhagandaranidanam
+mn.47: 47-upadamsanidanam
+mn.48: 48-sukadosanidanam
+mn.49: 49-kusthanidanam
+mn.50: 50-sitapittodardakothanidanam
+mn.51: 51-amlapittanidanam
+mn.52: 52-visarpanidanam
+mn.53: 53-visphotanidanam
+mn.54: 54-masurikanidanam
+mn.55: 55-ksudraroganidanam
+mn.56: 56-mukharoganidanam
+mn.57: 57-karnaroganidanam
+mn.58: 58-nasaroganidanam
+mn.59: 59-netraroganidanam
+mn.60: 60-siroroganidanam
+mn.61: 61-asrgdaranidanam
+mn.62: 62-yonivyapannidanam
+mn.63: 63-yonikandanidanam
+mn.64: 64-mudhagarbhanidanam
+mn.65: 65-sutikaroganidanam
+mn.66: 66-stanaroganidanam
+mn.67: 67-stanyadustinidanam
+mn.68: 68-balaroganidanam
+mn.69: 69-visaroganidanam
+mn.70: 70-visayanukramanika

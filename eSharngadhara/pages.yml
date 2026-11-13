@@ -1,0 +1,39 @@
+# Page names of eSharngadhara, by the xml:id of each chapter <div> in the TEI file.
+#
+# The address of a chapter page is  .../eSharngadhara/<section>/<page name>/
+# These names were fixed when the edition was a hand-built site, so they
+# are kept here to keep existing links, bookmarks and citations working.
+# A chapter that is not listed (e.g. a new one) gets a name made from its
+# number and <head>. Do not change a name once it is published.
+sd.1.1: 01-manaparibhasadhyayah
+sd.1.2: 02-bhaisajyakhyanakadhyayah
+sd.1.3: 03-nadipariksadividhiradhyayah
+sd.1.4: 04-dipanapacanadhyayah
+sd.1.5: 05-kaladikakhyanadhyayah
+sd.1.6: 06-athaharadigatiradhyayah
+sd.1.7: 07-rogagananadhyayah
+sd.2.1: 01-svarasadhyayah
+sd.2.2: 02-kvathakalpanadhyayah
+sd.2.3: 03-phantadikalpanadhyayah
+sd.2.4: 04-himakalpanadhyayah
+sd.2.5: 05-kalkakalpanadhyayah
+sd.2.6: 06-curnakalpanadhyayah
+sd.2.7: 07-gutikadhikaradhyayah
+sd.2.8: 08-avalehadhikaradhyayah
+sd.2.9: 09-tailadhikaradhyayah
+sd.2.10: 10-asavaristakalpanadhyayah
+sd.2.11: 11-dhatusodhanamaranakalpanadhyayah
+sd.2.12: 12-rasakalpanadhyayah
+sd.3.1: 01-snehadhyayah
+sd.3.2: 02-svedavidhiradhyayah
+sd.3.3: 03-vamanavidhiradhyayah
+sd.3.4: 04-virecanavidhiradhyayah
+sd.3.5: 05-snehabastividhiradhyayah
+sd.3.6: 06-niruhabastividhiradhyayah
+sd.3.7: 07-uttarabastividhiradhyayah
+sd.3.8: 08-nasyavidhiradhyayah
+sd.3.9: 09-dhumapanavidhiradhyayah
+sd.3.10: 10-gandusavidhiradhyayah
+sd.3.11: 11-lepanadividhiradhyayah
+sd.3.12: 12-raktamoksavidhiradhyayah
+sd.3.13: 13-netrakarmavidhiradhyayah

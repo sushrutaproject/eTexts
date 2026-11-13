@@ -6,7 +6,7 @@ layout: default
 
 <div class="sthana-header">
   <h1>{{ info.name }}</h1>
-  <p class="subtitle">{{ info.count }} chapters</p>
+  <p class="subtitle">{% if info.subtitle != "" %}{{ info.subtitle }} &middot; {% endif %}{{ info.count }} {{ site.chapter_word }}</p>
 </div>
 
 {{ content }}

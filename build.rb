@@ -74,7 +74,7 @@ def text_error(id, msg)
 end
 
 # Folders that are not texts.
-NOT_TEXTS = %w[portal tools vendor node_modules].freeze
+NOT_TEXTS = %w[portal tools legacy vendor node_modules].freeze
 
 def tei_folder?(dir)
   return false if File.exist?(File.join(dir, "_config.yml"))
