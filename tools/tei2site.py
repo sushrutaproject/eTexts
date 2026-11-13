@@ -365,7 +365,7 @@ class Renderer:
         tag = local(el)
         inner = self.inline_children(el)
         if tag == "lg":
-            return '<p class="lg">' + inner + "</p>"
+            return '<p class="lg%s">' % lg_part(el) + inner + "</p>"
         if tag == "l":
             return '<p class="lg"><span class="l">' + inner + "</span></p>"
         if tag == "trailer":
@@ -423,7 +423,7 @@ class Renderer:
             return '<span class="l">' + inner + "</span>" + t
         if tag == "lg":
             # a verse inside a block (e.g. <ab><lg>…</lg></ab>): still one line per <l>
-            return '<span class="blk lg">' + inner + "</span> " + t
+            return '<span class="blk lg%s">' % lg_part(el) + inner + "</span> " + t
         if tag in ("p", "ab", "head", "trailer", "quote", "cit", "div", "sp", "epigraph", "floatingText"):
             return '<span class="blk">' + inner + "</span> " + t
         if tag == "label":
@@ -527,6 +527,12 @@ class Renderer:
 # --------------------------------------------------------------------------
 # Structure: sections and chapters
 # --------------------------------------------------------------------------
+
+def lg_part(el):
+    """extra class for a verse continued from an earlier block (TEI @part F or M):
+    its first line is indented like the second half of a verse"""
+    return " lg-cont" if (el.get("part") or "").upper() in ("F", "M") else ""
+
 
 def is_structural(el):
     return local(el) in ("div", "div1", "div2", "div3", "div4") and classify(el)[0] is None

@@ -36,6 +36,7 @@ build.rb                  builds everything into _site/
 tools/tei2site.py         converts a folder holding a TEI file into a reading site
 tools/tei-template/       layouts, CSS etc. used for every text
 tools/text.yml.example    every setting a text.yml can make
+tools/spacing/            word spacing and verse tagging of a TEI file (see its README)
 Gemfile                   one Gemfile for every build (Jekyll 3.10)
 .github/workflows/pages.yml   builds and deploys on every push to main
 portal/                   the collection home page, combined search, About
@@ -156,6 +157,7 @@ Each of the six texts is a folder holding:
 | `pages.yml` | the address of each chapter page, by the `xml:id` of its `<div>` (first five texts only) |
 | `about.md` | the hand-written About page (first five texts only; a short account of the TEI file is added at its foot) |
 | `LICENSE` | published as it stands, where present |
+| `<name>-flagged.txt`, `<name>-prose.txt` | notes from the word-spacing and verse-tagging work (`tools/spacing/`): spots to check, and root-text passages left as prose (Śārṅgadhara so far); not published |
 
 For the first five texts the build also writes a **mūla-only TEI file**
 (`…-mula.xml`, offered for download beside the full one): the full file

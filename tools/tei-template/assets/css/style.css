@@ -706,6 +706,7 @@ main {
 .chapter-text .mula p:last-child, .chapter-text .bhasya p:last-child { margin-bottom: 0; }
 .chapter-text .lg .l { display: block; }
 .chapter-text .lg .l + .l { padding-left: 1.5em; }
+.chapter-text .lg.lg-cont > .l:first-child { padding-left: 1.5em; }   /* verse continued after commentary */
 .chapter-text .subhead { font-weight: 700; color: var(--accent); font-size: 0.95em; }
 .chapter-text .trailer { font-style: italic; color: var(--muted); }
 .chapter-text .label { color: var(--link); font-size: 0.8em; margin-right: 0.4em; }
