@@ -1,22 +1,28 @@
 /* ---------------------------------------------------------------
    eTexts portal -- design tokens (shared with the individual texts)
-   Palette drawn from palm-leaf manuscripts: aged-paper ground,
-   warm ink, and the terracotta "rubrication" red traditionally
-   used for chapter/verse numbering.
-   Type: Gentium Book Plus throughout (SIL font built for full
-   IAST diacritic coverage) -- one family, two weights, so long
-   Sanskrit passages never risk a missing-glyph fallback.
+   Palette and type follow the other Suśruta Project sites: navy and
+   saffron on a cool paper ground, Spectral for headings and prose.
+   The Sanskrit reading text stays in Gentium Book Plus (SIL font with
+   full IAST diacritic coverage), so long passages never risk a
+   missing-glyph fallback.
    ------------------------------------------------------------- */
 
 :root {
-  --paper: #f5eedc;
-  --paper-alt: #efe4c8;
-  --ink: #2b2013;
-  --rubric: #9b3a2b;
-  --rubric-dark: #7c2e22;
-  --gold: #8a6b24;
-  --muted: #6e5f49;
-  --line: #d9cba3;
+  /* Standalone copy of the Suśruta Project palette. When the text is
+     published as part of the collection, shared.css (loaded after this
+     file) sets these, adds the dark-mode values, and styles the site
+     chrome -- change the palette there. */
+  --navy: #1E2A44;
+  --saffron: #E0A43A;
+  --paper: #F6F7F9;
+  --card: #FFFFFF;
+  --tint: #EEF1F5;
+  --ink: #16202E;
+  --link: #1E4E8C;
+  --link-hover: #133563;
+  --accent: #8F6210;
+  --muted: #435064;
+  --rule: #DCE2EA;
   --max-width: 44rem;
 }
 
@@ -34,9 +40,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--rubric); text-decoration: none; }
-a:hover, a:focus { color: var(--rubric-dark); text-decoration: underline; }
-a:focus-visible { outline: 2px solid var(--rubric); outline-offset: 2px; }
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
 h1, h2, h3 {
   font-weight: 700;
@@ -49,8 +55,8 @@ h1, h2, h3 {
    ------------------------------------------------------------- */
 
 .site-header {
-  border-bottom: 1px solid var(--line);
-  background: var(--paper-alt);
+  border-bottom: 1px solid var(--rule);
+  background: var(--card);
 }
 
 .site-header-inner {
@@ -70,7 +76,7 @@ h1, h2, h3 {
 }
 
 .site-title a { color: var(--ink); }
-.site-title a:hover { color: var(--rubric); text-decoration: none; }
+.site-title a:hover { color: var(--link); text-decoration: none; }
 
 .site-tagline {
   color: var(--muted);
@@ -87,7 +93,7 @@ h1, h2, h3 {
 }
 
 .site-nav a { color: var(--muted); }
-.site-nav a:hover { color: var(--rubric); }
+.site-nav a:hover { color: var(--link); }
 
 main {
   max-width: 64rem;
@@ -96,7 +102,7 @@ main {
 }
 
 .site-footer {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: 0.9rem;
   text-align: center;
@@ -135,22 +141,22 @@ main {
 }
 
 .sthana-card {
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--rubric);
-  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--link);
+  background: var(--card);
   padding: 1.1rem 1.3rem;
   display: block;
   color: var(--ink);
 }
 
 .sthana-card:hover {
-  border-left-color: var(--rubric-dark);
-  background: #ece0c1;
+  border-left-color: var(--link-hover);
+  background: var(--tint);
   text-decoration: none;
 }
 
 .sthana-card .num {
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.85rem;
   letter-spacing: 0.04em;
 }
@@ -183,7 +189,7 @@ main {
 }
 
 .breadcrumb a { color: var(--muted); }
-.breadcrumb a:hover { color: var(--rubric); }
+.breadcrumb a:hover { color: var(--link); }
 
 .sthana-header h1 {
   font-size: 2rem;
@@ -208,7 +214,7 @@ main {
   align-items: baseline;
   gap: 0.9rem;
   padding: 0.55rem 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--rule);
 }
 
 .chapter-list .badge {
@@ -216,7 +222,7 @@ main {
   min-width: 1.9rem;
   height: 1.9rem;
   border-radius: 999px;
-  background: var(--rubric);
+  background: var(--link);
   color: var(--paper);
   font-size: 0.85rem;
   display: flex;
@@ -226,7 +232,7 @@ main {
 }
 
 .chapter-list a { color: var(--ink); font-size: 1.05rem; }
-.chapter-list a:hover { color: var(--rubric); }
+.chapter-list a:hover { color: var(--link); }
 
 /* ---------------------------------------------------------------
    Chapter reading page
@@ -251,7 +257,7 @@ main {
 }
 
 .verse-marker {
-  color: var(--rubric);
+  color: var(--link);
   font-weight: 700;
   font-size: 0.92em;
 }
@@ -260,7 +266,7 @@ main {
   max-width: var(--max-width);
   margin: 3rem auto 0;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--rule);
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -327,7 +333,7 @@ main {
   font-family: inherit;
   font-size: 0.9rem;
   padding: 0.3rem 0.55rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--rule);
   background: var(--paper);
   color: var(--ink);
   width: 12rem;
@@ -335,7 +341,7 @@ main {
 }
 
 .header-search input[type="search"]:focus {
-  outline: 2px solid var(--rubric);
+  outline: 2px solid var(--link);
   outline-offset: 1px;
 }
 
@@ -344,14 +350,14 @@ main {
   font-family: inherit;
   font-size: 0.9rem;
   padding: 0.3rem 0.8rem;
-  border: 1px solid var(--rubric);
-  background: var(--rubric);
+  border: 1px solid var(--link);
+  background: var(--link);
   color: var(--paper);
   cursor: pointer;
 }
 
 .header-search button:hover,
-.search-form button:hover { background: var(--rubric-dark); }
+.search-form button:hover { background: var(--link-hover); }
 
 /* Search page */
 
@@ -367,13 +373,13 @@ main {
   font-family: inherit;
   font-size: 1.05rem;
   padding: 0.5rem 0.7rem;
-  border: 1px solid var(--line);
-  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  background: var(--card);
   color: var(--ink);
 }
 
 .search-row input[type="search"]:focus {
-  outline: 2px solid var(--rubric);
+  outline: 2px solid var(--link);
   outline-offset: 1px;
 }
 
@@ -417,8 +423,8 @@ main {
   font-family: inherit;
   font-size: 0.95rem;
   padding: 0.25rem 0.4rem;
-  border: 1px solid var(--line);
-  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  background: var(--card);
   color: var(--ink);
 }
 
@@ -434,7 +440,7 @@ main {
   color: var(--muted);
   font-size: 0.95rem;
   padding: 0.5rem 0 1rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--rule);
   margin-bottom: 1.5rem;
 }
 
@@ -442,8 +448,8 @@ main {
 
 .result-sthana h2 {
   font-size: 1.15rem;
-  color: var(--gold);
-  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  border-bottom: 1px solid var(--rule);
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
@@ -457,7 +463,7 @@ main {
 }
 
 .result-chapter h3 a { color: var(--ink); }
-.result-chapter h3 a:hover { color: var(--rubric); }
+.result-chapter h3 a:hover { color: var(--link); }
 
 .hit-count {
   color: var(--muted);
@@ -476,7 +482,7 @@ main {
   font-size: 0.98rem;
   line-height: 1.6;
   padding: 0.45rem 0 0.45rem 0.9rem;
-  border-left: 2px solid var(--line);
+  border-left: 2px solid var(--rule);
   margin-bottom: 0.3rem;
 }
 
@@ -494,7 +500,7 @@ main {
   color: var(--muted);
   font-style: italic;
   font-size: 0.92rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--rule);
   padding-top: 1rem;
 }
 
@@ -503,8 +509,8 @@ main {
 .search-banner {
   font-size: 0.92rem;
   color: var(--muted);
-  background: var(--paper-alt);
-  border-left: 3px solid var(--rubric);
+  background: var(--card);
+  border-left: 3px solid var(--link);
   padding: 0.5rem 0.8rem;
   margin: 0.8rem 0 0;
 }
@@ -515,8 +521,8 @@ main {
 }
 
 .search-warning {
-  background: var(--paper-alt);
-  border-left: 3px solid var(--gold);
+  background: var(--card);
+  border-left: 3px solid var(--accent);
   color: var(--muted);
   font-size: 0.92rem;
   padding: 0.5rem 0.8rem;
@@ -543,7 +549,7 @@ main {
   line-height: 1.7;
   margin: 1.2rem 0 1.8rem 1.5rem;
   padding-left: 1.1rem;
-  border-left: 1px solid var(--line);
+  border-left: 1px solid var(--rule);
 }
 
 @media (max-width: 34rem) {
@@ -559,8 +565,8 @@ main {
   gap: 0.5rem 1.2rem;
   font-size: 0.9rem;
   color: var(--muted);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
   padding: 0.5rem 0;
   margin: 0 0 1.8rem;
 }
@@ -603,13 +609,13 @@ main {
 .notes {
   margin-top: 3rem;
   padding-top: 1.2rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--rule);
   font-size: 0.88em;
 }
 
 .notes h2 {
   font-size: 1.05rem;
-  color: var(--gold);
+  color: var(--accent);
   font-weight: 400;
   font-style: italic;
   margin: 0 0 0.8rem;
@@ -629,13 +635,13 @@ main {
 }
 
 .notes li:target {
-  background: var(--paper-alt);
-  outline: 2px solid var(--line);
+  background: var(--card);
+  outline: 2px solid var(--rule);
   outline-offset: 3px;
 }
 
 .note-num {
-  color: var(--rubric);
+  color: var(--link);
   font-weight: 700;
   min-width: 1.6rem;
   display: inline-block;
@@ -644,7 +650,7 @@ main {
 .note-back { text-decoration: none; font-size: 0.9em; }
 
 .noteref a:target,
-.noteref:target { background: var(--paper-alt); }
+.noteref:target { background: var(--card); }
 
 /* ---------------------------------------------------------------
    TEI download (home page)
@@ -653,9 +659,9 @@ main {
 .tei-download {
   margin-top: 1.75rem;
   padding: 0.9rem 1.1rem 1rem;
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--rubric);
-  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--link);
+  background: var(--card);
 }
 
 .tei-download p {
@@ -673,16 +679,16 @@ main {
 .tei-button {
   display: inline-block;
   padding: 0.35rem 0.9rem;
-  border: 1px solid var(--rubric);
+  border: 1px solid var(--link);
   border-radius: 3px;
   font-size: 0.95rem;
-  color: var(--rubric);
+  color: var(--link);
   background: var(--paper);
 }
 
 .tei-button:hover,
 .tei-button:focus {
-  background: var(--rubric);
+  background: var(--link);
   color: var(--paper);
   text-decoration: none;
 }
@@ -697,8 +703,8 @@ main {
   font-family: inherit;
   font-size: 1rem;
   padding: 0.4rem 0.5rem;
-  border: 1px solid var(--line);
-  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  background: var(--card);
   color: var(--ink);
   max-width: 14rem;
 }
@@ -712,9 +718,9 @@ main {
 }
 
 .text-card {
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--rubric);
-  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--link);
+  background: var(--card);
   padding: 1.1rem 1.3rem 1.2rem;
   display: flex;
   flex-direction: column;
@@ -722,7 +728,7 @@ main {
 
 .text-card h2 { font-size: 1.4rem; margin: 0 0 0.15rem; }
 .text-card h2 a { color: var(--ink); }
-.text-card h2 a:hover { color: var(--rubric); }
+.text-card h2 a:hover { color: var(--link); }
 
 .text-card .commentary {
   color: var(--muted);
@@ -734,7 +740,7 @@ main {
 .text-card .blurb { font-size: 0.98rem; margin: 0 0 0.6rem; }
 
 .text-card .count {
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.85rem;
   margin: 0 0 0.9rem;
 }
@@ -748,7 +754,7 @@ main {
 }
 
 .text-card .tei-link { font-size: 0.85rem; color: var(--muted); }
-.text-card .tei-link:hover { color: var(--rubric); }
+.text-card .tei-link:hover { color: var(--link); }
 
 .collection-count {
   text-align: center;
@@ -774,15 +780,15 @@ main {
 .result-text > h2 {
   font-size: 1.4rem;
   color: var(--ink);
-  border-bottom: 2px solid var(--rubric);
+  border-bottom: 2px solid var(--link);
   padding-bottom: 0.3rem;
   margin-bottom: 1.2rem;
 }
 
 .result-text .result-sthana h3 {
   font-size: 1.1rem;
-  color: var(--gold);
-  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  border-bottom: 1px solid var(--rule);
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
@@ -793,7 +799,7 @@ main {
 }
 
 .result-chapter h4 a { color: var(--ink); }
-.result-chapter h4 a:hover { color: var(--rubric); }
+.result-chapter h4 a:hover { color: var(--link); }
 
 /* "eTexts /" link in front of each text's own title */
 
@@ -815,14 +821,14 @@ main {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--muted);
-  border: 1px solid var(--line);
+  border: 1px solid var(--rule);
   border-radius: 2px;
   padding: 0 0.3rem;
   text-align: center;
   vertical-align: 0.1em;
 }
-.hit-list .reg-m { color: var(--paper); background: var(--rubric); border-color: var(--rubric); }
-.hit-list .reg-c { color: var(--gold); border-color: var(--gold); }
+.hit-list .reg-m { color: var(--paper); background: var(--link); border-color: var(--link); }
+.hit-list .reg-c { color: var(--accent); border-color: var(--accent); }
 
 /* Long Sanskrit compounds must wrap on narrow screens */
 .hit-list li, .result-chapter h4 { overflow-wrap: anywhere; }

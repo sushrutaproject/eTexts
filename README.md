@@ -69,7 +69,9 @@ mūla, commentaries and notes separately. The segments are made by
 `tools/tei-template/_includes/search-entry.json`.
 
 Shared by every text and served from the portal: `assets/css/shared.css`
-(search-hit highlight colour, `--hit-bg`) and
+(the collection's look: the Suśruta Project palette with its dark-mode
+values, fonts, header and footer, cards and buttons; also the search-hit
+highlight colour, `--hit-bg`) and
 `assets/js/search-highlight.js` (highlighting hits on a chapter page).
 
 Searching runs in the browser. The indexes for the whole collection come

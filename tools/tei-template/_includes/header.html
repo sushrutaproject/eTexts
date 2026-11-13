@@ -1,7 +1,23 @@
 <header class="site-header">
+  <div class="umbrella">
+    <nav class="umbrella-inner" aria-label="Suśruta Project websites">
+      <a class="umbrella-home" href="https://sushrutaproject.github.io/"><span lang="sa">सुश्रुत</span> The Suśruta Project</a>
+      <ul>
+        <li><a href="https://github.com/sushrutaproject1/Sushrutasamhita_Saktumiva1/raw/main/translation/incremental_SS_Translation.pdf?raw=true">Translation</a></li>
+        <li><a href="https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/">Edition</a></li>
+        <li><a href="https://sushrutaproject1.github.io/">Project 1</a></li>
+        <li><a href="https://sushrutaproject2.github.io/">Project 2</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="site-header-inner">
+    <div class="brand">
+      <a class="brand-mark" href="{{ site.corpus_root }}/" lang="sa" aria-hidden="true" tabindex="-1">सु</a>
+      <div class="brand-text">
     <div class="site-title"><a class="corpus-link" href="{{ site.corpus_root }}/">eTexts</a> <span class="corpus-sep">/</span> <a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
     <p class="site-tagline">{{ site.tagline }}</p>
+      </div>
+    </div>
     <nav class="site-nav">
       {% if site.single_section %}
         <a href="{{ '/' | relative_url }}">Chapters</a>

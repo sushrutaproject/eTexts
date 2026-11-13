@@ -3,14 +3,464 @@
 
    This one file is loaded by the portal AND by every text, after
    that site's own style.css, so a change here applies everywhere:
-   the search-results page and the highlighted hits on chapter pages.
+   the palette, the fonts, the site header and footer, cards and
+   buttons, the search-results page and the highlighted hits on
+   chapter pages.
    It is published at <collection root>/assets/css/shared.css.
+
+   The look follows the other Suśruta Project sites
+   (sushrutaproject.github.io, sushrutaproject2.github.io): a navy
+   header with saffron accents, a cool paper ground, white cards,
+   Spectral for headings and prose, IBM Plex Sans for small labels.
    ------------------------------------------------------------- */
 
 :root {
+  /* Search hits */
   --hit-bg: #F54927;      /* highlight colour for search hits */
   --hit-text: #2b2013;    /* text on the highlight (dark ink; #fff for white) */
+
+  /* Palette (the same values as the other Suśruta Project sites) */
+  --navy: #1E2A44;
+  --navy-deep: #141D30;
+  --saffron: #E0A43A;
+  --saffron-lt: #F0C77A;
+  --on-navy: #D3D9E4;
+  --on-navy-muted: #C9D2E0;
+  --ink: #16202E;
+  --muted: #435064;
+  --link: #1E4E8C;
+  --link-hover: #133563;
+  --accent: #8F6210;      /* saffron, darkened to be readable as text */
+  --paper: #F6F7F9;
+  --card: #FFFFFF;
+  --rule: #DCE2EA;
+  --tint: #EEF1F5;
+  --shadow: rgba(22, 32, 46, 0.10);
+
+  /* Type. Spectral has the IAST letters (it falls back to Gentium for
+     the rare ṝ and ḹ); IBM Plex Sans does not have ṭ ḍ ṇ ṣ ṃ ḥ ṛ, so it
+     is used only for labels that are always plain English. */
+  --serif: 'Spectral', 'Gentium Book Plus', Georgia, serif;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --text: 'Gentium Book Plus', 'Spectral', Georgia, serif;   /* Sanskrit reading text */
+  --deva: 'Noto Serif Devanagari', 'Spectral', serif;
+  --wide: 1160px;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #E4E8EE;
+    --muted: #9AA5B5;
+    --link: #8FB4E8;
+    --link-hover: #B9D0F2;
+    --accent: #F0C77A;
+    --paper: #0F1626;
+    --card: #18213A;
+    --rule: #2E3850;
+    --tint: #222C45;
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* ---------------------------------------------------------------
+   Base
+   ------------------------------------------------------------- */
+
+body {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+[lang="sa"] { font-family: var(--deva); }
+
+a:hover, a:focus { text-decoration: underline; }
+
+main {
+  max-width: var(--wide);
+  padding: 40px 24px 72px;
+}
+
+/* ---------------------------------------------------------------
+   Site header: the Suśruta Project bar, then this site's own bar
+   ------------------------------------------------------------- */
+
+.site-header {
+  background: var(--navy);
+  color: #fff;
+  border-bottom: 0;
+}
+
+.umbrella {
+  background: var(--navy-deep);
+  font-family: var(--sans);
+  font-size: 13.5px;
+}
+
+.umbrella-inner {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 16px;
+  min-height: 36px;
+}
+
+.umbrella a { color: var(--on-navy-muted); text-decoration: none; }
+.umbrella a:hover, .umbrella a:focus { color: #fff; text-decoration: none; }
+.umbrella-home { font-weight: 500; }
+.umbrella-home span { color: var(--saffron); margin-right: 4px; }
+
+.umbrella ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+}
+
+.umbrella ul a { display: block; padding: 8px 0; }
+
+.site-header-inner {
+  max-width: var(--wide);
+  padding: 14px 24px;
+  align-items: center;
+  gap: 10px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: auto;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 2px;
+}
+
+.brand-mark:hover, .brand-mark:focus { color: var(--navy); text-decoration: none; }
+
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+
+.site-title {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.site-title a, .site-title a:hover { color: #fff; }
+.site-title a:hover { text-decoration: underline; }
+.site-title .corpus-link { color: var(--on-navy-muted); font-weight: 400; }
+.corpus-sep { color: var(--on-navy-muted); }
+
+.site-tagline {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: normal;
+  font-size: 13.5px;
+  color: var(--on-navy-muted);
+}
+
+.site-nav { gap: 2px; font-size: 15.5px; align-items: center; }
+
+.site-nav a {
+  display: block;
+  padding: 8px 11px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.site-nav a:hover, .site-nav a:focus {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav a[aria-current="page"] { background: var(--saffron); color: var(--navy); }
+
+/* Search box in the header */
+
+.header-search input[type="search"] {
+  font-size: 15px;
+  padding: 7px 11px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #fff;
+  color: #16202E;
+}
+
+.header-search input[type="search"]:focus,
+.home-intro input[type="search"]:focus,
+.home-intro select:focus {
+  outline: 2px solid var(--saffron);
+  outline-offset: 1px;
+}
+
+.header-search button,
+.home-intro .search-form button {
+  font-family: var(--sans);
+  font-weight: 600;
+  border-color: var(--saffron);
+  background: var(--saffron);
+  color: var(--navy);
+}
+
+.header-search button:hover,
+.home-intro .search-form button:hover {
+  border-color: var(--saffron-lt);
+  background: var(--saffron-lt);
+}
+
+/* ---------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------- */
+
+.site-footer {
+  background: var(--card);
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 32px 24px 36px;
+}
+
+.site-footer p { max-width: 60rem; margin: 0 auto; }
+
+/* ---------------------------------------------------------------
+   Form controls and buttons
+   ------------------------------------------------------------- */
+
+input[type="search"], select, button { border-radius: 6px; }
+
+.search-row input[type="search"],
+.search-options select,
+.portal-search select { background: var(--card); }
+
+.search-form button {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--card);
+}
+
+.search-options legend,
+.search-options label,
+.text-controls,
+.search-status,
+.hit-count,
+.collection-count,
+.breadcrumb { font-family: var(--sans); font-style: normal; }
+
+.search-options legend { font-weight: 600; }
+.text-controls .legend { font-family: var(--serif); }
+.breadcrumb { font-family: var(--serif); font-size: 15.5px; }
+
+input[type="checkbox"], input[type="radio"] { accent-color: var(--link); }
+
+/* Pill buttons (Read / Search / TEI downloads) */
+
+.tei-button {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--link);
+}
+
+.tei-button:hover, .tei-button:focus {
+  background: var(--tint);
+  border-color: var(--link);
+  color: var(--link-hover);
+}
+
+/* ---------------------------------------------------------------
+   Home pages: a navy band across the page, with the cards
+   overlapping its lower edge
+   ------------------------------------------------------------- */
+
+.home-intro {
+  max-width: none;
+  margin: -41px 0 40px;     /* up over main's padding (and 1px more: no seam) */
+  padding: 49px 0 52px;
+  background: var(--navy);
+  /* extend the band to both edges of the window */
+  box-shadow: 0 0 0 100vmax var(--navy);
+  clip-path: inset(0 -100vmax);
+  color: var(--on-navy);
+  text-align: center;
+}
+
+.home-intro > * { max-width: 44rem; margin-left: auto; margin-right: auto; }
+
+.home-intro h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: clamp(36px, 6vw, 56px);
+  line-height: 1.08;
+  color: #fff;
+}
+
+.home-intro .subtitle {
+  margin-bottom: 20px;
+  font-size: 21px;
+  color: var(--saffron-lt);
+}
+
+.home-intro a { color: var(--saffron-lt); text-decoration: underline; }
+.home-intro a:hover { color: #fff; }
+.home-intro .search-hint { color: var(--on-navy-muted); }
+
+.home-intro .search-row input[type="search"],
+.home-intro select {
+  border-color: transparent;
+  background: #fff;
+  color: #16202E;
+}
+
+@supports selector(:has(a)) {
+  .home-intro:has(+ .sthana-grid),
+  .home-intro:has(+ .text-grid) { margin-bottom: 0; padding-bottom: 120px; }
+
+  .home-intro + .sthana-grid,
+  .home-intro + .text-grid { position: relative; margin-top: -76px; }
+
+  /* On a chapter page the breadcrumb lines up with the text column */
+  .breadcrumb:has(+ .chapter-header) {
+    max-width: calc(var(--max-width) + 6rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Cards */
+
+.sthana-grid, .text-grid { max-width: none; gap: 22px; }
+
+.sthana-card,
+.text-card {
+  border: 0;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 8px 24px var(--shadow);
+  padding: 26px 28px;
+}
+
+.sthana-card:hover {
+  background: var(--card);
+  box-shadow: 0 10px 28px rgba(22, 32, 46, 0.2);
+}
+
+.sthana-card:hover h2 { color: var(--link); }
+
+.sthana-card h2, .text-card h2 { font-size: 25px; }
+.text-card h2 a:hover { text-decoration: none; }
+
+.sthana-card .num,
+.sthana-card .count,
+.text-card .count {
+  font-family: var(--sans);
+  font-size: 13.5px;
+}
+
+.sthana-card .num {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-card .count { font-family: var(--serif); font-size: 15px; }
+.text-card .tei-link { font-family: var(--sans); font-size: 13.5px; }
+
+.tei-download {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-top: 28px;
+}
+
+/* ---------------------------------------------------------------
+   Lists of chapters, reading pages, search results
+   ------------------------------------------------------------- */
+
+.sthana-header h1, .search-page h1, .prose h1 { font-size: clamp(30px, 4.5vw, 40px); }
+.chapter-header h1 { font-size: clamp(26px, 4vw, 34px); }
+
+.chapter-list .badge {
+  font-family: var(--sans);
+  font-weight: 600;
+  background: var(--saffron);
+  color: var(--navy);
+}
+
+.chapter-list a { font-size: 19px; }
+
+/* The Sanskrit itself: Gentium Book Plus, on a white sheet */
+
+.chapter-text,
+.hit-list li {
+  font-family: var(--text);
+}
+
+.chapter-text {
+  max-width: calc(var(--max-width) + 6rem);
+  padding: 40px 3rem;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 8px 24px var(--shadow);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.chapter-header,
+.chapter-nav,
+main > .breadcrumb + .chapter-header,
+.text-controls { max-width: calc(var(--max-width) + 6rem); margin-left: auto; margin-right: auto; }
+
+.verse-marker, .note-num { color: var(--accent); }
+
+.notes li:target,
+.noteref a:target,
+.noteref:target { background: var(--tint); }
+
+.search-banner,
+.search-warning {
+  border-radius: 0 6px 6px 0;
+  background: var(--tint);
+  font-family: var(--sans);
+}
+
+.search-banner { border-left-color: var(--saffron); }
+
+.result-text > h2 { font-size: 27px; border-bottom-color: var(--saffron); }
+
+.hit-list .reg { font-family: var(--sans); font-weight: 600; border-radius: 4px; }
+.hit-list .reg-m { color: #fff; background: var(--navy); border-color: var(--navy); }
 
 /* Hits in the search-results snippets and on chapter pages */
 mark,
@@ -25,3 +475,19 @@ mark.search-hit {
 /* Long Sanskrit compounds must wrap on narrow (phone) screens rather
    than run off the right-hand edge of the page. */
 .chapter-text { overflow-wrap: anywhere; }
+
+/* ---------------------------------------------------------------
+   Narrow screens
+   ------------------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .umbrella-inner { justify-content: center; }
+  .site-header-inner { justify-content: center; }
+  .brand { margin-right: 0; width: 100%; justify-content: center; }
+  .site-nav { justify-content: center; }
+  .site-nav a { padding: 7px 9px; font-size: 15px; }
+  main { padding-left: 16px; padding-right: 16px; }
+  .home-intro { padding-top: 32px; }
+  .chapter-text { padding: 24px 18px; margin-left: -6px; margin-right: -6px; }
+  .sthana-card, .text-card { padding: 22px; }
+}

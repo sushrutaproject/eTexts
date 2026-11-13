@@ -79,7 +79,7 @@
 # CSS added to the text's stylesheet, e.g. to colour the rule beside the
 # second commentary (commentaries are .bhasya.comm-1, .bhasya.comm-2 ...):
 # extra_css: |
-#   .bhasya.comm-2 { border-left-color: var(--gold); }
+#   .bhasya.comm-2 { border-left-color: var(--accent); }
 
 # Downloads. Besides the TEI file itself, a root-text-only version can be
 # made from it at every build (all commentary blocks, and the notes in

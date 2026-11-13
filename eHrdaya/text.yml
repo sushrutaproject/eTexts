@@ -72,7 +72,7 @@ commentaries:
 # Hemādri, so the two can be told apart at a glance.
 extra_css: |
   .bhasya { margin: 1.2rem 0 1.2rem 1.5rem; }
-  .bhasya.comm-2 { border-left-color: var(--gold); }
+  .bhasya.comm-2 { border-left-color: var(--accent); }
   .chapter-text .commentator-label {
     display: inline-block;
     font-weight: 700;
@@ -81,7 +81,7 @@ extra_css: |
     margin-right: 0.4em;
   }
   .chapter-text .comm-1 .commentator-label { color: var(--muted); }
-  .chapter-text .comm-2 .commentator-label { color: var(--gold); }
+  .chapter-text .comm-2 .commentator-label { color: var(--accent); }
 
 mula:
   file: astangahrdaya-mula.xml
