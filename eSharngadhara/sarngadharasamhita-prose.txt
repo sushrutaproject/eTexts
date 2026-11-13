@@ -1,0 +1,249 @@
+# Root-text segments left as prose by tools/spacing/verse.py (line in sarngadharasamhita-full.xml: text)
+127: atha māgadhaparibhāṣā |
+130: trasareṇus tu paryāyanāmnā vaṃśī nigadyayate |
+170: atha kāliṅgaparibhāṣā |
+212: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ pūrvakhaṇḍe paribhāṣā nāma prathamo 'dhyāyaḥ||1||
+218: atha bhaiṣajyākhyānakādhyāyaḥ |
+250: iti dāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śrīśārṅgadharasaṃhitāyāṃ pūrvakhaṇḍe bhaiṣajyākhyānakaṃ nāma dvitīyo 'dhyāyaḥ ||
+250: iti śrīkāśīrāmavaidyaviracitāyāṃ gūḍhārthadīpikāyāṃ dravyarasaguṇavipākaprabhāva ṛtuṣaṭkākhyānādhyāyo dvitīyaḥ ||
+256: tṛtīyo 'dhyāyaḥ |
+256: atha nāḍīparīkṣādividhir adhyāyaḥ |
+283: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ nāḍīparīkṣādividhir adhyāyaḥ ||
+363: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ sūtrasthāne dīpanapācanā'dhyāyaś caturthaḥ |
+369: atha sapta kalāḥ |
+431: atha sṛṣṭikramaḥ |
+461: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ kalādikākhyānādhyāyaḥ || 5 ||
+467: ṣaṣṭho 'dhyāyaḥ |
+467: athāhārādigatir adhyāyaḥ |
+515: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ śārīre āhārādigatir adhyāyaḥ || 6 ||
+521: atha rogagaṇanādhyāyaḥ |
+790: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ nidānarogagaṇanādhyāyaḥ ||
+799: śārṅgadharasaṃhitāyām - madhyamakhaṇḍa: atha svarasādhyāya : |
+805: prakṣepapramāṇam|
+808: amṛtāsvarasaḥ |
+811: raktapittādiṣu vāsakādisvarasaḥ |
+814: viṣamajvare tulasīdroṇapuṣpīsvarasau |
+817: raktātisāre jambvādisvarasaḥ |
+820: babbūla – syonāka - kuṭajasvarasāḥ |
+823: pratiśyāye - ārdrakasvarasaḥ |
+826: pārśvādiśūleṣu - bījapūrasvarasaḥ |
+829: pittaśūla-śatāvarīsvarasaḥ |
+835: muṇḍīsvarasaḥ - sūryāvartārdhaśīrṣavyathādau |
+838: athonmādādau - brāhmyādisvarasaḥ |
+841: kodravamade - kūṣmāṇḍasvarasaḥ |
+847: puṭapākavidhiḥ |
+856: atīsāre - aralūpuṭapākaḥ |
+859: sarvātīsāre - tittirapuṭapākaḥ |
+886: iti śrīdāmodarasūnuśrīśārṅgadharācāryaviracitāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe svarasādikalpanā nāma prathamo 'dhyāyaḥ || 1 ||
+892: dvitīyo 'dhyāyaḥ |
+907: kaphajvare - bhūnimbādikāthaḥ |
+910: vātapittajvare - pañcabhadrakvāthaḥ |
+913: kaphavātajvarādau laghukṣudrādikkāthaḥ |
+916: vātakaphajvarādau āragvadhādikvāthaḥ |
+919: pittaśleṣmajvare - amṛtāṣṭakam |
+922: sarvajvarādau - kaṇṭakārikvāthaḥ |
+925: atha daśamūlakvāthaḥ vātaśleṣmajvare |
+931: atha saṃnipātajvare aṣṭādaśāṅgakvāthaḥ |
+934: tridoṣajajvarādau kaṭphalādikvāthaḥ |
+1016: nāgarādir vātaśūlādau - nāgarairaṇḍaja: kvāthaḥ indrayavasya ca |
+1019: pittaśūle triphalādikvāthaḥ |
+1022: kaphaśūlādau eraṇḍakvāthaḥ |
+1024: hṛdrogādau daśamūlakvāthaḥ |
+1029: vīratarvādigaṇaḥ |
+1071: punarbhavāvaruṇayoḥ kvātho 'ntarvidramadhiṃ jayet |
+1089: śvetakuṣṭhe bākucīkvāthaḥ |
+1092: raktakuṣṭhādau laghumañjiṣṭhādikvāthaḥ |
+1119: saptamuṣṭiyūṣaḥ |
+1125: ṣaḍaṅgapānam |
+1131: pañcamūlapayaḥ |
+1131: trikaṇṭakapayaḥ |
+1154: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ cikitsāsthāne kvāthakalpanā- dhyāyo dvitīyaḥ |
+1160: tṛtīyo 'dhyāyaḥ |
+1160: phāṇṭakalpanā |
+1163: atha bṛhanmadhūkaphāṇṭaḥ |
+1166: athāmrādiphāṇṭaḥ jvarādau |
+1169: laghumadhūkapuṣpādiphāṇṭo dāhapittādau |
+1172: manthavidhiḥ |
+1175: madātyayādau kharjūrādimanthaḥ |
+1181: tṛṣṇādāhādau yavasaktumanthaḥ |
+1181: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śrīśārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe phāṇṭādikalpanā nāma tṛtīyo 'dhyāyaḥ |
+1187: caturtho 'dhyāyaḥ |
+1190: āmrādihimo raktapitte |
+1196: vātapittādau nīlotpalādihimaḥ |
+1205: iti śrīdāmodarasūnunā śrīśārṅgadharācāryeṇa viracitāyāṃ śrīśārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe himakalpanā nāma caturtho 'dhyāyaḥ |
+1211: pañcamo 'dhyāyaḥ |
+1214: vardhamānapippalyaḥ |
+1259: raktārśasi tilakalkaḥ |
+1261: iti śrīdāmodarasūnunā śrīśārṅgadharācāryeṇa viracitāyāṃ śrīśārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe kalkakalpanā nāma pañcamo 'dhyāyaḥ |
+1267: ṣaṣṭho 'dhyāyaḥ |
+1270: cūrṇe guḍādimānakalpanā |
+1311: atha jvare pippalīcūrṇam |
+1319: śṛṅgīcūrṇam |
+1328: laghugaṅgādharacūrṇam |
+1341: dāḍimāṣṭakam |
+1347: pippalyādicūrṇam |
+1372: atha śūlādau tumburādicūrṇam |
+1399: vyāghrīcūrṇam |
+1412: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe cūrṇakalpanā nāma ṣaṣṭho 'dhyāyaḥ |
+1418: saptamo 'dhyāyaḥ |
+1430: śvāsakāsādau guḍavaṭikā |
+1450: sūraṇavaṭakāḥ |
+1481: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe vaṭakakalpanā nāma saptamo 'dhyāyaḥ ||
+1487: aṣṭamo 'dhyāyaḥ |
+1511: arśādau kuṭajāvalehaḥ |
+1514: iti śrīdāmodarasūnunā śrīśārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe 'valehakalpanā nāmāṣṭamo 'dhyāyaḥ || 8 ||
+1520: navamo 'dhyāyaḥ |
+1520: atha snehaparibhāṣā |
+1610: oum sarvavyādhināśinyai svāhā |
+1610: ity utpāṭanamantraḥ |
+1610: oum kumārījīvanyai svāhā |
+1610: iti pānamantraḥ |
+1645: jātyāditailam |
+1655: kecit tu madhuśuktalakṣaṇam etasyāgre paṭhanti tad yathā - madhuśuktam |
+1672: karavīrāditailam |
+1676: vacātailam - (vacāṃ śaṭhīṃ haridre dve devadāruhamahauṣadhī ||195||
+1677: lāṅgalītailam |
+1678: ity apy adhikaḥ pāṭho dṛśyate |
+1678: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ ghṛtatailakalpanā nāma navamo 'dhyāyaḥ |
+1683: daśamo 'dhyāyaḥ |
+1721: pāṇḍvādau lohāsavaḥ |
+1724: mṛdvīkāriṣṭaḥ |
+1745: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe āsavāriṣṭakalpanā nāma daśamo 'dhyāyaḥ ||
+1751: ekādaśo 'dhyāyaḥ |
+1802: atha māraṇam |
+1808: abhrasatvaprakāraḥ |
+1843: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracittāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe dhātuśodhanamāraṇaṃ nāmaikādaśo 'dhyāyaḥ ||
+1892: atha jvarādau rasāḥ procyante – jvarāṅkuśaḥ |
+1898: atha śītajvarārirasaḥ |
+1901: jvaraghnī guṭikā |
+1910: kṣayaśvāsādau hemagarbhapoṭṭalīrasaḥ |
+1927: pañcavakrarasaḥ |
+1941: vasantakusumākararasaḥ |
+1942: kṣayādau rājamṛgāṅkarasaḥ |
+1948: amṛtārṇavarasaḥ |
+1957: nirguṇḍīsvararasair mardyaṃ tad golaṃ sandhayed dinam |
+1969: atha kuṣṭhādau sarveśvaro rasaḥ -- śuddhaṃ sūtaṃ caturgandhaṃ palaṃ yāmaṃ vicūrṇeyet || 194||
+1996: kaphādau manthānabhairavarasaḥ |
+2024: viṣaśodhanam |
+2024: ) iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyāṃ madhyamakhaṇḍe rasakalpanā nāma dvādaśo 'dhyāyaḥ |
+2024: samāpto 'yaṃ madhyamakhaṇḍaḥ ||
+2034: atha snehapānavidhiḥ |
+2036: majjā ca -
+2039: kaḥ kāla ’ etasya uttaram āha -- taṃ piben martyaḥ kiṃcid abhyudite ravau || 1 ||
+2083: snehapānakālaḥ |
+2113: vimalendriyatā samyak snigdhe
+2116: rūkṣe lakṣaṇam āha – ---- rūkṣe viparyayaḥ |
+2131: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa praṇītāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe snehavidhir nāma prathamo 'dhyāyaḥ || 1 ||
+2138: atha svedavidhiḥ
+2163: sveditasya rakṣā |
+2168: iti || 13 ||
+2182: dravasvedavidhi: |
+2197: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe svedavidhir nāma dvitīyo 'dhyāyaḥ || 2 ||
+2204: vamanapradhāno vidhiḥ vamanavidhiḥ śodhanaprakāraḥ |
+2237: prasthamānam |
+2264: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa praṇītāyāṃ śārṅgādharasaṃhitāyām uttarakhaṇḍe vamanavidhir nāma tṛtīyo 'dhyāyaḥ || 3 ||
+2270: atha virecanādhyāyaṃ vyākhyāsyāmaḥ - atha virecanavidhiḥ |
+2284: atha pittādau virecanam |
+2307: trivṛtācūrṇam |
+2313: ṣaḍṛtuvirecanam |
+2318: abhayādimodakāḥ |
+2348: iti śrīdāmodarasūnunā śārṅgadharapraṇītāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe virecanavidhir nāma caturtho 'dhyāyaḥ || 4 ||
+2354: atha bastividhiṃ vyākhyātuṃ pratijānīte - atha bastividhiḥ |
+2354: tatrā'yaṃ sambandhaḥ - ‘pañcakarma vamī, reko, nirūho 'nvāsa-nāvanam’ iti |
+2369: anuvāsanayogyāḥ |
+2419: iti śrīdāmodarasūnuśārṅgadharācāryapraṇītaśārṅgadhara- saṃhitāyām uttarakhaṇḍe snehabastividhir nāma pañcamo 'dhyāyaḥ ||
+2425: atha ṣaṣṭho 'dhpāyaḥ |
+2457: atha teṣāṃ svarūpāṇy āha -- utkleśanabastiḥ |
+2464: śodhanabastim āha - śodhanadravyani:kvāthais tatkalkaiḥ snehsaindhavaiḥ |
+2490: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe nirūhabasti- vidhir adhyāya: samāpta: || 6 ||
+2496: atha saptamo 'dhyāyaḥ |
+2520: iti śrīdāmodarasūnuśārṅgadharācāryapraṇītaśārṅgadhara- saṃhitāyām uttarakhaṇḍe uttarabastividhir nāma saptamo 'dhyāyaḥ || 7 ||
+2526: aṣṭamo 'dhyāyaḥ |
+2526: atha nasyavidhiḥ |
+2566: idānīm avapīḍanapradhamanayoḥ katipayayogān āha - guḍādinasyam |
+2568: pippalyādinasyam |
+2580: iti virecananasyakalpanā |
+2583: kuṅkumanasyam|
+2592: māṣādinasyam |
+2598: atha palite nasyam |
+2625: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe nasyavidhi- rnāmāṣṭamo 'dhyāyaḥ ||
+2631: navamo 'dhyāyaḥ |
+2631: atha dhūmapānavidhiḥ |
+2655: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe dhūmapānavidhir nāma navamo 'dhyāyaḥ || 9 ||
+2660: daśamo 'dhyāyaḥ |
+2660: atha gaṇḍūṣakavalapratisāraṇavidhiḥ |
+2660: ūrṣvagatadoṣaharatvasāmānyāt dhūmapānam abhidhāya saṃprati gaṇḍūṣaṃ kavalaṃ pratisāraṇavidhim ārabhyate ||
+2675: iti śrīdāmodarasūnunā śārṅgadhareṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe gaṇḍūṣādi- vidhir nāma daśamo 'dhyāyaḥ || 10 ||
+2681: ekādaśo 'dhyāyaḥ |
+2681: atha kavalādīnāṃ vidhim abhidhāya saṃprati lepamūrddhatailakarṇapūraṇavidhim ārabhyate |
+2715: śvitre lepāḥ |
+2717: atha śvitranāśanāyāha - suvarṇapuṣpī sonīśabdavācyo viṭapaviśeṣaḥ tadabhāve bṛhadbalā grāhyā apare ca sthūlakaṃ gṛhṇanti |
+2717: śīśaṃ sīsakaṃ |
+2717: sīsakasthāne kāsīsam iti pāṭhaḥ sādhuḥ |
+2717: rocanā gorocanā prasiddhā |
+2717: lepo 'tra jalena |
+2717: vāyasī kākamācī |
+2717: eḍagajaḥ prapunnāṭaḥ tasya bījāni |
+2717: kṛṣṇā pippalī |
+2717: vatsa iti govatsaḥ |
+2717: athavā chāgaḥ iti pāṭhaḥ |
+2717: tālako haritālaḥ |
+2717: bākucī somarājī tasyāḥ phalāni prasiddhāni śeṣaṃ sugamam |
+2717: bākucī prasiddhā vetaso niculaḥ jalavetasa iti loke vṛkṣaviśeṣaḥ |
+2717: lākṣā laktakajananī kākondumbarikā kaṭumariśabdavācyā |
+2717: kaṇā pippalī|
+2717: rasāñjanaṃ prasiddham |
+2717: ayaścūrṇaṃ lohacūrṇaṃ |
+2717: kṛṣṇāstilā iti |
+2717: śvetatilaniṣedhārtham |
+2717: gavāṃ pittair iti |
+2717: goyakṛdekakhaṇḍaikadeśalagnaṃ dravarūpaṃ pittam iti vācyam |
+2725: atha kaṇḍvādau lepaḥ |
+2734: śiroroge yogāḥ |
+2760: atha aṇḍavṛddhau lepaḥ |
+2787: dīpikātailam |
+2790: syonākatailam |
+2793: yaṣṭīvasā |
+2796: svarjikātailam |
+2810: āmrāditailam |
+2815: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe lepādividhir nāmai- kādaśo 'dhyāyaḥ || 11 ||
+2821: dvādaśo 'dhyāyaḥ |
+2821: atha śoṇitavisrāvavidhir adhunā vidhīyate atha śoṇitasrāvavidhiḥ |
+2821: sambandhaś cāyaṃ yathā lepādayo dehakāntikarās tadvac choṇitavisrāvaṇam api |
+2856: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitaśārṅga- dharasaṃhitāyām uttarakhaṇḍe śoṇitasrāvavidhi- rnāma dvādaśo 'dhyāyaḥ || 12 ||
+2862: trayodaśo 'dhyāyaḥ |
+2862: atha netraprasādanakarmāṇi vyākhyāsyāmaḥ |
+2862: sambandhaś cāyaṃ - śirāvyadhenā'pi netraprasādanaṃ bhavati, tadvat sekādibhir api |
+2865: sekavidhiḥ |
+2868: atha trividhākṣisvedānāṃ prayogadvāreṇa karma darśayann āha - sa yathā - sa yathetyādinā darśayati granthakāraḥ |
+2871: āścyotanam |
+2883: atha biḍālavidhiḥ |
+2886: sa yathā - dī. - atha lepam āha - sa yathety anena yogān darśayati gnanthakāraḥ |
+2889: tarpaṇam |
+2892: puṭapākaḥ |
+2895: añjanam |
+2898: pūrvam uktaṃ lekhanaropaṇasnehanabhedena trividhāñjaneṣu vartirasacūrṇatrividharūpaṃ, tatrādau lekhanīvartir adhunā vidhīyase |
+2898: candrodayā |
+2901: karañjavartiḥ |
+2907: dantavartiḥ |
+2910: nīlotpalavartiḥ |
+2912: puṣpavartiḥ |
+2915: rasāñjanavartiḥ |
+2918: dhātryādivartiḥ |
+2921: rasakriyā |
+2930: prabodhanāñjanam |
+2933: dārvyādirasakriyā |
+2936: rasāñjanādirasakriyā |
+2945: babbūlarasakiyā |
+2945: hiñjalarasakriyā |
+2948: idānīṃ snehanī rasakriyā katakarasakriyā |
+2951: atha śirotpāte rasakriyā |
+2951: gū. - sarpir ghṛtam || 104 ||
+2953: kṛṣṇasarpavasārasakriyā |
+2953: lekhanāñjanam |
+2953: kaṇārasakriyā |
+2953: cūrṇāñjanam|
+2965: pratyañjanam |
+2965: nayanāmṛtāñjanam |
+2968: sarpaviṣe saṃjīvanāñjanam |
+2973: iti śrīdāmodarasūnunā śārṅgadharācāryeṇa viracitāyāṃ śārṅgadharasaṃhitāyām uttarakhaṇḍe netrakarmavidhi- rnāma trayodaśo 'dhyāyaḥ |
