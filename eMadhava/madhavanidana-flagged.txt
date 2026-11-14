@@ -1,0 +1,352 @@
+# Mādhavanidāna: word spacing and verse tagging — spots to check
+
+Word spacing was added in 2026-11 by 54 agents, one per piece of the TEI file
+(tools/spacing/, see its README). Each agent reported up to five places it was
+unsure of; they are listed below as "NNN l.LINE", where NNN is the piece and
+LINE the line within that piece. Use the form quoted to find the place in
+madhavanidana-full.xml (search for it; after the avagraha pass te'pi is te 'pi).
+
+Decisions taken across the whole text (the same as for the Śārṅgadharasaṃhitā):
+- the editor's notes are not spaced.
+- avagraha: a space before ' after e/o everywhere (te 'pi, khaṇḍo 'yaṃ), as in
+  the Aṣṭāṅgasaṅgraha; ā' (tathā'pi, vā'pi) stays joined.
+- particles split everywhere: tathā ca, tathā hi, yad vā, na hi, na ca, na tu,
+  yady api, ity arthaḥ, ity āha, yad uktaṃ, tad uktaṃ, yad āha, tad yathā …;
+  joined: tadanu, tadanantaraṃ, etadanantaraṃ, ityādi and its cases, kintu,
+  parantu, athavā, itastataḥ.
+- forms where the doubled consonant at a word junction is written once
+  (ālasyamanyāstambha…, kaṇḍūraktapitta…) are left joined; typos are left
+  uncorrected and are usually left joined.
+- commentary lemmata (pratīka) with a fused vowel stay joined (yathetyādi);
+  with a consonant junction they are split (kaṭv ityādi, vātād ityādi).
+
+New policy questions for the editor (decided provisionally as stated):
+- kiñca is split kiñ ca (26 places), kiṃvā is split kiṃ vā (25 places), by
+  analogy with kiṃ ca and yad vā; they could instead stay joined like kintu, athavā.
+- ityantena (and other cases of ityanta-) is kept joined, like ityādinā (12 places).
+- vāraṃvāram is split vāraṃ vāram as a repeated word; upary upari is split where
+  it stands alone, joined inside a compound (uparyuparisaṃsthitaiḥ).
+- -vat forms (śukravat, kāṣṭhavat, maṇḍalavat, tadvat …) are split off as adverbs
+  before a participle or adjective; several agents flagged that they could be
+  compound members.
+- pṛthak, prāk, manāk, punar, sadyas before a participle or noun are split or
+  joined by context (rule 5), and are treated differently in different places:
+  pṛthagdoṣaiḥ ×5 / pṛthag doṣaiḥ ×3, pṛthagabhidhānaṃ ×3 / pṛthag abhidhānaṃ ×2,
+  pṛthagupādānaṃ ×1 / pṛthag upādānaṃ ×4, punarukta- ×5 / punar ukta- ×5,
+  prāgukta- / prāg ukta-. Left as the agents had them.
+- tat/tad/etad before a noun is split or joined by context (rule 5):
+  tatpūrvarūpaṃ ×2 / tat pūrvarūpaṃ ×1, tadrūpam / tad rūpam, tadanye / tad anye.
+- list items that may be dvandvas are treated differently in different places:
+  kṣuttṛṣṇā ×2 / kṣut tṛṣṇā ×1, tvaṅmāṃsaṃ ×4 / tvaṅ māṃsaṃ ×1, hṛduṇḍukaḥ ×3 /
+  hṛd uṇḍukaḥ ×1, bahustokam / bahu stokam, ṣaḍarbudāni ×2 / ṣaḍ arbudāni ×1,
+  kaṭvamlamuṣṇaṃ / kaṭvamlam uṣṇaṃ. Left so.
+- the source has one untransliterated (ASCII) passage in adhyāya 21
+  (vyAyAmAder niShiddhakAlAdiShu …); it was spaced like the rest.
+
+Root-text segments the verse tagger left as prose (source references such as
+"(su. u. taṃ. a. 39) |", headings, colophons, and about 45 half-verses that do
+not scan, mostly hypermetric, defective or elided with "...") are listed in
+madhavanidana-prose.txt.
+
+## Uncertain spots reported by the agents
+
+001 l.3: tattadgranthatarubhyo, katicitkālāvasthāne — left joined as compound members
+001 l.4: dadhat tamālapratimaṃ, prāg viśiṣṭeṣṭadevatāpraṇāmaṃ — participle and adverb split off; both could be read differently
+001 l.9: kiñ ca — split as kiṃ ca (rule 8), though the e-text writes it with ñ
+001 l.12: etat padaṃ — split as pronoun ("this word"); could be a compound
+001 l.12: yanmate / tanmate and vikṣepākṣepaśoṣagrahaṇaśuṣiratācchedanaṃ — left joined as compounds
+002 l.3: sāmānyābhiprāyeṇaivata — looks like a typo (°eṇaiva tat?); left joined
+002 l.6/9: kiñ ca — kiñca split by analogy with kiṃ ca; could be kept joined like kintu
+002 l.6: yanmate / tanmate — kept joined as compounds; could be pronoun + mate
+002 l.6: nidānaval lakṣaṇārthaṃ — nidānavat split off as an adverb
+002 l.9: samyagvyādhijaduḥkhopaśamahetur — samyak kept as first member of a compound; could be samyag vyādhija…
+003 l.6: dhūmavattvād itivan nirūpaṇaṃ — -itivat may belong with the quoted phrase; could stay joined
+003 l.5: samyak pariṇate bhukte — split (samyak + participle); l.6 samyakpariṇatau kept joined (noun)
+003 l.6: tad yathāsaṅkhyena — tad split as pronoun; could be a compound member
+003 l.17/18: tad yathetyādi — lemma tadyathā split by the tad yathā rule, though lemmata are otherwise kept joined
+003 l.18: ‘ojaḥprabhṛtīnām’ — kept joined as compound; l.17 has the same phrase spaced in the source (ojaḥ prabhṛtīnām)
+004 l.2: pṛthagdvandvasaṅghātāgantujaḥ — kept as one compound; pṛthag could be a separate adverb
+004 l.14: śirohṛdgātrarug vaktravairasyaṃ — split, following the commentary's lemma śirohṛdgātrarug ity atra; could be one long compound
+004 l.12: sani mīmāghurabhalabhaśakapatapadām — sani split off (locative opening of Pāṇini 7.4.54)
+004 l.33: ālasyamanyāstambhapramīlakāḥ — left joined: ālasyam + manyāstambha with the doubled m written once
+004 l.33: pratiśyā cchardir ālasyaṃ — split before the doubled cch
+005 l.1: mūrchā cchardiḥ / śvāsapralāpaś cchardyarocakāḥ — split where the text writes cch at the junction; word junction or compound with doubled consonant?
+005 l.1: bhramaś cakrārūḍhastyeva — probably a typo for cakrārūḍhasyeva; left joined
+005 l.1: kṣut tṛṣṇā — split as separate list items; could be a compound
+005 l.1: śirogauravam ālasyamanyāstambhapramīlakāḥ — read ālasyaṃ + manyāstambha with the double m written once; that junction left joined
+005 l.1/8: śirorug vepathuḥ, śirorug vamathuḥ — split as list items; either could be a compound
+006 l.1: doṣadaurbalyādi caturthake'pi — could be the single compound doṣadaurbalyādicaturthake
+006 l.1: carakādibhi nodāhṛta — typo for carakādibhir nodāhṛta; split where the words meet, no letters changed
+006 l.15: etad abhidhānaṃ — split as pronoun ("this statement"); could be a compound
+006 l.30/31: tṛṣṇādīnām ity ādiśabdena — not the expression ityādi, so split (iti + ādiśabdena)
+006 l.1: kiñ ca — split as the particle pair kiṃ ca; the text writes kiñca
+007 l.8: kampaviḍbhid asañjñatā — asañjñatā read as a separate list item; could be one dvandva
+007 l.7: tad vākyaṃ — tad split as a pronoun; could be compound tadvākyaṃ
+007 l.6: anyatā ca — split at ca; anyatā probably a typo for anyathā, left uncorrected
+007 l.6/10/12: etadanantaraṃ — kept joined, like tadanu
+007 l.1: kṣuc chikkā — split as a gloss of kṣut
+008 l.3: sātmyaviparyayaiṛutuviparyayaiś ca — typo for …viparyayair ṛtu…; that junction left joined
+008 l.3: bahu stokam akāle — split to match l.4, which spaces them; could be a compound
+008 l.33: nirasthi piśitaṃ — split to match l.34; could be a karmadhāraya
+008 l.33: cād iniḥ — read as cāt iniḥ (the ini affix from the ca of the sūtra); may be meant as one word
+008 l.18: hṛṣṭaromā ityantena — ityantena kept joined, like ityādinā
+009 l.6: sañjanayām babhūvatuḥ — periphrastic perfect split; editions often print it as one word
+009 l.11: 'kṣut tṛṣṇā — treated as separate list items; could be one compound
+009 l.16: sa pītābhaḥ — text had sapītābhaḥ; split to match l.15 and the root text; could be bahuvrīhi sa-pītābha
+009 l.12: vātagulmādivat pīḍāyuktatvāt — -vat word split off; could be a compound
+009 l.13: parikartikā gude parikartanam iva pīḍā / gṛddhiḥ kāṅkṣā — run together with no sandhi in the e-text; split (rule 6)
+010 l.3/4: upary upari — repeated word, split; it is an āmreḍita with y-sandhi, not a vowel fusion
+010 l.3: tadanye'pi — kept joined as compound tad-anya; could be tad anye'pi
+010 l.4: pṛthagdoṣair — pṛthag kept as compound member (as root text pṛthagdoṣaiḥ); pṛthag gaṇitāni / gaṇitam split (qualifies a participle)
+010 l.13: nā''sannipatitaisribhiḥ — typo for -tais tribhiḥ; left unsplit as it stands
+010 l.40: picchilārdrastimitaṃ — kept joined as a compound; the reading is unclear
+011 l.9: ghoramalaviṣaṃ — left joined; possibly ghoram alaviṣaṃ, or corrupt
+011 l.39: yatreti sarvanāmaśabdena — split as two words run together; could be an iti-compound
+011 l.7: tenātimātram ajīrṇabhojanādikam — split; atimātram might belong to the compound
+011 l.46: puṃsa etal lakṣaṇam — etat taken as pronoun; could be a compound
+011 l.9: kiñ ca talliṅgair — kiñca split by rule 8 (kiṃ ca), although the text spells it with ñ
+012 l.51: kopayen mṛd rasādīṃś ca — mṛd read as the subject, separate from rasādīn; could be compound mṛdrasādīn
+012 l.31: na pṛthak kṛtaḥ — pṛthak split off as adverb on the participle; pṛthakkṛtaḥ could stay one compound
+012 l.37/38: kiñcidvidāraṇam — kept joined as a nominal compound; kiñcid could be split off as an adverb
+012 l.67/68: tāmyatītyantenaikam, vipadyate ityantenāparam — ityanta- treated like ityādi and kept joined
+012 l.58/59: bahir nirgataṃ — bahis split off as adverb on the participle, like samyak
+013 l.20/22: yugapad gatam — split as adverb + participle; could be a compound
+013 l.15/16: kiṃ vā — the text's kiṃvā split like kiṃ ca; may be a deliberate join like athavā
+013 l.30: vakṣyamāṇā māṃsaprakṣālanābham ityādirūpā — vakṣyamāṇā split off as a separate word (no sandhi)
+013 l.32: vikārā stad varjyaṃ — the e-text's odd existing space kept; only the space before varjyaṃ added
+013 l.29–31: hṛdy atulyā / hṛdy atulyeti — split at the y-junction (hṛdi atulyā, as the commentary glosses)
+014 l.6/7: yan mārgarodhāt, yan mārgāvarodhād — yat read as "that" and split; could be a compound member
+014 l.7: vikṛtibahulapicchilavisraharitapītaśvetakāsavegena — left joined; may be …śveta(ḥ) kāsavegena with a lost visarga
+014 l.10: iti sthāne'nye — the e-text's itisthāne'nye split
+014 l.19/21: bahumehantaṃ — left joined; bahu might be an adverb on the participle (commentary: bahutaraṃ mehantaṃ)
+014 l.47/53: kiṃ vā — kiṃvā split, as the text itself spaces it at l.48; naca / natu split as na ca / na tu (l.3, l.17)
+015 l.24: gātraśūletyādyanantaraṃ — kept joined as an ityādi-anantaram compound; could be …ityādy anantaraṃ
+015 l.24: vāyunā'gner uplavād doṣatrayaprakopa — split at uplavād (upaplavāt with a typo); uplavāddoṣatraya… might be a compound
+015 l.23: viṣamāsātmyabhojyātivyavāyād veganigrahāt — split as two ablatives; could be one long dvandva
+015 l.28: niṣṭhīvec chvāsakāsārto — split at the cch junction
+016 l.33/34: vegavadūrdhvavātatvaṃ — kept as one compound; could be vegavad ūrdhvavātatvaṃ (vegavat as adverb)
+016 l.30: nityam ityantenaikāvastho — ityanta treated as a compound, like ityādi
+016 l.16: upary upary atyupayuktaiḥ — split as a repeated word; uparyupari could be one compound adverb
+016 l.7: muhur vāraṃ vāram — the repeated vāraṃvāram is split
+016 l.37: (ayathāvat pravṛttam) — split; could be a compound
+017 l.55: vegair ardayenn aṅgabhañjanaiḥ — the text reads ardayenn (typo for ardayann?); split before aṅga
+017 l.55: ccharder vai — vai split off; the doubled cch left as written
+017 l.7: gardabhavat svaram ity atra gardabhavat kharam iti — -vat treated as a separate adverb, as the mūla spaces it
+017 l.24: sahopajāta ityantena — ityanta kept joined, like ityādi
+017 l.74: tadduṣṭān dhātumalān — kept as a compound, not tad + duṣṭān
+018 l.23: gurv annam evāśu — could be compound gurvannam; split because guru reads as one more adjective in the list (commentary: guruśabdena …)
+018 l.2: srotassv apāṃvāhiṣu — apāṃvāhiṣu kept joined as a compound, following the commentary's apāṃvāhiṣv iti
+018 l.9: guroś ca halaḥ — quoted Pāṇini sūtra, spaced like ordinary text
+019 l.20–22: pṛthivyāpas tamorūpaṃ — pṛthivyāpas kept joined as a dvandva; the commentary reads pṛthivī āpaś ca, so pṛthivy āpas is possible
+019 l.20: bhuvimānavāḥ — left joined as an aluk compound, following the commentary's gloss; could be bhuvi mānavāḥ
+019 l.19: lakṣaṇañcikitsābhedakhyāpanārthaṃ — left joined as a probable typo for lakṣaṇacikitsā°; might be lakṣaṇañ cikitsā°
+019 l.39/40: kāṣṭhavad bhūtaḥ — -vat adverb split from the participle; may be a compound
+019 l.31/33: sambhrāmadvastudarśanam, bhramadvastudarśanam — participle kept joined as a compound member
+020 l.8/24/25: snigdhais tadannair — tadannair kept as one compound ("food suited to it"); could be tad annair
+020 l.18: pṛthaṅ madāntaram asti — pṛthak read as adverb with asti; could be compounded with madāntaram
+020 l.42/43: kaṇṭhād dhūmanirgamavat pīḍā — the -vat form might belong in a compound with pīḍā
+020 l.16: muhur vāraṃ vāram — repetition split; could be an āmreḍita compound
+020 l.30: kathaṃ punar uktaḥ — split as "said again"; could be the term punarukta
+021 l.49: tad viśeṣāt sevata — tad read as the pronoun; could be compound tadviśeṣāt
+021 l.39/40: kiṃ vā — the text's kiṃvā split like kiṃ ca; could be kept joined like athavā
+021 l.10: nirdiṣṭāv iti — split after the v from au + iti, as with ity
+021 l.50: alpavāk sahiṣṇuḥ — run together in the mūla; split because the commentary glosses them as two words
+021 l.59: māṃsāsṛgvividhasurāvikāralipsur — kept as one compound
+022 l.4: mithyādiyoge yuktānām — run together with no sandhi in the e-text; might be meant as a compound (-yogayuktānām)
+022 l.4: paśyanna santi — the source's existing space is misplaced (should be paśyann asanti); left as it is (spaces are only added)
+022 l.4: vyAyAmAder niShiddhakAlAdiShu — an untransliterated (ASCII) segment in the source; spaced like the rest
+022 l.7: prāgrūmāha — typo for prāgrūpam āha; left unsplit
+022 l.21/22: punarudbhavaḥ, tatpūrvaṃ — kept joined as compounds
+023 l.31: karkaśāstodabahulān — possibly karkaśās todabahulān (or corrupt); left joined
+023 l.44: muhuścaraḥ — kept as one compound adjective (the commentary treats it as a single term, cf. variant bahiścara); could be muhuś caraḥ
+023 l.48/49: ityantena — kept joined by analogy with ityādi; could be ity antena
+023 l.46: vāraṃ vāraṃ — split under the repeated-word rule; joined in the e-text
+023 l.37: sirā vāte — split (the parallel on l.36 has sirā vāte); run together in the e-text
+024 l.10: uccairbhāṣaṇaṃ — left joined as an aluk compound; could be uccair bhāṣaṇaṃ
+024 l.42: dvayor itipadena — l.41 has dvayoriti padena in the source; dvayor iti padena is possible
+024 l.42: paṅgur irthaḥ — looks like a corrupt paṅgur ity arthaḥ; typo left, split only at the r
+024 l.51: ity enana — looks like a typo for ity anena; split as ity + the word as written
+024 l.36: tad ārabhya — tadārabhya is sometimes written as one word
+025 l.5–7: vidāhy annaṃ — could be one compound vidāhyanna; split because the commentary on l.7 glosses vidāhi separately
+025 l.3/4: pṛthag vātaraktādhikāraḥ, pṛthag vātaraktādhyāya — pṛthak split off as an adverb; could be a compound member
+025 l.7: tad raktapittaṃ — tat split as a pronoun; could be a compound
+025 l.16: pādabad dhastayor — typo for pādavad; split as pādavad dhastayor is on l.15, typo left
+025 l.42: jāḍyāntrakūjam ānāhaṃ — split as an accusative followed by a noun; could be one compound
+026 l.3: śūlanikhātavad vedanājanakatvāc ca — the -vat adverb could be a compound member (split, following the Ātaṅkadarpaṇa's parallel śūlanikhāta iva vedanā…)
+026 l.28: svalparug dīrghasantati — could be one bahuvrīhi; split because both commentaries gloss the two parts separately
+026 l.31: jaratpittaṃ — left joined; may be the participle jarat qualifying pittaṃ
+026 l.43: prāptam āgatamuñcato — left joined: the a of amuñcato is missing (treated like a missing avagraha)
+026 l.3/4: prāgutpattir asti — prāg- kept joined as first member of a compound
+027 l.10: kupitānilamūlatvātatsañcitvān malasya — corrupt (the same verse on l.9 reads mūlatvāt sañcitatvān); the corrupt stretch left joined
+027 l.3: koṣṭhāntar āmāśayādimadhye — split where the commentator glosses koṣṭhāntar; could be one compound
+027 l.7/31: etal lakṣaṇaṃ — etat read as a pronoun; could be a compound like tallakṣaṇe
+027 l.36/37: mā bhūt / mā bhūd evaṃ — split as separate words, though often printed joined
+027 l.33: strīriraṃsākṛṣṇatvaṅnakhādayaḥ — kept as one dvandva compound
+028 l.12/13: kiñcid dāhaḥ — could be the compound kiñciddāha; split to match the text's own kiñcit durgandhaḥ
+028 l.19: hṛdayād īpadambunirgamaḥ — could be hṛdayādi- plus a fused vowel; īpad looks like a typo for īṣad, left uncorrected
+028 l.88: tṛṇ mohaḥ — read as two list items; a dvandva tṛṇmoha is possible
+028 l.30: tīvrārtirugvaṅkṣaṇabastimeḍhre — left as one compound; tīvrārtiḥ ruk could be separate words
+028 l.65/66: tadāvṛtam — left joined as a compound ("covered by it"), not tad āvṛtam
+029 l.8: ruṅ nābhisevanībastimūrdhasu — ruk taken as a separate nominative (commentary: ruk śūlaṃ); l.23 bastiruṅmūtrakṛcchratva… left joined as a compound
+029 l.25: bastirug iti / bastirug ityādi — pratīka bastiruk kept joined as a compound
+029 l.7: bṛhattamabastasamānagandhatvaṃ — left joined; bṛhattama may be a separate word or a corruption
+029 l.13: muhur vāraṃ vāraṃ — vāraṃvāraṃ split under the repeated-word rule
+029 l.22: pāṭanādipūrvaṃ karmākarṣaṇaṃ — karmākarṣaṇaṃ is a vowel fusion, left joined
+030 l.11/13: svādvāsyaṃ — kept joined as a compound; could be svādv āsyaṃ
+030 l.17: kiñcid āvilapicchilam — split (kiñcid qualifies an adjective); could be a compound
+030 l.9/10: tal lasīkāśabdaṃ, tal lasīkāśabdena — split, tat read as a pronoun
+030 l.48: kiṃ vā — the e-text has kiṃvā; split like yad vā
+030 l.3: etad āsyāsukhādi — split, etad read as a pronoun; could be first member of a compound
+031 l.15: pṛthag doṣaiḥ — split, pṛthak as adverb parallel to samastaiś; could be compound pṛthagdoṣaiḥ
+031 l.39: mahat tat parivṛttanābhi samātataṃ — no sandhi at the split; separated because the commentary on l.41 glosses the two words separately
+031 l.13/14: punar doṣakṛtaṃ — punar split as qualifying the participle compound; could be a compound member
+031 l.24–26: tac chītavāte / tac chītavātādiṣu — tat taken as a pronoun ("that [udara]"), not a compound member
+031 l.25: kiṃ vā — kiṃvā split by analogy with yad vā
+032 l.5: tat pūrvarūpaṃ — split as a pronoun, following the commentary lemma tad ityādi; could be compound tatpūrvarūpaṃ
+032 l.15: kiṃvā — left joined by this agent (to be aligned with kiṃ vā elsewhere)
+032 l.37: pūrvairita — left joined; looks like a typo for pūreritaḥ (purerita in the root text)
+032 l.31: yan malavadvastu — malavadvastu kept joined as a compound, matching malavadvastra in the root text
+032 l.46/47: bhavann itastato — itastato left joined (itas tataḥ only where the text spaces it)
+033 l.49: rudhirapravṛttim atirudhiraṃ — atirudhiraṃ looks corrupt (perhaps iti rudhiraṃ); split before it
+033 l.21/22: medaḥkaphāc choṇitasañcayottho — could be one compound; split as ablative + compound
+033 l.33/34/36/48: kiṃ vā — the text's kiṃvā split like kiṃ ca
+033 l.68: vāraṃ vāraṃ — repeated word split; often written as one word
+033 l.56: tad addhyarbudam — the doubled ddh typo left as it is; split before it, tad as a pronoun
+034 l.2: pṛthag doṣaiḥ — split, pṛthak as adverb; could be compound pṛthagdoṣaiḥ (kept joined in piece 010)
+034 l.21/22: prāgabhighātasambhavatvenāgantuḥ — left joined with prāk- as first member; prāk could be a separate adverb
+034 l.34: cāptāsṛgbāhyavidradhilakṣaṇaḥ — looks corrupt; left joined
+034 l.34: nopari nābhijaḥ — split to match the spaced reading on l.33; uparinābhijaḥ could be a compound
+034 l.41: ‘rasastanutvakparuṣāruṇādikaiḥ’ — garbled quotation, left joined
+035 l.26: bahiḥ śītāś ca — split as adverb + adjective; could be compound bahiḥśītāḥ
+035 l.28: antar madhye — read as the lemma antar glossed by madhye; could be one compound
+035 l.39–41: yat kiñcit / yat kiñcid ityādi — split as a pronoun phrase; could be the lexicalized yatkiñcit
+035 l.35: tatṣāḍvidhyam āha — kept joined as a compound ("its sixfoldness"); could be tat ṣāḍvidhyam
+035 l.59: muhur vāraṃ vāraṃ — repeated word vāraṃvāraṃ split
+036 l.9/10: samantācchotho'py — samantāt + śotha kept joined as a symptom name; could be samantāc chotho
+036 l.47: samantāddāhaḥ — kept joined (glosses paridāha); could be samantād dāhaḥ
+036 l.9/10: manāg vikriyayā, manāk sandhiviśleṣaḥ — manāk split off as an adverb, matching the spaced parallels; could be first member of a compound
+036 l.9: tiryak kṣipte — split like samyak before a participle (l.10 has it spaced)
+036 l.12: asthi niḥśeṣataś chinnam — asthiniḥśeṣataś split, following l.13, which spaces it
+037 l.4: vraṇavad upakramād vā'to'nantaraṃ — vraṇavad could be a compound member; split like the other -vat forms (śataponakavad anekamukha-, śambūkāvartavad āvartanaṃ, māṃsavat tāmraiḥ)
+037 l.48: uparyuparisaṃsthitaiḥ — the repeated upari left joined as part of a compound; could be upary upari…
+037 l.97: vāsturujaś cogrā — vāstu rujaḥ could be two words; kept as a compound (commentary: tatra rujaḥ)
+037 l.56: etad virūḍhabṛhatī… — etad split as a pronoun; could be a compound member
+037 l.66: śaśvad iti ahar ahaḥ — aharahaḥ split as a repeated word (rule 7)
+038 l.2: duṣṭās tvagraktaṃ — tvagraktaṃ kept joined as a dvandva; could be two list items tvag raktaṃ
+038 l.20–22: prāg uktāni — prāk split the way samyak is; prāgukta is also used as a single compound adjective
+038 l.3/4/12/13: punar uktam — split; punarukta may be meant as the technical term (tautology)
+038 l.11: antaḥśyāvaṃ — kept joined as a compound; could be antaḥ śyāvaṃ
+038 l.30: kṣudrakuṣṭhavad yugapadraktalasīkātvaṅmāṃsasandūṣakatvavirahaḥ — yugapad kept as first member of the compound; parantu (l.21) left joined, like kintu
+039 l.46: tvaṅ māṃsaṃ — split (neighbouring items raktaṃ, lasīkā are separate words); could be dvandva tvaṅmāṃsaṃ
+039 l.15: punaḥpunarbhavanena — left joined as a compound with bhavana, although repeated words are otherwise split
+039 l.71: avedanaś cirātpākī — cirātpākī kept as one word (aluk compound); could be cirāt pākī
+039 l.62/63: atyantam udriktapitto'ñjanasamavarṇatanuḥ — atyantam split off as an adverb; may sit inside the bahuvrīhi
+039 l.48: lasīkā jalaṃ — split as headword + gloss written together with no sandhi
+040 l.12/13/21/22: tadvad vistṛtāḥ, tadvad vitatāḥ, tadvat kṛṣṇavarṇāḥ — tadvat split as an adverb; could be a compound member
+040 l.21: tenaitadvarṇavirahe — left joined (tena + etad fuse; etadvarṇavirahe treated as a compound)
+040 l.17: kaścid ābhyo — split as pronoun + ablative; the e-text may be corrupt here
+041 l.10: bahir vakrarahitā — split; could be a compound, or a corruption of bahirvaktra-
+041 l.37: bāhv ityādi — lemma split at the v junction (fused-vowel lemmata such as grīvetyādi stay joined)
+041 l.52: sannipatitainaṃ — probably corrupt for sannipatitair na; left joined and uncorrected
+041 l.27: pāṣāṇagardabhalakṣaṇam āhaṭṭha — āhaṭṭha is a typo for āha–; left as it is
+041 l.61: tat kadaraṃ — tat split as a pronoun ("that is called kadara")
+042 l.32: ‘sarvataścaraḥ’ — left joined as a nominal compound (epithet of vyāna); the participle sarvataś caran is split
+042 l.41/42: mahat srota’ / mahat sroto — split as adjective + noun; could be a compound
+042 l.36: pṛthag doṣatrayeṇānubadhyate — split to match pṛthak doṣa… in l.35; the quoted pṛthagdoṣaiḥ samanvitā (l.35–36) stays joined
+042 l.5: abhivartamāne'gnidupacāraḥ — probably a typo for agnyupacāra; left joined
+042 l.15: tridoṣajatvapy asya — corrupt (for -tvam apy); split only before asya
+043 l.6/7: kiñcidavadīrṇatvacau — kept joined as first member of a bahuvrīhi; could be kiñcid avadīrṇatvacau
+043 l.14/15: sakṛt kṛṣṇau sakṛt pītau sakṛc chvetau — split, sakṛt as adverb on an adjective
+043 l.66/67: tad balavaddhetujanya… — split as the pronoun answering yat kṛtaṃ; could be a compound member
+043 l.63/64: punaruktāḥ — kept joined as the lexicalised compound punarukta
+043 l.69/70: arśaāditvād ac — the suffix name ac split off
+044 l.19: kaphād antarbahiḥ — antarbahiḥ kept joined as one adverbial unit; could be antar bahiḥ
+044 l.22: pittarohiṇyanantaraṃ — kept joined, by analogy with tadanantaraṃ; could be pittarohiṇy anantaraṃ
+044 l.50: tasyaivetyādi prāguktavidradheḥ — lemma and gloss run together in the e-text; split as separate words
+044 l.17: tāluśoṣas tadāhvayaḥ — tadāhvayaḥ kept as a compound ("named after it")
+044 l.20: pṛthak samastāś ca — the e-text has pṛthaksamastāśca; split to match the same verse quoted on l.19
+045 l.19: ādyair gbhiṣabhir videhādibhiḥ — typo in the text (gbhiṣabhir, presumably for bhiṣagbhir); split placed by guesswork
+045 l.39/40: manāktvagavadaraṇavān — kept joined as a compound like īṣat-; could be manāk tvagavadaraṇavān
+045 l.33/34: saptam iti — reads saptamiti as a shortened saptamam iti; reading uncertain
+045 l.33/34: °arśasām atideśena / °arśasām atītāvekṣaṇena — first part taken as a genitive plural ending the compound
+045 l.2–4: 'nyathā caran, anyathā carann iti — split to match the Ātaṅkadarpaṇa, which writes anyathā caranniti; anyathācaran could be a compound
+046 l.12: taistariti — looks like a typo for taistairiti (cf. l.13 tais tair iti); left joined and uncorrected
+046 l.20/21: prāk sañcito / prāk sañcita — split (adverb + participle); could be compound prāksañcita
+046 l.4: tadā'sṛk picchilaṃ — split to match l.3, where the text already has it spaced
+046 l.19: marmavadvyathājanakatvāt — left joined; unclear whether a compound or marmavad vyathā…
+046 l.40: sadyaḥpratiśyāyanidānam — left joined as the text writes it; the parallel in l.39 has sadyaḥ pratiśyāya…
+047 l.3: antaḥsvāṅguṣṭhodarasammitam — antaḥ might be a separate adverb; left joined
+047 l.4: tadūṣmaṇordhvagatena — read as compound tad-ūṣman, not the pronoun tad; left joined
+047 l.60: ‘nātirugaśruyuktaṃ’ — could be nātirug aśruyuktaṃ; left joined as a compound
+047 l.69/70: yatastataś calaṃ — yatastataḥ treated like itastataḥ (joined); split only before ca
+047 l.84/85: asamyag rūpaṃ — split as an adverb qualifying gṛhṇāti; could be compound asamyagrūpa
+047 l.64, l.73: uktaviparyayātta, edddvitvaggataṃ — typos, left joined as they stand
+048 l.9: ṣaḍliṅganāśa iti — left joined as a dvigu (singular); the plural ṣaḍ liṅganāśāḥ (l.54) is split to match the root text (l.31)
+048 l.14: mlāyīnāmnā — could be mlāyī nāmnā or a compound; left joined
+048 l.28: gambhīrasañjñāc ca — the source has the odd sañjñācca, possibly a typo for sañjñā ca
+048 l.47/48: naktamandhās tu — naktamandha- kept as one compound
+048 l.86: tenākṣy udvīkṣaṇākṣamam — split; akṣyudvīkṣaṇākṣamam might be a single compound
+049 l.1: manāg ucchūnatā — manāk split as with manāg utsanno; before an abstract noun it could be first member of a compound
+049 l.29: caranty antarlocanaṃ — antarlocanaṃ kept joined as one avyayībhāva (the commentary glosses it as one); antar locanaṃ is possible
+049 l.45/46: vartmapakṣmāntar bāhyato'pi — split as two adverbs; could be one compound
+049 l.63: sac choṇitaṃ — sat taken as a participle (adhikapittaṃ sat śoṇitam); could be compound sacchoṇitaṃ
+049 l.100: kaṇḍūraktapittaprakopitaraktāt — left joined; probably kaṇḍūr rakta… with the doubled r written once
+050 l.4: śira āśritya — the e-text has śiraāśritya (hiatus, no sandhi); split under rule 6; could be meant as one form
+050 l.12: gurustimitabhārikam — left joined as a compound (guru-stimita-); could be gurus timitabhārikam
+050 l.26: mandamandam akṣibhruvaṃ — mandamandam kept as an iterative compound (first member has no ending)
+050 l.27: tad vivṛddhaṃ / tad vyādhipratyanīkatvāt — tad split as a pronoun in both places; could be a compound member
+050 l.54: sal lohitaṃ — split as sat lohitaṃ
+051 l.26: atasīkusumād eva varṇam — evavarṇam may be a typo (perhaps for -vad varṇam); split as eva + varṇam
+051 l.26: ity abhidhānādikalpitam — unclear reading (abhidhānād vikalpitam?); left as one compound
+051 l.12: kaṇḍūbhir ājageva (?) — corrupt; split only after -bhir
+051 l.44: tiryagāgataḥ — tiryak might qualify the participle; kept joined, like tiryaggata
+051 l.5/6: rug bhṛśam — split as ruk + adverb; could be a compound
+052 l.26: kiñcidrodanena — left joined as a compound ("slight weeping"); could be kiñcid rodanena
+052 l.55: aṅgasraṃsavadvyathāvān — left joined; the -vad- is unclear (parallel at l.56: aṅgasraṃsanavyathāvān), may be a typo
+052 l.58: anityatvād ipratyayo — ipratyaya (the suffix i) taken as one compound and split from anityatvāt
+052 l.3: śukravat samastaśarīrāśritatvāt — -vat split off as an adverb; could be one compound
+052 l.7: parameṣṭayuvatisthāne'trāpatyagrahaṇaṃ — left joined because of the vowel fusion param + iṣṭa-
+053 l.16: sadyaḥ kṣataṃ — sadyas read as qualifying the participle; could be a compound ("fresh wound")
+053 l.20: maṇḍalavad rathāṅgalāṅgalādirūpamaṇḍalayuktaḥ — maṇḍalavat may be first member of the compound
+053 l.20: tan militaprakṛtitvam eṣām — tat could be a compound member (tanmilita-) rather than a pronoun
+053 l.11: kiñcit tṛṇādikam — lemma kiñcit split from its gloss; could be one word
+053 l.21: dvyantarā dvandvarūpiṇa — run together with no sandhi in the e-text; split (rule 6)
+054 l.13/14: tenāntarjvaladaviralakopānalajvalitaṃ — left joined; antarjvalad aviralakopānala… is possible
+054 l.34: taddaṣṭo — kept as a compound ("bitten by it"); tad daṣṭo is possible
+054 l.62: tadrūpaṃ — kept as a compound ("its form"); tad rūpaṃ is possible
+054 l.51: smān mandavedanaḥ — split; smān looks like a typo for syān
+054 l.63: jāgrat supto'thavā — split; could be compound jāgratsupto
+
+## Consistency fixes applied (old => new; whole tokens, outside notes)
+
+yadāha => yad āha
+tvāhuḥ => tv āhuḥ
+kaṭvityādi => kaṭv ityādi
+gurvityādi => gurv ityādi
+hetvityādi => hetv ityādi
+vātādityādi => vātād ityādi
+kuryādityādi => kuryād ityādi
+tadevetyādi => tad evetyādi
+yaduktam => yad uktam
+yaduktaṃ => yad uktaṃ
+tameva => tam eva
+teṣāmeva => teṣām eva
+saṅkhyāmāha => saṅkhyām āha
+sandhāviti => sandhāv iti
+piṣṭamiti => piṣṭam iti
+kaṭūniti => kaṭūn iti
+kiṃvā => kiṃ vā
+vā'pyanekadhā => vā'py anekadhā
+varṣatyapi => varṣaty api
+tānasurān => tān asurān
+niruktiruktā => niruktir uktā
+kathamucyate => katham ucyate
+ivetyarthaḥ => ivety arthaḥ
+ityarthaḥ => ity arthaḥ
+ityatra => ity atra
+ityabhidhānāt => ity abhidhānāt
+bhavantyete => bhavanty ete
+ayamarthaḥ => ayam arthaḥ
+adhikamity => adhikam ity
+yaścordhvaṃ => yaś cordhvaṃ
+ity antena => ityantena
