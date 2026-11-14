@@ -1,0 +1,979 @@
+# Root-text segments left as prose by tools/spacing/verse.py (line in madhavanidana-full.xml: text)
+102: pañcanidānalakṣaṇam |
+108: (vā. ni. a. 1) |
+111: (vā. ni. a. 1) |
+114: (vā. ni. a. 1) |
+117: (vā. ni. a. 1) |
+120: (vā. ni. a. 1) |
+123: (vā. ni. a. 1) |
+126: (vā. ni. a. 1) |
+129: (vā. ni. a. 1) |
+132: (vā. ni. a. 1) |
+138: (ci. ni. a. 8) |
+141: (ca. ni. a. 8) |
+144: (ca. ni. a. 8) |
+150: iti śrīmādhavakaraviracite mādhavanidāne  pañcanidānalakṣaṇaṃ samāptam ||1||
+156: atha jvaranidānam |
+165: (su. u. taṃ. a. 39) |
+168: (su. u. taṃ. a. 39) |
+171: (su. u. taṃ. a. 39) |
+174: (su. u. taṃ. a. 39) |
+177: (su. u. taṃ. a. 39) |
+180: (su. u. taṃ. a. 39) |
+183: (su. u. taṃ. a. 39) |
+186: (ca. ci. a. 3) |
+189: (ca. ci. a. 3) |
+192: (ca. ci. a. 3) |
+195: (su. u. taṃ. a. 39) |
+201: (su. u. taṃ. a. 39) |
+204: (su. u. taṃ. a. 31) |
+207: (su. u. taṃ. a. 31) |
+210: (su. u. taṃ. a. 39) |
+213: (ca. ci. a. 3) |
+216: (ca. ci. a. 3) |
+219: (a. saṃ. ni. a. 2) |
+222: (a. saṃ. ni. a. 2) |
+225: (a. saṃ. ni. a. 2) |
+225: (su. u. taṃ. a. 39) |
+228: (su. u. taṃ. a. 39) |
+228: (ca. ci. a. 3) |
+231: (vā. ni. a. 2) |
+234: (vā. ni. a. 2) |
+237: (vā. ni. a. 2) |
+240: (vā. ni. a. 2) |
+243: (ca. ci. a. 3) |
+246: (ca. ci. a. 3) |
+249: (ca. ci. a. 3) |
+252: (ca. ci. a. 3) |
+252: (su. u. taṃ. a. 39) |
+252: (su. u. taṃ. a. 39) |
+258: (su. u. taṃ. a. 39) |
+261: iti śrīmādhavakaraviracite mādhavanidāne jvaranidānaṃ samāptam ||2||
+267: athātīsāranidānam |
+267: (su. u. taṃ. a. 40) |
+270: saraty atīvātisāraṃ tam āhur vyādhiṃ ghoraṃ ṣaḍvidhaṃ taṃ vadanti |
+270: (su. u. taṃ. a. 40) |
+273: (su. u. taṃ. a. 40) |
+279: (su. u. taṃ. a. 40) |
+282: (su. u. taṃ. a. 40) |
+288: (su. u. taṃ. a. 40) |
+291: (su. u. taṃ. a. 40) |
+294: (su. u. taṃ. a. 40) |
+297: (su. u. taṃ. a. 40) |
+297: (su. sū. a. 33) |
+297: chardiṃ mūrchāṃ ca hikkāṃ ca dṛṣṭāvātīsāriṇaṃ tyajet) |
+303: (su. u. taṃ. a. 40) |
+306: (su. u. taṃ. a. 40) |
+309: (su. u. taṃ. a. 40) |
+312: iti śrīmādhavakaraviracite mādhavanidāne 'tīsāranidānaṃ samāptam ||3||
+318: atha grahaṇīroganidānam |
+318: (su. u. taṃ. a. 40) |
+321: (su. u. taṃ. a. 40) |
+324: (ca. ci. a. 15) |
+327: (ca. ci. a. 15) |
+330: (ca. ci. a. 15) |
+333: (ca. ci. a. 15) |
+336: (ca. ci. a. 15) |
+342: iti śrīmādhavakaraviracite mādhavanidāne grahaṇīroganidānaṃ samāptam ||4||
+348: athārśonidānam |
+351: (vā. ni. a. 7) |
+354: (ca. ci. a. 14) |
+357: (ca. ci. a. 14) |
+360: (ca. ci. a. 14) |
+366: (ca. ci. a. 14) |
+369: (vā. ni. a. 7) |
+372: (vā. ni. a. 7) |
+375: (vā. ni. a. 7) |
+381: (vā. ni. a. 7) |
+384: (ca. ci. a. 14) |
+387: (ca. ci. a. 14) |
+390: (ca. ci. a. 14) |
+393: (ca. ci. a. 14) |
+396: (ca. ci. a. 14) |
+399: (ca. ci. a. 14) |
+399: (su. sū. a. 33) |
+402: (vā. ni. a. 7) |
+405: (vā. ni. a. 7) |
+408: (vā. ni. a. 7) |
+411: iti śrīmādhavakaraviracite mādhavanidāne 'rśonidānaṃ samāptam ||5||
+417: athāgnimāndyājīrṇa-visūcikālasaka-vilambikānidānam |
+423: (su. sū. a. 46) |
+426: (su. sū. a. 46) |
+426: (ca. vi. a. 2) |
+432: (su. sū. a. 46) |
+438: (su. u. taṃ. a. 56) |
+441: (su. u. taṃ. a. 56) |
+444: (su. u. taṃ. a. 56) |
+447: (su. u. taṃ. a. 56) |
+450: (su. u. taṃ. a. 56) |
+453: (su. u. taṃ. a. 56) |
+456: (su. u. taṃ. a. 56) |
+462: iti śrīmādhavakaraviracite mādhavanidāne 'gnimāndyājīrṇavisūcikālasakavilambikānidānaṃ samāptam ||6||
+468: atha kriminidānam |
+468: (vā. ni. a. 14) |
+471: (vā. ni. a. 14) |
+477: (su. u. taṃ. a. 54) |
+480: (su. u. taṃ. a. 54) |
+483: (vā. ni. a. 14) |
+486: (vā. ni. a. 14) |
+489: (vā. ni. a. 14) |
+492: iti śrīmādhavakaraviracite mādhavanidāne kriminidānaṃ samāptam ||7||
+498: atha pāṇḍurogakāmalākumbhakāmalāhalīmakanidānam |
+498: (ca. ci. a. 16) |
+501:  niṣevamāṇasya pradūṣya raktaṃ doṣās tvacaṃ pāṇḍuratāṃ nayanti ||2||
+501: (su. u. taṃ. a. 44) |
+504: (su. u. taṃ. a. 44) |
+519: (ca. ci. a. 16) |
+522: (ca. ci. a. 16) |
+525: (ca. ci. a. 16) |
+525: (su. sū. a. 33) |
+525: (su. u. taṃ. a. 44) |
+528: (ca. ci. a. 16) |
+531: (ca. ci. a. 16) |
+534: (ca. ci. a. 16) |
+540: (ca. ci. a. 16) |
+549: atha raktapittanidānam |
+549: (su. u. taṃ. a. 45) |
+552: (su. u. taṃ. a. 45) |
+555: (ca. ci. a. 4) |
+558: (ca. ci. a. 4) |
+561: (ca. ci. a. 4) |
+561: (ca. ci. a. 4) |
+564: (ca. ci. a. 4) |
+567: (su. u. taṃ. a. 45) |
+570: (ca. ci. a. 4) |
+573: (ca. ci. a. 4) |
+576: (su. u. taṃ. a. 45) |
+579: (su. u. taṃ. a. 45) |
+579: (ca. ni. a. 2) |
+579: (su. sū. a. 33) |
+582: iti śrīmādhavakaraviracite mādhavanidāne raktapittanidānaṃ samāptam ||9||
+588: atha rājayakṣmakṣatakṣīṇanidānam |
+594: (su. u. taṃ. a. 41) |
+594: (su. u. taṃ. a. 41) |
+597: (ca. ci. a. 8) |
+602: (su. u. taṃ. a. 41) |
+602: (su. u. taṃ. a. 41) |
+605: (su. u. taṃ. a. 41) |
+608: (su. u. taṃ. a. 41) |
+611: (su. u. taṃ. a. 41) |
+614: (su. u. taṃ. a. 41) |
+617: (su. u. taṃ. a. 41) |
+620: (su. u. taṃ. a. 41) |
+623: (su. u. taṃ. a. 41) |
+626: (su. u. taṃ. a. 41) |
+629: (su. u. taṃ. a. 41) |
+632: (ca. ci. a. 16) |
+638: (ca. ci. a. 16) |
+641: (ca. ci. a. 16) |
+644: iti śrīmādhavakaraviracite mādhavanidāne rājayakṣmakṣatakṣīṇanidānaṃ samāptam ||10||
+650: atha kāsanidānam |
+650: (su. u. taṃ. a. 52) |
+653: (a. hṛ. ni. a. 3) |
+656: (ca. ci. a. 22) |
+659: (su. u. taṃ. a. 52) |
+662: (su. u. taṃ. a. 52) |
+665: (su. u. taṃ. a. 52) |
+668: (su. u. taṃ. a. 52) |
+671: (su. u. taṃ. a. 52) |
+674: (su. u. taṃ. a. 52) |
+677: iti śrīmādhavakaraviracite mādhavanidāne kāsanidānaṃ samāptam ||11||
+683: atha hikkā-śvāsanidānam |
+683: (su. u. taṃ. a. 50) |
+686: (su. u. taṃ. a. 50) |
+689: (su. u. taṃ. a. 50) |
+692: (ca. ci. a. 21) |
+695: (su. u. taṃ. a. 50) |
+698: (su. u. taṃ. a. 50) |
+701: (su. u. taṃ. a. 50) |
+704: (su. u. taṃ. a. 50) |
+707: (su. u. taṃ. a. 50) |
+710: (ca. ci. a. 21) |
+713: (su. u. taṃ. a. 51) |
+713: śvāso mārutasaṃsṛṣṭo mahān ūrdhvas tathā(to) mataḥ) |
+713: (su. u. taṃ. a. 51) |
+716: (su. u. taṃ. a. 51) |
+719: (ca. ci. a. 21) |
+722: (ca. ci. a. 21) |
+725: (ca. ci. a. 29) |
+728: (ca. ci. a. 21) |
+731: (ca. ci. a. 21) |
+734: (ca. ci. a. 21) |
+734: (su. u. taṃ. a. 51) |
+737: (ca. ci. a. 21) |
+740: iti śrīmādhavakaraviracite mādhavanidāne hikkāśvāsanidānaṃ samāptam ||12||
+746: atha svarabhedanidānam |
+746: (su. u. taṃ. a. 53) |
+749: (su. u. taṃ. a. 53) |
+752: (su. u. taṃ. a. 53) |
+755: (su. u. taṃ. a. 53) |
+758: (su. u. taṃ. a. 53) |
+761: (su. u. taṃ. a. 53) |
+764: (su. u. taṃ. a. 53) |
+767: (su. u. taṃ. a. 53) |
+770: iti śrīmādhavakaraviracite mādhavanidāne svarabhedanidānaṃ samāptam ||13||
+776: athārocakanidānam |
+776: arocakāḥ syuḥ ... |1|
+776: (ca. ci. a. 26) |
+779: ... parihṛṣṭadantaḥ kaṣāyavaktraś ca mato 'nilena ||1||
+779: (ca. ci. a. 26) |
+782: kaṭvamlam uṣṇaṃ virasaṃ ca pūti pittena vidyāt ... |2|
+782: (ca. ci. a. 26) |
+785: ... lavaṇaṃ ca vaktram |
+785: (ca. ci. a. 26) |
+788: svābhāvikaṃ cāsyam athāruciś ca ... |3|
+788: (ca. ci. a. 26) |
+791: ... tridoṣaje naikarasaṃ bhavet tu ||3||
+791: (ca. ci. a. 26) |
+794: (ca. ci. a. 26) |
+797: iti śrīmādhavakaraviracite mādhavanidāne arocakanidānaṃ samāptam ||14||
+803: atha chardinidānam |
+803: (su. u. taṃ. a. 49) |
+806: (su. u. taṃ. a. 49) |
+809: (ca. ci. a. 23) |
+812: (ca. ci. a. 23) |
+815: (ca. ci. a. 23) |
+818: (ca. ci. a. 23) |
+821: (ca. ci. a. 23) |
+824: (su. u. taṃ. a. 49) |
+827: (su. u. taṃ. a. 49) |
+830: (ca. ci. a. 23) |
+835: iti śrīmādhavakaraviracite mādhavanidāne chardinidānaṃ samāptam ||15||
+841: atha tṛṣṇānidānam |
+841: (su. u. taṃ. a. 48) |
+844: (su. u. taṃ. a. 48) |
+847: (su. u. taṃ. a. 48) |
+850: (su. u. taṃ. a. 48) |
+853: (su. u. taṃ. a. 48) |
+856: (su. u. taṃ. a. 48) |
+859: (su. u. taṃ. a. 48) |
+862: (su. u. taṃ. a. 48) |
+868: jvaramohakṣayakāsaśvāsādyupasṛṣṭadehānām |10|
+868: (ca. ci. a. 22) |
+871: (ca. ci. a. 22) |
+874: iti śrīmādhavakaraviracite mādhavanidāne tṛṣṇānidānaṃ samāptam ||16||
+880: atha mūrchā-bhrama-nidrā-tandrā-sannyāsanidānam |
+880: (su. u. taṃ. a. 46) |
+883: (su. u. taṃ. a. 46) |
+886: (ca. sū. a. 24) |
+889: (ca. sū. a. 24) |
+892: (ca. sū. a. 24) |
+895: (ca. sū. a. 24) |
+898: (su. u. taṃ. a. 46) |
+901: (su. u. taṃ. a. 46) |
+904: (su. u. taṃ. a. 46) |
+907: (su. śā. a. 4) |
+910: (su. śā. a. 24) |
+913: (ca. sū. a. 24) |
+916: (ca. sū. a. 24) |
+919: iti śrīmādhavakaraviracite mādhavanidāne mūrchābhramanidrātandrāsannyāsanidānaṃ samāptam ||17||
+925: atha pānātyaya-paramada-pānājīrṇa-pānavibhramanidānam |
+928: (ca. ci. a. 24) |
+931: (ca. ci. a. 24) |
+931: (su. u. taṃ. a. 47) |
+946: (sa. u. a. 47) |
+949: (su. u. taṃ. a. 47) |
+952: (su. u. taṃ. a. 47) |
+955: (ca. ci. a. 24) |
+958: (su. u. taṃ. a. 47) |
+961: (su. u. taṃ. a. 47) |
+964: (su. u. taṃ. a. 47) |
+967: (su. u. taṃ. a. 47) |
+970: (su. u. taṃ. a. 47) |
+973: iti śrīmādhavakaraviracite mādhavanidāne pānātyayaparamadapānājīrṇapānavibhramanidānaṃ samāptam ||18||
+979: atha dāhanidānam|
+982: (su. u. taṃ. a. 47) |
+985: (su. u. taṃ. a. 47) |
+988: (su. u. taṃ. a. 47) |
+991: (su. u. taṃ. a. 47) |
+994: (su. u. taṃ. a. 47) |
+997: (su. u. taṃ. a. 47) |
+1000: iti śrīmādhavakaraviracite mādhavanidāne dāhanidānaṃ samāptam ||19||
+1006: athonmādanidānam |
+1006: (su. u. taṃ. a. 62) |
+1009: (su. u. taṃ. a. 62) |
+1012: (ca. ci. a. 9) |
+1015: (ca. ci. a. 1) |
+1018: (ca. ci. a. 9) |
+1021: (ca. ci. a. 9) |
+1024: (ca. ci. a. 9) |
+1027: (ca. ci. a. 9) ||12||
+1030: (ca. ci. a. 9) |
+1033: (su. u. taṃ. a. 62) |
+1036: (su. u. taṃ. a. 62) |
+1039: (su. u. taṃ. a. 62) |
+1042: (ca. ci. a. 9) |
+1045: (su. u. taṃ. a. 60) |
+1048: (su. u. taṃ. a. 60) |
+1051: (su. u. taṃ. a. 60) |
+1054: (su. u. taṃ. a. 60) |
+1057: (su. u. taṃ. a. 60) |
+1060: (su. u. taṃ. a. 60) |
+1063: (su. u. taṃ. a. 60) |
+1066: uddhastaḥ kṛśaparuṣo  acirapralāpī durgandho bhṛśam aśucis tathā'tilolaḥ |
+1066: (su. u. taṃ. a. 60) |
+1069: (su. u. taṃ. a. 60) |
+1072: (su. u. taṃ. a. 60) |
+1075: (su. u. taṃ. a. 60) |
+1080: iti śrīmādhavakaraviracite mādhavanidāna unmādanidānaṃ samāptam||20||
+1086: athāpasmāranidānam |
+1089: (su. u. taṃ. a. 61) |
+1092: (ca. ci. a. 10) |
+1095: (ca. ci. a. 10) |
+1098: (ca. ci. a. 10) |
+1101: (ca. ci. a. 10) |
+1104: (ca. ci. a. 10) |
+1104: (su. u. taṃ. a. 61) |
+1107: iti śrīmādhavakaraviracite mādhavanidāne 'pasmāranidānaṃ samāptam ||21||
+1113: atha vātavyādhinidānam|
+1113: (ca. ci. a. 28) |
+1116: (ca. ci. a. 28) |
+1122: (ca. ci. a. 28) |
+1125: (ca. ci. a. 28) |
+1128: (ca. ci. a. 28) |
+1131: (su. ni. a. 1) |
+1134: (ca. ci. a. 28) |
+1137: (ca. ci. a. 28) |
+1140: (ca. ci. a. 28) |
+1143: (ca. ci. a. 28) |
+1146: (su. ni. a. 1) |
+1146: (ca. ci. a. 28) |
+1149: (su. ni. a. 17) |
+1152: (su. ni. a. 1) |
+1152: (su. ni. a. 1) |
+1152: (su. ni. a. 1) |27|
+1155: (su. ni. a. 1) |
+1158: (ca. si. a. 1) |
+1161: (su. ni. a. 1) |
+1164: (su. ni. a. 1) |
+1167: (su. ni. a. 1) |
+1170: (su. ni. a. 1) |
+1173: (su. ni. a. 1) |
+1176: (vā. ni. a. 15) |
+1179: (su. ni. a. 1) |
+1182: (su. ni. a. 1) |
+1185: (su. ni. a. 1) |
+1188: (vā. ni. a. 15) |
+1191: (vā. ni. a. 15) |
+1194: (su. ni. a. 1) |
+1197: (vā. ni. a. 15) |
+1200: (vā. ni. a. 15) |
+1203: (ca. ci. a. 28) |
+1208: (su. ni. a. 1) |
+1211: (su. ni. a. 1) |
+1214: (su. ni. a. 1) |
+1217: (su. ni. a. 1) |
+1220: (vā. ni. a. 15) |
+1223: (su. ni. a. 1) |
+1226: (su. ni. a. 1) |
+1229: (su. ni. a. 1) |
+1232: (su. ni. a. 1) |
+1235: (su. ni. a. 1) |
+1238: (su. ni. a. 1) |
+1241: (su. ni. a. 1) |
+1244: (su. ni. a. 1) |
+1247: (su. ni. a. 1) |
+1250: (su. ni. a. 3) |
+1256: (ca. ci. a. 28) |
+1262: (ca. ci. a. 28) |
+1262: (ca. ci. a. 28) |
+1265: (su. sū. a. 33) |
+1268: (ca. ci. a. 28) |
+1271: iti śrīmādhavakaraviracite mādhavanidāne vātavyādhinidānaṃ samāptam ||22||
+1277: atha vātaraktanidānam |
+1277: (ca. ci. a. 29) |
+1277: (su. ci. a. 1) |
+1280: hastyaśvoṣṭrair gacchataś cāśnataś ca vidāhy annaṃ savidāho 'śanasya |
+1280: (su. ni. a. 1) |
+1283: (ca. ci. a. 29) |
+1286: (vā. ni. a. 16) |
+1289: (su. ni. a. 1) |
+1292: (su. ni. a. 1) |
+1292: (ca. ci. a. 29) |
+1295: iti śrīmādhavakaraviracite mādhavanidāne vātaraktanidānaṃ samāptam ||23||
+1301: athorustambhanidānam |
+1301: (vā. ni. a. 15) |
+1306: (ca. ci. a. 27) |
+1309: iti śrīmādhavakaraviracite mādhavanidāne ūrustambhanidānaṃ samāptam ||24||
+1315: athāmavātanidānam |
+1330: iti śrīmādhavakaraviracite mādhavanidāne āmavātanidānaṃ samāptam ||25||
+1336: atha śūlapariṇāmaśūlānnadravaśūlanidānam |
+1368: iti śrīmādhavakaraviracite mādhavanidāne śūlapariṇāmaśūlānnadravaśūlanidānaṃ samāptam ||26||
+1374: athodāvartānāhanidānam |
+1377: (ca. sū. a. 7) |
+1377: (su. u. taṃ. a. 55) |
+1377: (ca. sū. a. 7) |
+1377: (su. u. taṃ. a. 55) |
+1377: (ca. sū. a. 7) |
+1377: (su. u. taṃ. a. 55) |
+1377: (ca. sū. a. 7) |
+1377: (su. u. taṃ. a. 55) |
+1380: (su. u. taṃ. a. 55) |
+1383: (su. u. taṃ. a. 56) |
+1383: (su. u. taṃ. a. 55) |
+1386: iti śrīmādhavakaraviracite mādhavanidāne udāvartānāhanidānaṃ samāptam ||27||
+1392: atha gulmanidānam |
+1395: (su. u. taṃ. a. 42) |
+1398: (su. u. taṃ. a. 42) |
+1401: (vā. ni. a. 11) |
+1407: (ca. ci. a. 5) |
+1410: jvaraḥ pipāsā vadanāṅgarāgaḥ śūlaṃ mahaj jīryati bhojana ca |
+1410: (ca. ci. a. 5) |
+1413: (ca. ci. a. 5) |
+1416: (ca. ci. a. 5) |
+1419: (ca. ci. a. 5) |
+1422: navaprasūtā'hitabhojana yā yā cāmagarbhaṃ visṛjed ṛtau vā |
+1422: (su. u. taṃ. a. 42) |
+1422: (ca. ci. a. 5) |
+1425: (ca. ci. a. 5) |
+1425: (su. sū. a. 33) |
+1428: iti śrīmādhavakaraviracite mādhavanidāne gulmanidānaṃ samāptam ||28||
+1434: atha hṛdroganidānam |
+1437: (su. u. taṃ. a. 43) |
+1440: (su. u. taṃ. a. 43) |
+1443: (su. u. taṃ. a. 43) |
+1446: (su. u. taṃ. a. 43) |
+1449: (ca. ci. a. 26) |
+1449: (su. u. taṃ. a. 43) |
+1455: iti śrīmādhavakaraviracite mādhavanidāne hṛdroganidānaṃ samāptam ||29||
+1461: atha mūtrakṛcchranidānam |
+1461: (ca. ci. a. 26) |
+1464: (ca. ci. a. 26) |
+1464: (su. u. taṃ. a. 59) |
+1467: (su. u. taṃ. a. 59) |
+1470: iti śrīmādhavakaraviracite mādhavanidāne mūtrakṛcchranidānaṃ samāptam ||30||
+1476: atha mūtrāghātanidānam |
+1479: (su. u. taṃ. a. 58) |
+1485: (su. u. taṃ. a. 58) |
+1491: (su. u. taṃ. a. 58) |
+1494: (su. u. taṃ. a. 58) |
+1497: (su. u. taṃ. a. 58) |
+1500: (vā. ni. a. 9) |
+1503: (vā. ni. a. 9) |
+1506: (su. u. taṃ. a. 58) |
+1509: (vā. ni. a. 9) |
+1512: (vā. ni. a. 9) |
+1527: iti śrīmādhavakaraviracite mādhavanidāne mūtrāghātanidānaṃ samāptam ||31||
+1533: athāśmarīnidānam |
+1533: (ca. ci. a. 26) |
+1536: (vā. ni. a. 9) |
+1539: (vā. ni. a. 9) |
+1542: (vā. ni. a. 9) |
+1545: (vā. ni. a. 9) |
+1548: (vā. ni. a. 9) |
+1551: (vā. ni. a. 9) |
+1554: (vā. ni. a. 9) |
+1557: (vā. ni. a. 9) |
+1560: (vā. ni. a. 9) |
+1560: (su. ni. a. 3) |
+1563: (su. sū. a. 33) |
+1566: iti śrīmādhavakaraviracite mādhavanidāne 'śmarīnidānaṃ samāptam ||32||
+1572: atha prameha-pramehapiḍakānidānam |
+1572: (ca. ci. a. 7) |
+1575: (ca. ci. a. 6) |
+1578: (ca. ci. a. 6) |
+1584: (vā. ni. a. 10) |
+1587: (vā. ni. a. 10) |
+1590: (vā. ni. a. 10) |
+1593: (vā. ni. a. 10) |
+1596: (vā. ni. a. 10) |
+1599: (su. sū. a. 33) |
+1602: (ca. ci. a. 6) |
+1605: (su. ni. a. 6) |
+1605: (vā. ni. a. 10) |
+1608: (vā. ni. a. 10) |
+1611: (vā. ni. a. 10) |
+1614: (su. ni. a. 6) |
+1617: (su. ni. a. 6) |
+1617: (ca. sū. a. 17) |
+1620: (su. ni. a. 6) |
+1623: iti śrīmādhavakaraviracite mādhavanidāne pramehapramehapiḍakānidānaṃ samāptam ||33||
+1629: atha medoroganidānam |
+1629: (ca. sū. a. 21) |
+1632: iti śrīmādhavakaraviracite mādhavanidāne medonidānaṃ samāptam ||34||
+1638: athodaranidānam |
+1638: (vā. ni. a. 12) |
+1641: (ca. ci. a. 13) |
+1644: (su. ni. a. 7) |
+1647: (vā. ni. a. 12) |
+1650: (vā. ni. a. 12) |
+1653: (vā. ni. a. 12) |
+1653: dūṣyodaraṃ kīrtitam etad eva ...||
+1653: (su. ni. a. 7) |
+1656: ... plīhodaraṃ kīrtayato nibodha ||15||
+1656: (su. ni. a. 7) |
+1659: (vā. ni. a. 12) |
+1662: (su. ni. a. 7) |
+1665: etat parisrāvyudaraṃ pradiṣṭaṃ ... |22|
+1665: (su. ni. a. 7) |
+1668: ... dakodaraṃ kīrtayato nibodha ||22||
+1668: (su. ni. a. 7) |
+1671: (ca. ci. a. 13)0 |27|
+1674: (ca. ci. a. 13) |
+1674: (su. sū. a. 33) |
+1677: iti śrīmādhavakaraviracite mādhavanidāne udaranidānaṃ samāptam ||35||
+1683: atha śothanidānam |
+1683: (vā. ni. a. 13) |
+1686: (vā. ni. a. 13) |
+1689: (ca. ci. a. 12) |
+1695: (ca. ci. a. 12) |
+1698: (ca. ci. a. 12) |
+1701: (ca. ci. a. 12) |
+1704: (ca. sū. a. 18) |
+1707: (vā. ni. a. 13) |
+1710: (vā. ni. a. 13) |
+1713: (su. ci. a. 23) |
+1716: (su. ci. a. 23) |
+1716: (vā. ni. a. 13) |
+1719: iti śrīmādhavakaraviracite mādhavanidāne śothanidānaṃ samāptam ||36||
+1725: atha vṛddhinidānam |
+1725: (vā. ni. a. 11) |
+1728: (vā. ni. a. 11) |
+1731: (vā. ni. a. 11) |
+1734: iti śrīmādhavakaraviracite mādhavanidāne vṛddhinidānaṃ samāptam ||37||
+1740: atha galagaṇḍa-gaṇḍamālāpacī-granthyarbudanidānam |
+1740: (su. ni. a. 11) |
+1743: (su. ni. a. 11) |
+1746: (su. ni. a. 11) |
+1749: (su. ni. a. 11) |
+1752: (su. ni. a. 11) |
+1755: (su. ni. a. 11) |
+1758: (su. ni. a. 11) |
+1764: (su. ni. a. 11) |
+1767: (su. ni. a. 11) |
+1770: (su. ni. a. 11) |
+1773: (su. ni. a. 11) |
+1776: (su. ni. a. 11) |
+1779: (su. ni. a. 11) |
+1782: (su. ni. a. 11) |
+1785: (su. ni. a. 11) |
+1788: māṃsārbudaṃ tv etad asādhyam uktaṃ... |
+1788: (su. ni. a. 11) |
+1791: ...sādhyeṣv apīmāni tu varjayec ca |
+1791: (su. ni. a. 11) |
+1794: (su. ni. a. 11) |
+1797: (su. ni. a. 11) |
+1800: iti śrīmādhavakaraviracite mādhavanidāne galagaṇḍagaṇḍamālāpacīgranthyarbudanidānaṃ samāptam ||38||
+1806: atha ślīpadanidānam |
+1812: (su. ni. a. 12) |
+1815: (su. ni. a. 12) |
+1821: iti śrīmādhavakaraviracite mādhavanidāne ślīpadanidānaṃ samāptam ||39||
+1827: atha vidradhinidānam |
+1827: (su. ni. a. 9) |
+1830: (su. ni. a. 9) |
+1836: (su. ni. a. 9) |
+1842: (su. ni. a. 9) |
+1845: (su. ni. a. 9) |
+1848: (su. ni. a. 9) |
+1851: (su. ni. a. 9) |
+1854: (su. ni. a. 9) |
+1857: (su. ni. a. 9) |
+1857: (vā. ni. a. 11) |
+1857: (su. sū. a. 33) |
+1860: iti śrīmādhavakaraviracite mādhavanidāne vidradhinidānaṃ samāptam ||40||
+1866: atha vraṇaśothanidānam |
+1880: (su. sū. a. 17) |
+1883: (su. sū. a. 17) |
+1886: (su. sū. a. 17) |
+1889: iti śrīmādhavakaraviracite mādhavanidāne vraṇaśothanidānaṃ samāptam ||41||
+1895: atha śārīravraṇanidānam |
+1895: (ca. ci. a. 25) |
+1898: (ca. ci. a. 25) |
+1907: (su. sū. a. 23) |
+1910: (su. sū. a. 23) |
+1913: (su. sū. a. 23) |
+1916: (su. sū. a. 28) |
+1919: (su. sū. a. 28) |
+1922: iti śrīmādhavakaraviracite mādhavanidāne śārīravraṇanidānaṃ samāptam ||42||
+1928: (su. ci. a. 2) |
+1931: (su. ci. a. 2) |
+1934: (su. ci. a. 2) |
+1937: (su. ci. a. 2) |
+1940: (su. ci. a. 2) |
+1943: (su. ci. a. 2) |
+1946: (su. ci. a. 2) |
+1949: (su. ci. a. 2) |
+1952: (su. ci. a. 2) |
+1958: (su. sū. a. 25) |
+1961: (su. sū. a. 25) |
+1964: (su. sū. a. 25) |
+1967: (su. sū. a. 25) |
+1970: (ca. ci. a. 25) |
+1973: iti śrīmādhavakaraviracite mādhavanidāne sadyovraṇanidānaṃ samāptam ||43||
+1979: atha bhagnanidānam |
+1982: sāmānyataḥ sandhigatasya liṅgam... |2|
+1985: ...utpiṣṭasandheḥ śvayathuḥ samantāt ||2||
+1988: kāṇḍe tv ataḥ karkaṭakāśvakarṇavicūrṇitaṃ piccitam asthichallikā ||4||
+1994: (su. ci. a. 3) |
+1997: (su. ni. a. 15) |
+2000: (su. ni. a. 15) |
+2003: (su. ni. a. 15) |
+2006: iti śrīmādhavakaraviracite mādhavanidāne bhagnanidānaṃ samāptam ||44||
+2012: atha nāḍīvraṇanidānam |
+2012: (su. ni. a. 10) |
+2015: (su. ni. a. 10) |
+2018: (su. ni. a. 10) |
+2021: (su. ni. a. 10) |
+2024: (su. ni. a. 10) |
+2027: (su. ni. a. 10) |
+2030: (su. ni. a. 10) |
+2033: (su. ni. a. 10) |
+2036: (su. ci. a. 17) |
+2039: iti śrīmādhavakaraviracite mādhavanidāne nāḍīvraṇanidānaṃ samāptam ||45||
+2045: atha bhagandaranidānam |
+2063: (su. ni. a. 4) |
+2066: (su. sū. a. 33) |
+2069: iti śrīmādhavakaraviracite mādhavanidāne bhagandaranidānaṃ samāptam ||46||
+2075: athopadaṃśanidānam |
+2096: iti śrīmādhavakaraviracite mādhavanidāne upadaṃśanidānaṃ samāptam ||47||
+2102: atha śūkadoṣanidānam |
+2105: (su. ni. a. 14) |
+2108: (su. ni. a. 14) |
+2114: (su. ni. a. 14) |
+2117: (su. ni. a. 14) |
+2120: (su. ni. a. 14) |
+2123: (su. ni. a. 14) |
+2126: (su. ni. a. 14) |
+2129: (su. ni. a. 14) |
+2132: (su. ni. a. 14) |
+2135: (su. ni. a. 14) |
+2138: (su. ni. 14) ||11||
+2141: (su. ni. a. 14) |
+2144: (su. ni. a. 14) |
+2147: (su. ni. a. 14) |
+2150: (su. ni. a. 14) |
+2153: (su. ni. a. 14) |
+2156: (su. ni. a. 14) |
+2159: (su. ni. a. 14) |
+2162: iti śrīmādhavakaraviracite mādhavanidāne śūkadoṣanidānaṃ samāptam ||48||
+2168: atha kuṣṭhanidānam |
+2168: (ca. ci. a. 7) |
+2171: (vā. ni. a. 14) |
+2174: (vā. ni. a. 14) |
+2177: (ca. ci. a. 7) |
+2180: (ca. ci. a. 7) |
+2180: (ca. ci. a. 7) |
+2186: (su. ni. a. 5) |
+2189: (su. sū. a. 33) |
+2192: (vā. ni. a. 14) |
+2195: (vā. ni. a. 14) |
+2198: (a. saṃ. ni. a. 14) |
+2201: (su. ni. a. 5) |
+2204: iti śrīmādhavakaraviracite mādhavanidāne kuṣṭhanidānaṃ samāptam ||49||
+2210: atha śītapittodarda-koṭhanidānam |
+2225: iti śrīmādhavakaraviracite mādhavanidāne śītapittodardakoṭhānidānaṃ samāptam ||50||
+2231: athāmlapittanidānam |
+2240: karacaraṇadāham auṣṇyaṃ mahatīm aruciṃ jvaraṃ ca kaphapittam |
+2240: janayati  kaṇḍūmaṇḍalapiḍakāśatanicitagātrarogacayam ||6||
+2249: iti śrīmādhavakaraviracite mādhavanidāne 'mlapittanidānaṃ samāptam ||51||
+2255: atha visarpanidānam |
+2255: (ca. ci. a. 21) |
+2258: (vā. ni. a. 13) |
+2261: (vā. ni. a. 13) |
+2264: (vā. ni. a. 13) |
+2267: (vā. ni. a. 13) |
+2270: (vā. ni. a. 13) |
+2273: (su. ni. a. 10) |
+2276: iti śrīmādhavakaraviracite mādhavanidāne visarpanidānaṃ samāptam ||52||
+2282: atha visphoṭanidānam |
+2285: (su. ni. a. 13) |
+2294: iti śrīmādhavakaraviracite mādhavanidāne visphoṭanidānaṃ samāptam ||53||
+2300: atha masūrikānidānam |
+2330: iti śrīmādhavakaraviracite mādhavanidāne masūrikānidānaṃ samāptam ||54||
+2336: atha kṣudraroganidānam |
+2336: (su. ni. a. 13) |
+2339: (su. ni. a. 13) |
+2342: (su. ni. a. 13) |
+2345: (su. ni. a. 13) |
+2348: (su. ni. a. 13) |
+2354: (su. ni. a. 13) |
+2366: (su. ni. a. 13) |
+2369: (su. ni. a. 13) |
+2372: (su. ni. a. 13) |
+2375: (su. ni. a. 13) |
+2378: (su. ni. a. 13) |
+2381: (su. ni. a. 13) |
+2384: (su. ni. a. 13) |
+2387: (su. ni. a. 13) |
+2390: (su. ni. a. 13) |
+2393: (su. ni. a. 13) |
+2396: (su. ni. a. 13) |
+2399: (su. ni. a. 13) |
+2402: (su. ni. a. 13) |
+2405: (su. ni. a. 13) |
+2408: (su. ni. a. 13) |
+2411: (su. ni. a. 13) |34|
+2414: (su. ni. a. 13) |
+2417: (su. ni. a. 13) |
+2420: (su. ni. a. 13) |
+2423: (su. ni. a. 13) |
+2426: (su. ni. a. 13) |
+2429: (su. ni. a. 13) |
+2435: (su. ni. a. 13) |
+2438: (su. ni. a. 13) |
+2441: (su. ni. a. 13) |
+2444: (su. ni. a. 13) |
+2447: (su. ni. a. 13) |
+2450: (su. ni. a. 13) |
+2453: (su. ni. a. 13) |
+2459: iti śrīmādhavakaraviracite mādhavanidāne kṣudraroganidānaṃ samāptam ||55||
+2465: atha mukharoganidānam |
+2468: (su. ni. a. 16) |
+2471: (su. ni. a. 16) |
+2474: (su. ni. a. 16) |
+2477: (su. ni. a. 16) |
+2480: (su. ni. a. 16) |
+2483: (su. ni. a. 16) |
+2486: (su. ni. a. 16) |
+2489: (su. ni. a. 16) |
+2492: (su. ni. a. 16) |
+2495: (su. ni. a. 16) |
+2498: (su. ni. a. 16) |
+2501: (su. ni. a. 16) |
+2504: (su. ni. a. 16) |
+2507: (su. ni. a. 16) |
+2510: (su. ni. a. 16) |
+2513: (su. ni. a. 16) |
+2516: (su. ni. a. 16) |
+2522: (su. ni. a. 16) |
+2525: (su. ni. a. 16) |
+2528: (su. ni. a. 16) |
+2531: (su. ni. a. 16) |
+2534: (su. ni. a. 16) |
+2546: (su. ni. a. 16) |
+2548: (su. ni. a. 16) |
+2551: (su. ni. a. 16) |
+2554: (su. ni. a. 16) |
+2557: (su. ni. a. 16) |
+2560: (su. ni. a. 16) |
+2563: mṛduḥ śotho lohitaḥ śoṇitottho jñeyo 'dhruṣaḥ sajvaras tīvraruk ca ||34||
+2563: (su. ni. a. 16) |
+2566: (su. ni. a. 16) |
+2569: (su. ni. a. 16) |
+2572: (su. ni. a. 16) |
+2575: (su. ni. a. 16) |
+2578: (su. ni. a. 16) |
+2581: (su. ni. a. 16) |
+2584: (su. ni. a. 16) |
+2587: (su. ni. a. 16) |
+2590: (su. ni. a. 16) |
+2593: (su. ni. a. 16) |
+2596: (su. ni. a. 16) |
+2599: (su. ni. a. 16) |
+2602: (su. ni. a. 16) |
+2605: (su. ni. a. 16) |
+2608: (su. ni. a. 16) |
+2611: (su. ni. a. 16) |
+2614: (su. ni. a. 16) |
+2617: (su. ni. a. 16) |
+2620: (su. ni. a. 16) |
+2623: (su. ni. a. 16) |
+2626: iti śrīmādhavakaraviracite mādhavanidāne mukharoganidānaṃ samāptam ||56||
+2632: atha karṇaroganidānam |
+2632: (su. u. taṃ. a. 20) |
+2641: (su. u. taṃ. a. 20) |
+2644: (su. u. taṃ. a. 20) |
+2647: (su. u. taṃ. a. 20) |
+2653: (su. u. taṃ. a. 20) |
+2665: (ca. ci. a. 26) |
+2668: (su. ci. a. 25) |
+2671: (su. ci. a. 25) |
+2674: (su. ci. a. 25) |
+2677: (su. ci. a. 25) |
+2680: iti śrīmādhavakaraviracite mādhavanidāne karṇaroganidānaṃ samāptam ||57||
+2686: atha nāsāroganidānam |
+2686: (su. u. taṃ. a. 22) |
+2689: (su. u. taṃ. a. 22) |
+2692: (su. u. taṃ. a. 22) |
+2695: (su. u. taṃ. a. 22) |
+2698: (su. u. taṃ. a. 22) |
+2701: (su. u. taṃ. a. 22) |
+2704: (su. u. taṃ. a. 22) |
+2707: (su. u. taṃ. a. 22) |
+2710: (ca. ci. a. 26) |
+2713: (ca. ci. a. 26) |
+2716: (su. u. taṃ. a. 22) |
+2722: (ca. ci. a. 26) |
+2722: (su. u. taṃ. a. 24) |
+2725: (su. u. taṃ. a. 24) |
+2728: (su. u. taṃ. a. 24) |
+2728: (su. u. taṃ. a. 24) |
+2731: (su. u. taṃ. a. 24) |
+2734: (su. u. taṃ. a. 24) |
+2737: (su. u. taṃ. a. 24) |
+2740: (su. u. taṃ. a. 24) |
+2743: (su. u. taṃ. a. 24) |
+2749: iti śrīmādhavakaraviracite mādhavanidāne nāsāroganidānaṃ samāptam ||58||
+2755: atha netraroganidānam |
+2755: (su. u. taṃ. a. 1) |
+2761: (su. u. taṃ. a. 6) |
+2764: (su. u. taṃ. a. 6) |
+2767: (su. u. taṃ. a. 6) |
+2770: (su. u. taṃ. a. 6) |
+2773: (su. u. taṃ. a. 6) |
+2776: (su. u. taṃ. a. 6) |
+2779: hanyād dṛṣṭiṃ ślaiṣmikaḥ saptarātrād adhimantho raktajaḥ pañcarātrāt |
+2779:  ṣaḍrātrād vātiko vai nihanyān mithyācārāt paittikaḥ sadya eva ||11||
+2779: (su. u. taṃ. a. 6) |
+2788: (su. u. taṃ. a. 6) |
+2791: (su. u. taṃ. a. 6) |
+2797: (su. u. taṃ. a. 6) |
+2800: (su. u. taṃ. a. 6) |
+2806: (su. u. taṃ. a. 6) |
+2809: (su. u. taṃ. a. 6) |
+2812: srāvaṃ sraved uṣṇam atīva yac ca tat savraṇaṃ śukla(kra)m udāharanti ||22||
+2812: (su. u. taṃ. a. 5) |
+2815: avedanaṃ vā na yugmaśuklaṃ tat siddhim āyāti kadācid eva ||23||
+2815: (su. u. taṃ. a. 5) |
+2818: (su. u. taṃ. a. 5) |
+2821: (su. u. taṃ. a. 5) |
+2824: (su. u. taṃ. a. 5) |
+2827: (su. u. taṃ. a. 5) |
+2830: (iti kṛṣṇajāḥ) |
+2830: (su. u. taṃ. a. 5) |
+2833: (su. u. taṃ. a. 5) |
+2836: (su. u. taṃ. a. 7) |
+2839: (su. u. taṃ. a. 7) |
+2842: (su. u. taṃ. a. 7) |
+2845: (su. u. taṃ. a. 7) |
+2848: (su. u. taṃ. a. 7) |
+2851: (su. u. taṃ. a. 7) |
+2854: (su. u. taṃ. a. 7) |
+2860: (su. u. taṃ. a. 7) |
+2863: (su. u. taṃ. a. 7) |
+2866: (su. u. taṃ. a. 7) |
+2869: (su. u. taṃ. a. 7) |
+2872: (su. u. taṃ. a. 7) |
+2875: (su. u. taṃ. a. 7) |
+2878: (su. u. taṃ. a. 7) |
+2881: (su. u. taṃ. a. 7) |
+2884: (su. u. taṃ. a. 7) |
+2887: (su. u. taṃ. a. 7) |
+2890: (su. u. taṃ. a. 7) |
+2893: (iti dṛṣṭigatāḥ) |
+2893: (su. u. taṃ. a. 7) |
+2911: (su. u. taṃ. a. 7) |
+2914: (su. u. taṃ. a. 4) |
+2920: (su. u. taṃ. a. 4) |
+2923: (su. u. taṃ. a. 4) |
+2926: (iti śuklajāḥ) |
+2926: (su. u. taṃ. a. 4) |
+2929: (su. u. taṃ. a. 2) |
+2932: (su. u. taṃ. a. 2) |
+2935: (su. u. taṃ. a. 2) |
+2938: (su. u. taṃ. a. 2) |
+2941: (su. u. taṃ. a. 2) |
+2944: (su. u. taṃ. a. 2) |
+2947: (su. u. taṃ. a. 2) |
+2950: (su. u. taṃ. a. 2) |
+2953: ...'lajī syāt tasminn eva khyāpitā pūrvaliṅgai ||74||
+2953: (su. u. taṃ. a. 2) |
+2956: krimigranthir vartmanaḥ pakṣmaṇaś ca kaṇḍūṃ kuryuḥ krimayaḥ sandhijātāḥ |
+2956: (iti sandhigatāḥ) |
+2956: (su. u. taṃ. a. 2) |
+2959: (su. u. taṃ. a. 2) |
+2962: (su. u. taṃ. a. 3) |
+2965: (su. u. taṃ. a. 3) |
+2968: (su. u. taṃ. a. 3) |
+2971: (su. u. taṃ. a. 3) |
+2974: (su. u. taṃ. a. 3) |
+2977: (su. u. taṃ. a. 3) |
+2980: (su. u. taṃ. a. 3) |
+2983: (su. u. taṃ. a. 3) |
+2986: (su. u. taṃ. a. 3) |
+2989: (su. u. taṃ. a. 3) |
+2992: (su. u. taṃ. a. 3) |
+2995: (su. u. taṃ. a. 3) |
+2998: (su. u. taṃ. a. 3) |
+3001: (su. u. taṃ. a. 3) |
+3004: (su. u. taṃ. a. 3) |
+3007: (su. u. taṃ. a. 3) |
+3010: (su. u. taṃ. a. 3) |
+3013: (su. u. taṃ. a. 3) |
+3016: (vā. u. a. 8) |
+3025: (iti vartmagatāḥ) |
+3025: (su. u. taṃ. a. 1) |
+3028: iti śrīmādhavakaraviracite mādhavanidāne netraroganidānaṃ samāptam ||59||
+3034: atha śiroroganidānam|
+3034: (su. u. taṃ. a. 25) |
+3037: (su. u. taṃ. a. 25) |
+3040: (su. u. taṃ. a. 25) |
+3043: (su. u. taṃ. a. 25) |
+3046: (su. u. taṃ. a. 25) |
+3049: (su. u. taṃ. a. 25) |
+3052: (su. u. taṃ. a. 25) |
+3055: (su. u. taṃ. a. 25) |
+3058: (su. u. taṃ. a. 25) |
+3061: (su. u. taṃ. a. 25) |
+3070: iti śrīmādhavakaravicite mādhavanidāne śiroroganidānaṃ samāptam ||60||
+3076: athāsṛgdaranidānam |
+3079: (su. śā. a. 2) |
+3081: (su. śā. a. 2) |
+3087: (su. śā. a. 2) |
+3090: iti śrīmādhavakaraviracite mādhavanidāne asṛgdaranidānaṃ samāptam ||61||
+3096: atha yonivyāpannidānam |
+3096: (ca. ci. a. 30) |
+3099: (su. u. taṃ. a. 38) |
+3102: (su. u. taṃ. a. 38) |
+3105: (su. u. taṃ. a. 38) |
+3108: (su. u. taṃ. a. 38) |
+3111: iti śrīmādhavakaraviracite mādhavanidāne yonivyāpannidānaṃ samāptam ||62||
+3117: atha yonikandanidānam |
+3123: iti śrīmādhavakaraviracite mādhavanidāne yonikandanidānaṃ samāptam ||63||
+3129: atha mūḍhagarbhanidānam |
+3132: (su. ni. a. 8) |
+3147: (su. ni. a. 8) |
+3150: (su. ni. a. 8) |
+3153: (su. ni. a. 8) |
+3159: iti śrīmādhavakaraviracite mādhavanidāne mūḍhagarbhanidānaṃ samāptam ||64||
+3165: atha sūtikāroganidānam |
+3171: iti śrīmādhavakaraviracite mādhavanidāne sūtikāroganidānaṃ samāptam ||65||
+3177: atha stanaroganidānam |
+3183: iti śrīmādhavakaraviracite mādhavanidāne stanaroganidānaṃ samāptam ||66||
+3189: atha stanyaduṣṭinidānam |
+3204: iti śrīmādhavakaraviracite mādhavanidāne stanyaduṣṭinidānaṃ samāptam ||67||
+3210: atha bālaroganidānam |
+3243: (su. u. taṃ. a. 27) |
+3246: chardispa(sya)ndanakaṇṭhāsyaśoṣamūrchāvigandhitāḥ |
+3249: iti śrīmādhavakaraviracite mādhavanidāne bālaroganidānaṃ samāptam ||68||
+3255: atha viṣaroganidānam |
+3258: (ca. ci. a. 23) |3|
+3260: (ca. ci. a. 23) |4|
+3263: (su. ka. a. 1) |
+3266: (su. ka. a. 2) |
+3269: sadyaḥ kṣataṃ pacyate yasya jantoḥ sraved raktaṃ pacyate cāpy abhīkṣṇam |
+3269: tṛṣṇā mūrchā jvaradāhau ca yasya digdhāhataṃ taṃ puruṣaṃ vyavasyet |
+3269: liṅgāny etāny eva kuryād amitrair vraṇe viṣaṃ yasya dattaṃ pramādāt ||14||
+3269: (su. ka. a. 3) |
+3278: (su. ka. a. 3) |
+3281: (su. ka. a. 3) |
+3284: (su. ka. a. 3) |
+3287: (su. ka. a. 3) |
+3290: (su. ka. a. 2) |
+3293: (su. ka. a. 2) |
+3296: (su. ka. a. 2) |
+3299: (su. ka. a. 2) |
+3302: (su. ka. a. 2) |
+3305: (su. ka. a. 2) |
+3308: (su. ka. a. 2) |
+3314: (su. ka. a. 8) |
+3317: (su. ka. a. 8) |42|
+3320: (ca. ci. a. 23) |
+3323: (ca. ci. a. 23) |
+3326: (ca. ci. a. 23) |
+3329: (ca. ci. a. 23) |
+3332: (ca. ci. a. 23) |
+3335: (ca. ci. a. 23) |
+3338: (ca. ci. a. 23) |
+3341: (ca. ci. a. 23) |
+3344: (ca. ci. a. 23) |
+3347: (ca. ci. a. 23) |
+3350: (ca. ci. a. 23) |
+3353: (ca. ci. a. 23) |
+3356: (ca. ci. a. 23) |
+3364: (su. ka. a. 7) |
+3366: (su. ka. a. 6) |
+3369: iti śrīmādhavakaraviracite mādhavanidāne viṣanidānaṃ samāptam ||69||
+3375: atha viṣayānukramaṇikā |
+3377: viniścaye sarvarujāṃ narāṇāṃ śrīmādhavavenendukarātmajena ||10||
+3379: iti śrīmādhavakaraviracitaṃ mādhavanidānaṃ samāptam ||70||
