@@ -54,6 +54,36 @@ junction (words that would be joined into a conjunct consonant in Devanāgarī).
    spaced), `<label type="siglum">…</label>`, attribute values. You may add a space
    in the text directly before or after a tag when a word boundary falls there.
 
+## Conventions fixed in earlier rounds (Śārṅgadhara, Mādhava, Caraka)
+
+- Split everywhere: "tathā ca", "tathā hi", "yad vā", "na hi", "na ca", "na tu",
+  "yady api", "ity arthaḥ", "ity āha", "ity ucyate", "ity atra", "ity anena",
+  "yad uktaṃ", "tad uktaṃ", "yad āha", "tad āha", "tad yathā", "tac ca", "yas tu",
+  "kim uta", "kin tarhi", "kiñ ca" (also when written "kiñca"), "kiṃ vā" (also when
+  written "kiṃvā"), "naca" → "na ca", "natu" → "na tu"; X + iti / eva / api / ca /
+  tu / hi ("śītam iti", "viśvam eva", "lehas tu", "jvarāṃś ca"); verb or case ending
+  + vowel ("bhavanty eva", "nareṣv iti", "jvarādīnām uktaṃ").
+- Kept joined: "tadanu", "tadanantaraṃ", "etadanantaraṃ", "tadabhāve", "ityādi" and
+  all its cases and compounds ("ityādinā", "ityādivacanāt"), "ityanta-"
+  ("ityantena"), "kintu", "parantu", "athavā", "itastataḥ", "yatastataḥ".
+- Commentary lemmata (pratīka): with a fused vowel they stay joined
+  ("yathetyādi", "grīvetyādi"); with a consonant junction they are split
+  ("kaṭv ityādi", "vātād ityādi", "hetv ityādi", "brūyād ityādi"); so are au/ī
+  junctions ("sandhāv iti", "gatāv iti"). "iti" + "ādiśabdena" (not the expression
+  ityādi) is "ity ādiśabdena".
+- Repeated words are split, also "vāraṃ vāram", "upary upari" (where it stands
+  alone; inside a compound it stays joined).
+- -vat adverbs ("kāṣṭhavat", "tadvat", "pūrvavat") are split off before a
+  participle, adjective or verb ("kāṣṭhavad bhūtaḥ").
+- Where a doubled consonant at a word junction is written once ("tasmātriguṇaṃ",
+  "yasmādravyād", "ālasyamanyāstambha") leave the junction joined. Typos: leave them
+  uncorrected and, unless the junction is certain, joined.
+- Quotations are spaced like the rest; source references such as "(ca. sū. a. 17)"
+  are left exactly as they are.
+- The root text may have much prose (sūtras, lists, dialogues): space it by the same
+  rules. A masked note `<note n="§K"/>` may stand in the middle of a word: leave it
+  where it is.
+
 ## Method
 
 Copy the input to `out/`, then add spaces with a Python script of explicit,
@@ -69,9 +99,18 @@ Verify with
     python3 {TOOLS}/check.py {DIR} NNN
 
 Every piece must report `letters-ok xml-ok tags-ok lines-ok`. Fix until it does.
+Then list the remaining unspaced tokens of 20 letters or more and look at each once
+more: a missed junction (often a case or verb ending run into the next word) is the
+commonest error.
 
-## Final report (under 150 words)
+Put your helper scripts in `{DIR}/scripts/`, with your piece number in every file
+name. Never copy, run or edit another agent's script or output file.
 
-Per piece: spaces added and the check result, plus at most 5 genuinely uncertain
-segmentations, each as `NNN l.LINE: <form as you left it> — <the doubt>`
-(LINE = line number within your piece file).
+## Final report
+
+Write the report to `{DIR}/reports/NNN.txt` (plain text, under 150 words): first
+line `NNN spaces-added N check: <the check.py line>`, then at most 5 genuinely
+uncertain segmentations, each on its own line as
+`NNN l.LINE: <form as you left it> — <the doubt>` (LINE = line number within your
+piece file). Then reply with one line only: `NNN done, N spaces, check ok` (or what
+failed).
