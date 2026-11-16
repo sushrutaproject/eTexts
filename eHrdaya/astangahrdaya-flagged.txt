@@ -11,30 +11,36 @@ Mādhavanidāna and the Carakasaṃhitā; see tools/spacing/INSTRUCTIONS.md):
 - the notes are not spaced.
 - avagraha: a space before ' after e/o everywhere (te 'pi); ā' (tathā'pi) stays joined.
 - particles split everywhere (tathā ca, yad vā, na hi, yady api, ity arthaḥ, yad
-  uktaṃ, tad yathā, kiñ ca, kiṃ vā …); joined: tadanu, tadanantaraṃ, ityādi and its
-  cases, ityantena, kintu, parantu, athavā, itastataḥ.
+  uktaṃ, tad yathā, kiñ ca, kiṃ vā …); joined: tadanu, tadanantaraṃ, kintu,
+  parantu, athavā, itastataḥ.
 - a doubled consonant at a word junction written once: left joined; typos are left
   uncorrected and usually joined.
-- commentary lemmata with a fused vowel stay joined (yathetyādi); with a consonant
-  junction they are split (kaṭv ityādi).
 
-Policy questions for the editor (counts in this text):
-- "kiñ ca" (13) and "kiṃ vā" (4) are written as two words, as in the earlier texts. Should they be?
-- "kin tarhi" is split (12). Should it be one word, "kintarhi"?
-- "ityantena" is kept joined (4), like "ityādi". Should it be "ity antena"?
-- "iti" before a word beginning pad- is split in all 4 places ("iti padam"). Is that right, or is "itipada-" wanted as a compound?
-- punarukta: 10 places are joined (the technical term, "repetition") and 5 are split ("punar uktam", "said again"). The agents decided each by context. Should all be joined?
-- yatkiñcit: 8 joined and 15 split ("yat kiñcit"). Should one form be used throughout?
-- tat/tad + noun (tatsiddhaṃ / tat siddhaṃ, taccūrṇaṃ / tac cūrṇaṃ, and the like): split as a pronoun, joined as a compound member, decided by context each time. The pairs are in the list below; say if you want one rule.
-- prāk + participle (prāguktam ×5 joined, prāg uktam ×10 split) and "prāgeva" / "prāg eva": is "prāg uktam" the form you want everywhere?
-- Metre names in the commentary: "indravajrāvṛttam" is joined in 16 places and split in 2 ("indravajrā vṛttam"). Should it always be joined?
-- Glosses of the type "hi yasmādarthe" ("hi in the sense of yasmāt") are left joined in 8 places and split once. Which do you want?
-- Lemma and gloss run together where the e-text seems to have lost a hyphen (for example "bhasma bhūtim", "moho vivecanākṣamatvam") were split into two words. Should a hyphen be restored instead?
+Decided by the editor for this text (2026-11), and applied throughout:
+- ity ādi and its cases are two words (ity ādinā, ity ādibhiḥ, ity ādiślokaḥ), and
+  so is ity antena. The three earlier texts were changed to match.
+- commentary lemmata fused with iti follow from this: athety ādi, cety antena,
+  gurv ity ādi.
+- yat kiñcit, punar uktam, prāg uktam, prāg eva are split. Derived forms stay
+  joined: punaruktatvāt, punaruktatā, punaruktir, apunaruktam, yatkiñcana-.
+- indravajrāvṛttam is always joined, like the other metre names compounded with
+  -vṛttam (śālinīvṛttam, upajātivṛttam). Where the source inflects the name it
+  stays two words (upajātir vṛttam, śārdūlavikrīḍitaṃ vṛttam).
+- hi yasmād arthe (also paścād arthe, by analogy).
+- a typo seen while applying these: the source prints "hetā vityādi" (for hetāv
+  ity ādi) in the last chapter; left as it is, since no source space is removed.
+
+Policy questions for the editor (still open):
+- kiñ ca (13) and kiṃ vā (4) are written as two words. Is that right, or kiñca / kiṃvā?
+- kin tarhi (12) is written as two words, although kintu is joined. Keep?
+- iti pad- (4), as in "iti padacchedaḥ", is split. Keep?
+- tat / tad before a noun is joined when it reads as a compound (tatsiddhaṃ,
+  taccūrṇaṃ, tatpakvaṃ) and split when it is a pronoun; the agents were not
+  consistent, and the pairs below show where. Is there a rule to follow?
+- where a lemma and its gloss have lost their hyphen in the source, the words are
+  split and the hyphen is not restored. Should it be restored?
 
 Joined/split pairs left as the agents had them (context decides, or the editor):
-  prāguktam                                prāg uktam                                   joined×5 split×10
-  prāgeva                                  prāg eva                                     joined×4 split×10
-  yatkiñcid                                yat kiñcid                                   joined×3 split×6
   tatsiddhaṃ                               tat siddhaṃ                                  joined×5 split×3
   taccūrṇaṃ                                tac cūrṇaṃ                                   joined×3 split×11
   tatpakvaṃ                                tat pakvaṃ                                   joined×3 split×2
@@ -42,8 +48,6 @@ Joined/split pairs left as the agents had them (context decides, or the editor):
   tadubhayaṃ                               tad ubhayaṃ                                  joined×2 split×5
   tadannaṃ                                 tad annaṃ                                    joined×2 split×2
   rajastamaś                               rajas tamaś                                  joined×2 split×4
-  punaruktaṃ                               punar uktaṃ                                  joined×2 split×2
-  indravajrāvṛttam                         indravajrā vṛttam                            joined×16 split×2
   dvistrir                                 dvis trir                                    joined×2 split×4
   ṣaḍṛtūn                                  ṣaḍ ṛtūn                                     joined×1 split×1
   ṣaḍrasāḥ                                 ṣaḍ rasāḥ                                    joined×2 split×1
@@ -52,9 +56,7 @@ Joined/split pairs left as the agents had them (context decides, or the editor):
   āyurārogyam                              āyur ārogyam                                 joined×1 split×3
   āhaviśeṣād                               āha viśeṣād                                  joined×1 split×1
   āha-yatkiñcid                            āha-yat kiñcid                               joined×1 split×1
-  āha-taddhītyādi                          āha-tad dhītyādi                             joined×1 split×1
   yathābhavati                             yathā bhavati                                joined×1 split×1
-  yasmādarthe                              yasmād arthe                                 joined×8 split×1
   yadannaṃ                                 yad annaṃ                                    joined×1 split×3
   vyavāyyāśukaraṃ                          vyavāyy āśukaraṃ                             joined×1 split×1
   vartmāntarmāṃsapiṇḍābhaḥ                 vartmāntar māṃsapiṇḍābhaḥ                    joined×1 split×1
@@ -90,13 +92,9 @@ Joined/split pairs left as the agents had them (context decides, or the editor):
   pṛthagdoṣais                             pṛthag doṣais                                joined×1 split×3
   pānamannaṃ                               pānam annaṃ                                  joined×1 split×1
   punarāturaḥ                              punar āturaḥ                                 joined×1 split×1
-  punaruktam                               punar uktam                                  joined×1 split×2
   prākpaścād                               prāk paścād                                  joined×2 split×1
   prākkṛtena                               prāk kṛtena                                  joined×2 split×1
   prāgupanyāsaḥ                            prāg upanyāsaḥ                               joined×1 split×1
-  prāguktā                                 prāg uktā                                    joined×1 split×1
-  prāgukto                                 prāg ukto                                    joined×1 split×1
-  prāguktaṃ                                prāg uktaṃ                                   joined×3 split×1
   prāgdakṣiṇaṃ                             prāg dakṣiṇaṃ                                joined×1 split×1
   prasthamamlānāṃ                          prastham amlānāṃ                             joined×1 split×1
   pippalyardhapalaṃ                        pippaly ardhapalaṃ                           joined×2 split×1
@@ -951,7 +949,6 @@ pūrvameva => pūrvam eva
 pītavatyāśca => pītavatyāś ca
 pākastu => pākas tu
 punaste => punas te
-prāguktameva => prāguktam eva
 pratyāha => praty āha
 pradarśayannāha => pradarśayann āha
 piṣṭaiśca => piṣṭaiś ca
@@ -970,7 +967,6 @@ katipayānyeva => katipayāny eva
 kasmādatra => kasmād atra
 jīvanīyairvā => jīvanīyair vā
 ityāha-tad => ity āha-tad
-ityādiśabdena => ity ādiśabdena
 ityevamantena => ity evamantena
 ityatra => ity atra
 ityato => ity ato
@@ -1184,6 +1180,401 @@ sūtrasthānamuktam => sūtrasthānam uktam
 śakyamiha => śakyam iha
 rasamikṣorvā => rasam ikṣor vā
 bhaktādūrdhvaṃ => bhaktād ūrdhvaṃ
-gurvityādi => gurv ityādi
 pātvayaṃ => pātv ayaṃ
 praviśatītyarthaḥ => praviśatīty arthaḥ
+'pītyādi => 'pīty ādi
+abhyavahṛtamātrasyetyādi => abhyavahṛtamātrasyety ādi
+ahitetyādi => ahitety ādi
+aindrītyādi => aindrīty ādi
+akṛtsārvadhātuketyādinā => akṛtsārvadhātukety ādinā
+ambaṣṭhetyādi => ambaṣṭhety ādi
+anabhiṣyandītyādiviśiṣṭaṃ => anabhiṣyandīty ādiviśiṣṭaṃ
+anapekṣitetyādi => anapekṣitety ādi
+anyathetyādi => anyathety ādi
+anyatretyādi => anyatrety ādi
+apītyādi => apīty ādi
+arketyādi => arkety ādi
+asanetyādi => asanety ādi
+asthītyādi => asthīty ādi
+asītyādi => asīty ādi
+athetyādi => athety ādi
+athetyādinā => athety ādinā
+athetyādiśabdānāṃ => athety ādiśabdānāṃ
+atimandāgnītyādi => atimandāgnīty ādi
+atyarthetyādi => atyarthety ādi
+aṅgasyetyādi => aṅgasyety ādi
+aṣṭādaśāṅguletyādi => aṣṭādaśāṅgulety ādi
+baddhetyādi => baddhety ādi
+bhṛśoṣṇetyādi => bhṛśoṣṇety ādi
+brahmetyādi => brahmety ādi
+brahmetyādigranthena => brahmety ādigranthena
+brahmetyādisvāhāntena => brahmety ādisvāhāntena
+bāhulyetyādi => bāhulyety ādi
+bāhyonāpītyādinā => bāhyonāpīty ādinā
+bāletyādi => bālety ādi
+caturītyādi => caturīty ādi
+cetyantalakṣaṇaḥ => cety antalakṣaṇaḥ
+cetyantaṃ => cety antaṃ
+cetyantena => cety antena
+cetyanto => cety anto
+cetyādi => cety ādi
+cetyādidvandvaḥ => cety ādidvandvaḥ
+cetyādinā => cety ādinā
+daketyādi => dakety ādi
+daśamūlaśaṭhītyādiniryūhānvitān => daśamūlaśaṭhīty ādiniryūhānvitān
+deśetyādi => deśety ādi
+dhrauvyetyādinā'dhikaraṇe => dhrauvyety ādinā'dhikaraṇe
+dhītyādi => dhīty ādi
+dhīvarṇetyādi => dhīvarṇety ādi
+doṣetyādi => doṣety ādi
+durnāmetyādi => durnāmety ādi
+duṣyantītyādi => duṣyantīty ādi
+dvyaṅguletyādi => dvyaṅgulety ādi
+dāvāgnītyādibhiḥ => dāvāgnīty ādibhiḥ
+dūrvetyādi => dūrvety ādi
+dṛṣṭītyādi => dṛṣṭīty ādi
+ekaiketyādi => ekaikety ādi
+eketyādi => ekety ādi
+elāyugmetyādi => elāyugmety ādi
+evetyādi => evety ādi
+garbhakoṣṭhetyādi => garbhakoṣṭhety ādi
+garbhetyādi => garbhety ādi
+gatibuddhītyādinā => gatibuddhīty ādinā
+ghanacandanetyādi => ghanacandanety ādi
+ghṛtenetyādi => ghṛtenety ādi
+ghṛtetyādi => ghṛtety ādi
+ghṛṣṭetyādi => ghṛṣṭety ādi
+godhūmetyādi => godhūmety ādi
+gotīrthetyādi => gotīrthety ādi
+granthītyādi => granthīty ādi
+grāmyetyādi => grāmyety ādi
+gudetyādi => gudety ādi
+gurvityādi => gurv ity ādi
+guḍūcītyādi => guḍūcīty ādi
+guṇasyetyādi => guṇasyety ādi
+guṇavacanetyādinā => guṇavacanety ādinā
+gātretyādi => gātrety ādi
+gṛhatṛṣṇetyādiḥ => gṛhatṛṣṇety ādiḥ
+haridrādvayetyādi => haridrādvayety ādi
+hasantītyādi => hasantīty ādi
+hiṅgūgretyādibhir => hiṅgūgrety ādibhir
+hrasvenetyādi => hrasvenety ādi
+hīnetyādi => hīnety ādi
+hītyādi => hīty ādi
+hṛllāsetyādi => hṛllāsety ādi
+ityantam => ity antam
+ityantaṃ => ity antaṃ
+ityantena => ity antena
+ityādi => ity ādi
+ityādibhir => ity ādibhir
+ityādibhiś => ity ādibhiś
+ityādibhiḥ => ity ādibhiḥ
+ityādibhyo => ity ādibhyo
+ityādicikitsā => ity ādicikitsā
+ityādicirotthānavipākaś => ity ādicirotthānavipākaś
+ityādidravyasiddhena => ity ādidravyasiddhena
+ityādigaṇaḥ => ity ādigaṇaḥ
+ityādigaṇoktānāṃ => ity ādigaṇoktānāṃ
+ityādigrahaṇād => ity ādigrahaṇād
+ityādigranthanirdiṣṭair => ity ādigranthanirdiṣṭair
+ityādigranthanirdiṣṭam => ity ādigranthanirdiṣṭam
+ityādigranthanirdiṣṭaṃ => ity ādigranthanirdiṣṭaṃ
+ityādigranthanirdiṣṭena => ity ādigranthanirdiṣṭena
+ityādigranthanirdiṣṭeṣu => ity ādigranthanirdiṣṭeṣu
+ityādigranthanirdiṣṭāḥ => ity ādigranthanirdiṣṭāḥ
+ityādigranthe => ity ādigranthe
+ityādigranthena => ity ādigranthena
+ityādigranthoktam => ity ādigranthoktam
+ityādigranthoktena => ity ādigranthoktena
+ityādijñāpakāt => ity ādijñāpakāt
+ityādikam => ity ādikam
+ityādikayoḥ => ity ādikayoḥ
+ityādikayā => ity ādikayā
+ityādikaḥ => ity ādikaḥ
+ityādikaṃ => ity ādikaṃ
+ityādike => ity ādike
+ityādiko => ity ādiko
+ityādikrama => ity ādikrama
+ityādikā => ity ādikā
+ityādikāc => ity ādikāc
+ityādikāl => ity ādikāl
+ityādilakṣaṇalakṣitam => ity ādilakṣaṇalakṣitam
+ityādilakṣaṇalakṣitayantrasadṛśaṃ => ity ādilakṣaṇalakṣitayantrasadṛśaṃ
+ityādilakṣaṇalakṣitaḥ => ity ādilakṣaṇalakṣitaḥ
+ityādilakṣaṇalakṣitaṃ => ity ādilakṣaṇalakṣitaṃ
+ityādilakṣaṇalakṣitā => ity ādilakṣaṇalakṣitā
+ityādilakṣaṇam => ity ādilakṣaṇam
+ityādilakṣaṇaḥ => ity ādilakṣaṇaḥ
+ityādilakṣaṇaṃ => ity ādilakṣaṇaṃ
+ityādilakṣaṇo => ity ādilakṣaṇo
+ityādilakṣaṇā => ity ādilakṣaṇā
+ityādilakṣaṇāvasthā => ity ādilakṣaṇāvasthā
+ityādinaiva => ity ādinaiva
+ityādinety => ity ādinety
+ityādinirdeśo => ity ādinirdeśo
+ityādinoktam => ity ādinoktam
+ityādinoktau => ity ādinoktau
+ityādinoktaḥ => ity ādinoktaḥ
+ityādinoktaṃ => ity ādinoktaṃ
+ityādinokte => ity ādinokte
+ityādinoktāni => ity ādinoktāni
+ityādinoktāny => ity ādinoktāny
+ityādinā => ity ādinā
+ityādinā''hārakālaṃ => ity ādinā''hārakālaṃ
+ityādinā''kārādeśaḥ => ity ādinā''kārādeśaḥ
+ityādinā'mlavidagdhā => ity ādinā'mlavidagdhā
+ityādinā'sya => ity ādinā'sya
+ityādinā'tīsārasyāpi => ity ādinā'tīsārasyāpi
+ityādipabhāṣayā => ity ādipabhāṣayā
+ityādipacyamānajvarākṛteś => ity ādipacyamānajvarākṛteś
+ityādiprayogā => ity ādiprayogā
+ityādir => ity ādir
+ityādisneho => ity ādisneho
+ityādito => ity ādito
+ityādivacanān => ity ādivacanān
+ityādivacanāt => ity ādivacanāt
+ityādivakṣyamāṇoktam => ity ādivakṣyamāṇoktam
+ityādivargoktena => ity ādivargoktena
+ityādivargoktāḥ => ity ādivargoktāḥ
+ityādivat => ity ādivat
+ityādividhinā => ity ādividhinā
+ityādiviparyayeṇa => ity ādiviparyayeṇa
+ityādiviśeṣaṇavisiṣṭā => ity ādiviśeṣaṇavisiṣṭā
+ityādiviśeṣaṇaviśiṣṭaḥ => ity ādiviśeṣaṇaviśiṣṭaḥ
+ityādivyutpattyā => ity ādivyutpattyā
+ityādivākyena => ity ādivākyena
+ityādiśabda => ity ādiśabda
+ityādiśabdayuktaṃ => ity ādiśabdayuktaṃ
+ityādiśabdena => ity ādiśabdena
+ityādiśabdenaiva => ity ādiśabdenaiva
+ityādiḥ => ity ādiḥ
+ityādiṣu => ity ādiṣu
+ityādiṣv => ity ādiṣv
+ityādy => ity ādy
+ityādyam => ity ādyam
+ityādyasamāsakaraṇaṃ => ity ādyasamāsakaraṇaṃ
+ityādyuktānāṃ => ity ādyuktānāṃ
+ityādyāmalakṣaṇam => ity ādyāmalakṣaṇam
+ityādyāḥ => ity ādyāḥ
+itītyādinā => itīty ādinā
+itītyādiśabdānām => itīty ādiśabdānām
+ivetyādi => ivety ādi
+jayajayetyādiśabdapūrvā'bhimukham => jayajayety ādiśabdapūrvā'bhimukham
+jitvetyādi => jitvety ādi
+jñātvetyādi => jñātvety ādi
+jātahṛllāsetyādi => jātahṛllāsety ādi
+jīvanetyādi => jīvanety ādi
+jīvantītyādi => jīvantīty ādi
+jīvatītyādyabhaṅgalavādī => jīvatīty ādyabhaṅgalavādī
+jīvitāntāyetyādi => jīvitāntāyety ādi
+kadalītyādi => kadalīty ādi
+kakeruketyādinā => kakerukety ādinā
+kamalotpaletyādibhir => kamalotpalety ādibhir
+kaphetyādi => kaphety ādi
+karpūretyādi => karpūrety ādi
+karṇetyādi => karṇety ādi
+kaṇiketyādi => kaṇikety ādi
+kaṣāyetyādi => kaṣāyety ādi
+kaṭabhītyādikam => kaṭabhīty ādikam
+kleṣyetyādi => kleṣyety ādi
+kraśimetyādi => kraśimety ādi
+kākavatpūtigandhitetyantaṃ => kākavatpūtigandhitety antaṃ
+kāliketyādi => kālikety ādi
+kāntetyādi => kāntety ādi
+kāsetyādi => kāsety ādi
+kṣuttṛṣṇollekhanetyādi => kṣuttṛṣṇollekhanety ādi
+kṣāmatetyādikam => kṣāmatety ādikam
+laghūṣṇetyādi => laghūṣṇety ādi
+lūtāditantuviṇmūtretyādikaluṣeṇa => lūtāditantuviṇmūtrety ādikaluṣeṇa
+lūtādītyādi => lūtādīty ādi
+madanamadhuketyādi => madanamadhukety ādi
+madanetyādi => madanety ādi
+madhuretyādi => madhurety ādi
+madhyetyādi => madhyety ādi
+madyenetyādi => madyenety ādi
+majjasāretyādinā => majjasārety ādinā
+maletyādi => malety ādi
+mandavahnitetyādikaṃ => mandavahnitety ādikaṃ
+manoharetyādi => manoharety ādi
+masūretyādi => masūrety ādi
+maṇītyādi => maṇīty ādi
+mehāmedoṣetyādi => mehāmedoṣety ādi
+mustetyādi => mustety ādi
+muṣkaketyādi => muṣkakety ādi
+mātretyādi => mātrety ādi
+māṃsakṣīretyādi => māṃsakṣīrety ādi
+māṃsādetyādi => māṃsādety ādi
+māṣasūpetyādi => māṣasūpety ādi
+mūtrakiṃśukabhasmāmbutailāmbhoṣṇabahusrutetyādikayā => mūtrakiṃśukabhasmāmbutailāmbhoṣṇabahusrutety ādikayā
+mṛṇāletyādi => mṛṇālety ādi
+nagretyādi => nagrety ādi
+naktāndhyetyādi => naktāndhyety ādi
+naladetyādi => naladety ādi
+natetyādi => natety ādi
+nijetyādinā => nijety ādinā
+nordhvetyādi => nordhvety ādi
+nyagrodhetyādi => nyagrodhety ādi
+nājitvetyādi => nājitvety ādi
+nātītyādi => nātīty ādi
+padmakādītyādi => padmakādīty ādi
+padmendragopahemādītyādi => padmendragopahemādīty ādi
+padmetyādi => padmety ādi
+pakvodumbaratāmretyādikam => pakvodumbaratāmrety ādikam
+pathyākustumbarīmustetyādi => pathyākustumbarīmustety ādi
+paścādarthe => paścād arthe
+paṭoletyādi => paṭolety ādi
+peyetyādi => peyety ādi
+pippalītyādibhir => pippalīty ādibhir
+pittetyādi => pittety ādi
+pradūṣyetyādi => pradūṣyety ādi
+pratiśyāyetyādibhiḥ => pratiśyāyety ādibhiḥ
+prayātītyādinā => prayātīty ādinā
+praśaṃsatītyādi => praśaṃsatīty ādi
+prāgdakṣiṇastanastanyetyādi => prāgdakṣiṇastanastanyety ādi
+prāgeva => prāg eva
+prāguktaguṇaḥ => prāg uktaguṇaḥ
+prāguktam => prāg uktam
+prāguktameva => prāg uktam eva
+prāguktaḥ => prāg uktaḥ
+prāguktaṃ => prāg uktaṃ
+prāgukte => prāg ukte
+prāguktena => prāg uktena
+prāgukteḥ => prāg ukteḥ
+prāgukto => prāg ukto
+prāguktā => prāg uktā
+prāguktāni => prāg uktāni
+prāguktānīti => prāg uktānīti
+prāguktāt => prāg uktāt
+prāgvāmastanastanyetyādi => prāgvāmastanastanyety ādi
+prāṇetyādi => prāṇety ādi
+punaruktam => punar uktam
+punaruktaṃ => punar uktaṃ
+punaruktāni => punar uktāni
+punnāmetyādi => punnāmety ādi
+purovātetyādi => purovātety ādi
+pāṇipādāsyaramaṇīyatetyādikaṃ => pāṇipādāsyaramaṇīyatety ādikaṃ
+pītvetyādi => pītvety ādi
+pūraṇaguṇetyādinā => pūraṇaguṇety ādinā
+pūrvāparetyādinā => pūrvāparety ādinā
+pṛśrniparṇītyādi => pṛśrniparṇīty ādi
+raktetyādi => raktety ādi
+ratnādītyādi => ratnādīty ādi
+rodhretyādi => rodhrety ādi
+rogetyādi => rogety ādi
+rūkṣakṛṣṇetyādigranthanirdiṣṭam => rūkṣakṛṣṇety ādigranthanirdiṣṭam
+sadyobhuktasyetyādi => sadyobhuktasyety ādi
+sahetyādi => sahety ādi
+saindhavasauvarcalabiḍānītyādi => saindhavasauvarcalabiḍānīty ādi
+sakaṇḍūpiṭiketyādikaṃ => sakaṇḍūpiṭikety ādikaṃ
+samagretyādi => samagrety ādi
+sametyādi => samety ādi
+saptamyupamānapūrvasyetyādinottarapadalopī => saptamyupamānapūrvasyety ādinottarapadalopī
+saptamyupamānapūrvasyetyādinā => saptamyupamānapūrvasyety ādinā
+sarvadetyādi => sarvadety ādi
+sarvatrānnarakṣāmātrāśītyādyuktaprakāreṇa => sarvatrānnarakṣāmātrāśīty ādyuktaprakāreṇa
+sarvetyādi => sarvety ādi
+sasitetyādi => sasitety ādi
+sattvetyādi => sattvety ādi
+saukumāryetyādi => saukumāryety ādi
+savyathetyādi => savyathety ādi
+saṃjñetyādiparimāṇānuvṛtteḥ => saṃjñety ādiparimāṇānuvṛtteḥ
+sindhūtthetyādi => sindhūtthety ādi
+skandhetyādi => skandhety ādi
+snigdhetyādi => snigdhety ādi
+snāvnītyādi => snāvnīty ādi
+sphuṭatītyādikriyādiyutaṃ => sphuṭatīty ādikriyādiyutaṃ
+stanarohitetyādi => stanarohitety ādi
+sthānānītyādi => sthānānīty ādi
+sthāyītyādi => sthāyīty ādi
+surasetyādi => surasety ādi
+svakarmetyādi => svakarmety ādi
+svasthetyādi => svasthety ādi
+svasthānasthasyetyādi => svasthānasthasyety ādi
+svasvetyādi => svasvety ādi
+svedyetyādi => svedyety ādi
+svetyādy => svety ādy
+svādvamletyādi => svādvamlety ādi
+sābhyaṅgetyādi => sābhyaṅgety ādi
+sājyetyādi => sājyety ādi
+sāmlagandhatetyantam => sāmlagandhatety antam
+sāṅgetyādi => sāṅgety ādi
+taddhītyādi => taddhīty ādi
+tadvistāretyādi => tadvistārety ādi
+tadyogyetyādi => tadyogyety ādi
+tailetyādi => tailety ādi
+tathetyādi => tathety ādi
+tatpradeśinyagretyādi => tatpradeśinyagrety ādi
+tatretyādi => tatrety ādi
+tatretyādinā => tatrety ādinā
+tatretyādinā'smin => tatrety ādinā'smin
+tatretyādinā'syāgnicatuṣṭayasya => tatrety ādinā'syāgnicatuṣṭayasya
+toyetyādi => toyety ādi
+triphaletyādi => triphalety ādi
+tvaṅmāṃsetyādi => tvaṅmāṃsety ādi
+tānītyādi => tānīty ādi
+tīkṣṇetyādi => tīkṣṇety ādi
+upaletyādi => upalety ādi
+upapadasarvānnetyādinā => upapadasarvānnety ādinā
+upekṣyamāṇasyetyādi => upekṣyamāṇasyety ādi
+vacetyādi => vacety ādi
+vamanetyādi => vamanety ādi
+varaṇasairyeketyādigaṇe => varaṇasairyekety ādigaṇe
+vardhmetyādi => vardhmety ādi
+vartmetyādi => vartmety ādi
+vartītyādi => vartīty ādi
+varuṇetyādi => varuṇety ādi
+vatsaketyādi => vatsakety ādi
+vegodīraṇetyādi => vegodīraṇety ādi
+vellantaretyādi => vellantarety ādi
+vetyādi => vety ādi
+vicitretyādi => vicitrety ādi
+vidāhītyādi => vidāhīty ādi
+vipuletyādi => vipulety ādi
+viriktetyādi => viriktety ādi
+viruddhetyādi => viruddhety ādi
+viṣetyādi => viṣety ādi
+viṭapetyādi => viṭapety ādi
+vātetyādi => vātety ādi
+vātātapetyādi => vātātapety ādi
+vīcītyādinā => vīcīty ādinā
+vṛddhetyādi => vṛddhety ādi
+vṛṣyādīnītyādi => vṛṣyādīnīty ādi
+yantretyādi => yantrety ādi
+yasmādarthe => yasmād arthe
+yathetyādi => yathety ādi
+yathetyādinā => yathety ādinā
+yatkiñcid => yat kiñcid
+yatkiñcinmātram => yat kiñcinmātram
+yatkiñcit => yat kiñcit
+yavānītyādi => yavānīty ādi
+yogetyādi => yogety ādi
+yonītyādi => yonīty ādi
+yuktyetyādi => yuktyety ādi
+āmagarbhaśeṣeṇetyādi => āmagarbhaśeṣeṇety ādi
+āmetyādi => āmety ādi
+ānulomītyādi => ānulomīty ādi
+āragvadhendrayavetyādikaṣāyavatsaṃkamūrvetyādikaṣāyābhyāṃ => āragvadhendrayavety ādikaṣāyavatsaṃkamūrvety ādikaṣāyābhyāṃ
+ārambadhetyādi => ārambadhety ādi
+āviketyādi => āvikety ādi
+āyuṣkāmayamānenetyādikaḥ => āyuṣkāmayamānenety ādikaḥ
+āyāmetyādi => āyāmety ādi
+āśrayetyādi => āśrayety ādi
+āśukārītyādi => āśukārīty ādi
+śaivaletyādi => śaivalety ādi
+śatrusatretyādi => śatrusatrety ādi
+śayītetyādi => śayītety ādi
+śceṣṭā'lpetyādi => śceṣṭā'lpety ādi
+śigruvāraṇaketyādi => śigruvāraṇakety ādi
+ślathāṅgatetyādi => ślathāṅgatety ādi
+śleṣmetyādi => śleṣmety ādi
+śoṣetyādi => śoṣety ādi
+śucītyādi => śucīty ādi
+śukajihvetyādi => śukajihvety ādi
+śvāsakāsetyādi => śvāsakāsety ādi
+śyāmetyādi => śyāmety ādi
+śyāvetyādi => śyāvety ādi
+śākhetyādi => śākhety ādi
+śālītyādi => śālīty ādi
+śīghretyādi => śīghrety ādi
+ṣoḍaśetyādi => ṣoḍaśety ādi
+indravajrā vṛttam => indravajrāvṛttam

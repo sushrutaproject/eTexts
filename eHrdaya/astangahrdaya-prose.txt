@@ -183,7 +183,7 @@
 664: (gadyasūtre|2|
 667: prādhānyāc ca pānīyasya prāg upadeśaḥ|
 667: tathā cāṣṭāṅgasaṅgrahe 'nnapānaprakaraṇe 'dhyagīṣṭa (sū.a.10) "anupāne tu salilam eva śreṣṭham, sarvarasayonitvāt sarvabhūtasātmyāj jīvanādiguṇayogāc ca"|
-667: tathā, tatraivādhyaiṣṭa (saṃ.sū.a.6)_"pānīyaṃ prāṇināṃ prāṇā viśvam eva ca tanmayam" ityādi|
+667: tathā, tatraivādhyaiṣṭa (saṃ.sū.a.6)_"pānīyaṃ prāṇināṃ prāṇā viśvam eva ca tanmayam" ity ādi|
 667: tathā, cātraivāpyasaṅgrahe 'pi tad eva prāg upanītam (saṃ.sū.a.13)- "śreṣṭham udakam āśvāsanastambhanakledanānām" iti|
 667: bahuguṇatvāc cāntarikṣasya jalasya prāg upanyāso yukta ity āha----------------- atha toyavargaḥ|
 670: aklinnam avivarṇaṃ ca tat peyaṃ gāṅgam--------|3|
@@ -208,7 +208,7 @@
 715: tathā, jīvanīyānāṃ rasāyanānāṃ cāgresaratvāt|
 715: tathā cāṣṭāṅgasaṅgrahe (sū. a. 13)- "kṣīraṃ jīvanīyānām|
 715: kṣīraghṛtābhyāso rasāyanānām|
-715: " ityādi|
+715: " ity ādi|
 715: ---------------------- atha kṣīravargaḥ|
 715: ------------------------------------------------|
 715: prāyaḥ payaḥ---------------------------------|21|
