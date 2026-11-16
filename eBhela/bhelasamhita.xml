@@ -1,3 +1,4 @@
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader>
   <fileDesc>
@@ -73,7 +74,9 @@
    <change who="Dominik Wujastyk" when="2022-02-24">changed ampersands to
      <tag>note/</tag> throughout; more word division|</change>
 <change who="Dominik Wujastyk" when="2023-04-19">Many word-breaks; updated xml:ids; added labels</change>
-  </revisionDesc>
+ <change who="Dominik Wujastyk" when="2026-11-16">Added the text to the 
+    <ptr target="https://sushrutaproject.github.io/eTexts/">eText search website</ptr>.</change>
+ </revisionDesc>
 
  </teiHeader>
 
@@ -83,6 +86,8 @@
   <body>
 
    <div n="1" type="sthāna">
+    <head>Sūtrasthānam</head>
+    
     <div n="4" type="adhyāya">
 
      <head>sūtrasthānanam || caturtho ' dhyāyaḥ || </head>
@@ -2147,7 +2152,7 @@
    </div>
 
    <div n="2" type="sthāna">
-
+<head>Nidānasthānam</head>
 
     <div n="2" type="adhyāya">
      <l xml:id="BS.2.2.1"><label>2.2.1</label> urovighātāttasyātha<note/>jvaraḥ kāsaś ca jāyate |
@@ -2627,7 +2632,7 @@
    </div>
 
    <div n="3" type="sthāna">
-
+<head>Vimānasthānam</head>
 
     <div n="1" type="adhyāya">
 
@@ -3000,7 +3005,7 @@
 
 
    <div n="4" type="sthāna">
-
+<head>Śārīrasthānam</head>
 
     <div n="2" type="adhyāya">
 
@@ -3807,21 +3812,12 @@
       śārīre ' ṣṭame ' dhyāyaḥ || iti bhelasaṃhitāyāṃ, śārīrasthānaṃ samāptam || ||
       indriyasthānaḥ || || prathamo ' dhyāyaḥ || -----------------------------------
       -----------------------------------</l>
-
-
-
-
-
-
-
-
-
     </div>
    </div>
 
 
    <div n="5" type="sthāna">
-
+<head>Indriyasthānam</head>
     <div n="1" type="adhyāya">
 
      <l xml:id="BS.5.1.0" cert="low"><label>5.1.0" cert="low</label> |----------------dve vā jāta eva vinaśyati |
@@ -4513,13 +4509,10 @@
 
     </div>
 
-
-
-
    </div>
 
-
    <div n="6" type="sthāna">
+    <head>Cikitsāsthānam</head>
     
     <div n="1" type="adhyāya">
 
@@ -8400,8 +8393,8 @@
     </div>
    </div>
 
-
     <div n="7" type="sthāna">
+      <head>Kalpasthānam</head>
 
      <div n="1" type="adhyāya">
 
@@ -9020,9 +9013,8 @@
 
     </div>
 
-
     <div n="8" type="sthāna">
-
+<head>Siddhisthānam</head>
 
      <div n="1" type="adhyāya">
 
