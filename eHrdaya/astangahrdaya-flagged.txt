@@ -17,9 +17,8 @@ Mādhavanidāna and the Carakasaṃhitā; see tools/spacing/INSTRUCTIONS.md):
   uncorrected and usually joined.
 
 Decided by the editor for this text (2026-11), and applied throughout:
-- ity ādi and its cases are two words (ity ādinā, ity ādibhiḥ, ity ādiślokaḥ);
-  this differs from the three earlier texts, where ityādi is joined.
-- ity antena is two words (also differs from the earlier texts).
+- ity ādi and its cases are two words (ity ādinā, ity ādibhiḥ, ity ādiślokaḥ), and
+  so is ity antena. The three earlier texts were changed to match.
 - commentary lemmata fused with iti follow from this: athety ādi, cety antena,
   gurv ity ādi.
 - yat kiñcit, punar uktam, prāg uktam, prāg eva are split. Derived forms stay

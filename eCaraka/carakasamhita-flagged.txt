@@ -1,5 +1,10 @@
 # Carakasaṃhitā: word spacing and verse tagging — spots to check
 
+Changed afterwards (2026-11, the editor's decision): ityādi is now ity ādi in all its
+cases, and ityantena is ity antena; fused lemmata are cety ādi, kaṭv ity ādi. What is
+said below about ityādi / ityantena being joined describes the first round. The forms
+quoted in the flagged lines below are as the agents wrote them (ityādi joined).
+
 Word spacing was added in 2026-11 by 125 agents, one per piece of the TEI file
 (tools/spacing/, see its README). Each agent reported up to five places it was
 unsure of; they are listed below as "NNN l.LINE", where NNN is the piece and

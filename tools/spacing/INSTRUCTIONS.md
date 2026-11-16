@@ -42,11 +42,11 @@ junction (words that would be joined into a conjunct consonant in Devanāgarī).
    separate list items), but only when they are clearly separate words.
 7. The owner's decisions: repeated words are split ("punaḥ punaḥ", "muhur muhuḥ",
    "śanaiḥ śanaiḥ", "ahar ahaḥ"), except where the vowels fuse ("alpālpam",
-   "ekaika"); "tadyathā" → "tad yathā"; "ityādi" stays joined; a missing avagraha
+   "ekaika"); "tadyathā" → "tad yathā"; "ityādi" → "ity ādi"; a missing avagraha
    ("jātopi", "loke sminn") is left joined as it is; typos are left uncorrected.
 8. Particles and connectives are separate words: "tathā ca", "tathā hi", "na tu",
    "na hi", "na ca", "api ca", "yad vā", "kiṃ ca" (also "tathāhy uktam" → "tathā hy
-   uktam"). Kept joined: "ityādi", "kintu", "athavā", "itas tataḥ" only where the
+   uktam"). Kept joined: "kintu", "athavā", "itas tataḥ" only where the
    text spaces it.
 9. Do not add a space before an avagraha/apostrophe ("sarve'pi", "khaṇḍo'yaṃ" stay as
    they are); that is decided for the whole text in one pass afterwards.
@@ -63,14 +63,22 @@ junction (words that would be joined into a conjunct consonant in Devanāgarī).
   written "kiṃvā"), "naca" → "na ca", "natu" → "na tu"; X + iti / eva / api / ca /
   tu / hi ("śītam iti", "viśvam eva", "lehas tu", "jvarāṃś ca"); verb or case ending
   + vowel ("bhavanty eva", "nareṣv iti", "jvarādīnām uktaṃ").
-- Kept joined: "tadanu", "tadanantaraṃ", "etadanantaraṃ", "tadabhāve", "ityādi" and
-  all its cases and compounds ("ityādinā", "ityādivacanāt"), "ityanta-"
-  ("ityantena"), "kintu", "parantu", "athavā", "itastataḥ", "yatastataḥ".
-- Commentary lemmata (pratīka): with a fused vowel they stay joined
-  ("yathetyādi", "grīvetyādi"); with a consonant junction they are split
-  ("kaṭv ityādi", "vātād ityādi", "hetv ityādi", "brūyād ityādi"); so are au/ī
-  junctions ("sandhāv iti", "gatāv iti"). "iti" + "ādiśabdena" (not the expression
-  ityādi) is "ity ādiśabdena".
+- Kept joined: "tadanu", "tadanantaraṃ", "etadanantaraṃ", "tadabhāve", "kintu",
+  "parantu", "athavā", "itastataḥ", "yatastataḥ".
+- "ity ādi" is two words in all its cases and compounds ("ity ādinā", "ity ādayaḥ",
+  "ity ādau", "ity ādivacanāt", "ity ādiśabdena"), and so is "ity anta-" ("ity
+  antena", "ity antaṃ"). (The editor's decision of 2026-11; the first three texts
+  were first spaced with "ityādi" joined and changed afterwards.)
+- Commentary lemmata (pratīka): the space always goes after "ity". With a fused
+  vowel the lemma stays joined to it ("yathety ādi", "grīvety ādi", "cety antena",
+  "pippalīty ādinā"); with a consonant junction it is split off ("kaṭv ity ādi",
+  "vātād ity ādi", "hetv ity ādi", "brūyād ity ādi"); so are au/ī junctions
+  ("sandhāv iti", "gatāv iti"). Do not split nouns in -itya / -īti + ādi
+  ("śaityādi", "ādityādi", "prītyādi", "kṣityādi", "staimityādayaḥ").
+- Also decided by the editor (2026-11, for the Aṣṭāṅgahṛdaya): "yat kiñcit", "punar
+  uktam", "prāg uktam", "prāg eva" are split (derived nouns stay joined:
+  "punaruktatvāt", "punaruktiḥ"); a metre name compounded with -vṛttam is joined
+  ("indravajrāvṛttam"); a gloss of the type "hi yasmād arthe" is split.
 - Repeated words are split, also "vāraṃ vāram", "upary upari" (where it stands
   alone; inside a compound it stays joined).
 - -vat adverbs ("kāṣṭhavat", "tadvat", "pūrvavat") are split off before a

@@ -150,7 +150,7 @@ elif a.cmd == 'review':
     save_stats(agent_spaces=agent_spaces, avagraha_spaces=avn)
 
     # draft rules: split forms that are particles/connectives and split more often than not
-    P2 = {'ca', 'tu', 'eva', 'api', 'iti', 'ityādi', 'ityādinā', 'hi', 'vā', 'āha', 'arthaḥ', 'arthaṃ',
+    P2 = {'ca', 'tu', 'eva', 'api', 'iti', 'ity', 'hi', 'vā', 'āha', 'arthaḥ', 'arthaṃ',
           'uktaṃ', 'uktam', 'uktaḥ', 'uktā', 'ucyate', 'ucyante', 'atra', 'anena', 'anenāpi', 'iha', 'te',
           'yaḥ', 'tadā', 'ādau', 'ante', 'eṣa', 'ete', 'tena', 'yathā', 'yathetyādi', 'tarhi', 'tarhy', 'veti'}
     P1 = {'ity', 'tv', 'kiṃ', 'yady', 'kin', 'kiñ', 'yas', 'yac', 'tataś', 'evam'}
@@ -315,7 +315,7 @@ elif a.cmd == 'finish':
     def cnt(rx):
         return len(re.findall(rx, T))
     policy = {k: cnt(v) for k, v in {
-        'kiñ ca': r'\bkiñ ca\b', 'kiṃ vā': r'\bkiṃ vā\b', 'ityantena (joined)': r'\bityanten',
+        'kiñ ca': r'\bkiñ ca\b', 'kiṃ vā': r'\bkiṃ vā\b', 'ityādi / ityantena (joined; should be ity ādi, ity antena)': r'\bity(?:ād[iy]|ant)',
         'kin tarhi': r'\bkin tarhi', 'itipad- (joined)': r'\bitipad', 'iti pad- (split)': r'\biti pad',
         'punarukt- (joined)': r'\bpunarukt', 'punar ukt- (split)': r'\bpunar ukt',
         'yatkiñcit (joined)': r'\byatkiñci', 'yat kiñcit (split)': r'\byat kiñci'}.items()}
@@ -347,12 +347,12 @@ Mādhavanidāna and the Carakasaṃhitā; see tools/spacing/INSTRUCTIONS.md):
 - the notes are not spaced.
 - avagraha: a space before ' after e/o everywhere (te 'pi); ā' (tathā'pi) stays joined.
 - particles split everywhere (tathā ca, yad vā, na hi, yady api, ity arthaḥ, yad
-  uktaṃ, tad yathā, kiñ ca, kiṃ vā …); joined: tadanu, tadanantaraṃ, ityādi and its
-  cases, ityantena, kintu, parantu, athavā, itastataḥ.
+  uktaṃ, tad yathā, kiñ ca, kiṃ vā, ity ādi and its cases, ity antena …); joined:
+  tadanu, tadanantaraṃ, kintu, parantu, athavā, itastataḥ.
 - a doubled consonant at a word junction written once: left joined; typos are left
   uncorrected and usually joined.
-- commentary lemmata with a fused vowel stay joined (yathetyādi); with a consonant
-  junction they are split (kaṭv ityādi).
+- commentary lemmata: the space goes after ity; a fused vowel keeps the lemma joined
+  to it (yathety ādi), a consonant junction is split (kaṭv ity ādi).
 
 Policy questions for the editor (counts in this text):
 {pol}
