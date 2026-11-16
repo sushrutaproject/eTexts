@@ -10,8 +10,18 @@ The spacing itself is done by language-model agents following
 scripts cut the file into pieces, check every piece, put the file together
 again, and check the whole. Verse tagging is done by a script, by metre.
 
+**To run it on a new text, open a Claude Code session in this repository and say
+"Do the word spacing and verse tagging for eXxx, following
+tools/spacing/SESSION.md".** `SESSION.md` is the procedure as it was refined on
+the Mādhavanidāna and the Carakasaṃhitā (cost estimate first, agents writing
+their reports to files, resuming after a usage-limit stop, the sweep for missed
+junctions, the PR length limit); `pipeline.py` runs every step except the
+agents' spacing. The manual steps below remain what pipeline.py does.
+
 | file | what it does |
 |---|---|
+| `SESSION.md` | the procedure for a Claude Code session, step by step |
+| `pipeline.py` | `prepare`, `prompt`, `status`, `review`, `sample`, `finish`, `prbody`: every step but the spacing |
 | `INSTRUCTIONS.md` | the spacing rules and method, given to every agent (template; `prepare.py` fills in the paths) |
 | `prepare.py` | cuts the TEI into pieces of ~28k characters of text (whole chapters; long chapters cut at a line), masks the notes |
 | `check.py` | checks one agent's output: only spaces added, tags identical, well-formed, same lines |

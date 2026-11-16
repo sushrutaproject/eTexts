@@ -82,6 +82,8 @@ while i < len(pieces) - 1:
 
 os.makedirs(os.path.join(a.work, 'in'), exist_ok=True)
 os.makedirs(os.path.join(a.work, 'out'), exist_ok=True)
+os.makedirs(os.path.join(a.work, 'reports'), exist_ok=True)
+os.makedirs(os.path.join(a.work, 'scripts'), exist_ok=True)
 meta = {'tei': os.path.abspath(a.tei), 'pieces': {}, 'notes': notes if not a.keep_notes else {}}
 for no, p in enumerate(pieces, 1):
     name = '%03d' % no
