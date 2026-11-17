@@ -97,6 +97,10 @@
     <ref target="https://sushrutaproject.github.io/eTexts/">eText search website</ref>.</change>
  <change when="2026-11-16">Chapter headings and opening formulas moved to the start of their own
     chapters; word spacing completed (tools/spacing/).</change>
+ <change when="2026-11-17">Corrections of typing errors taken over from Tsutomu Yamashita's
+    updated transcription (received 2026-11), found by comparing it with his first version
+    (Ver.1, August 2009); word spacing adjusted where a correction changed a word
+    boundary.</change>
  </revisionDesc>
 
  </teiHeader>
@@ -183,7 +187,7 @@
      <l xml:id="BS.1.4.23"><label>1.4.23</label> tatas tv ālepayet sphoṭān śītodakapariplutān |
       <caesura/>
        kṣīriṇāṃ cāpi vṛkṣāṇāṃ <note/>tvacas saṃkṣodayed bhiṣak || </l>
-     <l xml:id="BS.1.4.24"><label>1.4.24</label> taiḥ kaṣāyeiś ca kalkaiś ca siñcayel lepayec ca tam |
+     <l xml:id="BS.1.4.24"><label>1.4.24</label> taiḥ kaṣāyaiś ca kalkaiś ca siñcayel lepayec ca tam |
       <caesura/>
        kharjūrasya ca bījāni śaṅkhanābhiḥ ca dāpayet || </l>
      <l xml:id="BS.1.4.25"><label>1.4.25</label><note/>añjanaṃ tagaraṃ patraṃ gairikaṃ nīlam utpalam |
@@ -811,7 +815,7 @@
      <l xml:id="BS.1.10.17"><label>1.10.17</label> yavāgvādibhir āhārais saṃsṛjed vā tam uttaram |
       <caesura/>
        śuṇṭhīprativiṣāmustākvāthaḥ syād āmapācanaḥ || </l>
-     <l xml:id="BS.1.10.18"><label>1.10.18</label><note/>śuṇṭhīnīrakadhānyākais tulyaiḥ kvātho rucipradaḥ |
+     <l xml:id="BS.1.10.18"><label>1.10.18</label><note/>śuṇṭhījīrakadhānyākais tulyaiḥ kvātho rucipradaḥ |
       <caesura/>
        mustaṃ hiṅgu trikaṭukaṃ pāṭhā vatsā harītakī || </l>
      <l xml:id="BS.1.10.19"><label>1.10.19</label><note/>cūrṇaḥ prativiṣā ceti citrakaś cāmanāśanaḥ |
@@ -875,7 +879,7 @@
        narasya strīsvaratvaṃ vā strī vāpi puruṣasvarā || </l>
      <l xml:id="BS.1.11.15"><label>1.11.15</label> āmagarbhacyutir vāpi garbhavyāpattijān viduḥ |
       <caesura/>
-       ity ete āmajā nẏṇāṃ viruddhādhyaśanātmakāḥ |
+       ity ete āmajā nṝṇāṃ viruddhādhyaśanātmakāḥ |
       <caesura/>
        viruddhāśanavarjī syād etad ārogyam uttamam || ity āha bhagavān ātreyaḥ iti
       bhele ekādaśo ' dhyāyaḥ || </l>
@@ -954,7 +958,7 @@
        kasmin janapade rogāḥ ke bhavanty adhikā iti |
       <caesura/>
        gurdālubhekinā pṛṣṭo vyācacakṣe punarvasuḥ || </l>
-     <l xml:id="BS.1.13.2"><label>1.13.2</label> matsyānnabhojino nityaṃ prācyāḥ syuḥ kaphapittanaḥ |
+     <l xml:id="BS.1.13.2"><label>1.13.2</label> matsyānnabhojino nityaṃ prācyāḥ syuḥ kaphapittinaḥ |
       <caesura/>
        ślīpadaṃ galagaṇḍaṃ ca prāyaśas teṣu dṛśyate || </l>
      <l xml:id="BS.1.13.3"><label>1.13.3</label> nadītoyagatān matsyān bhakṣayanti samudrajān |
@@ -1002,7 +1006,7 @@
        kaṇṭhe vā śrotram āśrity a vastau vā hṛdaye ' pi vā || </l>
      <l xml:id="BS.1.13.17"><label>1.13.17</label> tvaramāṇaś cikitseta pravṛddhā mārayen naram |
       <caesura/>
-       pittaśleṣmasamutthānā vātaśoṇitmūrcchitā || </l>
+       pittaśleṣmasamutthānā vātaśoṇitamūrcchitā || </l>
      <l xml:id="BS.1.13.18"><label>1.13.18</label> batāliketi tām āhur yatnavāṃs tatra jīvati |
       <caesura/>
        ity etat samyag uddiṣṭaṃ sarvaṃ yad yac ca coditam |
@@ -1045,7 +1049,7 @@
      <l xml:id="BS.1.14.7"><label>1.14.7</label> yathā vṛkṣasya puṣpeṣu palāśeṣu phaleṣu ca |
       <caesura/>
       <note/>śīrṇeṣv anyāni rohanti tathā vyādhir anirhṛtaḥ || </l>
-     <l xml:id="BS.1.14.8"><label>1.14.8</label> yathā mūle taroś channe mlāyaty agraṃ na saṃśayaḥ |
+     <l xml:id="BS.1.14.8"><label>1.14.8</label> yathā mūle taroś chinne mlāyaty agraṃ na saṃśayaḥ |
       <caesura/>
        evaṃ virecite vyādhir upaśāmyati dehinām || </l>
      <l xml:id="BS.1.14.9"><label>1.14.9</label><note/>udakaṃ codamanthaṃ ca matsyān māṃsatilān api |
@@ -1075,7 +1079,7 @@
      <l xml:id="BS.1.14.17"><label>1.14.17</label> sammiśraṃ gaṇḍakenaiva vāruṇīṃ śiśire pibet |
       <caesura/>
        mārdvīkaṃ tu vasante vai nidāghe kṣīram ācaret || </l>
-     <l xml:id="BS.1.14.18"><label>1.14.18</label> kalmāṣā vātalā rūkṣā <note/>guravo bhinnavarcasaḥ |
+     <l xml:id="BS.1.14.18"><label>1.14.18</label> kulmāṣā vātalā rūkṣā <note/>guravo bhinnavarcasaḥ |
       <caesura/>
       <note/>śiraso ' ntastarpayantaḥ śleṣmaṇaś ca viśoṣaṇāḥ || </l>
      <l xml:id="BS.1.14.19"><label>1.14.19</label> udāvartāñ jayanty ete snigdhatvād gauravād api |
@@ -1099,7 +1103,7 @@
      <l xml:id="BS.1.15.2"><label>1.15.2</label> tatra prāṇaiṣaṇāṃ<note/> pūrvaṃ samāpadyeta mānavaḥ |
       <caesura/>
        dharmārthakāmaprāptir hi sadbhiḥ prāṇaiḥ prapadyate || </l>
-     <l xml:id="BS.1.15.3"><label>1.15.3</label> dharmadīnām avāptiś ca puruṣārthaḥ paraḥ smṛtaḥ |
+     <l xml:id="BS.1.15.3"><label>1.15.3</label> dharmādīnām avāptiś ca puruṣārthaḥ paraḥ smṛtaḥ |
       <caesura/>
        tasmāc charīraṃ <note/>prayataḥ parirakṣed dhi śāstrataḥ || </l>
      <l xml:id="BS.1.15.4"><label>1.15.4</label><note/>dhanaiṣaṇāṃ dvitīyāṃ tu samāpadyeta mānavaḥ |
@@ -1110,7 +1114,7 @@
        jvararogādikā yena nirasyed āpado budhaḥ || </l>
      <l xml:id="BS.1.15.6"><label>1.15.6</label> dharmaiṣaṇāṃ tṛtīyāṃ tu samāpadyeta mānavaḥ |
       <caesura/>
-      <note/>avaśyam ādhigantavyā dehabhede varā gatiḥ || </l>
+      <note/>avaśyam adhigantavyā dehabhede varā gatiḥ || </l>
      <l xml:id="BS.1.15.7"><label>1.15.7</label><note/>prāṇādyanuparodhena tasmād dharmaṃ cared budhaḥ |
       <caesura/>
        trivargānuparodhena tatprāptir hi nare hitā || </l>
@@ -1162,7 +1166,7 @@
      <l xml:id="BS.1.16.8"><label>1.16.8</label> pṛthivyāś calanaṃ caiva vātād eva pravartate |
       <caesura/>
        vātena dhūmo bhavati dhūmād abhraṃ prajāyate || </l>
-     <l xml:id="BS.1.16.9"><label>1.16.9</label> abhrād vimucyte vāri bījānāṃ sambhavas tataḥ |
+     <l xml:id="BS.1.16.9"><label>1.16.9</label> abhrād vimucyate vāri bījānāṃ sambhavas tataḥ |
       <caesura/>
        ulkānipātaḥ stanitaṃ <note/>vidhutārāgaṇasya ca || </l>
      <l xml:id="BS.1.16.10"><label>1.16.10</label> vidyutāṃ ca balaṃ caiva vātād eva pravartate |
@@ -1291,7 +1295,7 @@
       |
       <caesura/>
        prādur bhavati tad vidyād duṣṭam annaṃ pracakṣaṇaḥ || </l>
-     <l xml:id="BS.1.18.7"><label>1.18.7</label> nīlapītāsitā <note/>rājyo <note/>bhantīndrāyudhopamāḥ |
+     <l xml:id="BS.1.18.7"><label>1.18.7</label> nīlapītāsitā <note/>rājyo <note/>bhavantīndrāyudhopamāḥ |
       <caesura/>
        madhye <note/>madyeṣu sarveṣu ye cānye pānasaṃśrayāḥ || </l>
      <l xml:id="BS.1.18.8"><label>1.18.8</label> anulepanadoṣe tu tvag asya bahulībhavet |
@@ -1327,7 +1331,7 @@
      <l xml:id="BS.1.18.18"><label>1.18.18</label> svedaś ca<note/> viṣamatyeti romakūpaiḥ samantataḥ |
       <caesura/>
        tudyamānaḥ punaḥ śayyāṃ <note/>manyate jantubhir vṛtām || </l>
-     <l xml:id="BS.1.18.19"><label>1.18.19</label> sudine durdine cāpi durdine sudinaṃ tathā |
+     <l xml:id="BS.1.18.19"><label>1.18.19</label> sudine durdinaṃ cāpi durdine sudinaṃ tathā |
       <caesura/>
        syād bhūś ca duṣṭaparyantā<note/> duṣṭacchatraniṣevaṇāt || </l>
      <l xml:id="BS.1.18.20"><label>1.18.20</label> kurute rūpavaivarṇyaṃ praduṣṭaśmaśruvardhakaḥ |
@@ -1383,7 +1387,7 @@
        balavarṇakaraṃ hy etad ārogyakaraṇaṃ param || </l>
      <l xml:id="BS.1.19.5"><label>1.19.5</label> snehapāne tathā mātrāvastikarmaṇi cāpy atha |
       <caesura/>
-       kṣāre ca lavaṇe caiva na surā prātiṣidhyate || </l>
+       kṣāre ca lavaṇe caiva na surā pratiṣidhyate || </l>
      <l xml:id="BS.1.19.6"><label>1.19.6</label> bṛṃhaṇaṃ nedṛśaṃ kijcid yathānnasahitā surā |
       <caesura/>
        tāṃ tu rūkṣāṃ viśeṣeṇa nātimātraṃ samācaret || </l>
@@ -1441,9 +1445,9 @@
      <l xml:id="BS.1.20.9"><label>1.20.9</label> sūryāṃśaṃ dhūmam ity āhur yato ' bhraprabhavaḥ smṛtaḥ |
       <caesura/>
        abhrād varṣaṃ tato ' nnāni, tasmāt tejo mahat param || </l>
-     <l xml:id="BS.1.20.10"><label>1.20.10</label> svedaś cāsraṃ ca mūtraṃ ca phenaṃ cāmyantaraṃ malam |
+     <l xml:id="BS.1.20.10"><label>1.20.10</label> svedaś cāsraṃ ca mūtraṃ ca phenaṃ cābhyantaraṃ malam |
       <caesura/>
-       avaśyāyahimāmbūni bāhmāni paricakṣate || hṛdayo<note/> |.. |.. |.. |.. |..
+       avaśyāyahimāmbūni bāhyāni paricakṣate || hṛdayo<note/> |.. |.. |.. |.. |..
       |.. |.. |.. |
       <caesura/>
        |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. iti bhele viṃśo ' dhyāyaḥ || </l>
@@ -1464,7 +1468,7 @@
      <l xml:id="BS.1.21.2"><label>1.21.2</label> vāmayec chaleṣmakāse ca <note/>pratiśyāye ca mānavān |
       <caesura/>
        hṛdroge caiva kuṣṭhe ca sarvaśleṣmāmayeṣu ca || </l>
-     <l xml:id="BS.1.21.3"><label>1.21.3</label> vorecayed dhi kuṣṭhāni jvarān visphoṭakāni ca |
+     <l xml:id="BS.1.21.3"><label>1.21.3</label> virecayed dhi kuṣṭhāni jvarān visphoṭakāni ca |
       <caesura/>
        dāhaṃ vicarcikāṃ caiva vātavyādhīṃś ca sarvaśaḥ || </l>
      <l xml:id="BS.1.21.4"><label>1.21.4</label> anvāsayet kaṭīpṛṣṭhapārśvarogān vicakṣaṇaḥ |
@@ -1542,7 +1546,7 @@
       <caesura/>
        saṅkaras tv eṣa vijñeyaḥ svedānām agrya ucyate || </l>
      <l xml:id="BS.1.22.17"><label>1.22.17</label> etāny anyāni ca bhiṣak svedadravyāṇi saṃharet || </l>
-     <l xml:id="BS.1.22.18"><label>1.22.18</label> prakīrya tāni śayane kalbalenāvaguṇṭhitam<note/> |
+     <l xml:id="BS.1.22.18"><label>1.22.18</label> prakīrya tāni śayane kambalenāvaguṇṭhitam<note/> |
       <caesura/>
        svabhyaktaṃ śāyayej jantuṃ<note/> svedaṃ prastaram ādiśet || </l>
      <l xml:id="BS.1.22.19"><label>1.22.19</label> vasātailaghṛtakṣīramūtramastvamlakāñjikaiḥ |
@@ -1563,7 +1567,7 @@
      <l xml:id="BS.1.22.24"><label>1.22.24</label> jñātvāvagāhayet tāvad yāvat svedodgamo bhavet |
       <caesura/>
        taptaiḥ pātrayutair vāpi śuddhair vā salilair bhiṣak || </l>
-     <l xml:id="BS.1.22.25"><label>1.22.25</label> svamyaktagātrasya tataḥ <note/>salilasvedam ācaret |
+     <l xml:id="BS.1.22.25"><label>1.22.25</label> svabhyaktagātrasya tataḥ <note/>salilasvedam ācaret |
       <caesura/>
        īdṛśair eva salilaiḥ kaṭāhe cārdhapūrite || </l>
      <l xml:id="BS.1.22.26"><label>1.22.26</label> praveśya svedayet svedyam udakoṣṭhaḥ prakīrtitaḥ |
@@ -1601,7 +1605,7 @@
      <l xml:id="BS.1.23.1"><label>1.23.1</label> || trayoviṃśo ' dhyāyaḥ || athāto
        gāḍhapurīṣīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
        <caesura/>
-       gāḍhaṃ purīṣaṃ grathitaṃ śuskaṃ vātasamīritam |
+       gāḍhaṃ purīṣaṃ grathitaṃ śuṣkaṃ vātasamīritam |
       <caesura/>
        tenāsyāpihitaṃ srotaḥ <note/>śvayathuṃ kurute gude || </l>
      <l xml:id="BS.1.23.2"><label>1.23.2</label> tasyaiva <note/>kupito vāyur ūrdhvaṃ jantoḥ prapadyate |
@@ -1657,20 +1661,20 @@
        tasmān na pāyayet svasthaṃ prakṛtyarthaṃ hi dhīyate || </l>
      <l xml:id="BS.1.25.4"><label>1.25.4</label> acākṣuṣatvāt koṣṭhasya pītaṃ <note/>svasthena cauṣadham |
       <caesura/>
-       yāti naikāntataḥ siddhiṃ tasmāt svasthaṃ na payayet || </l>
+       yāti naikāntataḥ siddhiṃ tasmāt svasthaṃ na pāyayet || </l>
      <l xml:id="BS.1.25.5"><label>1.25.5</label> ity etad vacanaṃ śrutvā pratyuvāca punarvasuḥ |
       <caesura/>
        iha doṣaviśeṣeṇa naro bhaiṣajyam ācaret || </l>
      <l xml:id="BS.1.25.6"><label>1.25.6</label> vāte tu bṛṃhaṇaṃ kuryāt pitte tu pariśodhanam |
       <caesura/>
-       kaphe prarcchadanaṃ sādhu sannipāte virecanam || </l>
+       kaphe pracchardanaṃ sādhu sannipāte virecanam || </l>
      <l xml:id="BS.1.25.7"><label>1.25.7</label> vātātapaviśuṣkāś ca ye ca karmaparā narāḥ |
       <caesura/>
        adhvayānaviśuṣkāś ca <note/>tān na saṃśodhayed bhiṣak || </l>
      <l xml:id="BS.1.25.8"><label>1.25.8</label> tailamāṣāṃs tilaghṛtaṃ phāṇitaṃ piṣṭamodakān |
       <caesura/>
-       ājaṃ gavyam athauramraṃ matsyān māṃāsavaṃ dadhi || </l>
-     <l xml:id="BS.1.25.9"><label>1.25.9</label> atyaśnano ' tipibataḥ sadā ca svapato divā |
+       ājaṃ gavyam athauramraṃ matsyān māṃsāsavaṃ dadhi || </l>
+     <l xml:id="BS.1.25.9"><label>1.25.9</label> atyaśnato ' tipibataḥ sadā ca svapato divā |
       <caesura/>
        doṣā ghorāḥ prakupyanti teṣāṃ sādhu virecanam || </l>
      <l xml:id="BS.1.25.10"><label>1.25.10</label> kiñ cānyad vidhivat kāle snigdhasvinnena<note/> bheṣajam |
@@ -1685,7 +1689,7 @@
      <l xml:id="BS.1.25.13"><label>1.25.13</label> tasmād yadā<note/> vai vasudhā tṛptā puṣpavatī bhavet |
       <caesura/>
       <note/>tadā prāvṛṣi <note/>saṃprāptavamanādīni kārayet || </l>
-     <l xml:id="BS.1.25.14"><label>1.25.14</label> madhyacārī <note/>yadā sūryo dhātūn utkleśayen mṛṇām |
+     <l xml:id="BS.1.25.14"><label>1.25.14</label> madhyacārī <note/>yadā sūryo dhātūn utkleśayen nṛṇām |
       <caesura/>
       <note/>tadā vasante saṃprāpte vamanādīni kārayet || </l>
      <l xml:id="BS.1.25.15"><label>1.25.15</label><note/>tadā varṣāsu dātavyaṃ <note/>yadā hy eṣa ṛtuḥ sukhaḥ
@@ -1733,7 +1737,7 @@
      <l xml:id="BS.1.25.28"><label>1.25.28</label> medodhātugate vidyāt plāvanaṃ pītamūtratā |
       <caesura/>
        asthimajjagate śoṣo nakhadantavivarṇate || </l>
-     <l xml:id="BS.1.25.29"><label>1.25.29</label> meḍhre muṣkaparītāpaḥ klaibyaṃ vāpy atha śuklage |
+     <l xml:id="BS.1.25.29"><label>1.25.29</label> meḍhramuṣkaparītāpaḥ klaibyaṃ vāpy atha śuklage |
       <caesura/>
        balavadvigrahād bhārāt <note/>pīḍanāl laṅghanād api || </l>
      <l xml:id="BS.1.25.30"><label>1.25.30</label> maithunasyātiyogāc ca jāyate manasaḥ klamaḥ |
@@ -1742,7 +1746,7 @@
      <l xml:id="BS.1.25.31"><label>1.25.31</label> ity ebhir īdṛśaiś cānyair hetubhiḥ<note/> kupito ' nilaḥ
       |
       <caesura/>
-       vikārāñ janayec chavāsakāsaviṣṭambhasaṃjñakān || </l>
+       vikārāñ janayec chvāsakāsaviṣṭambhasaṃjñakān || </l>
      <l xml:id="BS.1.25.32"><label>1.25.32</label> śūlavepanam ādhmānaṃ nistodaṃ suptatāṃ tathā |
       <caesura/>
        sphoṭanaṃ cālanaṃ raukṣyaṃ veṣṭanotkṣepaṇāni ca || </l>
@@ -1761,7 +1765,7 @@
        gudameḍhrakaṭīpṛṣṭhayonigarbhāśayair api || </l>
      <l xml:id="BS.1.25.37"><label>1.25.37</label> yakṛtplīhāṃsahṛdayapārśvavakṣobhujāntaraiḥ |
       <caesura/>
-      <note/>grīvāgaṇḍaharūśaṅkhanāsākṣidaśanacchadaiḥ || </l>
+      <note/>grīvāgaṇḍahanūśaṅkhanāsākṣidaśanacchadaiḥ || </l>
      <l xml:id="BS.1.25.38"><label>1.25.38</label> lalāṭakarṇasīmantaiḥ pratyekam anilārditaiḥ |
       <caesura/>
        dūyadbhir vikalaiś cāpi jñeyās tv ekāṅgarogiṇaḥ || </l>
@@ -1830,19 +1834,19 @@
      <l xml:id="BS.1.26.17"><label>1.26.17</label> vātajaṃ pittajaṃ caiva śleṣmajaṃ sannipātajam |
       <caesura/>
       <note/>sirāgranthiṃ vijānīyāt pañcamaṃ snāyuto bhiṣak || </l>
-     <l xml:id="BS.1.26.18"><label>1.26.18</label> vātajaṃ pittajaṃ caiv kaphajaṃ sannipātajam |
+     <l xml:id="BS.1.26.18"><label>1.26.18</label> vātajaṃ pittajaṃ caiva kaphajaṃ sannipātajam |
       <caesura/>
        abhiṣyandaṃ vijānīyād adhimanthaṃ<note/> ca buddhimān || </l>
      <l xml:id="BS.1.26.19"><label>1.26.19</label> śukloparodhād daurbalyād dhvajabhaṅgāt tathaiva ca |
       <caesura/>
        śukrakṣayāc ca catvāri klaibyasthānāni nirdiśet || </l>
-     <l xml:id="BS.1.26.20"><label>1.26.20</label> vātajaṃ pittjaṃ caiva śleṣmajaṃ sannipātajam |
+     <l xml:id="BS.1.26.20"><label>1.26.20</label> vātajaṃ pittajaṃ caiva śleṣmajaṃ sannipātajam |
       <caesura/>
        akṣirogaṃ vijānīyān mānavānāṃ caturvidham || </l>
      <l xml:id="BS.1.26.21"><label>1.26.21</label> pūyānmūtrāc ca śuklāc ca sandhānāc cāpi dehinām |
       <caesura/>
        upadaṃśaṃ vijānīyād bhiṣag evaṃ caturvidham || </l>
-     <l xml:id="BS.1.26.22"><label>1.26.22</label> raktāsrāvaṃ kaphasrāvaṃ pūyāsrāvaṃ tathaiva ca |
+     <l xml:id="BS.1.26.22"><label>1.26.22</label> raktāsrāvaṃ kaphāsrāvaṃ pūyāsrāvaṃ tathaiva ca |
       <caesura/>
        toyāsrāvaṃ ca jānīyād bhiṣag evaṃ caturvidham || </l>
      <l xml:id="BS.1.26.23"><label>1.26.23</label> vātajāṃ pittajāṃ caiva śleṣmajāṃ sannipātajām |
@@ -1910,7 +1914,7 @@
      <l xml:id="BS.1.27.5"><label>1.27.5</label> kaphakṛn mūlakaṃ vidyāt sarṣapaṃ vātakopanam |
       <caesura/>
        laśunaṃ vātaśamanaṃ pittaśleṣmakaraṃ ca tat || </l>
-     <l xml:id="BS.1.27.6"><label>1.27.6</label> nātiśleṣmakaraṃ hiṅgu ṣaṇḍyaṃ kṣāraḥ karoti ca |
+     <l xml:id="BS.1.27.6"><label>1.27.6</label> nātiśleṣmakaraṃ hiṅgu ṣāṇḍyaṃ kṣāraḥ karoti ca |
       <caesura/>
        sarvaṃ tiktam avṛṣyaṃ <note/>tu vidyād anyatra kūlakāt || </l>
      <l xml:id="BS.1.27.7"><label>1.27.7</label> avṛṣyaṃ paiṣṭikaṃ sarvaṃ yavagodhūmavarjitam |
@@ -1951,10 +1955,10 @@
        nandimaudgalyakāṃś cāpi kālakān kṛṣṇapucchakān || </l>
      <l xml:id="BS.1.27.19"><label>1.27.19</label> ājñātān ḍuṇḍubhāṃś caiva maṇḍūkān chuṭumallikān |
       <caesura/>
-       harṣyāt tu saptavārādi tathā garbhabhatāsakān(?) || </l>
+       harṣyāt tu saptavārādi tathā gardabhatāsakān(?) || </l>
      <l xml:id="BS.1.27.20"><label>1.27.20</label> sarvāṃś ca vārijān vidyān madhurān rasapākataḥ |
       <caesura/>
-       priyaṅguś ca plāṅgaś ca balākāś ca khagās tathā || </l>
+       priyaṅguś ca plavaṅgaś ca balākāś ca khagās tathā || </l>
      <l xml:id="BS.1.27.21"><label>1.27.21</label> ye cānye ' pyaudakā bhaumyāḥ khecarāś ca khagāḥ smṛtāḥ |
       <caesura/>
        nakrāṃś ca śiśumārāṃś ca vallakīmatsyakacchapān<note/> || </l>
@@ -1972,7 +1976,7 @@
        rohīṃ śvadaṃṣṭrān uṣṭrāṃś ca śarabhān mṛgamātṛkān || </l>
      <l xml:id="BS.1.27.26"><label>1.27.26</label> athānyān madhurāsvādān vipāke<note/> kaṭukān viduḥ |
       <caesura/>
-       kharāś cāścatarā meṣā<note/> ye cānye tādṛśā mṛgāḥ || </l>
+       kharāśvāśvatarā meṣā<note/> ye cānye tādṛśā mṛgāḥ || </l>
      <l xml:id="BS.1.27.27"><label>1.27.27</label> rasena madhurāṃs tān vai vipāke kaṭukān viduḥ |
       <caesura/>
        harītān stokakāṃś caiva kapotān śukaśārikāḥ || </l>
@@ -1987,7 +1991,7 @@
        anupānaṃ vidhātavyaṃ vārāhe khadirodaram || </l>
      <l xml:id="BS.1.27.31"><label>1.27.31</label> dadhi cukraṃ ca dhānyānām anupānaṃ pradāpayet |
       <caesura/>
-       śīrodakaṃ <note/>bisagranthisevanānāṃ tathāsavān || </l>
+       śītodakaṃ <note/>bisagranthisevanānāṃ tathāsavān || </l>
      <l xml:id="BS.1.27.32"><label>1.27.32</label> tadvārijānāṃ satvānām anupānaṃ pradāpayet |
       <caesura/>
        triphalāṃ śīdhumārdvīkaṃ kadambapanasodakam || </l>
@@ -2021,7 +2025,7 @@
        yad bhakṣayati bhuṅkte vā vidhivac cāpi mānavaḥ |
       <caesura/>
       <note/>anyac ca kiñcit pibati tat sarvaṃ ṣaḍrasānvitam || </l>
-     <l xml:id="BS.1.28.2"><label>1.28.2</label> pathyāpathyam abodhāryaṃ, tasmād bhojyaṃ śarīriṇām |
+     <l xml:id="BS.1.28.2"><label>1.28.2</label> pathyāpathyam abodhārthaṃ, tasmād bhojyaṃ śarīriṇām |
       <caesura/>
       <note/>rasato vīryataś caiva pravakṣyāmy ata uttaram || </l>
      <l xml:id="BS.1.28.3"><label>1.28.3</label> śālayo madhurāḥ sarve vipāke kaṭukāḥ smṛtāḥ |
@@ -2043,7 +2047,7 @@
      <l xml:id="BS.1.28.8"><label>1.28.8</label> yavakā nityam ahitāḥ<note/> kṛṣṇavrīhipramodakāḥ |
       <caesura/>
       <note/>vīryoṣṇā madhurās te vai sakaṣāyāś ca kīrtitāḥ || </l>
-     <l xml:id="BS.1.28.9"><label>1.28.9</label> bahūrūkṣāḥ kaṣāyāś ca koradūṣāḥ savāruṇāḥ |
+     <l xml:id="BS.1.28.9"><label>1.28.9</label> bahurūkṣāḥ kaṣāyāś ca koradūṣāḥ savāruṇāḥ |
       <caesura/>
        prasādhikāḥ kaṃ<note/>gavaś ca śyāmākāś ca samā rasaiḥ || </l>
      <l xml:id="BS.1.28.10"><label>1.28.10</label><note/>uddālakās tu saṃkhyā<note/>tāḥ kaṣāyā madhurā rase
@@ -2074,7 +2078,7 @@
      <l xml:id="BS.1.28.18"><label>1.28.18</label> vājī bhavati dugdhena balaṃ cāty upajāyate |
       <caesura/>
        sañjīvanaṃ sambhavati sarvaṃ kṣīram udāhṛtam || </l>
-     <l xml:id="BS.1.28.19"><label>1.28.19</label> rase pāke ca madhuraṃ tailaṃ sarvaṃ prakīrtītam |
+     <l xml:id="BS.1.28.19"><label>1.28.19</label> rase pāke ca madhuraṃ tailaṃ sarvaṃ prakīrtitam |
       <caesura/>
        yasmin yasmin viśeṣas tu yo yas tasmin nibodha tam || </l>
      <l xml:id="BS.1.28.20"><label>1.28.20</label> tailam eraṇḍabilvānām uṣṇaṃ vātaharaṃ smṛtam |
@@ -2092,7 +2096,7 @@
      <l xml:id="BS.1.28.24"><label>1.28.24</label><note/>kaulakaṃ madhurasparśaṃ rasato ' tha vipākataḥ |
       <caesura/>
        yasmin yasmin viśeṣas tu yo yas taṃ me nibodhata || </l>
-     <l xml:id="BS.1.28.25"><label>1.28.25</label> palālajātaṃ chvākam atīva guru sammatam |
+     <l xml:id="BS.1.28.25"><label>1.28.25</label> palālajātaṃ chatrākam atīva guru sammatam |
       <caesura/>
        mahādoṣam abhiṣyandi<note/> sukhaṃ bāhyopaghātakam(?) || </l>
      <l xml:id="BS.1.28.26"><label>1.28.26</label> chatrākaṃ <note/>gomayodbhūtaṃ kaṣāyamadhuraṃ rase |
@@ -2119,12 +2123,12 @@
      <l xml:id="BS.1.28.33"><label>1.28.33</label> tathā <note/>nāḍīkalāyaś ca pañcāṅgulyas tathaiva ca |
       <caesura/>
        etāni vidyāc chākāni tiktāni rasapākataḥ || </l>
-     <l xml:id="BS.1.28.34"><label>1.28.34</label> sa<note/>tīnaśākaṃ madhuram īṣatiktopasaṃhitam |
+     <l xml:id="BS.1.28.34"><label>1.28.34</label> sa<note/>tīnaśākaṃ madhuram īṣattiktopasaṃhitam |
       <caesura/>
        kovidārasya śākaṃ tu pūrveṇaiva <note/>samaṃ matam || </l>
      <l xml:id="BS.1.28.35"><label>1.28.35</label> vārtākīnāṃ phalaṃ tiktaṃ kaṭukenopasaṃhitam |
       <caesura/>
-       grahaṇīṃ dīpayaty etac chaleṣmāṇaṃ vinihanti ca || </l>
+       grahaṇīṃ dīpayaty etac chleṣmāṇaṃ vinihanti ca || </l>
      <l xml:id="BS.1.28.36"><label>1.28.36</label><note/>kaṭhillabakulau caiva <note/>madhurau
       śukraśo<note/>dhanau |
       <caesura/>
@@ -2159,7 +2163,7 @@
      <l xml:id="BS.1.28.46"><label>1.28.46</label> vidyād evaṃguṇaṃ caiva sakaṣāyaṃ ca māhiṣam |
       <caesura/>
        khaḍgamāṃsam abhiṣyandi sasvādulavaṇaṃ rase || </l>
-     <l xml:id="BS.1.28.47"><label>1.28.47</label> kutamāyur mayūraś ca<note/> gokarṇo gavayo guruḥ |
+     <l xml:id="BS.1.28.47"><label>1.28.47</label> kṛtamāyur mayūraś ca<note/> gokarṇo gavayo guruḥ |
       <caesura/>
        sṛmaraś camaro nyaṅkur madhurā guravaś ca te || </l>
      <l xml:id="BS.1.28.48"><label>1.28.48</label> ṛśyaś ca mṛgamātā ca tuṅgaś ca hariṇī mṛgaḥ |
@@ -2319,7 +2323,7 @@
        sandhāraṇād vā <note/>bhārasya raktam ādhmāpayet tataḥ || </l>
      <l xml:id="BS.2.3.24"><label>2.3.24</label><note/>sā śoṇite sthite nārī garbhiṇī strīti manyate |
       <caesura/>
-       samayād atha<note/> śūlāni tasyāḥ kukṣau bhavaty atha || </l>
+       samayād atha<note/> śūlāni tasyāḥ kukṣau bhavanty atha || </l>
      <l xml:id="BS.2.3.25"><label>2.3.25</label> koṣṭhe gulmodaraṃ tac ca garbho ' yam iti manyate |
       <caesura/>
        garbho ' yam iti ca vyādhir varṣam ekaṃ bahūny api || </l>
@@ -3579,7 +3583,7 @@
       <caesura/>
        nāsti ca sattvam <note/>aupapādakam[<note/>aupavādhikam] iti |
       <caesura/>
-       yadi hi mātā putraṃ janyet bhūyiṣṭhaṃ hi strī putrakāmā maithunavargam abhis
+       yadi hi mātā putraṃ janayet bhūyiṣṭhaṃ hi strī putrakāmā maithunavargam abhis
       andhāya putraṃ janayet strīkāmā ca striyam || </l>
      <l xml:id="BS.4.6.2"><label>4.6.2</label><note/>yadā[<note/>-vi] jīven a saha sūkṣmāv agnimārutau
       garbhaṃ viśataḥ <note/>tadā[<note/>-va] dvāv etāv aṅgapratyaṅgāni vikurutaḥ,tau
@@ -3609,7 +3613,7 @@
        kiṃ tarhi yathādity assambhūto ' pi <note/>meghāntarito[<note/>memāmtarito] na
       prakāśam upajanayati <note/>tathā[<note/>---] mano ' ntarhiteṣu vijñānasrotassu
       tamasā smṛtiṃ nopajanayatīti || </l>
-     <l xml:id="BS.4.6.5"><label>4.6.5</label> yat punar āḥ yady ayaṃ paralokād <note/>garbho '
+     <l xml:id="BS.4.6.5"><label>4.6.5</label> yat punar āha yady ayaṃ paralokād <note/>garbho '
       vakrāmen nāsya[<note/>garma ukta] kiñcit tatrādṛṣṭaṃ syād iti, atrocyate |
       <caesura/>
        iha tāvad ayaṃ cirotsṛṣṭāni vijñānāni vividhāni cāścaryabhūtāni na smarati kiṃ
@@ -3661,18 +3665,18 @@
       sthūlāntraṃ ca vapāvahanaṃ ceti || </l>
      <l xml:id="BS.4.7.5"><label>4.7.5</label> ṣaṭpañcāśat pratyaṅgāni tad yathā---dvau gulphau, dve
       nitambe, dve jaṅghe, dve piṇḍike, dve ūrupiṇḍike, dvau sphicau, dvau vṛṣaṇau,
-      ekaṃ śephaḥ, dvau śaṅkhau, dvau baṅkṣṇau, dvau kukundarau, eko vastiḥ,
-      śīrṣam ekam udaram ekam, dvau stanau, dvau bāhū, dvāṃvasakau, ekaṃ cubukaṃ,
+      ekaṃ śephaḥ, dvau śaṅkhau, dvau vaṅkṣaṇau, dvau kukundarau, eko vastiḥ,
+      śīrṣam ekam udaram ekam, dvau stanau, dvau bāhū, dvāv aṃsakau, ekaṃ cubukaṃ,
       dvāv oṣṭhau, dve dantaveṣṭe, dve <note/>sṛkvaṇī[<note/>sṛkvaṇīti], ekaṃ tālu,
       galaśuṇḍikā ekā, dvau karṇau, dve karṇaśaṣkulike, dvau gaṇḍau, dve akṣikūṭe,
       catvāry akṣivartmāni, dve <note/>akṣiṇī[<note/>akṣiṇīti] iti || </l>
      <l xml:id="BS.4.7.6"><label>4.7.6</label> śarīradravyāṇī---daśodakasyāñjalayaḥ śarīre pracyavamānaṃ
-      purīṣam anubadhvāty atiyoge, navāñjalayaḥ pūrvasyāhārapariṇāmadhātor yantaṃ rasa
+      purīṣam anubadhnāty atiyoge, navāñjalayaḥ pūrvasyāhārapariṇāmadhātor yantaṃ rasa
       ity <note/>ācakṣate[<note/>ācakṣati] kuśalāḥ, aṣṭau śoṇitasya, sapta
       purīṣasya, catvāro mūtrasya, dvau medasaḥ, eko majjñaḥ, mastiṣkasyāñjaliḥ
       śuklasya ceti || </l>
      <l xml:id="BS.4.7.7"><label>4.7.7</label> athātra praśno bhavati---
-      katamayaṃ <note/>jīvo[<note/>devo] dehād dehāntaram upakramata iti? atrovāca
+      kathamayaṃ <note/>jīvo[<note/>devo] dehād dehāntaram upakramata iti? atrovāca
       bhagavān ātreyaḥ |
       <caesura/>
        jalūkāyā ivāsya kecid gatiṃ bruvate |
@@ -3790,14 +3794,14 @@
       tailenānuvāsaḥ || </l>
      <l xml:id="BS.4.8.7"><label>4.8.7</label> evaṃ hy asyāḥ <note/>pratimāsaṃ[<note/>pratisaṃvartamānāyā
       yacchatanmataṃ] vartamānāyāḥ kukṣīkaṭīpārśvapṛṣṭhaṃ mṛdūbhavati jīrṇapurīṣaṃ
-      cādhaḥ travet sukhaṃ ca prajāyate || </l>
+      cādhaḥ sravet sukhaṃ ca prajāyate || </l>
      <l xml:id="BS.4.8.8"><label>4.8.8</label> saptame tu khalu māse garbhaprapīḍitā
       <note/>vātapittaśleṣmāṇa[<note/>-śleṣmāṇo] uraḥ prāpya
       <note/>savidāhaṃ[<note/>vidahyamānāḥ] kaṇḍūṃ janayanti |tena kikkisāni jāyante
       strīṇām |
       <caesura/>
        triphalācūrṇaṃ śaśarudhireṇa piṣṭvā tenāsyāḥ tāny ālepayet || </l>
-     <l xml:id="BS.4.8.9"><label>4.8.9</label> aṣṭame tu khalu māse prativihite sati sūkikāgāraṃ samyak
+     <l xml:id="BS.4.8.9"><label>4.8.9</label> aṣṭame tu khalu māse prativihite sati sūtikāgāraṃ samyak
       prāgdvāram udakdvāraṃ vā kārayet
       tinduka-<note/>palāśa[<note/>phalāśa]-aśvatthaiḥ |
       <caesura/>
@@ -3882,7 +3886,7 @@
      <l xml:id="BS.5.1.11"><label>5.1.11</label> sthūlāsthūlāṅgulī pāṇī nakhā <note/>yasyāpi lohitāḥ |
       <caesura/>
       <note/>kalyāṇadeśapratyaṅgaḥ pañcāśadvarṣa eva ca || </l>
-     <l xml:id="BS.5.1.12"><label>5.1.12</label> vyūṭhorasko dīrghabhujaḥ sthūlajānuś ca yo bhavet |
+     <l xml:id="BS.5.1.12"><label>5.1.12</label> vyūḍhorasko dīrghabhujaḥ sthūlajānuś ca yo bhavet |
       <caesura/>
        dīrghāṅgulir dīrghanakhaḥ ṣaṣṭi varṣāṇi jīvati || </l>
      <l xml:id="BS.5.1.13"><label>5.1.13</label> utpīḍitasvaraṃ vāpi tuṅganāsakaconmukham |
@@ -4487,14 +4491,14 @@
       <note/>aṃso ' nilāt kāsavataḥ paretaṃ tasya jīvitam || </l>
      <l xml:id="BS.5.12.7"><label>5.12.7</label> atyuṣṇaṃ vātiśītaṃ vā stabdhaṃ vā mṛdu vāpy atha |
       <caesura/>
-       manyate pāṇipādaṃ ca paretaṃ tasya jībitam || </l>
+       manyate pāṇipādaṃ ca paretaṃ tasya jīvitam || </l>
      <l xml:id="BS.5.12.8"><label>5.12.8</label> yo ' vatīrya nadīṃ pūrṇāṃ toye paśyati jālakam |
       <caesura/>
        gātraṃ liptam athādbhiś ca yasya nāstīti taṃ viduḥ || </l>
      <l xml:id="BS.5.12.9"><label>5.12.9</label> vivartayati yaḥ śīrṣam atyarthaṃ ca <note/>nasā naraḥ |
       <caesura/>
        na svidyate lalāṭaṃ ca nāsti tasya cikitsitam || </l>
-     <l xml:id="BS.5.12.10"><label>5.12.10</label> jvaryate kāsate vāpi tathocchavasiti vai dṛḍham |
+     <l xml:id="BS.5.12.10"><label>5.12.10</label> jvaryate kāsate vāpi tathocchvasiti vai dṛḍham |
       <caesura/>
        ākramyate tāmyate ca yathā pretas tathaiva saḥ || </l>
      <l xml:id="BS.5.12.11"><label>5.12.11</label> yasyodaraṃ <note/>samādhmātaṃ tadvartma ca vibhāvyate |
@@ -4908,7 +4912,7 @@
        śoṣiṇo ' tha <note/>balasthasya pañcakarma vidhīyate || </l>
      <l xml:id="BS.6.4.13"><label>6.4.13</label> tad eva kṣīṇamāṃsasya prayuktaṃ viṣamaṃ bhavet |
       <caesura/>
-       tasya saṃśuddhākāyasya bhojanāny upakalpayet || </l>
+       tasya saṃśuddhakāyasya bhojanāny upakalpayet || </l>
      <l xml:id="BS.6.4.14"><label>6.4.14</label> kalamān dīrghaśūkāṃś ca raktaśāliṃ saṣaṣṭikān |
       <caesura/>
        yavānnavikṛtīś cāpi jāṅgalāṃś ca mṛgadvijān || </l>
@@ -4931,7 +4935,7 @@
      <l xml:id="BS.6.4.20"><label>6.4.20</label> rasam āhārajātānāṃ na vahanti yathā purā |
       <caesura/>
        tasya bhuktaṃ na raktāya na māṃsāya ca kalpate || </l>
-     <l xml:id="BS.6.4.21"><label>6.4.21</label> na ca medo+<note/>asthimajjabhyo na śuklatvāy dehinām |
+     <l xml:id="BS.6.4.21"><label>6.4.21</label> na ca medo+<note/>asthimajjabhyo na śuklatvāya dehinām |
       <caesura/>
        teṣām avṛddhādhātūnāṃ <note/>baddhānām ayaneṣv atha || </l>
      <l xml:id="BS.6.4.22"><label>6.4.22</label> bhuñjānānām api sarogāṇi gātrāṇi dehinām |
@@ -4959,7 +4963,7 @@
       susaṃskṛtān |
       <caesura/>
        anyamāṃsopadeśena māṃsāny etāni dāpayet || </l>
-     <l xml:id="BS.6.4.30"><label>6.4.30</label> jugupsayā vamati vā pāde ' tyavahito<note/> bhavet |
+     <l xml:id="BS.6.4.30"><label>6.4.30</label> jugupsayā vamati vā pāke ' tyavahito<note/> bhavet |
       <caesura/>
        tasmād rahasyasiddhāni māṃsāny etāni bhakṣayet || </l>
      <l xml:id="BS.6.4.31"><label>6.4.31</label> bileśayakravyabhujāṃ bhiṣaṅ māṃsāni lābhataḥ |
@@ -5084,7 +5088,7 @@
        tejo vāpahṛtaṃ <note/>yeṣāṃ bhūtadharmeṇa kenacit || </l>
      <l xml:id="BS.6.4.70"><label>6.4.70</label> kṣīrānupānāt tanvanti sadyaḥ <note/>poṣaṃ hi modakāḥ |
       <caesura/>
-      <note/>vyākulātyalpādhātūnāṃ śoṣiṇāṃ mandadehinām || </l>
+      <note/>vyākulātyalpadhātūnāṃ śoṣiṇāṃ mandadehinām || </l>
      <l xml:id="BS.6.4.71"><label>6.4.71</label> api yogaśatenāpi duḥkham eva cikitsitam |
       <caesura/>
        tasmād rasāyanavidhiṃ vardhamāne kṣaye bhiṣak || </l>
@@ -5109,7 +5113,7 @@
        udaśvid iva dadhyarthaṃ so ' pi kṛtyakaro bhavet || </l>
      <l xml:id="BS.6.4.78"><label>6.4.78</label> ekādaśa ca ṣaṭ caiva <note/>śoṣajā ya upadravāḥ |
       <caesura/>
-       sukumāraṃ praśamayen medho ' gnīn iva vṛṣṭimān || </l>
+       sukumāraṃ praśamayen megho ' gnīn iva vṛṣṭimān || </l>
      <l xml:id="BS.6.4.79"><label>6.4.79</label> luñcitānāṃ tilānāṃ tu tailaprasthaṃ vipācayet |
       <caesura/>
        palaṃ tu madhukasyātra garbhaṃ kṣīraṃ caturguṇam || </l>
@@ -5152,7 +5156,7 @@
        tilā bilvaṃ ca kalkaṃ syāt tatra rakṣayonmardanaṃ param || </l>
      <l xml:id="BS.6.4.92"><label>6.4.92</label> maṅgalācārasaṃyukto bhavet svastyayano naraḥ |
       <caesura/>
-       snānāni śāntihomāṃś ca śoṣī nityaṃ samācarete || </l>
+       snānāni śāntihomāṃś ca śoṣī nityaṃ samācaret || </l>
      <l xml:id="BS.6.4.93"><label>6.4.93</label> iṣṭayo vedavihitā nāśanā rājayakṣmaṇaḥ |
       <caesura/>
        tāś ca nityaṃ niṣeveta pūjayed vṛṣabhadhvajam || </l>
@@ -5194,9 +5198,9 @@
      <l xml:id="BS.6.5.8"><label>6.5.8</label> madhūcchiṣṭamayaṃ piṇḍaṃ cinvanti bhramarā yathā |
       <caesura/>
        tathā koṣṭheṣu pavano dhātūṃs tān vicinoty api || </l>
-     <l xml:id="BS.6.5.9"><label>6.5.9</label> sthānāni tasya gulmasya śaṃmanti gurulāghavam |
+     <l xml:id="BS.6.5.9"><label>6.5.9</label> sthānāni tasya gulmasya śaṃsanti gurulāghavam |
       <caesura/>
-       kukṣikastigato gulmo vātabhūyiṣṭha ucyate || </l>
+       kukṣibastigato gulmo vātabhūyiṣṭha ucyate || </l>
      <l xml:id="BS.6.5.10"><label>6.5.10</label> sa vātagulmarūpāṇi kuryāt sthānavaśena tu |
       <caesura/>
        tathaiva pittasthānasthaḥ pittarūpāṇi darśayet || </l>
@@ -5281,7 +5285,7 @@
        plīhānam arśāṃsi tathā grahaṇīdoṣam eva ca || </l>
      <l xml:id="BS.6.5.36"><label>6.5.36</label> vastikuṇḍalavardhmāni<note/> pānād evāpakarṣati |
       <caesura/>
-       eṣām anyatamaiḥ svehaiḥ snehitaṃ vātagulminam |
+       eṣām anyatamaiḥ snehaiḥ snehitaṃ vātagulminam |
       <caesura/>
        virecanena snigdhena yuktyā saṃśodhayed bhiṣak || </l>
      <l xml:id="BS.6.5.37"><label>6.5.37</label> ghṛtaṃ ca saktuṃ ca tathā citrakaṃ saindhavaṃ <note/>vacām
@@ -5319,7 +5323,7 @@
       |
       <caesura/>
        prasahya nāśayed gulmaṃ chinnābhrāṇīva mārutaḥ || vandhyā ca labhate garbhaṃ
-      garān api ca naśayet |
+      garān api ca nāśayet |
       <caesura/>
        apasmārān athonmādān<note/><gap reason="damage" n="12" unit="char"/>
       <gap reason="damage" n="25" unit="char"/>
@@ -5351,7 +5355,7 @@
        madyaṃ madhu ca yaḥ pītvāt yuṣṇam annaṃ ca sevate || </l>
      <l xml:id="BS.6.6.7"><label>6.6.7</label> vidagdhabhukto yaś cāpi grāmyadharma niṣevate |
       <caesura/>
-       uṣṇātapāmyāṃ sahasā <note/>yaś cāpy apsu nimajjati || </l>
+       uṣṇātapābhyāṃ sahasā <note/>yaś cāpy apsu nimajjati || </l>
      <l xml:id="BS.6.6.8"><label>6.6.8</label><note/>tasyoṣmā sanniruddhas tu <note/>prakopayati mārutam |
       <caesura/>
        udīrayati vāyus tu dūṣito doṣasaṃcayān<note/> || </l>
@@ -5384,7 +5388,7 @@
        rāgaḥ pipāsā daurbalyaṃ davathuḥ piṭakādayaḥ || </l>
      <l xml:id="BS.6.6.18"><label>6.6.18</label><note/>tataḥ kuṣṭhāni jāyante teṣāṃ vakṣyāmi lakṣaṇam |
       <caesura/>
-       svedanaṃ kākaṇābhāsaṃ<note/> samuptannaṃ<note/> savedanam || </l>
+       svedanaṃ kākaṇābhāsaṃ<note/> samutpannaṃ<note/> savedanam || </l>
      <l xml:id="BS.6.6.19"><label>6.6.19</label> sphuṭitaṃ nīlaparyantaṃ kākaṇaṃ kuṣṭham ucyate |
       <caesura/>
        udumbaranibhair yat tu maṇḍalair bahubhiś citam || </l>
@@ -5393,7 +5397,7 @@
        maṇḍalair bandhujīvābhair utsannaiś ca vidāhibhiḥ || </l>
      <l xml:id="BS.6.6.21"><label>6.6.21</label> vidyān maṇḍalakuṣṭhaṃ tad vedanācoṣaṇānvitam |
       <caesura/>
-       rśyajihvopamaṃ kuṣṭhaṃ ṛśyajihvaṃ vibhāvayet || </l>
+       ṛśyajihvopamaṃ kuṣṭhaṃ ṛśyajihvaṃ vibhāvayet || </l>
      <l xml:id="BS.6.6.22"><label>6.6.22</label> puṇḍarīkadalābhāsaṃ puṇḍarīkaṃ tu tad viduḥ |
       <caesura/>
        alābupuṣpasadṛśaṃ sidhmaṃ kuṣṭham udāhṛtam || </l>
@@ -5424,7 +5428,7 @@
      <l xml:id="BS.6.6.31"><label>6.6.31</label> sphuṭitaṃ vedanādāhayuktaṃ vaipādikaṃ smṛtam |
       <caesura/>
        udumbarasavarṇaṃ tu samutpannaṃ savedanam || </l>
-     <l xml:id="BS.6.6.32"><label>6.6.32</label><note/>picchārāgavivarṇaṃ ca kuṣṭhaṃ sthūlārur uvyate |
+     <l xml:id="BS.6.6.32"><label>6.6.32</label><note/>picchārāgavivarṇaṃ ca kuṣṭhaṃ sthūlārur ucyate |
       <caesura/>
        visarpais saṃparikrāntaṃ vikūṇaṃ saparisravam || </l>
      <l xml:id="BS.6.6.33"><label>6.6.33</label> tad ekakuṣṭham ity uktam ekaṃ vīsarpasambhavam |
@@ -5469,7 +5473,7 @@
       <caesura/>
        vamanaṃ recanaṃ caiva tathā śīrṣavirecanam || āsthāpanaṃ ca kurvīta na
       cainam anuvāsayet || </l>
-     <l xml:id="BS.6.6.46"><label>6.6.46</label> śālīna saṣṭaṣṭikāṃś caiva jāṅgalāṃś ca mṛgadvijān |
+     <l xml:id="BS.6.6.46"><label>6.6.46</label> śālīn saṣaṣṭikāṃś caiva jāṅgalāṃś ca mṛgadvijān |
       <caesura/>
       <note/>yavānnavikṛtīś caiva kuṣṭhī nityaṃ samācaret || </l>
      <l xml:id="BS.6.6.47"><label>6.6.47</label><note/>grāmyānūpaudakaṃ māṃsam ikṣus tilaghṛtaṃ surā |
@@ -5481,7 +5485,7 @@
      <l xml:id="BS.6.6.49"><label>6.6.49</label> evaṃvidhāni cānnāni <note/>hy abhiṣyandakarāṇi ca |
       <caesura/>
       <note/>ajīrṇādhyaśanaṃ caiva kuṣṭhī nityaṃ vivarjayet || </l>
-     <l xml:id="BS.6.6.50"><label>6.6.50</label> dhānvantaraṃ pibet sarpiḥ svehanārhteṣu kuṣṭhitaḥ |
+     <l xml:id="BS.6.6.50"><label>6.6.50</label> dhānvantaraṃ pibet sarpiḥ snehanārtheṣu kuṣṭhitaḥ |
       <caesura/>
        mahad vai <note/>pañcagavyaṃ vā tailaṃ śairīṣam eva vā || </l>
      <l xml:id="BS.6.6.51"><label>6.6.51</label> pippalīvardhamānaṃ vā mākṣikeṇa samācaret |
@@ -5645,7 +5649,7 @@
        cikitsitaṃ mayā proktaṃ <note/>pramehāṇāṃ vināśanam || </l>
      <l xml:id="BS.6.7.29"><label>6.7.29</label> asādhyā <note/>vātajāś caiva vijñeyā bhṛśadāruṇāḥ |
       <caesura/>
-       avagādyātisūkṣmatvād dāyā prasravaṇaṃ śṛtam(?) || </l>
+       avagāhyātisūkṣmatvād dāyā prasravaṇaṃ śṛtam(?) || </l>
      <l xml:id="BS.6.7.30"><label>6.7.30</label> āsthāpanair vātaharaiḥ sukṛtaiś cānuvāsanaiḥ |
       <caesura/>
        majjapramehiṇaṃ dṛṣṭvā bahuśas tam upācaret || </l>
@@ -5674,7 +5678,7 @@
        <caesura/>
        pañconmādās samākhyātā nidāneṣu savistarāḥ |
       <caesura/>
-      <note/>saliṅgās sasamucthānāḥ śṛṇu teṣāṃ cikitsitam || </l>
+      <note/>saliṅgās sasamutthānāḥ śṛṇu teṣāṃ cikitsitam || </l>
      <l xml:id="BS.6.8.2"><label>6.8.2</label><note/>cittabuddhīnriyāṇāṃ hi teṣām api viceṣṭitam |
       <caesura/>
        śirastālvantaragataṃ sarvendriyaparaṃ manaḥ || </l>
@@ -5739,7 +5743,7 @@
       <note/>yac cikitsitam ākhyātam apasmāravināśanam || </l>
      <l xml:id="BS.6.8.22"><label>6.8.22</label> tad eva sarvaṃ <note/>nikhileṣūnmādeṣv avacārayet |
       <caesura/>
-       ghātayet taṃ <note/>kaśābhiś ca <note/>vadhnīyāt tāḍayet tathā || </l>
+       ghātayet taṃ <note/>kaśābhiś ca <note/>badhnīyāt tāḍayet tathā || </l>
      <l xml:id="BS.6.8.23"><label>6.8.23</label> gajenāpy athavāśvena trāsayet pannagena vā |
       <caesura/>
        punas tṛṇāgninā vāpi sarvatas samavākiret || </l>
@@ -5767,7 +5771,7 @@
        sthitaṃ varṣaśataṃ śreṣṭhaṃ kumbhasarpis tad ucyate || </l>
      <l xml:id="BS.6.8.31"><label>6.8.31</label> pānābhyañjananasyeṣu <note/>hitam unmādināṃ <note/>sadā |
       <caesura/>
-       kāñjikaṃ laśunaṃ caiva bastamūtreṇa peṣavet || </l>
+       kāñjikaṃ laśunaṃ caiva bastamūtreṇa peṣayet || </l>
      <l xml:id="BS.6.8.32"><label>6.8.32</label> unmādināṃ prayogo ' yaṃ purāṇaghṛtasaṃyutaḥ |
       <caesura/>
        etāḥ kriyāḥ prayuñjīta vaidyaḥ kāyacikitsakaḥ || </l>
@@ -5851,7 +5855,7 @@
        saindhavaṃ ceti <note/>piṣṭāni pāyayed uṣṇavāriṇā || </l>
      <l xml:id="BS.6.10.9"><label>6.10.9</label> āmātisāre<note/> yogo ' yaṃ vidhitas tu cikitsakaiḥ |
       <caesura/>
-       yukte kvāthe prayoktavyo baidyenāpi yaśo ' rthinā || </l>
+       yukte kvāthe prayoktavyo vaidyenāpi yaśo ' rthinā || </l>
      <l xml:id="BS.6.10.10"><label>6.10.10</label> āmātisāro yo <note/>hy ābhyāṃ yogābhyāṃ na nivartate |
       <caesura/>
        na sa <note/>sādhayituṃ śakyo <note/>hy anyair mārgaśatair api || </l>
@@ -6017,7 +6021,7 @@
       cikitsitaiḥ |
       <caesura/>
        etad viṣūcyām ākhyātaṃ samāsena cikitsitam || </l>
-     <l xml:id="BS.6.10.63"><label>6.10.63</label> kūratvād asya rogasya bhūyo vakṣyāmi vistaram |
+     <l xml:id="BS.6.10.63"><label>6.10.63</label> krūratvād asya rogasya bhūyo vakṣyāmi vistaram |
       <caesura/>
        viṣūcyāḥ pūrvarūpāṇi <note/>saṃniśamya cikitsakaḥ || </l>
      <l xml:id="BS.6.10.64"><label>6.10.64</label> vamanaṃ kārayet kṣipram uṣṇena lavaṇāmbunā |
@@ -6058,7 +6062,7 @@
       <caesura/>
        snehapānāni nasyaṃ ca svedāḥ <note/>pathyāśanāni ca |
       <caesura/>
-       upanāhāś ca śasyante vastayaś cārdite hitāḥ || (Bhṣ6.10.2.3) |
+       upanāhāś ca śasyante bastayaś cārdite hitāḥ || (Bhṣ6.10.2.3) |
       <caesura/>
       <note/>dadhyāranālayor droṇe vasā lābhena cāḍhake |
       <caesura/>
@@ -6279,7 +6283,7 @@
       <note/>tasyānyārdham ivātyartham udaraṃ<note/> saṃprakāśate || </l>
      <l xml:id="BS.6.13.9"><label>6.13.9</label> nānārājivanaddhaṃ ca nānāromācitaṃ tathā |
       <caesura/>
-       tathā nānāvedanāḍyam udaraṃ sānnipātikam || </l>
+       tathā nānāvedanāḍhyam udaraṃ sānnipātikam || </l>
      <l xml:id="BS.6.13.10"><label>6.13.10</label> āmananty udaraṃ nāryo <note/>garam ātmodbhavaṃ yadā |
       <caesura/>
        karṇarodhakṛtaṃ cāpi śuklaṃ jihvāmalaṃ nakham || </l>
@@ -6348,7 +6352,7 @@
      <l xml:id="BS.6.13.31"><label>6.13.31</label> gomūtratriphalākṣārarasair madyaiḥ<note/> sukhāmbunā |
       <caesura/>
        suvarṇasamakaṃ cūrṇaṃ sarvarogārtibheṣajam || </l>
-     <l xml:id="BS.6.13.32"><label>6.13.32</label> sarvodaraplīhaśoṣagulmahṛdroganāśnam |
+     <l xml:id="BS.6.13.32"><label>6.13.32</label> sarvodaraplīhaśoṣagulmahṛdroganāśanam |
       <caesura/>
        vātāṣṭhīlām athānāhaṃ śvayathuṃ sarvagātrajam || </l>
      <l xml:id="BS.6.13.33"><label>6.13.33</label> halīmakāmilāpāṇḍupramehān<note/> sajvarān jayet |
@@ -6397,17 +6401,17 @@
      <l xml:id="BS.6.13.47"><label>6.13.47</label> maṇḍalaṃ nirmitaṃ yac ca <note/>śvayathuḥ sparśane mṛduḥ
       |
       <caesura/>
-      <note/>ākoṭitam aśabdaṃ ca na ca <note/>rājisamākulam || </l>
+      <note/>ākoṭhitam aśabdaṃ ca na ca <note/>rājisamākulam || </l>
      <l xml:id="BS.6.13.48"><label>6.13.48</label> ākramyamāṇaṃ<note/> nābhyān tu mṛdur eva hi <note/>sarpati
       |
       <caesura/>
       <note/>tataś ca salilodbhūtiṃ picchanaiś ca vinirdiśet |
       <caesura/>
        kriyāyatīś ca sarvāṇi sakriyāpiś ca dehinām(?) || </l>
-     <l xml:id="BS.6.13.49"><label>6.13.49</label> bhallātakānāṃ pavanāhatānāṃ vṛntacyutānām iha cāṭhakaṃ
+     <l xml:id="BS.6.13.49"><label>6.13.49</label> bhallātakānāṃ pavanāhatānāṃ vṛntacyutānām iha cāḍhakaṃ
       syāt |
       <caesura/>
-       tad iṣṭakācūrṇakaṇair vighṛṣya prakṣālayitvā visṛjet <note/>pravāte || </l>
+       tad iṣṭikācūrṇakaṇair vighṛṣya prakṣālayitvā visṛjet <note/>pravāte || </l>
      <l xml:id="BS.6.13.50"><label>6.13.50</label> śuṣkaṃ punas tad vidalīkṛtaṃ ca vinikṣiped apsu caturguṇāsu
       |
       <caesura/>
@@ -6461,12 +6465,12 @@
      <l xml:id="BS.6.14.7"><label>6.14.7</label> aśvamūtre tv apāmārgaḥ<note/> śārivā<note/> naktamālikā |
       <caesura/>
        valmīkamṛttikā yuktam etair udvartanaṃ varam || </l>
-     <l xml:id="BS.6.14.8"><label>6.14.8</label> karajas suraso bilvaṃ devadāru vacārjunaḥ |
+     <l xml:id="BS.6.14.8"><label>6.14.8</label> karañjas suraso bilvaṃ devadāru vacārjunaḥ |
       <caesura/>
        tarkārī meṣaśṛṅgī ca śobhāñjanaka āraṇī<note/> || </l>
-     <l xml:id="BS.6.14.9"><label>6.14.9</label> ubhe bṛhatyau śyonākaḥ śbadaṃṣṭrā khadirāsanau |
+     <l xml:id="BS.6.14.9"><label>6.14.9</label> ubhe bṛhatyau śyonākaḥ śvadaṃṣṭrā khadirāsanau |
       <caesura/>
-      <note/>jale siddhair imaisttulyaiḥ<note/> kaṣāyapariṣecanam || </l>
+      <note/>jale siddhair imais tulyaiḥ<note/> kaṣāyapariṣecanam || </l>
      <l xml:id="BS.6.14.10"><label>6.14.10</label> etair eva uṣadhais tulyaiḥ kṣīrapiṣṭaṃ pralepayet |
       <caesura/>
        anena vidhinā śīghram ūrustambhaḥ praśāmyati || </l>
@@ -6491,7 +6495,7 @@
      <l xml:id="BS.6.14.17"><label>6.14.17</label> garbheṇānena vaidyas tu kaṣāyeṇa susādhayet |
       <caesura/>
        siddhaṃ <note/>pūtaṃ ca śītaṃ ca kṣaudrājyenānusaṃsṛjet || </l>
-     <l xml:id="BS.6.14.18"><label>6.14.18</label> tad asya dadyāt pānārthaṃ <note/>tathaivābhyajjanādiṣu |
+     <l xml:id="BS.6.14.18"><label>6.14.18</label> tad asya dadyāt pānārthaṃ <note/>tathaivābhyañjanādiṣu |
       <caesura/>
        ūrustambhaś cirotpannas tailenaitena śāmyati || </l>
      <l xml:id="BS.6.14.19"><label>6.14.19</label> ślīpadāny āṭhyavātaṃ<note/> ca <note/>khuḍavātāṃś ca
@@ -6569,7 +6573,7 @@
        sphoṭās tasyopajāyante vahnineva <note/>samīritāḥ || </l>
      <l xml:id="BS.6.15.16"><label>6.15.16</label> yatra yatra ca jāyante sphoṭās tatra vilīyate |
       <caesura/>
-       hāridraṃ haritaṃ kṛṣṇaṃ koṣaṃ muñcaty abhīkṣṇaśaḥ || </l>
+       hāridraṃ haritaṃ kṛṣṇaṃ doṣaṃ muñcaty abhīkṣṇaśaḥ || </l>
      <l xml:id="BS.6.15.17"><label>6.15.17</label> eṣo ' gnikalpo vīsarpaḥ paittiko dehanāśanaḥ |
       <caesura/>
        cikitsāṃ tatra kurvīta pratyākhyāya cikitsakaḥ || </l>
@@ -6579,7 +6583,7 @@
      <l xml:id="BS.6.15.19"><label>6.15.19</label> abhīkṣṇaṃ secayec caiva himakalpena vāriṇā |
       <caesura/>
        kṣīrivṛkṣakaṣāyair vā kaṣāyair madhukasya vā || </l>
-     <l xml:id="BS.6.15.20"><label>6.15.20</label> pradehaṃ<note/> tv asya kurvīta<note/> śatadhaitena
+     <l xml:id="BS.6.15.20"><label>6.15.20</label> pradehaṃ<note/> tv asya kurvīta<note/> śatadhautena
       sarpiṣā |
       <caesura/>
        madhukotpalakalkais tu kṣīrapiṣṭaiḥ pralepayet || </l>
@@ -6610,7 +6614,7 @@
        vamanaṃ recanaṃ caiva kuryāt tasya yathābalam || </l>
      <l xml:id="BS.6.15.29"><label>6.15.29</label> tailvakaṃ vā pibet sarpiḥ purāṇaṃ ghṛtam eva vā |
       <caesura/>
-       sarjāśvakarṇau sustā ca sallakī somavalkalaḥ<note/> || </l>
+       sarjāśvakarṇau mustā ca sallakī somavalkalaḥ<note/> || </l>
      <l xml:id="BS.6.15.30"><label>6.15.30</label> dvau karañjau kapitthatvak śirīṣośīrasāribāḥ |
       <caesura/>
        kṣīrivṛkṣapravālāni kuṭajatvagdhanajjayaḥ || </l>
@@ -6655,7 +6659,7 @@
      <l xml:id="BS.6.15.43"><label>6.15.43</label> yadi śoṇitam ākrāntaṃ<note/> gambhīre vātaśoṇite |
       <caesura/>
       <note/>vātavat tac cikitseta snehapānānuvāsanaiḥ || </l>
-     <l xml:id="BS.6.15.44"><label>6.15.44</label> mayūrakauñcalāvānāṃ vasā majjā ca lāmataḥ |
+     <l xml:id="BS.6.15.44"><label>6.15.44</label> mayūrakrauñcalāvānāṃ vasā majjā ca lābhataḥ |
       <caesura/>
        pāne ' bhyaṅge ca vastau ca balātailaṃ praśasyate || </l>
      <l xml:id="BS.6.15.45"><label>6.15.45</label> akriyābhiḥ kriyābhir vā <note/>pakvaṃ yad vātaśoṇitam |
@@ -6681,7 +6685,7 @@
      <l xml:id="BS.6.16.4"><label>6.16.4</label> yavānām udakānāṃ ca duṣṭānām avacāraṇāt |
       <caesura/>
        nity ājīrṇabhujāṃ cāpi vegānāṃ ca vidhāraṇāt || </l>
-     <l xml:id="BS.6.16.5"><label>6.16.5</label> pravāhaṇāc catimātraṃ maithunasyātisevanāt |
+     <l xml:id="BS.6.16.5"><label>6.16.5</label> pravāhaṇāc cātimātraṃ maithunasyātisevanāt |
       <caesura/>
        duṣṭapānaprasaṅgāc ca kaṭhināt pṛṣṭhapīḍanāt || </l>
      <l xml:id="BS.6.16.6"><label>6.16.6</label> nirūhasyātiyogāc ca vastīnāṃ vibhramād api |
@@ -6690,9 +6694,9 @@
      <l xml:id="BS.6.16.7"><label>6.16.7</label> ebhiḥ prakupitā doṣā vātapittakaphās trayaḥ |
       <caesura/>
        ekaśas sarvaśo vātha dvandvaśaḥ śoṇitena vā || </l>
-     <l xml:id="BS.6.16.8"><label>6.16.8</label> gudābhiṣyandam evāśu karvanti gudam āśritāḥ |
+     <l xml:id="BS.6.16.8"><label>6.16.8</label> gudābhiṣyandam evāśu kurvanti gudam āśritāḥ |
       <caesura/>
-       kīlās tatra prahohanti sūkṣmasarṣapasannibhāḥ || </l>
+       kīlās tatra prarohanti sūkṣmasarṣapasannibhāḥ || </l>
      <l xml:id="BS.6.16.9"><label>6.16.9</label> yavamudgādiniṣpāvakarkandhubadaropamāḥ |
       <caesura/>
        śarīrāṅguṣṭhamātrā vā tāmrā gostanasannibhāḥ || </l>
@@ -6705,17 +6709,17 @@
      <l xml:id="BS.6.12."><label>6.12.</label> purīṣabhedo<note/> vaivarṇyaṃ śūlaṃ nirvāhikā<note/> tathā
       |
       <caesura/>
-       avadāras tṛṣā dāho gudapṛṣṭhe medo jvaraḥ || </l>
+       avadāras tṛṣā dāho gudapṛṣṭhe mado jvaraḥ || </l>
      <l xml:id="BS.6.16.13"><label>6.16.13</label> aruciś cāvipākaś ca <note/>gātrakṣayabalakṣayau |
       <caesura/>
-       paṇḍutvaṃ parvabhedaś ca śvayathuś cākṣikūṭayoḥ || </l>
+       pāṇḍutvaṃ parvabhedaś ca śvayathuś cākṣikūṭayoḥ || </l>
      <l xml:id="BS.6.16.14"><label>6.16.14</label> glānir maithunahāniś ca gudabhraṃśo gudagrahaḥ |
       <caesura/>
        arśasāṃ rūpasādṛśyaṃ pṛthaktvaṃ teṣu vakṣyate || </l>
      <l xml:id="BS.6.16.15"><label>6.16.15</label> kṛṣṇaṃ purīṣaṃ bhavati rūkṣaṃ kiṃcit saphenilam |
       <caesura/>
        nityaṃ gāḍhapurīṣaś ca bhinnavarcāḥ punaḥ punaḥ || </l>
-     <l xml:id="BS.6.16.16"><label>6.16.16</label> ūrupṛṣṭakaṭigrāho <note/>nity ānaddhasudurbalaḥ |
+     <l xml:id="BS.6.16.16"><label>6.16.16</label> ūrupṛṣṭhakaṭigrāho <note/>nity ānaddhasudurbalaḥ |
       <caesura/>
        jāyate parvabhedaś ca karṇaśūlas tṛṣā bhramaḥ || </l>
      <l xml:id="BS.6.16.17"><label>6.16.17</label> arśo yakṛd dhi pavano<note/> jaṭharaṃ <note/>vāpi
@@ -6740,7 +6744,7 @@
      <l xml:id="BS.6.16.23"><label>6.16.23</label> aruciś cāvipākaś ca na ca pakvaṃ viricyate |
       <caesura/>
        śvayathuś ca viśaty enaṃ viśeṣeṇākṣikūṭayoḥ || </l>
-     <l xml:id="BS.6.16.24"><label>6.16.24</label> etac chaleṣmasamutthānām arśasāṃ rūpam ucyate |
+     <l xml:id="BS.6.16.24"><label>6.16.24</label> etac chleṣmasamutthānām arśasāṃ rūpam ucyate |
       <caesura/>
        sannipātasamutthānaṃ jānīyāt sarvalakṣaṇaiḥ || </l>
      <l xml:id="BS.6.16.25"><label>6.16.25</label> saṅghātaraktaṃ visraṃ vā bhinnaṃ vā <note/>pittamiśritam
@@ -6756,7 +6760,7 @@
      <l xml:id="BS.6.16.28"><label>6.16.28</label> gavāṃ ca mahiṣīṇāṃ ca mūtrāṇy atha samācaret |
       <caesura/>
        bhasmīkṛtya tu taṃ kṣāraṃ yuktyā <note/>madyena pāyayet || </l>
-     <l xml:id="BS.6.16.29"><label>6.16.29</label> śleṣmārśāṃsi praśamayec chavayathuṃ pāṇḍutām api |
+     <l xml:id="BS.6.16.29"><label>6.16.29</label> śleṣmārśāṃsi praśamayec chvayathuṃ pāṇḍutām api |
       <caesura/>
        arśasāṃ vātikānāṃ tu yad uktaṃ vai cikitsitam || </l>
      <l xml:id="BS.6.16.30"><label>6.16.30</label> tad eva ślaiṣmikāṇāṃ tu snehavarjaṃ samācaret |
@@ -6771,7 +6775,7 @@
      <l xml:id="BS.6.16.33"><label>6.16.33</label> ajākṣīre daśaguṇe tat siddhaṃ mātrayā pibet |
       <caesura/>
        etad raktasamutthāni pittajāni hi yāni ca || </l>
-     <l xml:id="BS.6.16.34"><label>6.16.34</label> arśāsi nāśayaty āśu chinnābhrāṇīva mārutaḥ |
+     <l xml:id="BS.6.16.34"><label>6.16.34</label> arśāṃsi nāśayaty āśu chinnābhrāṇīva mārutaḥ |
       <caesura/>
        lodhraṃ dāruharidrā ca majjā baibhītakī tathā || </l>
      <l xml:id="BS.6.16.35"><label>6.16.35</label> taṇḍulodakapītāni <note/>madhunārśovināśanam |
@@ -6905,7 +6909,7 @@
       |
       <caesura/>
       <note/>snuhīkṣīreṇa piṣṭāni gavāṃ pittena bhāvayet || </l>
-     <l xml:id="BS.6.16.77"><label>6.16.77</label> arṇāṃsi lepayet tena saptarātraṃ punaḥ punaḥ |
+     <l xml:id="BS.6.16.77"><label>6.16.77</label> arṣāṃsi lepayet tena saptarātraṃ punaḥ punaḥ |
       <caesura/>
        etena liptāny arśāṃsi vinaśyanti na saṃśayaḥ || </l>
      <l xml:id="BS.6.16.78"><label>6.16.78</label> śigru |.. |.. |.. |.. |.. |.. |.. |
@@ -6923,7 +6927,7 @@
      <l xml:id="BS.6.16.82"><label>6.16.82</label> etad ālepanaṃ śreṣṭhaṃ durnāmānaṃ vināśayet |
       <caesura/>
        svarṇakṣīrī tu |.. |.. |.. tsakam || </l>
-     <l xml:id="BS.6.16.83"><label>6.16.83</label> kukkuṭsya purīṣaṃ ca snuhīkṣīreṇa peṣayet |
+     <l xml:id="BS.6.16.83"><label>6.16.83</label> kukkuṭasya purīṣaṃ ca snuhīkṣīreṇa peṣayet |
       <caesura/>
        etad ālepanaṃ śreṣṭham arśasāṃ kṣārasammitam || </l>
      <l xml:id="BS.6.16.84"><label>6.16.84</label><note/>dahyante ' rśāṃsi saptāhāt puṃstvaṃ ca na
@@ -6993,14 +6997,14 @@
        asādhyaś copasargaś ca śvayathuḥ prasṛtaś ca yaḥ || </l>
      <l xml:id="BS.6.17.14"><label>6.17.14</label> nīlapītāruṇaṃ jyotir dṛśyate śvayathau yadi |
       <caesura/>
-       kiñcit kṣaraty aslilaṃ tam asādhyaṃ vinirdiśet || </l>
-     <l xml:id="BS.6.17.15"><label>6.17.15</label> śastradaṇḍaprahārābhyāṃ prāpātād asthibhaṅgataḥ |
+       kiñcit kṣaraty asalilaṃ tam asādhyaṃ vinirdiśet || </l>
+     <l xml:id="BS.6.17.15"><label>6.17.15</label> śastradaṇḍaprahārābhyāṃ prapātād asthibhaṅgataḥ |
       <caesura/>
        śvayathuḥ pañcamo dṛṣṭo bhūyiṣṭhaṃ sa <note/>tu raktajaḥ || </l>
      <l xml:id="BS.6.17.16"><label>6.17.16</label> abhighātāc ca jātānāṃ māṃsam asthi ca pīḍitam |
       <caesura/>
        sirāḥ sandūṣayaty āśu tato raktaṃ praduṣyati || </l>
-     <l xml:id="BS.6.17.17"><label>6.17.17</label> sa dāharāgāhulo vardhate tīvravedanaḥ |
+     <l xml:id="BS.6.17.17"><label>6.17.17</label> sa dāharāgabahulo vardhate tīvravedanaḥ |
       <caesura/>
        kṣatavaisarpikīṃ tasya kriyāṃ kuryāc cikitsakaḥ || </l>
      <l xml:id="BS.6.17.18"><label>6.17.18</label> etal lakṣaṇam uddiṣṭaṃ śvayathūnāṃ yathāvidhi |
@@ -7042,7 +7046,7 @@
      <l xml:id="BS.6.17.30"><label>6.17.30</label> viḍaṅgaṃ śigruvalkaṃ ca naktamālaṃ mahauṣadham |
       <caesura/>
        gomūtrapiṣṭaṃ śvayathau mukhyam udvartanaṃ bhavet || </l>
-     <l xml:id="BS.6.17.31"><label>6.17.31</label> dantī viḍaṅgaṃ triphalā trayūṣaṇaṃ kaṭurohiṇī |
+     <l xml:id="BS.6.17.31"><label>6.17.31</label> dantī viḍaṅgaṃ triphalā tryūṣaṇaṃ kaṭurohiṇī |
       <caesura/>
        citrakaṃ devakāṣṭhaṃ ca trivṛtā hastipippalī || </l>
      <l xml:id="BS.6.17.32"><label>6.17.32</label> cūrṇany etāni tulyāni dviguṇaṃ syād ayor ajaḥ |
@@ -7121,7 +7125,7 @@
      <l xml:id="BS.6.18.3"><label>6.18.3</label> śuktakāni ca vallūraṃ piṇyākaṃ <note/>kodravaudanam |
       <caesura/>
        abhiṣyandīni<note/> kaṭukaṃ vetraśākaṃ ca sevate || </l>
-     <l xml:id="BS.6.18.4"><label>6.18.4</label> vātamūtrpurīṣāṇāṃ <note/>vidhṛtyā maithunasya ca |
+     <l xml:id="BS.6.18.4"><label>6.18.4</label> vātamūtrapurīṣāṇāṃ <note/>vidhṛtyā maithunasya ca |
       <caesura/>
        etair anyaiś ca gurubhir hetubhiḥ kupito ' nilaḥ || </l>
      <l xml:id="BS.6.18.5"><label>6.18.5</label> nigṛhṇāti gudadvāraṃ śarīraṃ <note/>vyāpya sarvaśaḥ |
@@ -7137,13 +7141,13 @@
      <l xml:id="BS.6.18.8"><label>6.18.8</label> ūrdhvaṃ <note/>hy apānas samprāpya <note/>codānena samāgataḥ
       |
       <caesura/>
-       udārvata iti proktaḥ śastrasarpaviṣopaḥ || </l>
+       udārvata iti proktaḥ śastrasarpaviṣopamaḥ || </l>
      <l xml:id="BS.6.18.9"><label>6.18.9</label> atha śūlāni tīvrāṇi dāho mūrcchā vivarṇatā |
       <caesura/>
-      <note/>śūyate vastimūlaṃ ca <note/>mūtravarvograhas tathā || </l>
-     <l xml:id="BS.6.18.10"><label>6.18.10</label><note/>vatāv atha ca kukṣau ca hṛdi pārśvodare tathā |
+      <note/>śūyate vastimūlaṃ ca <note/>mūtravarcograhas tathā || </l>
+     <l xml:id="BS.6.18.10"><label>6.18.10</label><note/>vastāv atha ca kukṣau ca hṛdi pārśvodare tathā |
       <caesura/>
-       devanābhiparītaś ca nissaṃjño vetate ' sakṛt || </l>
+       vedanābhiparītaś ca nissaṃjño vepate ' sakṛt || </l>
      <l xml:id="BS.6.18.11"><label>6.18.11</label><note/>niśvasity atha tāmyaṃś ca tṛṣyaty api ca hikkate |
       <caesura/>
        upadravā udāvarte śṛṇu teṣāṃ cikitsitam || </l>
@@ -7153,7 +7157,7 @@
      <l xml:id="BS.6.18.13"><label>6.18.13</label> tato ' sya gudam abhyajya nirūhaṃ sampradāpayet |
       <caesura/>
        ekaṃ dvau vā bhiṣak kṛtvā yāvad vā <note/>sādhu manyate || </l>
-     <l xml:id="BS.6.18.14"><label>6.18.14</label> surirūḍhaṃ ca taṃ jñātvā sukhāmbupariṣecitam |
+     <l xml:id="BS.6.18.14"><label>6.18.14</label> sunirūḍhaṃ ca taṃ jñātvā sukhāmbupariṣecitam |
       <caesura/>
        uṣṇodakānupānaṃ ca bhojyen mṛdum odanam || </l>
      <l xml:id="BS.6.18.15"><label>6.18.15</label> snuhāyāḥ patraśākena trivṛcchākena vā punaḥ |
@@ -7172,7 +7176,7 @@
        <note/>sarvāṇy etāni liṅgāni dṛśyante <note/>marmarogiṇaḥ |
       <caesura/>
        sannipātasamuttho ' sau naiva sidhyati karmaṇā || </l>
-     <l xml:id="BS.6.19.2"><label>6.19.2</label> nirbhidyate devanārtaṃ dahyate marma dūyate |
+     <l xml:id="BS.6.19.2"><label>6.19.2</label> nirbhidyate vedanārtaṃ dahyate marma dūyate |
       <caesura/>
        bhaktadveṣo jvaro mūrcchā <note/>śvāsaś ca <note/>paritapyate || </l>
      <l xml:id="BS.6.19.3"><label>6.19.3</label> bhinnavarṇo ' tha dīnaś ca hṛdi kaṇḍūś ca jāyate |
@@ -7298,7 +7302,7 @@
        nihanyate yasya vakṣaḥ kṣatakāsaḥ sa ucyate || </l>
      <l xml:id="BS.6.20.15"><label>6.20.15</label> saraktaṃ pūtipūyābhaṃ grathitaṃ doṣasañcayam |
       <caesura/>
-       niṣṭhīvati sa kāsārto jvaryate cātisaryate || </l>
+       niṣṭhīvati sa kāsārto jvaryate cātisāryate || </l>
      <l xml:id="BS.6.20.16"><label>6.20.16</label> uro nirbhidyamānaṃ ca manyate <note/>praśvasity api |
       <caesura/>
        sa tāmyet kāsamānaś ca tṛṣṇā śoṣo mukhasya ca || </l>
@@ -7325,8 +7329,8 @@
        jāṅgalānāṃ ca māṃsāni niṣeven mṛgapakṣiṇām || </l>
      <l xml:id="BS.6.20.24"><label>6.20.24</label> audakānūpamāṃsāni gurūṇi ca vivarjayet |
       <caesura/>
-       daśakalkopasiddhaṃ vā kalyaṇakam athāpi vā || </l>
-     <l xml:id="BS.6.20.25"><label>6.20.25</label> rasayanaṃ ca seveta sarpiḥ sarpirguḍāni ca |
+       daśakalkopasiddhaṃ vā kalyāṇakam athāpi vā || </l>
+     <l xml:id="BS.6.20.25"><label>6.20.25</label> rasāyanaṃ ca seveta sarpiḥ sarpirguḍāni ca |
       <caesura/>
        sarpirmodakayogaṃ vā rasāyanavidhiṃ tathā || </l>
      <l xml:id="BS.6.20.26"><label>6.20.26</label> yad uktaṃ śoṇite pūrvaṃ tat kāseṣv api yojayet |
@@ -7371,7 +7375,7 @@
      <l xml:id="BS.6.20.39"><label>6.20.39</label> siddhaṃ <note/>mantraṃ yathā sarpo nātikrāmed udīritam |
       <caesura/>
        tathā leham imaṃ kāso nātikrāmati dehinām || </l>
-     <l xml:id="BS.6.20.40"><label>6.20.40</label> daśamūlīm apānārgaṃ śaṅkhapuṣpīṃ <note/>śaṭhīṃ vacām |
+     <l xml:id="BS.6.20.40"><label>6.20.40</label> daśamūlīm apāmārgaṃ śaṅkhapuṣpīṃ <note/>śaṭhīṃ vacām |
       <caesura/>
        citrakaṃ cātmaguptāṃ ca pippalīmūlam eva ca || </l>
      <l xml:id="BS.6.20.41"><label>6.20.41</label> balāṃ puṣkaramūlaṃ ca tathaiva gajapippalīm |
@@ -7500,7 +7504,7 @@
      <l xml:id="BS.6.21.37"><label>6.21.37</label> dūyate hṛdayaṃ cāsya svarabhedaś ca<note/> mārutāt |
       <caesura/>
        nasyakarmāṇi pāne ca balātailaṃ praśasyate || </l>
-     <l xml:id="BS.6.21.38"><label>6.21.38</label><note/>kaphavātottare dhāryās tathaiva kabalagrahāḥ |
+     <l xml:id="BS.6.21.38"><label>6.21.38</label><note/>kaphavātottare dhāryās tathaiva kavalagrahāḥ |
       <caesura/>
        pippalī pippalīmūlaṃ maricāni harītakī || </l>
      <l xml:id="BS.6.21.39"><label>6.21.39</label> śṛṅgaberaṃ yavakṣāro lodhraṃ tejovatī tathā |
@@ -7523,15 +7527,15 @@
        dārvī haridrā mustā ca tejohvā madhukaṃ balā || </l>
      <l xml:id="BS.6.21.45"><label>6.21.45</label> etāni samabhāgāni kaṣāyam upasādhayet |
       <caesura/>
-       ity eṣa kabalagrāhaḥ kartavyo madhusaṃyutaḥ || </l>
+       ity eṣa kavalagrāhaḥ kartavyo madhusaṃyutaḥ || </l>
      <l xml:id="BS.6.21.46"><label>6.21.46</label><note/>sārdrakaś ca kapittho vā
-      savyoṣmadhuśarkaraḥ<note/> |
+      savyoṣamadhuśarkaraḥ<note/> |
       <caesura/>
        arocakeṣu sarveṣu praśasto dhāraṇo<note/> mukhe || </l>
      <l xml:id="BS.6.21.47"><label>6.21.47</label> ajājyo maricaṃ drākṣā tintriṇīkaṃ sadāḍimam |
       <caesura/>
        sauvarcalaṃ kāravīṃ ca guḍamākṣikasaṃyutam || </l>
-     <l xml:id="BS.6.21.48"><label>6.21.48</label> drākṣāghautakaya |.. |.. (?)<note/>mukhabiśodhanaḥ |
+     <l xml:id="BS.6.21.48"><label>6.21.48</label> drākṣāghautakaya |.. |.. (?)<note/>mukhaviśodhanaḥ |
       <caesura/>
        arocakānāṃ sarveṣāṃ praśastaḥ<note/> kabalottamaḥ || </l>
      <l xml:id="BS.6.21.49"><label>6.21.49</label> sambhavanti trayo doṣāḥ gale <note/>nāsaudaneriṇīm |
@@ -7593,10 +7597,10 @@
        trayūṣaṇaṃ saindhavaṃ kuṣṭhaṃ mañjiṣṭhā madhukaṃ tathā || </l>
      <l xml:id="BS.6.21.68"><label>6.21.68</label> rāsnā haridrā tejohvā varāṅgaṃ tilvakatvacaḥ<note/> |
       <caesura/>
-       lākṣā mūrvā <note/>rubūrkākakesarāsanavīraṇāḥ<note/> || </l>
+       lākṣā mūrvā <note/>rubūkārkakesarāsanavīraṇāḥ<note/> || </l>
      <l xml:id="BS.6.21.69"><label>6.21.69</label> sūkṣmailā tagaraṃ patraṃ tvag vyāghranakham eva ca |
       <caesura/>
-       āramālatilā māṣā bhūrjagranthir nidigdhikā || </l>
+       āranālatilā māṣā bhūrjagranthir nidigdhikā || </l>
      <l xml:id="BS.6.21.70"><label>6.21.70</label> etais tulyakṛtair bhāgais tailaprasthaṃ vipācayet |
       <caesura/>
        bhoginaś ca vasāṃ dadyān māṃsaṃ babhroḥ kharasya ca || </l>
@@ -7743,7 +7747,7 @@
        sannipātasamutthāṃś ca saṃsṛṣṭāṃś caikajāṃs tathā<note/> || </l>
      <l xml:id="BS.6.24.3"><label>6.24.3</label> yonivyāpattivandhyātvaṃ pravṛddhaṃ <note/>yad asṛgdaram |
       <caesura/>
-       balavarṇakaraṃ caiva kāsakṣayanirbahaṇam || </l>
+       balavarṇakaraṃ caiva kāsakṣayanibarhaṇam || </l>
      <l xml:id="BS.6.24.4"><label>6.24.4</label> balāmūlāt palaśataṃ <note/>daśamūlāc chataṃ tathā |
       <caesura/>
        śatāvaryā guḍūcyāś ca rāsnāmadhukadāruṇaḥ || </l>
@@ -7798,8 +7802,8 @@
       <note/>śvadaṃṣṭrābhūtikābhyāṃ ca pṛthak <note/>pañcapalaṃ kṣipet || </l>
      <l xml:id="BS.6.24.21"><label>6.24.21</label> toyadroṇeṣu <note/>daśasu sādhayet sūkṣmakuṭṭitam |
       <caesura/>
-      <note/>droṇāvaśeṣe tasmiṃs tu tailasyārdharmaṇaṃ pacet || </l>
-     <l xml:id="BS.6.24.22"><label>6.24.22</label> droṇān daśa ca dugdhasya ghṛtasyārdhaḍhakaṃ tathā |
+      <note/>droṇāvaśeṣe tasmiṃs tu tailasyārdhārmaṇaṃ pacet || </l>
+     <l xml:id="BS.6.24.22"><label>6.24.22</label> droṇān daśa ca dugdhasya ghṛtasyārdhāḍhakaṃ tathā |
       <caesura/>
        tadaikadhyaṃ vipaktavyaṃ garbhe cātra vipācayet || </l>
      <l xml:id="BS.6.24.23"><label>6.24.23</label> madhukaṃ mālatīpuṣpaṃ mañjiṣṭhāṃ madayantikām |
@@ -7920,7 +7924,7 @@
      <l xml:id="BS.6.25.2"><label>6.25.2</label> bhuktvā pītodako yas tu sahasā saṃpradhāvati |
       <caesura/>
        pṛṣṭhayānād drutāc cāpi plavanāt snehavibhramāt || </l>
-     <l xml:id="BS.6.25.3"><label>6.25.3</label> rogair anyaiś ca klinnānāṃ kurbalānāṃ ca dehinām |
+     <l xml:id="BS.6.25.3"><label>6.25.3</label> rogair anyaiś ca klinnānāṃ durbalānāṃ ca dehinām |
       <caesura/>
        plīhā sthānāt pravardheta<note/> tasya rūpāṇi me śṛṇu || </l>
      <l xml:id="BS.6.25.4"><label>6.25.4</label> karoty agner mārdavaṃ ca śūlaṃ kaṭhina <note/>eva ca |
@@ -7966,9 +7970,9 @@
      <l xml:id="BS.6.26.4"><label>6.26.4</label> ūrdhvam āpūrya srotāṃsi śiraśśaṅkhau ca dhāvati |
       <caesura/>
       <note/>ākṣepāt tasya gātrāṇi nāmyante<note/> ca dhanur yathā || </l>
-     <l xml:id="BS.6.26.5"><label>6.26.5</label> nimīlitākṣaḥ stabdho vā nirucchavāso viceṣṭate |
+     <l xml:id="BS.6.26.5"><label>6.26.5</label> nimīlitākṣaḥ stabdho vā nirucchvāso viceṣṭate |
       <caesura/>
-      <note/>kṛcchrāc chavasiti <note/>sarpīva kūjaty api kapotavat || </l>
+      <note/>kṛcchrāc chvasiti <note/>sarpīva kūjaty api kapotavat || </l>
      <l xml:id="BS.6.26.6"><label>6.26.6</label> mukte ca hṛdi vātena punaḥ svāsthyaṃ niyacchati |
       <caesura/>
        bhūyas tu śete srastākṣo muhyaty aprayato yathā || </l>
@@ -7980,7 +7984,7 @@
        na cainaṃ vāmayed dhīro na cāpy enaṃ virecayet || </l>
      <l xml:id="BS.6.26.9"><label>6.26.9</label> na cāsyāsthāpanaṃ dadyān na cainam apatarpayet |
       <caesura/>
-       pippalyo ' tha viḍaṅgāni śigrūṇi maricani ca || </l>
+       pippalyo ' tha viḍaṅgāni śigrūṇi maricāni ca || </l>
      <l xml:id="BS.6.26.10"><label>6.26.10</label> etāni sūkṣmapiṣṭāni <note/>kuryāc chīrṣavirecanam |
       <caesura/>
        śvasato yasya saṃvṛddhiḥ śleṣmaṇo mārutasya ca || </l>
@@ -7999,7 +8003,7 @@
      <l xml:id="BS.6.26.15"><label>6.26.15</label> bhārṅgīṃ saśṛṅgaberāṃ ca sūkṣmacūrṇāni kārayet |
       <caesura/>
        tāni cūrṇāni <note/>madyena pītāny uṣṇodakena vā || </l>
-     <l xml:id="BS.6.26.16"><label>6.26.16</label> nāśayanti nṛṇāṃ kṣipraṃ śvāsakāsapatānakam |
+     <l xml:id="BS.6.26.16"><label>6.26.16</label> nāśayanti nṛṇāṃ kṣipraṃ śvāsakāsāpatānakam |
       <caesura/>
        harītakī vacā rāsnā saindhavaṃ sāmlavetasam || </l>
      <l xml:id="BS.6.26.17"><label>6.26.17</label> ghṛtamātrāsamāyuktaṃ nāśayaty apatānakam |
@@ -8020,16 +8024,16 @@
      <l xml:id="BS.6.26.22"><label>6.26.22</label> eteṣāṃ dvipalān bhāgān jaladroṇe vipācayet |
       <caesura/>
        etair evākṣamātraiś ca ghṛtaprasthaṃ vipācayet || </l>
-     <l xml:id="BS.6.26.23"><label>6.26.23</label> dviguṇena kaṣāyeṇa tat siddhaṃ yuktiyaḥ pibet |
+     <l xml:id="BS.6.26.23"><label>6.26.23</label> dviguṇena kaṣāyeṇa tat siddhaṃ yuktitaḥ pibet |
       <caesura/>
       <note/>asādhyāṃ mahatīṃ hikkāṃ śvāsaṃ caivāpakarṣati || </l>
-     <l xml:id="BS.6.26.24"><label>6.26.24</label> harītakyāś ca pañcād dve ca sauvarcalāt pale<note/> |
+     <l xml:id="BS.6.26.24"><label>6.26.24</label> harītakyāś ca pañcāśad dve ca sauvarcalāt pale<note/> |
       <caesura/>
        vipācayed ghṛtaprasthaṃ dviguṇakṣīrasaṃyutam || </l>
-     <l xml:id="BS.6.26.25"><label>6.26.25</label> apatānaṃ sahṛdrogam etasarpir vyapohati |
+     <l xml:id="BS.6.26.25"><label>6.26.25</label> apatānaṃ sahṛdrogam etat sarpir vyapohati |
       <caesura/>
        hikkāśvāsau<note/> ca saṃvṛddhau sadya eva cikitsati || </l>
-     <l xml:id="BS.6.26.26"><label>6.26.26</label> atapānakanāśārtham etad uktaṃ cikitsitam |
+     <l xml:id="BS.6.26.26"><label>6.26.26</label> apatānakanāśārtham etad uktaṃ cikitsitam |
       <caesura/>
        athārditānāṃ vakṣyāmi cikitsāṃ lakṣaṇāni ca || </l>
      <l xml:id="BS.6.26.27"><label>6.26.27</label> śastrakāṣṭhaprahārāc ca<note/> grāmyadharmātisevanāt |
@@ -8041,7 +8045,7 @@
      <l xml:id="BS.6.26.29"><label>6.26.29</label> narasya kupito vāyur ūrdhvam eva prapadyate |
       <caesura/>
        hanumūlaṃ śiraś cāpi grīvāṃ caivārdayaty api || </l>
-     <l xml:id="BS.6.26.30"><label>6.26.30</label> sa <note/>jihmaṃ kutute tasya vadanaṃ cakṣur eva ca |
+     <l xml:id="BS.6.26.30"><label>6.26.30</label> sa <note/>jihmaṃ kurute tasya vadanaṃ cakṣur eva ca |
       <caesura/>
        kampate ' sya śirogrīvaṃ nāsā vakrībhavaty api || </l>
      <l xml:id="BS.6.26.31"><label>6.26.31</label><note/>tasyākṣiṇī nimīlyete niṣpande <note/>viṣame tathā |
@@ -8071,8 +8075,8 @@
        udumbaraḥ<note/> śirīṣaś ca madhukaṃ candanaṃ tilāḥ || </l>
      <l xml:id="BS.6.27.5"><label>6.27.5</label><note/>indukāntaṃ samudrāntā tathaiva ca śatāvarī |
       <caesura/>
-       nīlotpalaṃ padmakaṃ ca <note/>tvacā dve cāpi sāribe || </l>
-     <l xml:id="BS.6.27.6"><label>6.27.6</label> eṣa pralepo gāraṃ ca vraṇānāṃ <note/>tu vināśayet |
+       nīlotpalaṃ padmakaṃ ca <note/>tvacā dve cāpi sārive || </l>
+     <l xml:id="BS.6.27.6"><label>6.27.6</label> eṣa pralepo rāgaṃ ca vraṇānāṃ <note/>tu vināśayet |
       <caesura/>
        tilakalkas samadhukaḥ<note/> picumandasya<note/> kalkavān || </l>
      <l xml:id="BS.6.27.7"><label>6.27.7</label><note/>pūrvābhyāṃ sarpiṣā yukto vraṇeṣu vraṇaropaṇaḥ |
@@ -8083,7 +8087,7 @@
        nīlotpalaṃ kaṭphalaṃ ca mālatī svarṇayūthikā || </l>
      <l xml:id="BS.6.27.9"><label>6.27.9</label> eṣāṃ kalkais samais siddhaṃ tailaṃ syād vraṇaropaṇam |
       <caesura/>
-      <note/>nimbvāmrāmalakīnāṃ ca pallavaṃ madhukaṃ balā || </l>
+      <note/>nimbāmrāmalakīnāṃ ca pallavaṃ madhukaṃ balā || </l>
      <l xml:id="BS.6.27.10"><label>6.27.10</label> etaiś śakṛdrase siddhaṃ<note/> tailaṃ vraṇanibarhaṇam |
       <caesura/>
        nyagrodhodumbarāśvatthaplakṣapāṭhāvarārjunāḥ<note/> || </l>
@@ -8107,13 +8111,13 @@
        uddeśataḥ kriyāś caitāḥ kuryāt kāyacikitsakaḥ || </l>
      <l xml:id="BS.6.27.17"><label>6.27.17</label> triphalā madhukaṃ lodhraṃ mañjiṣṭhā bilvaśuṇṭhikā |
       <caesura/>
-       samaṅgā dhātakī lākṣā viryāsaḥ śālmaler api || </l>
+       samaṅgā dhātakī lākṣā niryāsaḥ śālmaler api || </l>
      <l xml:id="BS.6.27.18"><label>6.27.18</label> pālāśasya ca niryāso niryāsaḥ kakubhasya ca |
       <caesura/>
        sūkṣmāny etāni cūrṇāni vraṇānāṃ ropaṇaṃ param || </l>
      <l xml:id="BS.6.27.19"><label>6.27.19</label> gugguloḥ sallakīnāṃ ca sarjasya tiniśasya ca |
       <caesura/>
-       niryāsā ropaṇāḥ poktāḥ samastāḥ pṛthag eva vā || </l>
+       niryāsā ropaṇāḥ proktāḥ samastāḥ pṛthag eva vā || </l>
      <l xml:id="BS.6.27.20"><label>6.27.20</label> vraṇe dhūmakramā ye ca pratyutpattau ca yā kriyā |
       <caesura/>
        etac cheṣaṃ śalyakṛtā kartavyaṃ dṛṣṭakarmaṇā || ity āha bhagavān ātreyaḥ |
@@ -8131,7 +8135,7 @@
        tīkṣṇaṃ coṣṇaṃ tathā <note/>sūkṣmam āśukāri<note/> vyavāyi ca || </l>
      <l xml:id="BS.6.28.2"><label>6.28.2</label><note/>dīpanīyaṃ ca hṛdyaṃ ca sarvabhūtahitaṃ laghu |
       <caesura/>
-       cintāśorkaklamaharaṃ ratiprītivivardhanam || </l>
+       cintāśokaklamaharaṃ ratiprītivivardhanam || </l>
      <l xml:id="BS.6.28.3"><label>6.28.3</label> harṣasthāne harṣakaraṃ bhayasthāne bhayāpaham |
       <caesura/>
        rativihārajananaṃ dyutiśauryakaraṃ <note/>param || </l>
@@ -8140,11 +8144,11 @@
       <note/>taikṣṇyān mohayate cittam auṣṇyāt pittakaraṃ ca tat || </l>
      <l xml:id="BS.6.28.5"><label>6.28.5</label> hṛdyaṃ <note/>vaiśadyabhāvāc ca raukṣyān mārutakopanam |
       <caesura/>
-       śleṣmaghnaṃ tīkṣṇabhāvac ca harṣaṇād vṛṣyam ucyate || </l>
+       śleṣmaghnaṃ tīkṣṇabhāvāc ca harṣaṇād vṛṣyam ucyate || </l>
      <l xml:id="BS.6.28.6"><label>6.28.6</label> madyāvacāraṇāt tasya kupitau pittamārutau |
       <caesura/>
        śoṣayetāṃ rasavahāḥ sirāḥ <note/>kloma ca tālu ca || </l>
-     <l xml:id="BS.6.28.7"><label>6.28.7</label><note/>tṛṣāparītas so ' tyarthaṃ pānam evābhinandati |
+     <l xml:id="BS.6.28.7"><label>6.28.7</label><note/>tṛṣṇāparītas so ' tyarthaṃ pānam evābhinandati |
       <caesura/>
        pītaṃ pītaṃ śoṣayato dehe tasyāgnimārutau || </l>
      <l xml:id="BS.6.28.8"><label>6.28.8</label> gacchaty āśu jarāṃ dehe sikatāyām ivodakam |
@@ -8269,7 +8273,7 @@
      <l xml:id="BS.6.28.46"><label>6.28.46</label> madātyaye na śasyante <note/>yavāgvo doṣanāśanāḥ |
       <caesura/>
        jāṣyāt pānasya pītasya vegaṃ janayate punaḥ || </l>
-     <l xml:id="BS.6.28.47"><label>6.28.47</label><note/>tan madyaśeṣaṃ saṃvṛddhaṃ kurvād ghorān upadravān |
+     <l xml:id="BS.6.28.47"><label>6.28.47</label><note/>tan madyaśeṣaṃ saṃvṛddhaṃ kuryād ghorān upadravān |
       <caesura/>
        tasmāt pānātyaye ' pathyāḥ snehāḥ<note/> peyā yavāgv api || </l>
      <l xml:id="BS.6.28.48"><label>6.28.48</label> sūkṣmāṇi dehasrotāṃsi madyaṃ samanudhāvati |
@@ -8367,7 +8371,7 @@
      <l xml:id="BS.6.28.78"><label>6.28.78</label> pānātyaye pittakṛte <note/>śastrāśaniviṣopame |
       <caesura/>
       <note/>jāṅgalair ghṛtasaṃyuktair bhojayed raktaśālikān || </l>
-     <l xml:id="BS.6.28.79"><label>6.28.79</label> mudgayūṣeṇa vā śītaṃ bhojan mṛdulaudanam<note/> |
+     <l xml:id="BS.6.28.79"><label>6.28.79</label> mudgayūṣeṇa vā śītaṃ bhojayen mṛdulaudanam<note/> |
       <caesura/>
        triphalāyāḥ kaṣāyaṃ vā piben madyena saṃyutam || </l>
      <l xml:id="BS.6.28.80"><label>6.28.80</label> kṣaudreṇa rasam ikṣor vā trivṛtkalkena vā punaḥ |
@@ -8394,7 +8398,7 @@
      <l xml:id="BS.6.28.87"><label>6.28.87</label> kaṣāyaṃ pāyayed etaṃ śītaṃ mākṣikasaṃyutam |
       <caesura/>
        nityaṃ seveta tiktāni kaṣāyakaṭukāni ca || </l>
-     <l xml:id="BS.6.28.88"><label>6.28.88</label> jāṅgalāni ca māṃāni seveta mṛgapakṣiṇām |
+     <l xml:id="BS.6.28.88"><label>6.28.88</label> jāṅgalāni ca māṃsāni seveta mṛgapakṣiṇām |
       <caesura/>
        pibet kuṭannaṭācūrṇaṃ triphalārasasaṃyutam || </l>
      <l xml:id="BS.6.28.89"><label>6.28.89</label> dīpanīyāṃś ca seveta yogān pānena nity aśaḥ |
@@ -8509,7 +8513,7 @@
       <l xml:id="BS.7.3.5"><label>7.3.5</label> ekarātrasthitāny atra hastau prakṣālya mardayet |
        <caesura/>
         parisrutaṃ salavaṇaṃ madhuyuktaṃ pratāpya ca || </l>
-      <l xml:id="BS.7.3.6"><label>7.3.6</label> pāyayed āturaṃ snigdhaṃ charayet tena sādhu saḥ |
+      <l xml:id="BS.7.3.6"><label>7.3.6</label> pāyayed āturaṃ snigdhaṃ chardayet tena sādhu saḥ |
        <caesura/>
         etenaiva ca <note/>kalpena ikṣudarbhekṣuvārikaiḥ || </l>
       <l xml:id="BS.7.3.7"><label>7.3.7</label> tathā poṭagalekṣoś ca<note/> kārayet tu rasāplutam |
@@ -8604,7 +8608,7 @@
       <l xml:id="BS.7.4.19"><label>7.4.19</label> bhāgaṃ tu gulikāḥ kāryāḥ kolakarkandhusammitāḥ |
        <caesura/>
         kovidārakaṣāyeṇa pūrvakalpena chardayet || </l>
-      <l xml:id="BS.7.4.20"><label>7.4.20</label> karkandhūbadarāṇāṃ ca kolānāṃ vāpi sīdhunā |
+      <l xml:id="BS.7.4.20"><label>7.4.20</label> karkandhubadarāṇāṃ ca kolānāṃ vāpi sīdhunā |
        <caesura/>
         gulikāṃ <note/>vinīya vidhivac chardayet tena sādhu saḥ || </l>
       <l xml:id="BS.7.4.21"><label>7.4.21</label> rohitasya ca matsyasya tathā karkaṭakasya ca |
@@ -8626,7 +8630,7 @@
         vasante vā śaradi vā kuṭajāny uddhared bhiṣak |
        <caesura/>
         śuciś śuddhaś śiraḥsnātaḥ puṣyeṇāśvayujena vā || </l>
-      <l xml:id="BS.7.5.2"><label>7.5.2</label> pratūṭhāni śucau deśe kuśarohiṣasaṃskṛte |
+      <l xml:id="BS.7.5.2"><label>7.5.2</label> prarūḍhāni śucau deśe kuśarohiṣasaṃskṛte |
        <caesura/>
         kṛṣṇamṛtsnāprabhe vāpi tathā vā svarṇamṛttike || </l>
       <l xml:id="BS.7.5.3"><label>7.5.3</label> vyātape na nadītīre śvabhravalmīkayos tathā |
@@ -8651,7 +8655,7 @@
       <l xml:id="BS.7.5.9"><label>7.5.9</label> madhukasya kaṣāyeṇa tac cūrṇaṃ parimardayet || </l>
       <l xml:id="BS.7.5.10"><label>7.5.10</label> gulikāḥ kārayet tena karkandhubadaropamāḥ |
        <caesura/>
-        kovidārakaṣāyeṇa pūrvakaloena chardayet || </l>
+        kovidārakaṣāyeṇa pūrvakalpena chardayet || </l>
       <l xml:id="BS.7.5.11"><label>7.5.11</label> yathābalaṃ yathoddiṣṭaṃ chardayet tena sādhu saḥ |
        <caesura/>
        <note/>kṛtavedhanakalpo ' yam ukto vamanavistare || </l>
@@ -8697,7 +8701,7 @@
        <caesura/>
        <note/>tat khaṇḍāmalakaṃ nāma pāṇḍuśvayathukāmilām || </l>
       <l xml:id="BS.7.6.11"><label>7.6.11</label> śirobhramaṇam unmādam amlapittavikārajit || </l>
-      <l xml:id="BS.7.6.12."><label>7.6.12.</label> bhallātakānāṃ pavanāhatānāṃ vṛntacyutānām iha cāṭhakaṃ
+      <l xml:id="BS.7.6.12."><label>7.6.12.</label> bhallātakānāṃ pavanāhatānāṃ vṛntacyutānām iha cāḍhakaṃ
        syāt |
        <caesura/>
         tad iṣṭakācūrṇakaṇair vighṛṣya prakṣālayitvā visṛjet pravāte || </l>
@@ -8886,7 +8890,7 @@
         śyāmāyās trivṛtayāś ca <note/>mūlāny uddhārayed bhiṣak |
        <caesura/>
         kalyāṇadeśajātāyāḥ kuśarohiṣasaṃskṛte || </l>
-      <l xml:id="BS.7.9.2"><label>7.9.2</label> kṛṣṇamṛtsnāprame vāpi <note/>hy athavā svarṇamṛttike |
+      <l xml:id="BS.7.9.2"><label>7.9.2</label> kṛṣṇamṛtsnāprabhe vāpi <note/>hy athavā svarṇamṛttike |
        <caesura/>
         mūlāny etāni saṃgṛhya sūkṣmacūrṇāni kārayet || </l>
       <l xml:id="BS.7.9.3"><label>7.9.3</label> sthirākaṣāye<note/> saṃsṛjya pāyayet tu yathābalam |
@@ -8895,7 +8899,7 @@
       <l xml:id="BS.7.9.4"><label>7.9.4</label> triphalārasamātreṇa drākṣāpīlurasena vā |
        <caesura/>
         āloḍya vāpi payasā sarpiṣā<note/> vāpi pāyayet || </l>
-      <l xml:id="BS.7.9.5"><label>7.9.5</label> hariṇasaya rasaṃ dadyān nyaṅkoś ca mahiṣasya ca |
+      <l xml:id="BS.7.9.5"><label>7.9.5</label> hariṇasya rasaṃ dadyān nyaṅkoś ca mahiṣasya ca |
        <caesura/>
         khaḍgasya kalaviṅkasya tittirer lāvukasya ca || </l>
       <l xml:id="BS.7.9.6"><label>7.9.6</label> rasam anyatamaṃ teṣāṃ <note/>trivṛcchyāmāprayojitam |
@@ -8990,10 +8994,10 @@
       <l xml:id="BS.7.9.34"><label>7.9.34</label> trivṛtāyāḥ kaṣāyeṇa sakṣaudraṃ sāmlavetasam |
        <caesura/>
         atha vā dadhimaṇḍena kolakānāṃ rasena vā || </l>
-      <l xml:id="BS.7.9.35"><label>7.9.35</label> kulutthamudgayūṣair vā<note/> satīnaciribilvayoḥ |
+      <l xml:id="BS.7.9.35"><label>7.9.35</label> kulutthamudgayūṣair vā<note/> satīnacirabilvayoḥ |
        <caesura/>
         yavakolakayūṣeṇa pibet kaulattham eva<note/> vā || </l>
-      <l xml:id="BS.7.9.36"><label>7.9.36</label> yuktaṃ vā taintraṇīkena sāmlavetasadāḍimam |
+      <l xml:id="BS.7.9.36"><label>7.9.36</label> yuktaṃ vā taintriṇīkena sāmlavetasadāḍimam |
        <caesura/>
         yūṣeṇa śigrukolāhvāmūlakānāṃ rasena vā || </l>
       <l xml:id="BS.7.9.37"><label>7.9.37</label><note/>rasenāmalakānāṃ vā bījapūrārjakasya<note/> vā |
@@ -9084,7 +9088,7 @@
       <l xml:id="BS.8.1.10"><label>8.1.10</label> taruṇā balavantaś ca vāmayed uttamena tān |
        <caesura/>
         madhyame prāṇavayasi madhyamaṃ tatra kārayet || </l>
-      <l xml:id="BS.8.1.11"><label>8.1.11</label> kanīyasi <note/>kanīys tu tathā prāṇe kanīyasi |
+      <l xml:id="BS.8.1.11"><label>8.1.11</label> kanīyasi <note/>kanīyas tu tathā prāṇe kanīyasi |
        <caesura/>
         viparītaṃ prayuñjāno na rogān vijayiṣyati || </l>
       <l xml:id="BS.8.1.12"><label>8.1.12</label> upadravān vā <note/>janayed āturaṃ vā vināśayet |
@@ -9227,7 +9231,7 @@
         tathaivātiviśuddheṣu <note/>srotassv āyasyate śiraḥ || </l>
       <l xml:id="BS.8.2.14"><label>8.2.14</label> dantacāle hanustambhe manyāstambhe śirograhe |
        <caesura/>
-        vādhirye karṇaśūle ca karṇamūlāc ca bhedane || </l>
+        bādhirye karṇaśūle ca karṇamūlāc ca bhedane || </l>
       <l xml:id="BS.8.2.15"><label>8.2.15</label> apatantre keśasāde<note/> ' prabodhe dṛṣṭivibhrame |
        <caesura/>
        <note/>hikkānetramukhāsrāve svarabhede ' tha <note/>vāggrahe || </l>
@@ -9267,7 +9271,7 @@
        <caesura/>
        <note/>nātibhuktasya nāsnigdhasvinnasyānirvṛtes tathā ||<note/>
       </l>
-      <l xml:id="BS.8.2.27"><label>8.2.27</label> samyaṅ nirūḍhasya <note/><note/>narugujā samyak
+      <l xml:id="BS.8.2.27"><label>8.2.27</label> samyaṅ nirūḍhasya <note/><note/>narugrujā samyak
        praśāmyati |
        <caesura/>
         yato mūtrapurīṣāmyāṃ <note/>vāto hy asya nivartate || </l>
@@ -9280,7 +9284,7 @@
         nirūḍhasya punar yasya śoṇitaṃ sampraduṣyati || </l>
       <l xml:id="BS.8.2.30"><label>8.2.30</label> atīva tu nirūḍhasya niṣpurīṣasya<note/> mārutaḥ |
        <caesura/>
-        śūlenāveṣṭyamanasya sarvagātrāṇi pīḍayet || </l>
+        śūlenāveṣṭyamānasya sarvagātrāṇi pīḍayet || </l>
       <l xml:id="BS.8.2.31"><label>8.2.31</label> iti pañcavidhaṃ coktaṃ vyākhyātaṃ samupācaret |
        <caesura/>
         pañcakarmavidhānajño rājārho bhiṣag ucyate || ity āha bhagavān ātreyaḥ |
@@ -9303,7 +9307,7 @@
        pratipadya <note/>hi |
        <caesura/>
         tiryag ūrdhvam adhaś caiva doṣān niṣyandayanty api<note/> || </l>
-      <l xml:id="BS.8.4.4"><label>8.4.4</label><note/>sūkṣmāñ charīrāvayavān<note/> saukṣmyād anusarinti
+      <l xml:id="BS.8.4.4"><label>8.4.4</label><note/>sūkṣmāñ charīrāvayavān<note/> saukṣmyād anusaranti
        ca |
        <caesura/>
         visrāvayanti<note/> dhātūṃś ca vimārgaur api dehinām || </l>
@@ -9346,7 +9350,7 @@
       <l xml:id="BS.8.4.17"><label>8.4.17</label> snehasvedavimuktasya mṛdukoṣṭhasya dehinaḥ |
        <caesura/>
        <note/>doṣās tathāvaśiṣṭās tu janayanti <note/>pravāhikām || </l>
-      <l xml:id="BS.8.4.18"><label>8.4.18</label> atiraukṣyād atisvehād auṣadhānāṃ ca sambhramāt |
+      <l xml:id="BS.8.4.18"><label>8.4.18</label> atiraukṣyād atisnehād auṣadhānāṃ ca sambhramāt |
        <caesura/>
         nṛṇāṃ śūlaṃ prabhavati gudasraṃsaś ca dāruṇaḥ || </l>
       <l xml:id="BS.8.4.19"><label>8.4.19</label> vamane recane vāpi <note/>pīte vegavidhārite |
@@ -9381,7 +9385,7 @@
         cikitsāṃ tāsu kurvīta yathātreyasya śāsanam || </l>
       <l xml:id="BS.8.4.29"><label>8.4.29</label> tatrāyoginam abhyajya<note/> tailena lavaṇena ca |
        <caesura/>
-       <note/>saṅkaraprastarasvedair nāḍīsvedair athapi vā || </l>
+       <note/>saṅkaraprastarasvedair nāḍīsvedair athāpi vā || </l>
       <l xml:id="BS.8.4.30"><label>8.4.30</label> samyaṅ nirūḍhaṃ viśrāntaṃ <note/>pariṣicya sukhāmbunā |
        <caesura/>
         jāṅgalena rasenaiva bhojayen mṛdum odanam<note/> || </l>
@@ -9523,7 +9527,7 @@
        <note/>yāś ca vyāpattayaḥ paścād vamane ca virecane || </l>
       <l xml:id="BS.8.4.75"><label>8.4.75</label> tāś cikitseta matimān <note/>yathā sve sve cikitsite |
        <caesura/>
-        grāmyān<note/> paudakaṃ māṃsaṃ snehito<note/> yo ' pi sevate || </l>
+        <note/>grāmyānūpaudakaṃ māṃsaṃ snehito<note/> yo ' pi sevate || </l>
       <l xml:id="BS.8.4.76"><label>8.4.76</label><note/>kaphe pravṛddhe tasyāśu vireko vamanaṃ<note/>
        bhavet |
        <caesura/>
@@ -9563,7 +9567,7 @@
       <l xml:id="BS.8.5.3"><label>8.5.3</label><note/>satatan tu viriktasya śītībhavati pāvakaḥ |
        <caesura/>
        <note/>hṛdāśrayāṇi srotāṃsi gudakoṣṭhāśrayāṇi ca || </l>
-      <l xml:id="BS.8.5.4"><label>8.5.4</label> pravṛddho mārutas tasya <note/>pakvādhānaṃ pradhavati |
+      <l xml:id="BS.8.5.4"><label>8.5.4</label> pravṛddho mārutas tasya <note/>pakvādhānaṃ pradhāvati |
        <caesura/>
         śītīkaroti kāyāgniṃ balaṃ cāsyāpakarṣati || </l>
       <l xml:id="BS.8.5.5"><label>8.5.5</label> srotassu <note/>śuddhāśuddheṣu yadi vastiḥ pradīyate |
@@ -9621,7 +9625,7 @@
        |
        <caesura/>
         dattamātre punar yasya tailavastir nivartate || </l>
-      <l xml:id="BS.8.5.22"><label>8.5.22</label> na sa karyakaraḥ proktas tasyānyaṃ<note/> praṇidhāpayet
+      <l xml:id="BS.8.5.22"><label>8.5.22</label> na sa kāryakaraḥ proktas tasyānyaṃ<note/> praṇidhāpayet
        |
        <caesura/>
         tṛṣitas sa<note/> tathā rātriṃ kālyam uṣṇodakaṃ pibet || </l>
@@ -9794,7 +9798,7 @@
       <l xml:id="BS.8.7.3"><label>8.7.3</label> garhitā ssarva evaite vādāḥ pratyekaśaḥ smṛtāḥ<note/> |
        <caesura/>
         bheṣajānāṃ ca <note/>saṅghāto nirūheṣu praśasyate || </l>
-      <l xml:id="BS.8.7.4"><label>8.7.4</label> vātapittakaphagnāṃs tu<note/> nirūhāṃś cānupūrvaśaḥ |
+      <l xml:id="BS.8.7.4"><label>8.7.4</label> vātapittakaphaghnāṃs tu<note/> nirūhāṃś cānupūrvaśaḥ |
        <caesura/>
         vyākhyāsyāmo yathānyāyaṃ <note/>sannipātahitāś ca ye || </l>
       <l xml:id="BS.8.7.5"><label>8.7.5</label> dvai pañcamūlyau kolāni <note/>naladaś śuṣkamūlakam |
@@ -9862,7 +9866,7 @@
         kaṣāyakuḍavaṃ cātra ṣaḍvarṣāṇāṃ prayojayet || </l>
       <l xml:id="BS.8.7.25"><label>8.7.25</label> yuktaṃ lavaṇatailabhyāṃ kṣīreṇa madhunā tathā |
        <caesura/>
-        kaṣāyavastiṃ kurvīta svehād dviprasṛtaṃ bhiṣak || </l>
+        kaṣāyavastiṃ kurvīta snehād dviprasṛtaṃ bhiṣak || </l>
       <l xml:id="BS.8.7.26"><label>8.7.26</label> prasṛtaṃ madhyame<note/> kuryāt prasṛtārdhaṃ
        kanīyasi<note/> |
        <caesura/>
@@ -10055,7 +10059,7 @@
       <l xml:id="BS.8.8.31"><label>8.8.31</label><note/>kharjūraudanapākyau ca śītapākīṃ<note/>
        nidigdhikām |
        <caesura/>
-       <note/>salāmajjatvacaṃ patraṃ hvīberaṃ samahāsaham || </l>
+       <note/>salāmajjatvacaṃ patraṃ hrīberaṃ samahāsaham || </l>
       <l xml:id="BS.8.8.32"><label>8.8.32</label> jīvakarṣabhakau medāṃ pippalīś cāpi saṃharet |
        <caesura/>
         tat siddhaṃ śītalīkṛtya kṣaudraprasthe niyojayet || </l>
@@ -10153,7 +10157,7 @@
       <l xml:id="BS.8.8.61"><label>8.8.61</label> eṣa rāsāyano vastir dīpanīyo ' tha bṛṃhaṇaḥ |
        <caesura/>
         balavarṇakaro vṛṣyo <note/>yāpano nirupadravaḥ || </l>
-      <l xml:id="BS.8.8.62"><label>8.8.62</label><note/>gulmodavartitādhmānapramehakṛmikoṣṭhinām |
+      <l xml:id="BS.8.8.62"><label>8.8.62</label><note/>gulmodāvartitādhmānapramehakṛmikoṣṭhinām |
        <caesura/>
         nityaṃ gāḍhapurīṣāṇāṃ vastir eṣa <note/>hitaḥ smṛtaḥ || </l>
       <l xml:id="BS.8.8.63"><label>8.8.63</label> ghṛtaṃ madhu ca tailaṃ ca <note/>teṣāṃ mānaṃ samaṃ
@@ -10174,7 +10178,7 @@
        <caesura/>
         trikajānūrupṛṣṭhādivedanāṃ cāpakarṣati || </l>
       <l xml:id="BS.8.8.68"><label>8.8.68</label>
-       mṛdutvān na <note/>nivatante <note/>kṣubhyante <note/>vastayaś ca vā |
+       mṛdutvān na <note/>nivartante <note/>kṣubhyante <note/>vastayaś ca vā |
        <caesura/>
        <note/>tīkṣṇair āsthāpanaṃ kāryaṃ kṣipraṃ pratinivartayet || </l>
       <l xml:id="BS.8.8.69"><label>8.8.69</label> mṛdutvād yāpanānāṃ tu kecid vibhramabhīravaḥ |
