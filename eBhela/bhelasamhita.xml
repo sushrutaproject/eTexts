@@ -189,14 +189,14 @@
       <caesura/>
        evaṃ hi vartamānānāṃ kuṣṭhaṃ praśamameti vai || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athātyāśitīyaṃ
-      vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele caturtho ' dhyāyaḥ || </l>
     </div>
 
     <div n="5" type="adhyāya">
-     <l xml:id="BS.1.5.1"><label>1.5.1</label> athāśitena pītena khāditena ca yuktitaḥ |
+     <l xml:id="BS.1.5.1"><label>1.5.1</label> || pañcamo ' dhyāyaḥ || athātyāśitīyaṃ
+       vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       athāśitena pītena khāditena ca yuktitaḥ |
       <caesura/>
        balamāpyāyate jantoḥ sadyo vahnirivendhanaiḥ || </l>
      <l xml:id="BS.1.5.2"><label>1.5.2</label> tenaivātyādṛteneha bhojanena śarīrajāḥ |
@@ -282,14 +282,14 @@
       <caesura/>
        ghṛtamuṣṇāmbu ca bhajedetadārogyam uttamam || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele pañcamo ' dhyāyaḥ || || ṣaṣṭho ' dhyāyaḥ || atha na vegāndhāraṇīyaṃ
-      <note/>vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele pañcamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="6" type="adhyāya">
-     <l xml:id="BS.1.6.1"><label>1.6.1</label> na vegāndhārayed dhīraḥ prāptānmūtrapurīṣayoḥ |
+     <l xml:id="BS.1.6.1"><label>1.6.1</label> || ṣaṣṭho ' dhyāyaḥ || atha na vegāndhāraṇīyaṃ
+       <note/>vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       na vegāndhārayed dhīraḥ prāptānmūtrapurīṣayoḥ |
       <caesura/>
        na vātasya na pittasya na śuklasya kaphasya ca || </l>
      <l xml:id="BS.1.6.2"><label>1.6.2</label> udgāracchardijṛmbhāṇāṃ tathā ca kṣavathorapi |
@@ -448,10 +448,7 @@
        tasmād dhi vegaṃ na vidhārayeta naro ya icchediha dīrghamāyuḥ || ity āha
       bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele ṣaṣṭho ' dhyāyaḥ || || saptamo ' dhyāyaḥ || athāta
-      indriyopakramaṇīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ṣaṣṭho ' dhyāyaḥ || </l>
 
 
 
@@ -462,7 +459,10 @@
     </div>
 
     <div n="7" type="adhyāya">
-     <l xml:id="BS.1.7.1"><label>1.7.1</label> indriyāṇi hi sarvāṇi parijīryanti jīryataḥ |
+     <l xml:id="BS.1.7.1"><label>1.7.1</label> || saptamo ' dhyāyaḥ || athāta
+       indriyopakramaṇīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       indriyāṇi hi sarvāṇi parijīryanti jīryataḥ |
       <caesura/>
        tasmāt sarvatra vayasi yathākālaṃ striyaṃ vrajet || </l>
      <l xml:id="BS.1.7.2"><label>1.7.2</label> na tvanāpyāyitabalaḥ samāgacchet tu yoṣitaḥ |
@@ -514,14 +514,14 @@
       <caesura/>
        saṃjapanvai spṛśan vāri tathā ' syāyurna hīyate || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele saptamo ' dhyāyaḥ || || aṣṭamo ' dhyāyaḥ || athāto mātrāśitīyaṃ
-      vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele saptamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="8" type="adhyāya">
-     <l xml:id="BS.1.8.1"><label>1.8.1</label> mātrāśī syādvipakvāśī daṇḍapāṇirmitādhvagaḥ |
+     <l xml:id="BS.1.8.1"><label>1.8.1</label> || aṣṭamo ' dhyāyaḥ || athāto mātrāśitīyaṃ
+       vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       mātrāśī syādvipakvāśī daṇḍapāṇirmitādhvagaḥ |
       <caesura/>
        yathartubhojanaṃ kṛtvā janturdhūmamimaṃ pibet || </l>
      <l xml:id="BS.1.8.2"><label>1.8.2</label> kaiḍaryaśśatapuṣpā ca tālīsāguruguggulu |
@@ -606,14 +606,14 @@
       <caesura/>
        sadbhir ācaritaṃ pūrvaṃ vṛttamātreyasammatam || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele aṣṭamo ' dhyāyaḥ || || navamo ' dhyāyaḥ || athātaś
-      catuṣpādabhiṣagjitīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele aṣṭamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="9" type="adhyāya">
-     <l xml:id="BS.1.9.1"><label>1.9.1</label> bheṣajaṃ hi catuṣpādamāturaṃ kurute ' gadam |
+     <l xml:id="BS.1.9.1"><label>1.9.1</label> || navamo ' dhyāyaḥ || athātaś
+       catuṣpādabhiṣagjitīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       bheṣajaṃ hi catuṣpādamāturaṃ kurute ' gadam |
       <caesura/>
        yunakti yaśasā<note/>vaidyamarthamapyasya yacchati || </l>
      <l xml:id="BS.1.9.2"><label>1.9.2</label> tasmād auṣadhayogasya<note/> vaidyasyāpy āturasya<note/>
@@ -731,14 +731,14 @@
        nāvahanti guṇān vaidyādṛte pādatrayaṃ tathā |
       <caesura/>
        vidyāt tasmāc cikitsāyāṃ pradhānaṃ kāraṇaṃ bhiṣak || ity āha bhagavān ātreyaḥ
-      iti bhele navamo ' dhyāyaḥ || || daśamo ' dhyāyaḥ || athāta āmapradoṣīyaṃ
-      vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+      iti bhele navamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="10" type="adhyāya">
-     <l xml:id="BS.1.10.1"><label>1.10.1</label> athāha tailātpiṣṭānnāt kṛsarāt pāyasād api |
+     <l xml:id="BS.1.10.1"><label>1.10.1</label> || daśamo ' dhyāyaḥ || athāta āmapradoṣīyaṃ
+       vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       athāha tailātpiṣṭānnāt kṛsarāt pāyasād api |
       <caesura/>
        viruddhādhyaśanādāmācchālūkācchuṣkaśākataḥ || </l>
      <l xml:id="BS.1.10.2"><label>1.10.2</label> hrīśokakrodhakāmerṣyā<note/>lobhodvegādbhayād api |
@@ -802,15 +802,15 @@
        agāradhūmaḥ pippalyo madanaṃ rājasarṣapāḥ |
       <caesura/>
       <note/>gomūtrapiṣṭāssaguḍāḥ phalavartiḥ praśasyate || ity āha bhagavān ātreyaḥ
-      iti bhele daśamo ' dhyāyaḥ || || ekādaśo ' dhyāyaḥ ||
-      <note/>athātassamaśayanaparighanīyaṃ vyākhyāsyāma iti ha smāha bhagavān
-      ātreyaḥ |
-      <caesura/>
-     </l>
+      iti bhele daśamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="11" type="adhyāya">
-     <l xml:id="BS.1.11.1"><label>1.11.1</label> āhāraṃ praghasaṃ nẏṇām upayuktaṃ caturvidham |
+     <l xml:id="BS.1.11.1"><label>1.11.1</label> || ekādaśo ' dhyāyaḥ ||
+       <note/>athātassamaśayanaparighanīyaṃ vyākhyāsyāma iti ha smāha bhagavān
+       ātreyaḥ |
+       <caesura/>
+       āhāraṃ praghasaṃ nẏṇām upayuktaṃ caturvidham |
       <caesura/>
        pacyamānaṃ dvidhā kāye koṣṭhe<note/>rasamalākhyayā || </l>
      <l xml:id="BS.1.11.2"><label>1.11.2</label> svedamūtraśakṛdrūpairniṣkrāmati<note/> malaḥ punaḥ |
@@ -857,14 +857,14 @@
        ity ete āmajā nẏṇāṃ viruddhādhyaśanātmakāḥ |
       <caesura/>
        viruddhāśanavarjī syādetadārogyam uttamam || ity āha bhagavān ātreyaḥ iti
-      bhele ekādaśo ' dhyāyaḥ || || dvādaśo ' dhyāyaḥ || athātaḥ
-      ātreyakhaṇḍakāpyīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+      bhele ekādaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="12" type="adhyāya">
-     <l xml:id="BS.1.12.1"><label>1.12.1</label><note/>ātreyaḥ khaṇḍakāpyaś ca maitreyo ' nye ca tadvidhāḥ
+     <l xml:id="BS.1.12.1"><label>1.12.1</label> || dvādaśo ' dhyāyaḥ || athātaḥ
+       ātreyakhaṇḍakāpyīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       <note/>ātreyaḥ khaṇḍakāpyaś ca maitreyo ' nye ca tadvidhāḥ
       |
       <caesura/>
        rasasaṃkhyākathāṃ cakrurvane caitrarathe dvijāḥ || </l>
@@ -921,16 +921,16 @@
        sarva<note/>eva rasā bhojyāḥ<note/>yuktyā saṃvṛtadhātubhiḥ || ity āha
       bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele dvādaśo ' dhyāyaḥ || |
-      <caesura/>
-       |trayodaśo ' dhyāyaḥ || athāto janapadavibhaktīyaṃ vyākhyāsyāma iti ha smāha
-      bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele dvādaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="13" type="adhyāya">
-     <l xml:id="BS.1.13.1"><label>1.13.1</label> kasmin janapade rogāḥ ke bhavantyadhikā iti |
+     <l xml:id="BS.1.13.1"><label>1.13.1</label> |
+       <caesura/>
+       |trayodaśo ' dhyāyaḥ || athāto janapadavibhaktīyaṃ vyākhyāsyāma iti ha smāha
+       bhagavān ātreyaḥ |
+       <caesura/>
+       kasmin janapade rogāḥ ke bhavantyadhikā iti |
       <caesura/>
        gurdālubhekinā pṛṣṭo vyācacakṣe punarvasuḥ || </l>
      <l xml:id="BS.1.13.2"><label>1.13.2</label> matsyānnabhojino nityaṃ prācyāḥ syuḥ kaphapittanaḥ |
@@ -989,10 +989,7 @@
        ṛṣibhyaḥ paripṛcchadbhyaḥ praśnajātaṃ yathākramam || ity āha bhagavān ātreyaḥ
       |
       <caesura/>
-       iti bhele trayodaśo ' dhyāyaḥ || || caturdaśo ' dhyāyaḥ || athātaḥ
-      cikitsāprābhṛtīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele trayodaśo ' dhyāyaḥ || </l>
 
 
 
@@ -1003,7 +1000,10 @@
     </div>
 
     <div n="14" type="adhyāya">
-     <l xml:id="BS.1.14.1"><label>1.14.1</label> cikitsāprābhṛto vidvān<note/>vidyāt saṃśodhane vidhim |
+     <l xml:id="BS.1.14.1"><label>1.14.1</label> || caturdaśo ' dhyāyaḥ || athātaḥ
+       cikitsāprābhṛtīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       cikitsāprābhṛto vidvān<note/>vidyāt saṃśodhane vidhim |
       <caesura/>
        na ca dhāmārgavaṃ dadyāt snehasvedānupaskṛte || </l>
      <l xml:id="BS.1.14.2"><label>1.14.2</label> yo hi saṃśodhanaṃ<note/>pītvā sakaṣāyāṇi sevate |
@@ -1064,14 +1064,14 @@
       <caesura/>
        nẏṇāṃ<note/>samādhipūrṇānāmadīnamanasāṃ tathā || ity āha bhgavānātreyaḥ |
       <caesura/>
-       iti bhele caturdaśo ' dhyāyaḥ || || pañcadaśo ' dhyāyaḥ ||
-      athātastisraiṣaṇīyamadhyāyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele caturdaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="15" type="adhyāya">
-     <l xml:id="BS.1.15.1"><label>1.15.1</label> prāṇaiṣaṇā<note/>syāt prathamā dvitīyā
+     <l xml:id="BS.1.15.1"><label>1.15.1</label> || pañcadaśo ' dhyāyaḥ ||
+       athātastisraiṣaṇīyamadhyāyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       prāṇaiṣaṇā<note/>syāt prathamā dvitīyā
       tu<note/>dhanaiṣaṇā |
       <caesura/>
        dharmaiṣaṇā tṛtīyā tu puruṣasya bhavatyatha || </l>
@@ -1107,14 +1107,14 @@
       <caesura/>
        malāc cāpy eti vaiṣamyaṃ tasmāt tamabhinirharet || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele pañcadaśo ' dhyāyaḥ || || ṣoḍaśo ' dhyāyaḥ ||<note/>athāto
-      vātakalākalīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele pañcadaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="16" type="adhyāya">
-     <l xml:id="BS.1.16.1"><label>1.16.1</label><note/>katamo ' bhyadhiko doṣo nyūnaś
+     <l xml:id="BS.1.16.1"><label>1.16.1</label> || ṣoḍaśo ' dhyāyaḥ ||<note/>athāto
+       vātakalākalīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       <note/>katamo ' bhyadhiko doṣo nyūnaś
       caiveti<note/>tatvataḥ |
       <caesura/>
        kṛṣṇātreyaṃ puraskṛtya kathāś cakrurmaharṣayaḥ || </l>
@@ -1187,16 +1187,16 @@
        bhūtebhyo ' bhyadhikaṃ vātaṃ lakṣayāma śarīriṇām<note/> || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele ṣoḍaśo ' dhyāyaḥ || |
-      <caesura/>
-       |saptadaśo ' dhyāyaḥ || athāto daśaprāṇāyatanīyaṃ vyākhyāsyāma iti ha smāha
-      bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ṣoḍaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="17" type="adhyāya">
-     <l xml:id="BS.1.17.1"><label>1.17.1</label> caturvidhamatho bhuktaṃ daśadhā prāṇamṛcchati |
+     <l xml:id="BS.1.17.1"><label>1.17.1</label> |
+       <caesura/>
+       |saptadaśo ' dhyāyaḥ || athāto daśaprāṇāyatanīyaṃ vyākhyāsyāma iti ha smāha
+       bhagavān ātreyaḥ |
+       <caesura/>
+       caturvidhamatho bhuktaṃ daśadhā prāṇamṛcchati |
       <caesura/>
        ūṣmasvedaśakṛnmūtrais tathā vātādibhis tribhiḥ || </l>
      <l xml:id="BS.1.17.2"><label>1.17.2</label> striyāḥ stanyena śuklena śoṇitena<note/> ca vāpy atha |
@@ -1243,14 +1243,14 @@
        yathā tamasi dīpaḥ syāt tatrarahā śāstraṃ prakāśakṛt || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele saptadaśo ' dhyāyaḥ || || aṣṭādaśo ' dhyāyaḥ || athāto '
-      nnarakṣīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele saptadaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="18" type="adhyāya">
-     <l xml:id="BS.1.18.1"><label>1.18.1</label> gāndhārabhūmau rājarṣirnagnajitsvargamārgadaḥ |
+     <l xml:id="BS.1.18.1"><label>1.18.1</label> || aṣṭādaśo ' dhyāyaḥ || athāto '
+       nnarakṣīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       gāndhārabhūmau rājarṣirnagnajitsvargamārgadaḥ |
       <caesura/>
        saṃgṛhya pādau papraccha cāndrabhāgaṃ punarvasum || </l>
      <l xml:id="BS.1.18.2"><label>1.18.2</label> na ca strībhyo na<note/>cāstrebhyo na bhṛtyebhyo ' sti me
@@ -1340,14 +1340,14 @@
       <caesura/>
        cikitsiteṣu<note/> yā proktā viṣapraśamane hitā || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele ' ṣṭādaśodhyāyaḥ || || ekonaviṃśo ' dhyāyaḥ || athāto
-      vidhiśoṇitīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ' ṣṭādaśodhyāyaḥ || </l>
     </div>
 
     <div n="19" type="adhyāya">
-     <l xml:id="BS.1.19.1"><label>1.19.1</label> vidhinā śoṇitaṃ jātaṃ<note/>sevamānasya vāruṇīm |
+     <l xml:id="BS.1.19.1"><label>1.19.1</label> || ekonaviṃśo ' dhyāyaḥ || athāto
+       vidhiśoṇitīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       vidhinā śoṇitaṃ jātaṃ<note/>sevamānasya vāruṇīm |
       <caesura/>
        praduṣyati vidāhena tato rogāya kalpate || </l>
      <l xml:id="BS.1.19.2"><label>1.19.2</label> sarvaṃ madyamacakṣuṣyamapauruṣyaṃ tathaiva ca |
@@ -1386,14 +1386,14 @@
       <caesura/>
        tasmāt pānaguṇān buddhvā yathāyogaṃ samācaret || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele ekonaviṃśo ' dhyāyaḥ || || viṃśo ' dhyāyaḥ || athāto '
-      rthedaśamūlīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ekonaviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="20" type="adhyāya">
-     <l xml:id="BS.1.20.1"><label>1.20.1</label> artha ity āha hṛdayaṃ tasmin dhamanayo daśa |
+     <l xml:id="BS.1.20.1"><label>1.20.1</label> || viṃśo ' dhyāyaḥ || athāto '
+       rthedaśamūlīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       artha ity āha hṛdayaṃ tasmin dhamanayo daśa |
       <caesura/>
        ūrdhvaṃ catasro dve tiryak catasraś cāpy adhaḥ kramāt || </l>
      <l xml:id="BS.1.20.2"><label>1.20.2</label> tābhyo mūlasirāstiryagbhidyante naikadhā sirāḥ |
@@ -1425,18 +1425,19 @@
        avaśyāyahimāmbūni bāhmāni paricakṣate || hṛdayo<note/> |.. |.. |.. |.. |..
       |.. |.. |.. |
       <caesura/>
-       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. iti bhele viṃśo ' dhyāyaḥ || |
-      <caesura/>
-       |ekaviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. |.. |.. virecyāṃś caiva mānavān |
-      <caesura/>
-       āsthāpyānanuvāsyāṃś ca vātavyādhīṃś ca sarvaśaḥ || </l>
+       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. iti bhele viṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="21" type="adhyāya">
-     <l xml:id="BS.1.21.1"><label>1.21.1</label> virūkṣayed atisnigdhaṃ kṛmikoṣṭhinam eva ca |
+     <l xml:id="BS.1.21.1"><label>1.21.1</label> |
+       <caesura/>
+       |ekaviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |.. |.. |.. virecyāṃś caiva mānavān |
+       <caesura/>
+       āsthāpyānanuvāsyāṃś ca vātavyādhīṃś ca sarvaśaḥ ||
+       virūkṣayed atisnigdhaṃ kṛmikoṣṭhinam eva ca |
       <caesura/>
        rūkṣastambhyān pramehāṃś ca kapharogāṃś ca sarvaśaḥ || </l>
      <l xml:id="BS.1.21.2"><label>1.21.2</label> vāmayecchaleṣmakāse ca<note/>pratiśyāye ca mānavān |
@@ -1464,14 +1465,14 @@
       <caesura/>
        virecayed virecyāṃs tu tathā pakvāśayāśrayān || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele ekaviṃśo ' dhyāyaḥ || || dvāviṃśo ' dhyāyaḥ || athātaḥ svedādhyāyaṃ
-      vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ekaviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="22" type="adhyāya">
-     <l xml:id="BS.1.22.1"><label>1.22.1</label> saṃkaraṃ prastaraṃ sekaṃ<note/>nāḍīṃ droṇiṃ jalāni ca |
+     <l xml:id="BS.1.22.1"><label>1.22.1</label> || dvāviṃśo ' dhyāyaḥ || athātaḥ svedādhyāyaṃ
+       vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       saṃkaraṃ prastaraṃ sekaṃ<note/>nāḍīṃ droṇiṃ jalāni ca |
       <caesura/>
        udakoṣṭhaṃ kuṭiṃ caiva svedamaṣṭavidhaṃ viduḥ || </l>
      <l xml:id="BS.1.22.2"><label>1.22.2</label> pāṣāṇabhasmasikatātuṣapāṃsubusāni ca |
@@ -1572,14 +1573,14 @@
       <note/>svedyās tu snigdharūkṣābhyāṃ jñātvā vyādhibalābalam || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele dvāviṃśo ' dhyāyaḥ || || trayoviṃśo ' dhyāyaḥ || athāto
-      gāḍhapurīṣīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele dvāviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="23" type="adhyāya">
-     <l xml:id="BS.1.23.1"><label>1.23.1</label> gāḍhaṃ purīṣaṃ grathitaṃ śuskaṃ vātasamīritam |
+     <l xml:id="BS.1.23.1"><label>1.23.1</label> || trayoviṃśo ' dhyāyaḥ || athāto
+       gāḍhapurīṣīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       gāḍhaṃ purīṣaṃ grathitaṃ śuskaṃ vātasamīritam |
       <caesura/>
        tenāsyāpihitaṃ srotaḥ<note/>śvayathuṃ kurute gude || </l>
      <l xml:id="BS.1.23.2"><label>1.23.2</label> tasyaiva<note/>kupito vāyurūrdhvaṃ jantoḥ prapadyate |
@@ -1617,14 +1618,14 @@
       <caesura/>
        pāyayec ca bhiṣaktāpairvamanaṃ savirecanam || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele trayoviṃśo ' dhyāyaḥ || ||<note/>pañcaviṃśo ' dhyāyaḥ || athātaḥ
-      ṛtuvibhāgīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele trayoviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="25" type="adhyāya">
-     <l xml:id="BS.1.25.1"><label>1.25.1</label> suśrotā nāma medhāvī cāndrabhāgamuvāca ha |
+     <l xml:id="BS.1.25.1"><label>1.25.1</label> ||<note/>pañcaviṃśo ' dhyāyaḥ || athātaḥ
+       ṛtuvibhāgīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       suśrotā nāma medhāvī cāndrabhāgamuvāca ha |
       <caesura/>
        na pātavyamarogeṇa<note/>sukhakāmena recanam || </l>
      <l xml:id="BS.1.25.2"><label>1.25.2</label> anīritānāṃ doṣāṇāṃ<note/>haraṇaṃ na praśasyate |
@@ -1748,14 +1749,14 @@
       <note/>bhūyas tv idam adhiṣṭhānaṃ pratirogaṃ pratīkṣata || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele pañcaviṃśo ' dhyāyaḥ || || ṣaḍviṃśo ' dhyāyaḥ || athātaḥ
-      aṣṭodarīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele pañcaviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="26" type="adhyāya">
-     <l xml:id="BS.1.26.1"><label>1.26.1</label> athāṣṭāvudarāṇīha<note/>mūtrāghātāṃś ca nirdiśet |
+     <l xml:id="BS.1.26.1"><label>1.26.1</label> || ṣaḍviṃśo ' dhyāyaḥ || athātaḥ
+       aṣṭodarīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       athāṣṭāvudarāṇīha<note/>mūtrāghātāṃś ca nirdiśet |
       <caesura/>
        ṣaṭ<note/>kācāṃlliṅganāśāṃś ca jānīyāt timirāṇi ca || </l>
      <l xml:id="BS.1.26.2"><label>1.26.2</label> hikkāśvāsāṃś ca kāsāṃś ca<note/>khālity aṃ<note/>palitāni
@@ -1864,16 +1865,16 @@
       <caesura/>
        vātādernātivartante bahavo ' pi tathā++āmayāḥ || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele ṣaḍviṃśo ' dhyāyaḥ || |
-      <caesura/>
-       |saptaviṃśo ' dhyāyaḥ || athāto ' nnapānavidhīyaṃ vyākhyāsyāma iti ha smāha
-      bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ṣaḍviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="27" type="adhyāya">
-     <l xml:id="BS.1.27.1"><label>1.27.1</label> athodakaṃ kledayati lavaṇaṃ syandayaty api |
+     <l xml:id="BS.1.27.1"><label>1.27.1</label> |
+       <caesura/>
+       |saptaviṃśo ' dhyāyaḥ || athāto ' nnapānavidhīyaṃ vyākhyāsyāma iti ha smāha
+       bhagavān ātreyaḥ |
+       <caesura/>
+       athodakaṃ kledayati lavaṇaṃ syandayaty api |
       <caesura/>
        atha<note/>pācayati kṣāraḥ kṣīraṃ vai jīvayaty api || </l>
      <l xml:id="BS.1.27.2"><label>1.27.2</label> snehayatyatha sarpiś ca piśitaṃ bṛṃhayaty api |
@@ -1989,14 +1990,14 @@
        anupānaṃ manuṣyāṇāṃ<note/>sātmyatāṃ ca prayacchati || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele saptaviṃśo ' dhyāyaḥ || || aṣṭāviṃśo ' dhyāyaḥ || athāto
-      bhojanavidhīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele saptaviṃśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="28" type="adhyāya">
-     <l xml:id="BS.1.28.1"><label>1.28.1</label> yad bhakṣayati bhuṅkte vā vidhivac cāpi mānavaḥ |
+     <l xml:id="BS.1.28.1"><label>1.28.1</label> || aṣṭāviṃśo ' dhyāyaḥ || athāto
+       bhojanavidhīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       yad bhakṣayati bhuṅkte vā vidhivac cāpi mānavaḥ |
       <caesura/>
       <note/>anyac ca kiñcit pibati tat sarvaṃ ṣaḍrasānvitam || </l>
      <l xml:id="BS.1.28.2"><label>1.28.2</label> pathyāpathyam abodhāryaṃ, tasmād bhojyaṃ śarīriṇām |
@@ -2143,11 +2144,7 @@
      <l xml:id="BS.1.28.48"><label>1.28.48</label> ṛśyaś ca mṛgamātā ca tuṅgaś ca hariṇī mṛgaḥ |
       <caesura/>
       <note/>pārāvata<gap reason="damage" n="31" unit="char"/> || iti bhele
-      aṣṭāviṃśo ' dhyāyaḥ || iti bhelasaṃhitāyāṃ sūtrasthānaṃ samāptam ||
-      nidānasthānam<note/> || dvitīyo ' dhyāyaḥ || <gap reason="damage" n="39"
-       unit="char"/>
-      <gap reason="damage" n="39" unit="char"/>
-     </l>
+      aṣṭāviṃśo ' dhyāyaḥ || iti bhelasaṃhitāyāṃ sūtrasthānaṃ samāptam || </l>
     </div>
    </div>
 
@@ -2155,7 +2152,10 @@
 <head>Nidānasthānam</head>
 
     <div n="2" type="adhyāya">
-     <l xml:id="BS.2.2.1"><label>2.2.1</label> urovighātāttasyātha<note/>jvaraḥ kāsaś ca jāyate |
+     <l xml:id="BS.2.2.1"><label>2.2.1</label> nidānasthānam<note/> || dvitīyo ' dhyāyaḥ || <gap reason="damage" n="39"
+       unit="char"/>
+       <gap reason="damage" n="39" unit="char"/>
+       urovighātāttasyātha<note/>jvaraḥ kāsaś ca jāyate |
       <caesura/>
        svaraḥ sīdati cāpy asya niṣṭhīvati saśoṇitam || </l>
      <l xml:id="BS.2.2.2"><label>2.2.2</label> athavāpyavaśo jantuḥ śaśvatsa parihīyate |
@@ -2219,14 +2219,14 @@
        buddhau<note/>cārogyamāyattamidamuktaṃ maharṣiṇā || ity āha bhagavān ātreyaḥ
       |
       <caesura/>
-       iti bhele nidāne dvitīyo ' dhyāyaḥ || || tṛtīyo ' dhyāyaḥ || athāto
-      gulmanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele nidāne dvitīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="3" type="adhyāya">
-     <l xml:id="BS.2.3.1"><label>2.3.1</label> vātātpittātkaphāccaiva nicayādatha lohitāt |
+     <l xml:id="BS.2.3.1"><label>2.3.1</label> || tṛtīyo ' dhyāyaḥ || athāto
+       gulmanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       vātātpittātkaphāccaiva nicayādatha lohitāt |
       <caesura/>
        pañca gulmā<note/>bhavantīha teṣāṃ vakṣyāmi lakṣaṇam || </l>
      <l xml:id="BS.2.3.2"><label>2.3.2</label> sa yadā<note/>vātalo<note/>janturvātalaṃ bhajate ' śanam |
@@ -2315,14 +2315,14 @@
       <note/>vidyādasādhyaṃ nicayaṃ<note/>yatnasādhyāṃstathetarān || ity āha
       bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele nidāne tṛtīyo ' dhyāyaḥ || || caturtho ' dhyāyaḥ || athātaḥ
-      kāsanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele nidāne tṛtīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="4" type="adhyāya">
-     <l xml:id="BS.2.4.1"><label>2.4.1</label> vātātpittātkaphāccaiva kṣatādvātha kṣayād api |
+     <l xml:id="BS.2.4.1"><label>2.4.1</label> || caturtho ' dhyāyaḥ || athātaḥ
+       kāsanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       vātātpittātkaphāccaiva kṣatādvātha kṣayād api |
       <caesura/>
        pañca<note/>kāsā bhavantīha teṣāṃ vakṣyāmi lakṣaṇam || </l>
      <l xml:id="BS.2.4.2"><label>2.4.2</label> yassadā vātalo janturasātmyaṃ vai niṣevate |
@@ -2377,14 +2377,14 @@
        tānavekṣya bhiṣag buddhyā tataḥ kuryāc cikitsitam<note/> || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele nidāne caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athātaḥ
-      kuṣṭhanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele nidāne caturtho ' dhyāyaḥ || </l>
     </div>
 
     <div n="5" type="adhyāya">
-     <l xml:id="BS.2.5.1"><label>2.5.1</label> pippalīṃ kākamācīṃ<note/> ca likucaṃ dadhisarpiṣā |
+     <l xml:id="BS.2.5.1"><label>2.5.1</label> || pañcamo ' dhyāyaḥ || athātaḥ
+       kuṣṭhanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       pippalīṃ kākamācīṃ<note/> ca likucaṃ dadhisarpiṣā |
       <caesura/>
        vātāyuṃ<note/> payasā sārdhaṃ<note/>guḍena saha mūlakam || </l>
      <l xml:id="BS.2.5.2"><label>2.5.2</label> anyadevaṃvidhaṃ yac ca viruddhaṃ tatsamaśnataḥ |
@@ -2470,14 +2470,14 @@
       <caesura/>
        tanniśamyeha matimān hitajīrṇāśano bhavet || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele nidāne pañcamo ' dhyāyaḥ || || ṣaṣṭho ' dhyāyaḥ || athātaḥ
-      pramehanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele nidāne pañcamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="6" type="adhyāya">
-     <l xml:id="BS.2.6.1"><label>2.6.1</label> prakṛtiprabhavaś caiva narasya svakṛtas tathā |
+     <l xml:id="BS.2.6.1"><label>2.6.1</label> || ṣaṣṭho ' dhyāyaḥ || athātaḥ
+       pramehanidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       prakṛtiprabhavaś caiva narasya svakṛtas tathā |
       <caesura/>
        jñeyaḥ prameho dvividhas tasya vakṣyāmi lakṣaṇam || </l>
      <l xml:id="BS.2.6.2"><label>2.6.2</label> ślakṣṇāṅgā mṛdavaḥ snigdhā bhṛśaṃ śleṣmalamedurāḥ |
@@ -2518,13 +2518,14 @@
       <caesura/>
       <gap reason="damage" n="49" unit="char"/>
       <gap reason="damage" n="49" unit="char"/><note/>iti bhele nidāne ṣaṣṭho '
-      dhyāyaḥ || || saptamo ' dhyāyaḥ || <gap reason="damage" n="49" unit="char"/>..
-       <gap reason="damage" n="49" unit="char"/>.. gītāni bhajate nityaṃ 
-      pittonmādanipīḍitaḥ<note/> || </l>
+      dhyāyaḥ || </l>
     </div>
 
     <div n="7" type="adhyāya">
-     <l xml:id="BS.2.7.1"><label>2.7.1</label> yassadā śleṣmalo jantuḥ śleṣmalaṃ bhajate ' śanam |
+     <l xml:id="BS.2.7.1"><label>2.7.1</label> || saptamo ' dhyāyaḥ || <gap reason="damage" n="49" unit="char"/>..
+       <gap reason="damage" n="49" unit="char"/>.. gītāni bhajate nityaṃ
+       pittonmādanipīḍitaḥ<note/> ||
+       yassadā śleṣmalo jantuḥ śleṣmalaṃ bhajate ' śanam |
       <caesura/>
        sevate ca divāsvapnaṃ tasya śleṣmā pravardhate || </l>
      <l xml:id="BS.2.7.2"><label>2.7.2</label> sa vṛddha ūrdhvaṃ hṛdayād gṛhītvā dhamanīrdaśa |
@@ -2558,14 +2559,14 @@
       <caesura/>
        na jātu dāruṇān rogānunmādān prāpnuyān naraḥ || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele nidāne saptamo ' dhyāyaḥ || || aṣṭamo ' dhyāyaḥ || athāto '
-      pasmāranidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele nidāne saptamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="8" type="adhyāya">
-     <l xml:id="BS.2.8.1"><label>2.8.1</label> vātātpittātkaphāccaiva sannipātāttathaiva<note/> ca |
+     <l xml:id="BS.2.8.1"><label>2.8.1</label> || aṣṭamo ' dhyāyaḥ || athāto '
+       pasmāranidānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       vātātpittātkaphāccaiva sannipātāttathaiva<note/> ca |
       <caesura/>
        apasmārā bhavantīha teṣāṃ vakṣyāmi lakṣaṇam || </l>
      <l xml:id="BS.2.8.2"><label>2.8.2</label> yassadā vātalo janturvātalaṃ bhajate ' śanam |
@@ -2614,13 +2615,7 @@
       <caesura/>
        vimānāni pravakṣyāmi yathāvadanupūrvaśaḥ || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele aṣṭamo ' dhyāyaḥ || iti bhelasaṃhitāyāṃ nidānasthānaṃ samāptam ||
-      || vimānasthānam || |
-      <caesura/>
-       |prathamo ' dhyāyaḥ || athāto rasavimānaṃ vyākhyāsyāma iti ha smāha bhagavān
-      ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele aṣṭamo ' dhyāyaḥ || iti bhelasaṃhitāyāṃ nidānasthānaṃ samāptam || </l>
 
 
 
@@ -2636,7 +2631,12 @@
 
     <div n="1" type="adhyāya">
 
-     <l xml:id="BS.3.1.1"><label>3.1.1</label> śarīraṃ dhārayantīha ṣaḍrasāḥ<note/>samamāhṛtāḥ |
+     <l xml:id="BS.3.1.1"><label>3.1.1</label> || vimānasthānam || |
+       <caesura/>
+       |prathamo ' dhyāyaḥ || athāto rasavimānaṃ vyākhyāsyāma iti ha smāha bhagavān
+       ātreyaḥ |
+       <caesura/>
+       śarīraṃ dhārayantīha ṣaḍrasāḥ<note/>samamāhṛtāḥ |
       <caesura/>
        ato ' nyathā vikārāṃs tu janayanti śarīriṇām || </l>
      <l xml:id="BS.3.1.2"><label>3.1.2</label> rūkṣo laghuḥ<note/>sthiraśśītaḥ kaṣāyastikta eva ca |
@@ -2721,11 +2721,12 @@
        bhṛśamauṣṇyāt kaṭurgrīṣmaḥ sarvadhātuviśoṣaṇaḥ || </l>
      <l xml:id="BS.3.1.28"><label>3.1.28</label> dhairyasthairyakaraṃ śītaṃ, varṣāmadyaba.... |
       <caesura/>
-       |....... || ity āha bhagavān ātreyaḥ || |tṛtīyo ' dhyāyaḥ || </l>
+       |....... || ity āha bhagavān ātreyaḥ || </l>
     </div>
 
     <div n="3" type="adhyāya">
-     <l xml:id="BS.3.3.1"><label>3.3.1</label> |.. |.. yasya bhuktaṃ vipacyate |
+     <l xml:id="BS.3.3.1"><label>3.3.1</label> |tṛtīyo ' dhyāyaḥ ||
+       |.. |.. yasya bhuktaṃ vipacyate |
       <caesura/>
        bhuñjānasyāpi cānnāni balaṃ varṇaś ca hīyate || </l>
      <l xml:id="BS.3.3.2"><label>3.3.2</label> alpaṃ laghvapi yaccānnaṃ bhuktaṃ duḥkhena jīryati |
@@ -2784,15 +2785,15 @@
       <caesura/>
        kālena prakṛtiṃ yātas tad āhuḥ sātmyalakṣaṇam ||
       <caesura/>
-       ity āha bhagavān ātreyaḥ | iti bhele vimāne tṛtīyo ' dhyāyaḥ || || caturtho '
-      dhyāyaḥ || athāto rogaprakṛtiviniścayaṃ vyākhyāsyāma iti ha smāha bhagavān
-      ātreyaḥ |
-      <caesura/>
-     </l>
+       ity āha bhagavān ātreyaḥ | iti bhele vimāne tṛtīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="4" type="adhyāya">
-     <l xml:id="BS.3.4.1"><label>3.4.1</label> pramṛśya dṛṣṭvā<note/>pṛṣṭvā ca parīkṣetāturaṃ bhiṣak |
+     <l xml:id="BS.3.4.1"><label>3.4.1</label> || caturtho '
+       dhyāyaḥ || athāto rogaprakṛtiviniścayaṃ vyākhyāsyāma iti ha smāha bhagavān
+       ātreyaḥ |
+       <caesura/>
+       pramṛśya dṛṣṭvā<note/>pṛṣṭvā ca parīkṣetāturaṃ bhiṣak |
       <caesura/>
        pūrvaṃ tu rogavijñānaṃ tataḥ paś cāccikitsitam || </l>
      <l xml:id="BS.3.4.2"><label>3.4.2</label> rūpaṃ chāyām upacayaṃ prāgvyādhervyādhitasya ca |
@@ -2875,14 +2876,14 @@
       <caesura/>
        sannipātātmikā yā tu jaghanyā sā prakīrtitā || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athāto
-      vyādhitarūpīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele caturtho ' dhyāyaḥ || </l>
     </div>
 
     <div n="5" type="adhyāya">
-     <l xml:id="BS.3.5.1"><label>3.5.1</label><note/>guruvyādhirnaraḥ kaścinmūrtyā caiva balena ca |
+     <l xml:id="BS.3.5.1"><label>3.5.1</label> || pañcamo ' dhyāyaḥ || athāto
+       vyādhitarūpīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       <note/>guruvyādhirnaraḥ kaścinmūrtyā caiva balena ca |
       <caesura/>
       <note/>laghuvyādhiḥ naras tv anyaḥ sattvād ibhir ananvitaḥ || </l>
      <l xml:id="BS.3.5.2"><label>3.5.2</label> guruvyādhirivābhāti bhiṣak tatra pramuhyati |
@@ -2904,14 +2905,14 @@
       <caesura/>
        etadāragvadhārthaṃ tu kuryād āsthāpanaṃ bhiṣak || <gap reason="damage" n="24"
        unit="char"/>
-      <gap reason="damage" n="25" unit="char"/> || ṣaṣṭho ' dhyāyaḥ || athāta
-      ṛtuvimānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+      <gap reason="damage" n="25" unit="char"/> </l>
     </div>
 
     <div n="6" type="adhyāya">
-     <l xml:id="BS.3.6.1"><label>3.6.1</label> ādity agativaiśeṣyādṛtūnāṃ parivartanāt |
+     <l xml:id="BS.3.6.1"><label>3.6.1</label> || ṣaṣṭho ' dhyāyaḥ || athāta
+       ṛtuvimānaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       ādity agativaiśeṣyādṛtūnāṃ parivartanāt |
       <caesura/>
        kṣayaṃ vṛddhiṃ ca gacchanti yathāsvaṃ dhātavo nṛṇām || </l>
      <l xml:id="BS.3.6.2"><label>3.6.2</label> bhūmibāṣpātpurovātād<note/>ghanacchāyāprasaṅgataḥ |
@@ -2983,15 +2984,7 @@
        tasmād vasante śleṣmaghnaṃ<note/>madhumārdvīkamīritam || <gap reason="damage"
        n="49" unit="char"/>
       <gap reason="damage" n="49" unit="char"/> iti bhele ṣaṣṭho ' dhyāyaḥ || iti
-      bhelasaṃhitāyāṃ vimānasthānaṃ samāptam || || śārīrasthāna || dvitīyo ' dhyāyaḥ
-      || Bhṣ4.2.? || <gap reason="damage" n="19" unit="char"/>
-      <gap reason="damage" n="23" unit="char"/> māno ' vatiṣṭhate |
-      <caesura/>
-       jātasya daśame māse nāmagotre namaskṛte || Bhṣ4.2.? |
-      <caesura/>
-       taruṇasya kumārasya vardhamāneṣu dhātuṣu |
-      <caesura/>
-       asthimajjasu pūrṇeṣu śukraṃ na pratipadyate || </l>
+      bhelasaṃhitāyāṃ vimānasthānaṃ samāptam || </l>
 
 
 
@@ -3009,7 +3002,16 @@
 
     <div n="2" type="adhyāya">
 
-     <l xml:id="BS.4.2.3"><label>4.2.3</label> aṅgāṅgeṣu pravṛddheṣu pratimūleṣu dhātuṣu |
+     <l xml:id="BS.4.2.3"><label>4.2.3</label> || śārīrasthāna || dvitīyo ' dhyāyaḥ
+       || Bhṣ4.2.? || <gap reason="damage" n="19" unit="char"/>
+       <gap reason="damage" n="23" unit="char"/> māno ' vatiṣṭhate |
+       <caesura/>
+       jātasya daśame māse nāmagotre namaskṛte || Bhṣ4.2.? |
+       <caesura/>
+       taruṇasya kumārasya vardhamāneṣu dhātuṣu |
+       <caesura/>
+       asthimajjasu pūrṇeṣu śukraṃ na pratipadyate ||
+       aṅgāṅgeṣu pravṛddheṣu pratimūleṣu dhātuṣu |
       <caesura/>
        śuklaṃ ca ṣoḍaśe varṣe suvyaktaṃ pratipadyate || </l>
      <l xml:id="BS.4.2.4"><label>4.2.4</label> tathā vṛddhasya jantoś ca parikṣīṇeṣu dhātuṣu |
@@ -3049,15 +3051,15 @@
        ātmendriyamanorthānāṃ<note/>bandhācceti[<note/>bandhiśce] samādiśa || ity āha
       bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele dvitīyo ' dhyāyaḥ || tṛtīyo ' dhyāyaḥ |
-      <caesura/>
-       athāto ' samānagotrīyaṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele dvitīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="3" type="adhyāya">
-     <l xml:id="BS.4.3.1"><label>4.3.1</label> ihāsamānagotrān<note/>tu[<note/>vai] ṛtusnātāṃ striyaṃ
+     <l xml:id="BS.4.3.1"><label>4.3.1</label> tṛtīyo ' dhyāyaḥ |
+       <caesura/>
+       athāto ' samānagotrīyaṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       ihāsamānagotrān<note/>tu[<note/>vai] ṛtusnātāṃ striyaṃ
       vrajet |
       <caesura/>
        medhā<note/>vinamarogaṃ[<note/>di-] sā putramevaṃ prasūyate || </l>
@@ -3126,14 +3128,14 @@
        tisṛṇāṃ sattvayonīnāṃ,<note/>miśrāṃstenaiva[<note/>mitrāntenaira] lakṣayet ||
       ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele śārīre tṛtīyo ' dhyāyaḥ || caturtho ' dhyāyaḥ || athātaḥ
-      puruṣanicayaṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele śārīre tṛtīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="4" type="adhyāya">
-     <l xml:id="BS.4.4.1"><label>4.4.1</label> iha khalu bho<note/>ayam[<note/>jaya]-annātpuruṣo bhavati
+     <l xml:id="BS.4.4.1"><label>4.4.1</label> caturtho ' dhyāyaḥ || athātaḥ
+       puruṣanicayaṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       iha khalu bho<note/>ayam[<note/>jaya]-annātpuruṣo bhavati
       |
       <caesura/>
       <note/>rasajanmāno ' sya[<note/>rajja] vyādhayo bhavanti |
@@ -3377,14 +3379,14 @@
       <caesura/>
        rasodbhavaḥ pumāṃstasmād raso jīvanamucyate || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele śārīre caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athātaḥ
-      śarīranicayaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele śārīre caturtho ' dhyāyaḥ || </l>
     </div>
 
     <div n="5" type="adhyāya">
-     <l xml:id="BS.4.5.1"><label>4.5.1</label> iha khalvojastejaḥ śarīre nity e<note/>ca[<note/>va]
+     <l xml:id="BS.4.5.1"><label>4.5.1</label> || pañcamo ' dhyāyaḥ || athātaḥ
+       śarīranicayaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       iha khalvojastejaḥ śarīre nity e<note/>ca[<note/>va]
       bhavataḥ |
       <caesura/>
       <note/>tayoḥ[<note/>teyo] sthānāni dvādaśa bhavanti |
@@ -3537,14 +3539,14 @@
       <caesura/>
        mano buddhiś ca sarveṣāṃ brahmaṇi pratitiṣṭhati || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele śārīre pañcamo ' dhyāyaḥ || || ṣaṣṭho ' dhyāyaḥ || athātaḥ
-      khaḍḍikāṃ garbhāvakrāntiṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele śārīre pañcamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="6" type="adhyāya">
-     <l xml:id="BS.4.6.1"><label>4.6.1</label> iha khalu bho mātṛjaś cāyaṃ garbhaḥ pitṛjaś cātmajaś ca
+     <l xml:id="BS.4.6.1"><label>4.6.1</label> || ṣaṣṭho ' dhyāyaḥ || athātaḥ
+       khaḍḍikāṃ garbhāvakrāntiṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       iha khalu bho mātṛjaś cāyaṃ garbhaḥ pitṛjaś cātmajaś ca
       sātmyajaś ca rasajaś ca |
       <caesura/>
        asti ca sattvam<note/>aupapādakam[<note/>aupavādakam] ity ātreyavacanam |
@@ -3597,14 +3599,14 @@
        saṃsmaretpūrvacaritaṃ sukṛte<note/>vedavad[<note/>vedavidṛja] dvijaḥ || ity 
       āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele śārīre ṣaṣṭho ' dhyāyaḥ || || saptamo ' dhyāyaḥ || athātaḥ
-      śarīrasaṃkhyāśārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele śārīre ṣaṣṭho ' dhyāyaḥ || </l>
     </div>
 
     <div n="7" type="adhyāya">
-     <l xml:id="BS.4.7.1"><label>4.7.1</label> iha khalu śarīre ṣaṭ tvaco bhavanti |
+     <l xml:id="BS.4.7.1"><label>4.7.1</label> || saptamo ' dhyāyaḥ || athātaḥ
+       śarīrasaṃkhyāśārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       iha khalu śarīre ṣaṭ tvaco bhavanti |
       <caesura/>
        udakadharā prathamā ' sṛgdharā
       dvitīyā,<note/>sidhmakilāsasaṃbhava[<note/>maṃ] adhiṣṭhānā tṛtīyā,
@@ -3692,14 +3694,14 @@
        jagataścopapannāṃś ca<note/>sarvān[<note/>svarbhā] paśyanti mānavān || ity 
       āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele śārīre saptamo ' dhyāyaḥ || || aṣṭamo ' dhyāyaḥ || athāto
-      jātisūtrīyaṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele śārīre saptamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="8" type="adhyāya">
-     <l xml:id="BS.4.8.1"><label>4.8.1</label> iha khalu bhoḥ yāḥ striyaḥ pathyalaghubhojinyo '
+     <l xml:id="BS.4.8.1"><label>4.8.1</label> || aṣṭamo ' dhyāyaḥ || athāto
+       jātisūtrīyaṃ śārīraṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       iha khalu bhoḥ yāḥ striyaḥ pathyalaghubhojinyo '
       nudāvartanaśīlā apraduṣṭā yathāgarbhāśayāḥ suviśuddhasrotaso bhavanti, tā
       ācakṣate avandhyāḥ iti kuśalāḥ |
       <caesura/>
@@ -3809,9 +3811,7 @@
       tīkṣṇaphala-<note/>tailena[<note/>taire]-anuvāsayet<note/> ||
       [<note/>ayamadhyāyaḥ mātukāyāmardhe vicchinno dṛśyate |] |.. |.. |.. |.. |..
       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. iti bhele
-      śārīre ' ṣṭame ' dhyāyaḥ || iti bhelasaṃhitāyāṃ, śārīrasthānaṃ samāptam || ||
-      indriyasthānaḥ || || prathamo ' dhyāyaḥ || -----------------------------------
-      -----------------------------------</l>
+      śārīre ' ṣṭame ' dhyāyaḥ || iti bhelasaṃhitāyāṃ, śārīrasthānaṃ samāptam || </l>
     </div>
    </div>
 
@@ -3820,7 +3820,10 @@
 <head>Indriyasthānam</head>
     <div n="1" type="adhyāya">
 
-     <l xml:id="BS.5.1.0" cert="low"><label>5.1.0" cert="low</label> |----------------dve vā jāta eva vinaśyati |
+     <l xml:id="BS.5.1.0" cert="low"><label>5.1.0" cert="low</label> ||
+       indriyasthānaḥ || || prathamo ' dhyāyaḥ || -----------------------------------
+       -----------------------------------
+       |----------------dve vā jāta eva vinaśyati |
       <caesura/>
      </l>
      <l xml:id="BS.5.1.1"><label>5.1.1</label> hrasvaikapakṣo vitato yas tu garbhas tu susvaraḥ |
@@ -3880,11 +3883,12 @@
       <caesura/>
        rasāyanopayogāc ca sa dīrghamanujīvati || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele indriye prathamo ' dhyāyaḥ || || dvitīyo ' dhyāyaḥ || </l>
+       iti bhele indriye prathamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="2" type="adhyāya">
-     <l xml:id="BS.5.2.1"><label>5.2.1</label> mukhaṃ netre śarīraṃ ca pāṇipādaṃ tathaiva ca |
+     <l xml:id="BS.5.2.1"><label>5.2.1</label> || dvitīyo ' dhyāyaḥ ||
+       mukhaṃ netre śarīraṃ ca pāṇipādaṃ tathaiva ca |
       <caesura/>
        saraktaṃ dṛśyate yasya sa vai svastho bhaviṣyati || 5|</l>
      <l xml:id="BS.2.2."><label>2.2.</label> yasya gomayacūrṇābhaṃ narāṇāṃ mūrdhni dṛśyate |
@@ -3909,15 +3913,16 @@
        ātapādhiṣṭhito yas tu na |.. prakāśace |
       <caesura/>
        na ca lohitasaṃyu<gap reason="damage" n="14" unit="char"/>
-      <gap reason="damage" n="20" unit="char"/> || tṛtīyo ' dhyāyaḥ || <gap
-       reason="damage" n="59" unit="char"/>
-      <gap reason="damage" n="59" unit="char"/> Bhṣ5.3.? |
-      <caesura/>
-       |...dhitasvapne tāṃ rātriṃ nātivartate || </l>
+      <gap reason="damage" n="20" unit="char"/> </l>
     </div>
 
     <div n="3" type="adhyāya">
-     <l xml:id="BS.5.3.1"><label>5.3.1</label> iyaṃ me śiṣṭaśibikā vaiḍūryamaṇiyantritā |
+     <l xml:id="BS.5.3.1"><label>5.3.1</label> || tṛtīyo ' dhyāyaḥ || <gap
+       reason="damage" n="59" unit="char"/>
+       <gap reason="damage" n="59" unit="char"/> Bhṣ5.3.? |
+       <caesura/>
+       |...dhitasvapne tāṃ rātriṃ nātivartate ||
+       iyaṃ me śiṣṭaśibikā vaiḍūryamaṇiyantritā |
       <caesura/>
        evaṃ pralāpayeccārto gatāyuriti taṃ viduḥ || </l>
      <l xml:id="BS.5.3.2"><label>5.3.2</label> prajvalaty api yo dīpe tama evābhipaśyati |
@@ -3946,11 +3951,12 @@
        na cikitsāṃ prayuñjīta yathāmārgaṃ<note/>cikīrṣakaḥ || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele indriye tṛtīyo ' dhyāyaḥ || || caturtho ' dhyāyaḥ || </l>
+       iti bhele indriye tṛtīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="4" type="adhyāya">
-     <l xml:id="BS.5.4.1"><label>5.4.1</label> yadāturasya hṛdayaṃ vāyuḥ saṃgṛhya tiṣṭhati |
+     <l xml:id="BS.5.4.1"><label>5.4.1</label> || caturtho ' dhyāyaḥ ||
+       yadāturasya hṛdayaṃ vāyuḥ saṃgṛhya tiṣṭhati |
       <caesura/>
       <note/>dhamanīssaṃparīpīḍya sadyo jahyāt sa jīvitam |
       <caesura/>
@@ -3989,14 +3995,14 @@
       <caesura/>
        ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele indriye caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athāto
-      yasyaśyāvīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye caturtho ' dhyāyaḥ || </l>
     </div>
 
     <div n="5" type="adhyāya">
-     <l xml:id="BS.5.5.1"><label>5.5.1</label> yasya śyāve ume netre dṛśyete harite tathā |
+     <l xml:id="BS.5.5.1"><label>5.5.1</label> || pañcamo ' dhyāyaḥ || athāto
+       yasyaśyāvīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       yasya śyāve ume netre dṛśyete harite tathā |
       <caesura/>
        utpannaś ca śirorogaḥ phalitaṃ tasya jīvitam || </l>
      <l xml:id="BS.5.5.2"><label>5.5.2</label><note/>haritāś ca sirā yasya romakūpāś ca lohitāḥ |
@@ -4047,14 +4053,14 @@
       <note/>na cikitsāṃ prayuñjīta<note/>yaśomārgapratīkṣayā || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele indriye pañcamo ' dhyāyaḥ || || ṣaṣṭho ' dhyāyaḥ || athātaḥ
-      pūrvarūpīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye pañcamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="6" type="adhyāya">
-     <l xml:id="BS.5.6.1"><label>5.6.1</label><note/>antarlohitakāyas tu bahiḥ pāṇḍuḥ prakāśate |
+     <l xml:id="BS.5.6.1"><label>5.6.1</label> || ṣaṣṭho ' dhyāyaḥ || athātaḥ
+       pūrvarūpīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       <note/>antarlohitakāyas tu bahiḥ pāṇḍuḥ prakāśate |
       <caesura/>
        pūrvarūpaṃ tadācaṣṭe mānavasya mumūrṣataḥ || </l>
      <l xml:id="BS.5.6.2"><label>5.6.2</label> bahirlohitakāyas tu pāṇḍurantaḥ prakāśate |
@@ -4107,14 +4113,14 @@
       <caesura/>
        nopakrameta medhāvī ya icchedātmanaḥ sukham || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele indriye ṣaṣṭho ' dhyāyaḥ || || saptamo ' dhyāyaḥ || athāta
-      indriyāṇīkamindriyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye ṣaṣṭho ' dhyāyaḥ || </l>
     </div>
 
     <div n="7" type="adhyāya">
-     <l xml:id="BS.5.7.1"><label>5.7.1</label> indriyāṇi yathā jantoḥ parīkṣeta viśeṣataḥ |
+     <l xml:id="BS.5.7.1"><label>5.7.1</label> || saptamo ' dhyāyaḥ || athāta
+       indriyāṇīkamindriyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       indriyāṇi yathā jantoḥ parīkṣeta viśeṣataḥ |
       <caesura/>
        āyuḥpramāṇaṃ<note/>jijñāsurbhiṣak tanme nibodhata || </l>
      <l xml:id="BS.5.7.2"><label>5.7.2</label> annapānātparīkṣeta darśanādyaiś ca tattvataḥ |
@@ -4186,14 +4192,14 @@
       <caesura/>
        maraṇaṃ jīvitaṃ caiva sa bhiṣag jñātumarhati || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele indriye saptamo ' dhyāyaḥ || || aṣṭamo ' dhyāyaḥ || athāto
-      dūtādhyāyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye saptamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="8" type="adhyāya">
-     <l xml:id="BS.5.8.1"><label>5.8.1</label> tṛṇānnakhānvā chindan vai bhiṣajaṃ paripṛcchati |
+     <l xml:id="BS.5.8.1"><label>5.8.1</label> || aṣṭamo ' dhyāyaḥ || athāto
+       dūtādhyāyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       tṛṇānnakhānvā chindan vai bhiṣajaṃ paripṛcchati |
       <caesura/>
        āturasya yadā dūtaḥ pratyākhyeyastathāvidhaḥ || </l>
      <l xml:id="BS.5.8.2"><label>5.8.2</label> viplutaṃ bhāṣamāṇaś ca bhiṣajaṃ paripṛcchati |
@@ -4243,14 +4249,14 @@
       <note/>ya evaṃ veda nipuṇaṃ siddhikāmaḥ<note/>sa vai bhiṣak || ity āha
       bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele indriye aṣṭamo ' dhyāyaḥ || || navamo ' dhyāyaḥ || athāto
-      gomayacūrṇaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye aṣṭamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="9" type="adhyāya">
-     <l xml:id="BS.5.9.1"><label>5.9.1</label> cūrṇaṃ śirasi yasyaiva śuṣkagomayasannibham |
+     <l xml:id="BS.5.9.1"><label>5.9.1</label> || navamo ' dhyāyaḥ || athāto
+       gomayacūrṇaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       cūrṇaṃ śirasi yasyaiva śuṣkagomayasannibham |
       <caesura/>
        snehino dṛśyate jantormāsāddehaṃ jahāti saḥ || </l>
      <l xml:id="BS.5.9.2"><label>5.9.2</label> kṛśasya kapharogeṇa yasya śleṣmaparikṣayaḥ |
@@ -4315,14 +4321,14 @@
       <caesura/>
        nopakramettathā vīra rakṣannātmayaśaḥ sphuṭam || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele indriye navamo ' dhyāyaḥ || || daśamo ' dhyāyaḥ ||
-      athātaśchāyādhyāyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye navamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="10" type="adhyāya">
-     <l xml:id="BS.5.10.1"><label>5.10.1</label> anucchāyāthavā jantordṛḍhacchāyāthavā punaḥ |
+     <l xml:id="BS.5.10.1"><label>5.10.1</label> || daśamo ' dhyāyaḥ ||
+       athātaśchāyādhyāyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       anucchāyāthavā jantordṛḍhacchāyāthavā punaḥ |
       <caesura/>
        vicchinnā yasya vā chāyā na sa jīvati tādṛśaḥ || </l>
      <l xml:id="BS.5.10.2"><label>5.10.2</label> yo vidyutamivākāśe vyabhre paśyati mānavaḥ |
@@ -4363,14 +4369,14 @@
        sa<note/>jīvitaṃ ca mṛtyuṃ ca nṛṇāṃ vidyādbhiṣagvaraḥ || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele indriye daśamo ' dhyāyaḥ || || ekadaśo ' dhyāyaḥ || athātaḥ
-      puṣpīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye daśamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="11" type="adhyāya">
-     <l xml:id="BS.5.11.1"><label>5.11.1</label> śirasyaṅge raktavarṇaṃ yo ' nilaṃ vāpi paśyati |
+     <l xml:id="BS.5.11.1"><label>5.11.1</label> || ekadaśo ' dhyāyaḥ || athātaḥ
+       puṣpīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       śirasyaṅge raktavarṇaṃ yo ' nilaṃ vāpi paśyati |
       <caesura/>
        ghaṭikāmekavarṇaṃ vā sa puṣpita ihocyate || </l>
      <l xml:id="BS.5.11.2"><label>5.11.2</label> aṣṭāpadaṃ vā sukṛtaṃ jagatīṃ yaḥ prapaśyati |
@@ -4432,14 +4438,14 @@
       <note/>jīvitaṃ caiva mṛtyuṃ ca nṛṇāṃ vidyādvicakṣaṇaḥ || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele indriye ekādaśo ' dhyāyaḥ || || dvādaśo ' dhyāyaḥ ||
-      athāto+<note/>avākcitīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele indriye ekādaśo ' dhyāyaḥ || </l>
     </div>
 
     <div n="12" type="adhyāya">
-     <l xml:id="BS.5.12.1"><label>5.12.1</label> avākcitā vā jihmā vā yasya chāyālpikā bhāvet |
+     <l xml:id="BS.5.12.1"><label>5.12.1</label> || dvādaśo ' dhyāyaḥ ||
+       athāto+<note/>avākcitīyaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       avākcitā vā jihmā vā yasya chāyālpikā bhāvet |
       <caesura/>
        netre ca viṣame syātāṃ paretaṃ tasya jīvitam || 5.1</l>
      <l xml:id="BS.5.12.2"><label>5.12.2</label> yadi dīnāni pakṣmāṇi na nimīlanti dehinaḥ |
@@ -4495,12 +4501,7 @@
        yathoktaṃ veda vedāyuḥ sa bhiṣak śāstrakovidaḥ || ity āha bhagavān ātreyaḥ |
       <caesura/>
        iti bhele indriye dvādaśo ' dhyāyaḥ || iti bhelasaṃhitāyām indriyasthānaṃ
-      samāptam || |
-      <caesura/>
-       |cikitsāsthānam || || prathamo ' dhyāyaḥ || athāta ekādaśasarpiṣkaṃ
-      vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+      samāptam || </l>
 
 
 
@@ -4516,7 +4517,12 @@
     
     <div n="1" type="adhyāya">
 
-     <l xml:id="BS.6.1.1"><label>6.1.1</label> akalpayan na yajñāṅgaṃ purā dakṣastriśūline |
+     <l xml:id="BS.6.1.1"><label>6.1.1</label> |
+       <caesura/>
+       |cikitsāsthānam || || prathamo ' dhyāyaḥ || athāta ekādaśasarpiṣkaṃ
+       vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       akalpayan na yajñāṅgaṃ purā dakṣastriśūline |
       <caesura/>
        tasmāt praṇāśayāmāsa yajñaṃ dakṣasya śaṅkaraḥ || </l>
      <l xml:id="BS.6.1.2"><label>6.1.2</label> taṃ ca nāśayatā yajñaṃ devyāḥ priyacikīrṣayā |
@@ -4673,15 +4679,15 @@
        prayatena prayoktavyaṃ<note/>cirajvaracikitsitam || ity āha bhagavān ātreyaḥ
       |
       <caesura/>
-       iti bhele cikitsite prathamo ' dhyāyaḥ || || dvitīyo ' dhyāyaḥ || athāto
-      viṣamajvaracikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele cikitsite prathamo ' dhyāyaḥ || </l>
 
     </div>
 
     <div n="2" type="adhyāya">
-     <l xml:id="BS.6.2.1"><label>6.2.1</label> kecidvātātmakaṃ<note/>prāhurbhiṣajo viṣamajvaram |
+     <l xml:id="BS.6.2.1"><label>6.2.1</label> || dvitīyo ' dhyāyaḥ || athāto
+       viṣamajvaracikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       kecidvātātmakaṃ<note/>prāhurbhiṣajo viṣamajvaram |
       <caesura/>
        sannipātodbhavaṃ kecidapare pittasambhavam || </l>
      <l xml:id="BS.6.2.2."><label>6.2.2.</label> śleṣmajaṃ tvapare prāhurapare bhūtasambhavam |
@@ -4804,14 +4810,14 @@
       <caesura/>
        homairbalividhānaiś ca nāśayed viṣamajvaram || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele cikitsite dvitīyo ' dhyāyaḥ || || tṛtīyo ' dhyāyaḥ || athāto
-      raktapittacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele cikitsite dvitīyo ' dhyāyaḥ || </l>
     </div>
 
     <div n="3" type="adhyāya">
-     <l xml:id="BS.6.3.1"><label>6.3.1</label> ūrdhvaṃ cādhaś ca martyānāṃ raktapittaṃ pravartate |
+     <l xml:id="BS.6.3.1"><label>6.3.1</label> || tṛtīyo ' dhyāyaḥ || athāto
+       raktapittacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       ūrdhvaṃ cādhaś ca martyānāṃ raktapittaṃ pravartate |
       <caesura/>
        atas tu dvividhā proktā cikitsā raktapittinaḥ || </l>
      <l xml:id="BS.6.3.2"><label>6.3.2</label> atyamlalavaṇāhārāt satatātapasevanāt |
@@ -4836,14 +4842,14 @@
       <caesura/>
        sarvasrotaḥpravṛttaṃ tu raktapittaṃ na sidhyati || raktapittamadhobhāgaṃ<note/>
       <note/>chardinaissamupācaret || <gap reason="damage" n="51" unit="char"/>
-      <gap reason="damage" n="51" unit="char"/> ||<note/>caturtho ' dhyāyaḥ || <gap
-       reason="damage" n="26" unit="char"/>
-      <gap reason="damage" n="51" unit="char"/>
-     </l>
+      <gap reason="damage" n="51" unit="char"/> </l>
     </div>
 
     <div n="4" type="adhyāya">
-     <l xml:id="BS.6.4.1"><label>6.4.1</label> svapneṣu nityaṃ paśyanti śuṣkāndagdhāṃś ca pādapān |
+     <l xml:id="BS.6.4.1"><label>6.4.1</label> ||<note/>caturtho ' dhyāyaḥ || <gap
+       reason="damage" n="26" unit="char"/>
+       <gap reason="damage" n="51" unit="char"/>
+       svapneṣu nityaṃ paśyanti śuṣkāndagdhāṃś ca pādapān |
       <caesura/>
       <note/>makṣikātṛṇakeśāś ca sampatantyasya bhojane || </l>
      <l xml:id="BS.6.4.2"><label>6.4.2</label> romāṇi mūrdhajāś cāsya vivardhante viśeṣataḥ |
@@ -5136,12 +5142,13 @@
       <caesura/>
        yaśaḥsvargakaraṃ puṇyaṃ śiṣyāṇāmarthasiddhaye || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele cikitsite caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athāto
-      gulmacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ | </l>
+       iti bhele cikitsite caturtho ' dhyāyaḥ || </l>
     </div>
 
     <div n="5" type="adhyāya">
-     <l xml:id="BS.6.5.1"><label>6.5.1</label> pañca gulmāḥ samuddiṣṭā nidāneṣu savistaram |
+     <l xml:id="BS.6.5.1"><label>6.5.1</label> || pañcamo ' dhyāyaḥ || athāto
+       gulmacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       pañca gulmāḥ samuddiṣṭā nidāneṣu savistaram |
       <caesura/>
        gulmatvaṃ teṣu vakṣyāmi cikitsāṃ tu pṛthak pṛthak || </l>
      <l xml:id="BS.6.5.2"><label>6.5.2</label> mārutaḥ kupito dehe srotāṃsyunnahya sarvaśaḥ |
@@ -5295,14 +5302,14 @@
       <caesura/>
        apasmārānathonmādān<note/><gap reason="damage" n="12" unit="char"/>
       <gap reason="damage" n="25" unit="char"/>
-      <gap reason="damage" n="25" unit="char"/> || ṣaṣṭho ' dhyāyaḥ || <gap
-       reason="damage" n="52" unit="char"/>
-      <gap reason="damage" n="52" unit="char"/>
-     </l>
+      <gap reason="damage" n="25" unit="char"/> </l>
     </div>
 
     <div n="6" type="adhyāya">
-     <l xml:id="BS.6.6.1"><label>6.6.1</label> |<gap reason="damage" n="16" unit="char"/>pittaṃ bhṛśaṃ
+     <l xml:id="BS.6.6.1"><label>6.6.1</label> || ṣaṣṭho ' dhyāyaḥ || <gap
+       reason="damage" n="52" unit="char"/>
+       <gap reason="damage" n="52" unit="char"/>
+       |<gap reason="damage" n="16" unit="char"/>pittaṃ bhṛśaṃ
       dehe prakupyati |
       <caesura/>
        tatpraduṣṭaṃ dūṣayati raktamāṃsamatholbaṇam || </l>
@@ -5520,14 +5527,14 @@
        |<gap reason="damage" n="17" unit="char"/>bhallātakam<gap reason="damage"
        n="9" unit="char"/> |
       <caesura/>
-      <gap reason="damage" n="28" unit="char"/> || saptamo ' dhyāyaḥ || <gap
-       reason="damage" n="27" unit="char"/>
-      <gap reason="damage" n="27" unit="char"/>
-     </l>
+      <gap reason="damage" n="28" unit="char"/> </l>
     </div>
 
     <div n="7" type="adhyāya">
-     <l xml:id="BS.6.7.1"><label>6.7.1</label><note/>striyaṃ ca yuktyā seveta divāsvapnaṃ ca varjayet |
+     <l xml:id="BS.6.7.1"><label>6.7.1</label> || saptamo ' dhyāyaḥ || <gap
+       reason="damage" n="27" unit="char"/>
+       <gap reason="damage" n="27" unit="char"/>
+       <note/>striyaṃ ca yuktyā seveta divāsvapnaṃ ca varjayet |
       <caesura/>
        kaṣāyasnānanity asya kaṣāyodakasevinaḥ || </l>
      <l xml:id="BS.6.7.2"><label>6.7.2</label> viśeṣataḥ śleṣmamehān tīkṣṇair eva samācaret |
@@ -5637,14 +5644,14 @@
       <caesura/>
        cikitsitaṃ vistareṇa yathāvadanupūrvaśaḥ ||<note/> ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele cikitsite saptamo ' dhyāyaḥ || || aṣṭamo ' dhyāyaḥ || athāta<note/>
-      unmādacikitsitaṃ<note/> vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele cikitsite saptamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="8" type="adhyāya">
-     <l xml:id="BS.6.8.1"><label>6.8.1</label> pañconmādās samākhyātā nidāneṣu savistarāḥ |
+     <l xml:id="BS.6.8.1"><label>6.8.1</label> || aṣṭamo ' dhyāyaḥ || athāta<note/>
+       unmādacikitsitaṃ<note/> vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       pañconmādās samākhyātā nidāneṣu savistarāḥ |
       <caesura/>
       <note/>saliṅgāssasamucthānāḥ śṛṇu teṣāṃ cikitsitam || </l>
      <l xml:id="BS.6.8.2"><label>6.8.2</label><note/>cittabuddhīnriyāṇāṃ hi teṣām api viceṣṭitam |
@@ -5749,14 +5756,14 @@
       <caesura/>
        vedoktāḥ karmavidhayaḥ kāryāśconmādanāśanāḥ || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele cikitsite aṣṭamo ' dhyāyaḥ || || navamo ' dhyāyaḥ || athāto '
-      pasmāracikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele cikitsite aṣṭamo ' dhyāyaḥ || </l>
     </div>
 
     <div n="9" type="adhyāya">
-     <l xml:id="BS.6.9.1"><label>6.9.1</label> uktaṃ rūpaṃ<note/>samutthānamapasmārasya kṛtsnaśaḥ |
+     <l xml:id="BS.6.9.1"><label>6.9.1</label> || navamo ' dhyāyaḥ || athāto '
+       pasmāracikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       uktaṃ rūpaṃ<note/>samutthānamapasmārasya kṛtsnaśaḥ |
       <caesura/>
        nidāneṣu, cikitsāṃ tu vistareṇa nibodha me || </l>
      <l xml:id="BS.6.9.2"><label>6.9.2</label><note/>gajāśvayānātpatanādabhighātāt<note/> bhramād api |
@@ -5786,12 +5793,12 @@
       <caesura/>
        arśāṃsi gulmānmehāṃś ca<note/>plīhānamudarāmayam<note/> ||<note/>
       <gap reason="damage" n="28" unit="char"/>
-      <gap reason="damage" n="28" unit="char"/> || daśamo ' dhyāyaḥ || </l>
+      <gap reason="damage" n="28" unit="char"/> </l>
     </div>
 
     <div n="10" type="adhyāya">
-     <l xml:id="BS.6.10.0"><label>6.10.0</label>
-      <gap reason="damage" n="28" unit="char"/>
+     <l xml:id="BS.6.10.0"><label>6.10.0</label> || daśamo ' dhyāyaḥ ||
+       <gap reason="damage" n="28" unit="char"/>
       <gap reason="damage" n="28" unit="char"/> bhayād vā yadi śokād vā yo ' tisāraḥ
       pravartate |
       <caesura/>
@@ -6089,16 +6096,16 @@
        tasmāt tayor gatiṃ dṛṣṭvā vātaghnīṃ kārayetkriyām || ity āha bhagavān ātreyaḥ
       |
       <caesura/>
-       iti bhele ṣaḍviṃśo?? ' dhyāyaḥ || || ekādaśo ' dhyāyaḥ || athāto
-      grahaṇīcikitsāṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele ṣaḍviṃśo?? ' dhyāyaḥ || </l>
 
 
     </div>
 
     <div n="11" type="adhyāya">
-     <l xml:id="BS.6.11.1"><label>6.11.1</label> agnirvā++āyurmanuṣyāṇāṃ prāṇās tatra pratiṣṭhitāḥ |
+     <l xml:id="BS.6.11.1"><label>6.11.1</label> || ekādaśo ' dhyāyaḥ || athāto
+       grahaṇīcikitsāṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       agnirvā++āyurmanuṣyāṇāṃ prāṇās tatra pratiṣṭhitāḥ |
       <caesura/>
        balamārogyamāyuś ca sukhaduḥkhaṃ tadāśrayam || </l>
      <l xml:id="BS.6.11.2"><label>6.11.2</label> mriyate hy upaśānte ' gnau yukte coṣmaṇi<note/>jīvati |
@@ -6171,26 +6178,27 @@
       /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
        unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
        reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
-      /> |<gap reason="damage" n="2" unit="char"/> || dvādaśo ' dhyāyaḥ || <gap
-       reason="damage" n="3" unit="char"/> |<gap reason="damage" n="2" unit="char"
-      /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
-       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
-       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
-      /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
-       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
-       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
-      /> |<gap reason="damage" n="2" unit="char"/>
-      <gap reason="damage" n="3" unit="char"/> |<gap reason="damage" n="2"
-       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
-       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
-      /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
-       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
-       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
-      /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
-       unit="char"/> |<gap reason="damage" n="2" unit="char"/></l>
+      /> |<gap reason="damage" n="2" unit="char"/> </l>
     </div>
     <div n="12" type="adhyāya">
-     <l xml:id="BS.6.12.1"><label>6.12.1</label><note/>tālapatrīkaṣāyaṃ<note/> tu mūtrāghāteṣu dāpayet |
+     <l xml:id="BS.6.12.1"><label>6.12.1</label> || dvādaśo ' dhyāyaḥ || <gap
+       reason="damage" n="3" unit="char"/> |<gap reason="damage" n="2" unit="char"
+       /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
+       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
+       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
+       /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
+       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
+       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
+       /> |<gap reason="damage" n="2" unit="char"/>
+       <gap reason="damage" n="3" unit="char"/> |<gap reason="damage" n="2"
+       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
+       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
+       /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
+       unit="char"/> |<gap reason="damage" n="2" unit="char"/> |<gap
+       reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2" unit="char"
+       /> |<gap reason="damage" n="2" unit="char"/> |<gap reason="damage" n="2"
+       unit="char"/> |<gap reason="damage" n="2" unit="char"/>
+       <note/>tālapatrīkaṣāyaṃ<note/> tu mūtrāghāteṣu dāpayet |
       <caesura/>
        bhojanaṃ krauñcamāṃsena mūtrāghāteṣu<note/> śasyate || </l>
      <l xml:id="BS.6.12.2"><label>6.12.2</label> piṣṭvā tu tasya caivāsthi kṣīreṇa saha pāyayet |
@@ -6218,13 +6226,13 @@
       <caesura/>
        rūpāṇi caiva sarveṣāṃ śiṣyāṇāmarthasiddhaye || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele<note/>dvādaśo ' dhyāyaḥ || || trayodaśo ' dhyāyaḥ || athāta
-      udaracikitsāṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>dvādaśo ' dhyāyaḥ || </l>
     </div>
     <div n="13" type="adhyāya">
-     <l xml:id="BS.6.13.1"><label>6.13.1</label> bhārābhihatadehasya kaṭutiktopasevinaḥ |
+     <l xml:id="BS.6.13.1"><label>6.13.1</label> || trayodaśo ' dhyāyaḥ || athāta
+       udaracikitsāṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       bhārābhihatadehasya kaṭutiktopasevinaḥ |
       <caesura/>
        vāyussarvaśarīrastho duṣṭo vātahatāḥ sirāḥ || </l>
      <l xml:id="BS.6.13.2"><label>6.13.2</label> gatvā hi pūrayetkoṣṭhaṃ<note/> tathādhmānaṃ karoti ca |
@@ -6406,11 +6414,12 @@
       <caesura/>
        mahāmayūrāñjayati svareṇa balena nāgāṃsturagāñjavena |
       <caesura/>
-       smṛmatibalamasatya(?)<note/> |.. |.. |.. |.. |... || || caturdaśo ' dhyāyaḥ
-      || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. </l>
+       smṛmatibalamasatya(?)<note/> |.. |.. |.. |.. |... || </l>
     </div>
     <div n="14" type="adhyāya">
-     <l xml:id="BS.6.14.1"><label>6.14.1</label> vaṃśako naktamālaś ca mūrvā kaṭukarohiṇī |
+     <l xml:id="BS.6.14.1"><label>6.14.1</label> || caturdaśo ' dhyāyaḥ
+       || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       vaṃśako naktamālaś ca mūrvā kaṭukarohiṇī |
       <caesura/>
        tarkārī pragrahaś caiva pīlūni niculāni ca || </l>
      <l xml:id="BS.6.14.2"><label>6.14.2</label> asanaḥ sptaparṇaś ca triphalā maricāni ca |
@@ -6483,16 +6492,16 @@
      <l xml:id="BS.6.14.24"><label>6.14.24</label> samyak proktam idaṃ sarvamūrustambhacikitsitam || ity 
       āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele<note/>caturdaśo ' dhyāyaḥ || || pañcadaśo ' dhyāyaḥ |
-      <caesura/>
-       |
-      <caesura/>
-       athāto visarpavātaśoṇitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>caturdaśo ' dhyāyaḥ || </l>
     </div>
     <div n="15" type="adhyāya">
-     <l xml:id="BS.6.15.1"><label>6.15.1</label> vātātpittātkaphāccaiva sannipātād<note/> dvayād api |
+     <l xml:id="BS.6.15.1"><label>6.15.1</label> || pañcadaśo ' dhyāyaḥ |
+       <caesura/>
+       |
+       <caesura/>
+       athāto visarpavātaśoṇitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       vātātpittātkaphāccaiva sannipātād<note/> dvayād api |
       <caesura/>
        visarpāḥ pañca nirdiṣṭās teṣāṃ vakṣyāmi lakṣaṇam || </l>
      <l xml:id="BS.6.15.2"><label>6.15.2</label> kaṣāyakaṭurūkṣāṃś ca yo nityam upasevate |
@@ -6633,13 +6642,13 @@
        pāṭanaṃ tatra kurvīta<note/>suvikalpya prayogavit || ity āha bhagavān ātreyaḥ
       |
       <caesura/>
-       iti bhele<note/>pañcadaśo ' dhyāyaḥ || || ṣoḍaśo ' dhyāyaḥ || athāto ' rśasāṃ
-      cikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>pañcadaśo ' dhyāyaḥ || </l>
     </div>
     <div n="16" type="adhyāya">
-     <l xml:id="BS.6.16.1"><label>6.16.1</label> vātātpittātkaphāccaiva<note/> sannipātāttathaiva ca |
+     <l xml:id="BS.6.16.1"><label>6.16.1</label> || ṣoḍaśo ' dhyāyaḥ || athāto ' rśasāṃ
+       cikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       vātātpittātkaphāccaiva<note/> sannipātāttathaiva ca |
       <caesura/>
        sahajāni ca raktāc ca ṣoḍārśāṃsyatha dehinām || </l>
      <l xml:id="BS.6.16.2"><label>6.16.2</label> teṣāṃ nidānaṃ vakṣyāmi cikitsāṃ cānupūrvaśaḥ |
@@ -6913,13 +6922,13 @@
       <note/>raktajāssahajā yāpyāḥ sādhyā anye trayo ' pi te || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele<note/>ṣoḍaśo ' dhyāyaḥ || || saptadaśo ' dhyāyaḥ || athātaḥ
-      śvayathucikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>ṣoḍaśo ' dhyāyaḥ || </l>
     </div>
     <div n="17" type="adhyāya">
-     <l xml:id="BS.6.17.1"><label>6.17.1</label> yaḥ kṣīṇamāṃso mandāgniḥ vyādhiyuktas sudurbalaḥ |
+     <l xml:id="BS.6.17.1"><label>6.17.1</label> || saptadaśo ' dhyāyaḥ || athātaḥ
+       śvayathucikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       yaḥ kṣīṇamāṃso mandāgniḥ vyādhiyuktas sudurbalaḥ |
       <caesura/>
        gurūṇi sevate ' tyartham amlapittakarāṇi<note/> ca || </l>
      <l xml:id="BS.6.17.2"><label>6.17.2</label> sadyo vānto virikto vā gurūṇyannāni sevate |
@@ -7076,13 +7085,13 @@
        śvāso ' tisāro hikkā ca<note/>śophasyopadravāḥ smṛtāḥ || ity āha bhagavān
       ātreyaḥ |
       <caesura/>
-       iti bhele<note/>saptadaśo ' dhyāyaḥ || || aṣṭādaśo ' dhyāyaḥ || athāta
-      udāvartacikitsitaṃ vyākhayāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>saptadaśo ' dhyāyaḥ || </l>
     </div>
     <div n="18" type="adhyāya">
-     <l xml:id="BS.6.18.1"><label>6.18.1</label> prakṛtyā<note/>vātalo yas tu rūkṣāṇyannāni sevate |
+     <l xml:id="BS.6.18.1"><label>6.18.1</label> || aṣṭādaśo ' dhyāyaḥ || athāta
+       udāvartacikitsitaṃ vyākhayāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       prakṛtyā<note/>vātalo yas tu rūkṣāṇyannāni sevate |
       <caesura/>
        kaṣāyaṃ kaṭukānnityaṃ rasāṃstiktāṃś ca sevate || </l>
      <l xml:id="BS.6.18.2"><label>6.18.2</label> karkandhūni<note/>kapitthāni karīralikucāni ca |
@@ -7132,13 +7141,14 @@
      <l xml:id="BS.6.18.16"><label>6.18.16</label> nityaṃ bhinnapurīṣais taṃ bhojanīyair upācaret |
       <caesura/>
        evaṃ tasya purīṣaṃ hi<note/>vāyurbhūyo na śoṣayet<note/> || |.. |.. |.. |..
-      |.. |.. |.. |.. |
-      <caesura/>
-       |ekonaviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. </l>
+      |.. |.. |.. |.. </l>
     </div>
     <div n="19" type="adhyāya">
-     <l xml:id="BS.6.19.1"><label>6.19.1</label><note/>sarvāṇy etāni liṅgāni dṛśyante<note/>marmarogiṇaḥ |
+     <l xml:id="BS.6.19.1"><label>6.19.1</label> |
+       <caesura/>
+       |ekonaviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |..
+       <note/>sarvāṇy etāni liṅgāni dṛśyante<note/>marmarogiṇaḥ |
       <caesura/>
        sannipātasamuttho ' sau naiva sidhyati karmaṇā || </l>
      <l xml:id="BS.6.19.2"><label>6.19.2</label> nirbhidyate devanārtaṃ dahyate marma dūyate |
@@ -7216,13 +7226,13 @@
       <caesura/>
        laghūni cānnapānāni śasyante teṣu sarvadā || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele<note/>ekonaviṃśo ' dhyāyaḥ || || viṃśo ' dhyāyaḥ || athātaḥ
-      kāsacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>ekonaviṃśo ' dhyāyaḥ || </l>
     </div>
     <div n="20" type="adhyāya">
-     <l xml:id="BS.6.20.1"><label>6.20.1</label> pañca kāsāḥ<note/>samuddiṣṭā vātapittakaphātmakāḥ |
+     <l xml:id="BS.6.20.1"><label>6.20.1</label> || viṃśo ' dhyāyaḥ || athātaḥ
+       kāsacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       pañca kāsāḥ<note/>samuddiṣṭā vātapittakaphātmakāḥ |
       <caesura/>
        kṣatajaḥ kṣayajaśceti teṣāṃ vakṣyāmi lakṣaṇam || </l>
      <l xml:id="BS.6.20.2"><label>6.20.2</label> udāvartādabhīghātād vyāyāmāc cāpi karśanāt |
@@ -7350,15 +7360,16 @@
       <caesura/>
        avatārya yavaissiddhair uddharet tu harītakīḥ || </l>
      <l xml:id="BS.6.20.43"><label>6.20.43</label> bhedanaṃ tāsu kartavyaṃ tato vaṃśaśalākayā || |.. |..
-      |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. || ekaviṃśo ' dhyāyaḥ
-      || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. <note/>etadālepanaṃ kāryaṃ śaṅkhakasya vināśanam |
-      <caesura/>
-       etānyeva tu sarvāṇi kaṣāyam upadhārayet || </l>
+      |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. </l>
     </div>
     <div n="21" type="adhyāya">
-     <l xml:id="BS.6.21.1"><label>6.21.1</label> tena śītena kartavyaṃ bahuśaḥ pariṣecanam || </l>
+     <l xml:id="BS.6.21.1"><label>6.21.1</label> || ekaviṃśo ' dhyāyaḥ
+       || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. <note/>etadālepanaṃ kāryaṃ śaṅkhakasya vināśanam |
+       <caesura/>
+       etānyeva tu sarvāṇi kaṣāyam upadhārayet ||
+       tena śītena kartavyaṃ bahuśaḥ pariṣecanam || </l>
      <l xml:id="BS.6.21.2"><label>6.21.2</label> nityaṃ vegapratīghātādajīrṇādhyaśanādapi<note/> |
       <caesura/>
        raktaṃ vāyuś ca kupitau mastake pratitiṣṭhataḥ || </l>
@@ -7591,12 +7602,12 @@
        srute kīṭe tu yadyasya karṇasrāvaḥ pravartate || yathoktaṃ tasya kurvīta
       karṇasrāvacikitsitam<note/> |
       <caesura/>
-       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. || dvāviṃśo '
-      dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-     </l>
+       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. </l>
     </div>
     <div n="22" type="adhyāya">
-     <l xml:id="BS.6.22.1"><label>6.22.1</label> ajīrṇe yaddivā bhuktaṃ na duṣyati yathā nṛṇām |
+     <l xml:id="BS.6.22.1"><label>6.22.1</label> || dvāviṃśo '
+       dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       ajīrṇe yaddivā bhuktaṃ na duṣyati yathā nṛṇām |
       <caesura/>
       <note/>vyuṣitaṃ dūṣyate vāpi tatra hetuṃ nibodha me || </l>
      <l xml:id="BS.6.22.2."><label>6.22.2.</label> vyāyacchato<note/> vicarataḥ vyākṣiptamanasas tathā |
@@ -7637,11 +7648,12 @@
       <caesura/>
        tasmād ajīrṇe<note/>vyuṣitaṃ bhojanaṃ pratiṣidhyate<note/> || |.. |.. |.. |..
       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. || trayoviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. </l>
+      |.. </l>
     </div>
     <div n="23" type="adhyāya">
-     <l xml:id="BS.6.23.1"><label>6.23.1</label> nidrāṃ caivātinidrāṃ ca mūrchāṃ caiva nibodha me |
+     <l xml:id="BS.6.23.1"><label>6.23.1</label> || trayoviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |..
+       nidrāṃ caivātinidrāṃ ca mūrchāṃ caiva nibodha me |
       <caesura/>
        tamasā hi samākrānte<note/>sattve divasasaṃkṣayāt || </l>
      <l xml:id="BS.6.23.2"><label>6.23.2</label> indriyāṇyasya karmabhyaḥ kramātpraviramantyatha<note/> |
@@ -7695,14 +7707,14 @@
       <caesura/>
        |
       <caesura/>
-       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. || caturviṃśo
-      ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. |.. |.. |||<note/>pajārditam |
-      <caesura/>
-     </l>
+       |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. </l>
     </div>
     <div n="24" type="adhyāya">
-     <l xml:id="BS.6.24.1"><label>6.24.1</label><note/>hanugrahaṃ pādaharṣaṃ pārśvaśūlaṃ jvaraṃ kṣayam |
+     <l xml:id="BS.6.24.1"><label>6.24.1</label> || caturviṃśo
+       ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |.. |.. |.. |||<note/>pajārditam |
+       <caesura/>
+       <note/>hanugrahaṃ pādaharṣaṃ pārśvaśūlaṃ jvaraṃ kṣayam |
       <caesura/>
        vardhmakuṇḍalikṛcchrāṇi hṛdgrahaṃ<note/>gātrajaṃ klamam || </l>
      <l xml:id="BS.6.24.2"><label>6.24.2</label> aśītiṃ<note/> vātikān rogān tailametadvyapohati |
@@ -7875,13 +7887,13 @@
       <caesura/>
        kuryāc chāstrānusāreṇa tathā siddhim avāpnuyāt || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele caturviṃśo ' dhyāyaḥ || || pañcaviṃśo ' dhyāyaḥ || athātaḥ
-      <note/>plīhahalīmakacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele caturviṃśo ' dhyāyaḥ || </l>
     </div>
     <div n="25" type="adhyāya">
-     <l xml:id="BS.6.25.1"><label>6.25.1</label> abhiṣyandīni bhojyāni<note/>bhuñjītātīva yo naraḥ |
+     <l xml:id="BS.6.25.1"><label>6.25.1</label> || pañcaviṃśo ' dhyāyaḥ || athātaḥ
+       <note/>plīhahalīmakacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       abhiṣyandīni bhojyāni<note/>bhuñjītātīva yo naraḥ |
       <caesura/>
        laṅghito vā<note/>virikto vā vyāyāmam upasevate || </l>
      <l xml:id="BS.6.25.2"><label>6.25.2</label> bhuktvā pītodako yas tu sahasā saṃpradhāvati |
@@ -7915,13 +7927,13 @@
      <l xml:id="BS.6.25.11"><label>6.25.11</label> ayor ajīyaṃ kṣīreṇa pāyayet tu rasāyanam |
       <caesura/>
        agastyābhayalehaṃ vā seveta prayataḥ śuciḥ || ity āha bhagavān ātreyaḥ || iti
-      bhele pañcaviṃśo ' dhyāyaḥ || || ṣaḍviṃśo ' dhyāyaḥ || athāto '
-      patantrakacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+      bhele pañcaviṃśo ' dhyāyaḥ || </l>
     </div>
     <div n="26" type="adhyāya">
-     <l xml:id="BS.6.26.1"><label>6.26.1</label> rūkṣānnapānasevābhir vegasandhāraṇena ca |
+     <l xml:id="BS.6.26.1"><label>6.26.1</label> || ṣaḍviṃśo ' dhyāyaḥ || athāto '
+       patantrakacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+       <caesura/>
+       rūkṣānnapānasevābhir vegasandhāraṇena ca |
       <caesura/>
        karśitasyātimātrantu<note/> ceṣṭitasya tathaiva ca || </l>
      <l xml:id="BS.6.26.2"><label>6.26.2</label> viriktayuktanasyasya vastinā karśitasya ca |
@@ -8017,13 +8029,13 @@
      <l xml:id="BS.6.26.32"><label>6.26.32</label> oṣṭhau śvayathumantau<note/> ca cibukaṃ ca vināmyate |
       <caesura/>
        ṣṭhīvatyathātimātraṃ<note/> hi kalā sajjati cāsya vāk<note/> || |.. |.. |..
-      |.. |.. |.. |.. |.. |.. || saptaviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |..
-      |.. |.. |.. |.. |.. |.. |||<note/>nāṃ vraṇanāśanāḥ |
-      <caesura/>
-     </l>
+      |.. |.. |.. |.. |.. |.. </l>
     </div>
     <div n="27" type="adhyāya">
-     <l xml:id="BS.6.27.1"><label>6.27.1</label> vraṇasya kāle sampaśyan tataḥ kuryād upakramam |
+     <l xml:id="BS.6.27.1"><label>6.27.1</label> || saptaviṃśo ' dhyāyaḥ || |.. |.. |.. |.. |.. |.. |..
+       |.. |.. |.. |.. |.. |.. |||<note/>nāṃ vraṇanāśanāḥ |
+       <caesura/>
+       vraṇasya kāle sampaśyan tataḥ kuryād upakramam |
       <caesura/>
        bhedanaṃ pācanaṃ caiva stambhanaṃ śoṣaṇaṃ tathā || </l>
      <l xml:id="BS.6.27.2"><label>6.27.2</label> srāvaṇaṃ ropaṇaṃ caiva vraṇe kuryād upakramam |
@@ -8085,15 +8097,15 @@
       <caesura/>
        etaccheṣaṃ śalyakṛtā kartavyaṃ dṛṣṭakarmaṇā || ity āha bhagavān ātreyaḥ |
       <caesura/>
-       iti bhele<note/>saptaviṃśo ' dhyāyaḥ || || aṣṭāviṃśo ' dhyāyaḥ
-      ||<note/>athātaḥ pānātyayacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān
-      ātreyaḥ |
-      <caesura/>
-     </l>
+       iti bhele<note/>saptaviṃśo ' dhyāyaḥ || </l>
     </div>
     
     <div n="28" type="adhyāya">
-     <l xml:id="BS.6.28.1"><label>6.28.1</label><note/>sarve lavaṇavarjyās tu rasā madye pratiṣṭhitāḥ |
+     <l xml:id="BS.6.28.1"><label>6.28.1</label> || aṣṭāviṃśo ' dhyāyaḥ
+       ||<note/>athātaḥ pānātyayacikitsitaṃ vyākhyāsyāma iti ha smāha bhagavān
+       ātreyaḥ |
+       <caesura/>
+       <note/>sarve lavaṇavarjyās tu rasā madye pratiṣṭhitāḥ |
       <caesura/>
        tīkṣṇaṃ coṣṇaṃ tathā<note/>sūkṣmamāśukāri<note/> vyavāyi ca || </l>
      <l xml:id="BS.6.28.2"><label>6.28.2</label><note/>dīpanīyaṃ ca hṛdyaṃ ca sarvabhūtahitaṃ laghu |
@@ -8386,10 +8398,7 @@
       bhagavān ātreyaḥ |
       <caesura/>
        iti bhele<note/>aṣṭāviṃśo ' dhyāyaḥ ||<note/> iti bhelasaṃhitāyāṃ
-      cikitsāsthānaṃ samāptam || || kalpasthānam || || prathamo ' dhyāyaḥ ||
-      athāto<note/>madanakalpaṃ vyākhyāsyāma it ha smāha bhagavān ātreyaḥ |
-      <caesura/>
-     </l>
+      cikitsāsthānaṃ samāptam || </l>
     </div>
    </div>
 
@@ -8398,7 +8407,10 @@
 
      <div n="1" type="adhyāya">
 
-      <l xml:id="BS.7.1.1"><label>7.1.1</label> piṇḍītakāni tu trīṇi saṃgrahoktāni me śṛṇu |
+      <l xml:id="BS.7.1.1"><label>7.1.1</label> || kalpasthānam || || prathamo ' dhyāyaḥ ||
+        athāto<note/>madanakalpaṃ vyākhyāsyāma it ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        piṇḍītakāni tu trīṇi saṃgrahoktāni me śṛṇu |
        <caesura/>
        <note/>kṛṣṇaṃ śvetamubhe tac ca tritayaṃ madanaṃ smṛtam || </l>
       <l xml:id="BS.7.1.2"><label>7.1.2</label> phalānāntveva<note/>sarveṣāṃ madanaṃ sarvaśodhanam |
@@ -8453,14 +8465,14 @@
        susnigdhaṃ pāyayed bhiṣak |
        <caesura/>
         balābalamavekṣya<note/> |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |.. |..
-       |.. |.. ||<note/> || tṛtīyo ' dhyāyaḥ || |.. |.. |.. ha smāha bhagavān
-       ātreyaḥ |
-       <caesura/>
-      </l>
+       |.. |.. || </l>
      </div>
 
      <div n="3" type="adhyāya">
-      <l xml:id="BS.7.3.1"><label>7.3.1</label> ikṣvākūṇyuddhareddhīmān<note/>vasante ' tha śarady api |
+      <l xml:id="BS.7.3.1"><label>7.3.1</label> <note/> || tṛtīyo ' dhyāyaḥ || |.. |.. |.. ha smāha bhagavān
+        ātreyaḥ |
+        <caesura/>
+        ikṣvākūṇyuddhareddhīmān<note/>vasante ' tha śarady api |
        <caesura/>
         yadā prayuṣpitāni<note/>syurmadhugandhīni vānti ca || </l>
       <l xml:id="BS.7.3.2"><label>7.3.2</label> teṣāṃ kriyāṃ pravakṣyāma<note/> ikṣvākūṇāṃ yathā vidhiḥ
@@ -8506,14 +8518,14 @@
       <l xml:id="BS.7.3.15"><label>7.3.15</label> mṛdurabhyāsatassiddhaḥ<note/> prayojyo deśakālataḥ ||
        ity āha bhagavān ātreyaḥ |
        <caesura/>
-        iti bhele kalpasthāne tṛtīyo ' dhyāyaḥ || || caturtho ' dhyāyaḥ || athāto
-       dhāmārgavakalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele kalpasthāne tṛtīyo ' dhyāyaḥ || </l>
      </div>
 
      <div n="4" type="adhyāya">
-      <l xml:id="BS.7.4.1"><label>7.4.1</label> dhāmārgavānyuddhareta<note/> vasante vā śarady api |
+      <l xml:id="BS.7.4.1"><label>7.4.1</label> || caturtho ' dhyāyaḥ || athāto
+        dhāmārgavakalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        dhāmārgavānyuddhareta<note/> vasante vā śarady api |
        <caesura/>
        <note/>yadā prapuṣpitāni syuḥ<note/>madhugandhīni bhānti ca || </l>
       <l xml:id="BS.7.4.2"><label>7.4.2</label> same bhūmipradeśe ' smin kuśarohiṣasaṃskṛte |
@@ -8583,14 +8595,14 @@
         gulikāṃ<note/>vinīya vidhivat pāyayet tāṃ<note/> yathābalam || ity āha
        bhagavān ātreyaḥ |
        <caesura/>
-        iti bhele caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ || athātaḥ
-       kuṭajakalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele caturtho ' dhyāyaḥ || </l>
      </div>
 
      <div n="5" type="adhyāya">
-      <l xml:id="BS.7.5.1"><label>7.5.1</label> vasante vā śaradi vā kuṭajāny uddhared bhiṣak |
+      <l xml:id="BS.7.5.1"><label>7.5.1</label> || pañcamo ' dhyāyaḥ || athātaḥ
+        kuṭajakalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        vasante vā śaradi vā kuṭajāny uddhared bhiṣak |
        <caesura/>
         śuciśśuddhaśśiraḥsnātaḥ puṣyeṇāśvayujena vā || </l>
       <l xml:id="BS.7.5.2"><label>7.5.2</label> pratūṭhāni śucau deśe kuśarohiṣasaṃskṛte |
@@ -8625,14 +8637,14 @@
       <l xml:id="BS.7.5.12"><label>7.5.12</label> ya evaṃ samprajānāti sa rājñāṃ kartumarhati || ity āha
        bhagavān ātreyaḥ |
        <caesura/>
-        iti bhele kalpasthāne pañcamo ' dhyāyaḥ || || ṣaṣṭho ' dhyāyaḥ ||
-       athātaścaturaṅgulīyaṃ kalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele kalpasthāne pañcamo ' dhyāyaḥ || </l>
      </div>
 
      <div n="6" type="adhyāya">
-      <l xml:id="BS.7.6.1"><label>7.6.1</label> manojñadeśajātas tu yo bhavec caturaṅgulaḥ |
+      <l xml:id="BS.7.6.1"><label>7.6.1</label> || ṣaṣṭho ' dhyāyaḥ ||
+        athātaścaturaṅgulīyaṃ kalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        manojñadeśajātas tu yo bhavec caturaṅgulaḥ |
        <caesura/>
         phalamuṣṭiṃ samāhṛtya tataścūrṇāni kārayet || </l>
       <l xml:id="BS.7.6.2"><label>7.6.2</label> taccūrṇitaṃ tridhākṛtya bhāgamekaṃ nidhāpayet |
@@ -8717,15 +8729,16 @@
         sandhyāvelāmatikramya vimale ca divākare |
        <caesura/>
         maitre muhūrte vyakte tu yogānetān prayojayet || ity āha bhagavān ātreyaḥ
-       || iti bhele kalpasthāne ṣaṣṭho ' dhyāyaḥ || || saptamo ' dhyāyaḥ
-       ||<note/>athāto dantīphalakalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ
-       |
-       <caesura/>
-        |.. |.. |.. |.. |.. |.. |.. |.. </l>
+       || iti bhele kalpasthāne ṣaṣṭho ' dhyāyaḥ || </l>
      </div>
 
      <div n="7" type="adhyāya">
-      <l xml:id="BS.7.7.1"><label>7.7.1</label> tridhā vibhajya matimān svanuguptaṃ nidhāpayet |
+      <l xml:id="BS.7.7.1"><label>7.7.1</label> || saptamo ' dhyāyaḥ
+        ||<note/>athāto dantīphalakalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ
+        |
+        <caesura/>
+        |.. |.. |.. |.. |.. |.. |.. |..
+        tridhā vibhajya matimān svanuguptaṃ nidhāpayet |
        <caesura/>
         rasenāmalakasyāpi dvau bhāgau<note/>ścyotayed bhiṣak || </l>
       <l xml:id="BS.7.7.2"><label>7.7.2</label> cyutaṃ kaṣāyaṃ vimalaṃ pariyogamadhiśrayet |
@@ -8759,14 +8772,14 @@
        <note/>nāparisnigdhakoṣṭhasya<note/>prasidhyati viśodhanam || ity āha
        bhagavān ātreyaḥ |
        <caesura/>
-        iti bhele kalpasthāne saptamo ' dhyāyaḥ || || aṣṭhamo ' dhyāyaḥ || athātaḥ
-       śaṅkhinīkalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele kalpasthāne saptamo ' dhyāyaḥ || </l>
      </div>
 
      <div n="8" type="adhyāya">
-      <l xml:id="BS.7.8.1"><label>7.8.1</label> phalāni paripakvāni śaṅkhinyāstūddharedbhiṣak |
+      <l xml:id="BS.7.8.1"><label>7.8.1</label> || aṣṭhamo ' dhyāyaḥ || athātaḥ
+        śaṅkhinīkalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        phalāni paripakvāni śaṅkhinyāstūddharedbhiṣak |
        <caesura/>
         antarā<note/> caitravaiśākhamavyagro<note/> yavasaṃgrahe || </l>
       <l xml:id="BS.7.8.2"><label>7.8.2</label> anūṣare niruddhāre kṣetre sūryapratāpite |
@@ -8842,14 +8855,14 @@
         ya evaṃ samprajānāti<note/>sa rājñāṃ kartumarhati || ity āha bhagavān
        ātreyaḥ |
        <caesura/>
-        iti bhele kalpasthāne ' ṣṭamo ' dhyāyaḥ || || navamo ' dhyāyaḥ || athātaḥ
-       śyāmātrivṛtkalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele kalpasthāne ' ṣṭamo ' dhyāyaḥ || </l>
      </div>
 
      <div n="9" type="adhyāya">
-      <l xml:id="BS.7.9.1"><label>7.9.1</label> śyāmāyāstrivṛtayāś ca<note/>mūlānyuddhārayed bhiṣak |
+      <l xml:id="BS.7.9.1"><label>7.9.1</label> || navamo ' dhyāyaḥ || athātaḥ
+        śyāmātrivṛtkalpaṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        śyāmāyāstrivṛtayāś ca<note/>mūlānyuddhārayed bhiṣak |
        <caesura/>
         kalyāṇadeśajātāyāḥ kuśarohiṣasaṃskṛte || </l>
       <l xml:id="BS.7.9.2"><label>7.9.2</label> kṛṣṇamṛtsnāprame vāpi<note/>hyathavā svarṇamṛttike |
@@ -8996,12 +9009,7 @@
         trivṛccūrṇasya<note/>triśśāṇāstat sarvamavacūrṇayet || </l>
       <l xml:id="BS.7.9.47"><label>7.9.47</label> tāni cūrṇāni madhunā sarpiṣā vā guḍena vā |
        <caesura/>
-        lehaṃ vā vidhinā<note/> |.. |.. |.. |.. || || siddhisthānam ||
-       ||<note/>prathamo ' dhyāyaḥ |
-       <caesura/>
-        |
-       <caesura/>
-        |.. |.. |.. |.. |.. |.. |.. |.. </l>
+        lehaṃ vā vidhinā<note/> |.. |.. |.. |.. || </l>
 
 
 
@@ -9018,7 +9026,13 @@
 
      <div n="1" type="adhyāya">
 
-      <l xml:id="BS.8.1.1"><label>8.1.1</label> riktakoṣṭhasya vamane mārutaḥ<note/> samprakupyati |
+      <l xml:id="BS.8.1.1"><label>8.1.1</label> || siddhisthānam ||
+        ||<note/>prathamo ' dhyāyaḥ |
+        <caesura/>
+        |
+        <caesura/>
+        |.. |.. |.. |.. |.. |.. |.. |..
+        riktakoṣṭhasya vamane mārutaḥ<note/> samprakupyati |
        <caesura/>
         plīhā<note/>pracalati sthānāttasmād doṣānnihantyasūn || </l>
       <l xml:id="BS.8.1.2"><label>8.1.2</label> peyāṃ maṇḍaṃ pibettasmāt susnigdhaṃ lavaṇānvitam |
@@ -9143,12 +9157,13 @@
       <l xml:id="BS.8.1.41"><label>8.1.41</label><note/>rūpāṇyativiriktasya haretkṣīraghṛtādibhiḥ |
        <caesura/>
         snehaiścaivopanāhaiś ca<note/>sābhyaṅgaiś ca bhiṣagjayet<note/> || |.. |..
-       |.. |.. |.. |.. |.. |.. |.. || dvitīyo ' dhyāyaḥ || |.. |.. |.. |.. |.. |..
-       |.. |.. </l>
+       |.. |.. |.. |.. |.. |.. |.. </l>
      </div>
 
      <div n="2" type="adhyāya">
-      <l xml:id="BS.8.2.1"><label>8.2.1</label> avapīḍānuvāsāś ca dhūmāḥ pradhamanāni ca |
+      <l xml:id="BS.8.2.1"><label>8.2.1</label> || dvitīyo ' dhyāyaḥ || |.. |.. |.. |.. |.. |..
+        |.. |..
+        avapīḍānuvāsāś ca dhūmāḥ pradhamanāni ca |
        <caesura/>
         caturvidhaṃ nasyam āhuḥ pṛthaktvena tu me śṛṇu || 8|</l>
       <l xml:id="BS.8.2.2"><label>8.2.2</label><note/>galagraho rohiṇikā<note/> śaṅkhako '
@@ -9249,15 +9264,15 @@
        <caesura/>
         pañcakarmavidhānajño rājārho bhiṣagucyate || ity āha bhagavān ātreyaḥ |
        <caesura/>
-        iti bhele dvitīyo ' dhyāyaḥ || ||<note/>caturtho ' dhyāyaḥ || athāto
-       daśavyāpadīyāṃ vamanavirecanasiddhiṃ vyākhyāsyāma iti ha smāha bhagavān
-       ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele dvitīyo ' dhyāyaḥ || </l>
      </div>
 
      <div n="4" type="adhyāya">
-      <l xml:id="BS.8.4.1"><label>8.4.1</label> adhobhāgordhvabhāgāni bheṣajāni prayatnataḥ |
+      <l xml:id="BS.8.4.1"><label>8.4.1</label> ||<note/>caturtho ' dhyāyaḥ || athāto
+        daśavyāpadīyāṃ vamanavirecanasiddhiṃ vyākhyāsyāma iti ha smāha bhagavān
+        ātreyaḥ |
+        <caesura/>
+        adhobhāgordhvabhāgāni bheṣajāni prayatnataḥ |
        <caesura/>
         kalpayenmatimānvaidyo viṣaśastranibhāni tu || </l>
       <l xml:id="BS.8.4.2"><label>8.4.2</label> kaṭutiktakaṣāyāṇi<note/>vidāhīnītarāṇi ca |
@@ -9510,15 +9525,15 @@
        <caesura/>
         vyāpadaś ca cikitsā yā yathāvadanupūrvaśaḥ || ity āha bhagavān ātreyaḥ |
        <caesura/>
-        iti<note/>bhele siddhisthāne caturtho ' dhyāyaḥ || || pañcamo ' dhyāyaḥ ||
-       athāto vastimātrīyāṃ<note/>siddhiṃ vyākhyāsyāma iti ha smāha bhagavān
-       ātreyaḥ |
-       <caesura/>
-      </l>
+        iti<note/>bhele siddhisthāne caturtho ' dhyāyaḥ || </l>
      </div>
 
      <div n="5" type="adhyāya">
-      <l xml:id="BS.8.5.1"><label>8.5.1</label> saṃsṛṣṭabhakte<note/> śaṃsanti vastikarma cikitsakāḥ |
+      <l xml:id="BS.8.5.1"><label>8.5.1</label> || pañcamo ' dhyāyaḥ ||
+        athāto vastimātrīyāṃ<note/>siddhiṃ vyākhyāsyāma iti ha smāha bhagavān
+        ātreyaḥ |
+        <caesura/>
+        saṃsṛṣṭabhakte<note/> śaṃsanti vastikarma cikitsakāḥ |
        <caesura/>
        <note/>virikteṣv apare vaidyā nirūḍhe<note/> tvapare janāḥ || </l>
       <l xml:id="BS.8.5.2"><label>8.5.2</label> trīṇyetānyavarāṇyāhuḥ na śaṃsanti viśāradāḥ |
@@ -9625,14 +9640,14 @@
         yaś ca<note/>vastimupāsīta sa jīveccharadāṃ śatam || ity āha bhagavān
        ātreyaḥ |
        <caesura/>
-        iti bhele siddhisthāne pañcamo ' dhyāyaḥ || || ṣaṣṭo ' dhyāyaḥ ||
-       athāta<note/> upakalpasiddhiṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele siddhisthāne pañcamo ' dhyāyaḥ || </l>
      </div>
 
      <div n="6" type="adhyāya">
-      <l xml:id="BS.8.6.1"><label>8.6.1</label> upakalpamato<note/> vasternetraṃ snehaṃ ca sarvaśaḥ |
+      <l xml:id="BS.8.6.1"><label>8.6.1</label> || ṣaṣṭo ' dhyāyaḥ ||
+        athāta<note/> upakalpasiddhiṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        upakalpamato<note/> vasternetraṃ snehaṃ ca sarvaśaḥ |
        <caesura/>
         teṣāṃ prayogayuktiṃ<note/> ca kriyāṃ karma ca me śṛṇu || </l>
       <l xml:id="BS.8.6.2"><label>8.6.2</label> bālānāmatha vṛddhānāṃ yuvamadhyamayostathā<note/> |
@@ -9738,18 +9753,18 @@
        <note/>kṛśānām api<note/>martyānāṃ māṃsasaṃjananaṃ smṛtam || ity āha
        bhagavān ātreyaḥ |
        <caesura/>
-       <note/>iti bhele siddhisthāne ṣaṣṭho ' dhyāyaḥ || || saptamo ' dhyāyaḥ |
-       <caesura/>
-        |
-       <caesura/>
-        athātaḥ<note/>phalamātrāsiddhiṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ
-       |
-       <caesura/>
-      </l>
+       <note/>iti bhele siddhisthāne ṣaṣṭho ' dhyāyaḥ || </l>
      </div>
 
      <div n="7" type="adhyāya">
-      <l xml:id="BS.8.7.1"><label>8.7.1</label><note/>phalamātraṃ nirūheṣu śreṣṭham āhur manīṣiṇaḥ |
+      <l xml:id="BS.8.7.1"><label>8.7.1</label> || saptamo ' dhyāyaḥ |
+        <caesura/>
+        |
+        <caesura/>
+        athātaḥ<note/>phalamātrāsiddhiṃ vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ
+        |
+        <caesura/>
+        <note/>phalamātraṃ nirūheṣu śreṣṭham āhur manīṣiṇaḥ |
        <caesura/>
         teṣāṃ tu madanaṃ śreṣṭhaṃ pravadanti cikitsakāḥ || </l>
       <l xml:id="BS.8.7.2"><label>8.7.2</label> jīmūtakaṃ praśaṃsanti keciddhāmārgavaṃ tathā |
@@ -9911,16 +9926,16 @@
         vyākuleṣu<note/>vikārais tu tān bhiṣak saṃprayojayet || ity āha bhagavān
        ātreyaḥ |
        <caesura/>
-        iti bhele saptamo ' dhyāyaḥ || |
-       <caesura/>
-        |aṣṭamo ' dhyāyaḥ || athāto daśavyāpadāmāsthāpanānuvāsanasiddhiṃ<note/>
-       vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
-       <caesura/>
-      </l>
+        iti bhele saptamo ' dhyāyaḥ || </l>
      </div>
 
      <div n="8" type="adhyāya">
-      <l xml:id="BS.8.8.1"><label>8.8.1</label> snehavastirnirūhaś ca dvividhaṃ yāti vibhramam |
+      <l xml:id="BS.8.8.1"><label>8.8.1</label> |
+        <caesura/>
+        |aṣṭamo ' dhyāyaḥ || athāto daśavyāpadāmāsthāpanānuvāsanasiddhiṃ<note/>
+        vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |
+        <caesura/>
+        snehavastirnirūhaś ca dvividhaṃ yāti vibhramam |
        <caesura/>
         na yujyate vā duryukto yukto vāpy atipūryate || </l>
       <l xml:id="BS.8.8.2"><label>8.8.2</label> teṣāṃ vipratipannānāṃ<note/> vastīnāṃ vyāpado daśa |
