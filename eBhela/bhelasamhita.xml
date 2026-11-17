@@ -94,7 +94,7 @@
      <tag>note/</tag> throughout; more word division|</change>
 <change who="Dominik Wujastyk" when="2023-04-19">Many word-breaks; updated xml:ids; added labels</change>
  <change who="Dominik Wujastyk" when="2026-11-16">Added the text to the 
-    <ptr target="https://sushrutaproject.github.io/eTexts/">eText search website</ptr>.</change>
+    <ref target="https://sushrutaproject.github.io/eTexts/">eText search website</ref>.</change>
  <change when="2026-11-16">Chapter headings and opening formulas moved to the start of their own
     chapters; word spacing completed (tools/spacing/).</change>
  </revisionDesc>
