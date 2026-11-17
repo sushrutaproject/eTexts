@@ -1,0 +1,203 @@
+# Bhelasaṃhitā: word spacing — spots to check
+
+The text (bhelasamhita.xml) was already partly word-spaced. In 2026-11 the remaining
+run-together words were spaced by 14 agents, one per piece of the file (tools/spacing/,
+see its README); 4,923 spaces were added. "NNN l.LINE" below = piece and line within
+the piece; search for the quoted form in bhelasamhita.xml.
+
+Two things were done differently from the other texts:
+- Before the spacing, the heading and opening formula of each chapter ("|| pañcamo '
+  dhyāyaḥ || athāto … vyākhyāsyāma iti ha smāha bhagavān ātreyaḥ |"), which the source
+  had at the end of the last <l> of the preceding chapter, were moved to the start of
+  the first <l> of their own chapter, at all 97 chapter boundaries (at the 7 sthāna
+  boundaries with the sthāna title). This is a separate commit. In the lacunose
+  chapters everything from the heading onward was moved, including verse fragments.
+  3.1.28/3.3.1: the heading "|tṛtīyo ' dhyāyaḥ ||" follows "ity āha bhagavān ātreyaḥ ||"
+  without "iti bhele"; it was taken as the heading of chapter 3.3.
+- The verse markup was left as it is (one <l xml:id> with <label> and <caesura/> per
+  verse; no <lg>); verse.py was not run, and there is no -prose.txt file.
+
+Decisions taken across the whole text (see tools/spacing/INSTRUCTIONS.md):
+- only spaces were added; no existing space was removed, even a wrong one (below).
+- the 2882 notes are all empty (<note/>). Where a word boundary falls at
+  a note the space was put before the note ("pallavāḥ <note/>śvetā"; 1239 places now,
+  41 in the source); the 481 places where the source has the space after the note
+  are unchanged; 31 notes stand inside a word and have no space.
+- bracketed alternative readings are spaced like the text; "+" and "++", lacuna dots,
+  "(?)", "Bhṣ…" references and typos (palāśaw, nẏṇām, sūtrasthānanam, ekadaśo,
+  aṣṭhamo, ṣaṣṭo) are left as they are.
+
+## Existing spacing of the source that differs from our conventions (left as it is)
+
+These would need a space REMOVED, which the tools do not do. For the editor to decide.
+- avagraha: 477 of 478 apostrophes have a space on both sides ("caturtho ' dhyāyaḥ";
+  our form is "caturtho 'dhyāyaḥ"): 460 after e/o, 15 after ā ("tathā ' prāptās",
+  our form "tathā'prāptās"). 16 of them are divided by a line break.
+- "atha vā" (our form: athavā): 3 ("atha vā dadhimaṇḍena" twice, "atha vā kārayel
+  lehaṃ"); "athavā" joined: 25.
+- a space inside a word after "-ity-" (apparently from an old replacement of "ity"
+  by "ity "): 40 places:
+  śaity aṃ ×3; āśrity a ×2; khālity aṃ ×2; nity aśaḥ ×2; sauhity aṃ; śaity amauṣṇyaṃ; valīpalitakhālity aśīghrapākī; ādity agativaiśeṣyād; nity e; strīvihāranity aḥ; yathādity assambhūto; parity akte; yathādity asya; cādity aś; ādity asya; vāpity a; ādity amardhacandraṃ; staimity amaruciṃ; nity ajugupsāluḥ; khālity aṃ; strīnity āḥ; kaṣāyasnānanity asya; ānūpaudakanity ānāṃ; madhurakṣīranity ānāṃ; nity ājīrṇabhujāṃ; nity ānaddhasudurbalaḥ; ādity akaradūṣitam; ādity oṣmasamuddhatam; ādity araśmibhiḥ; yavānnanity asevātha; nity ānāhitakoṣṭhaś; nity odāvartapīḍitaḥ; adhiśrity a; pālity e; valīpalitakhālity aṃ
+- other wrong spaces inside a word that the agents reported (the list includes the
+  "-ity-" cases they saw):
+  001 l.42: WRONG-SPACE sauhity aṃ
+  001 l.102: WRONG-SPACE ' bhis amīritāḥ
+  001 l.129: WRONG-SPACE gatvāt havā
+  001 l.173: WRONG-SPACE śaity aṃ
+  001 l.175: WRONG-SPACE śaity aṃ
+  002 l.33: WRONG-SPACE āśrity a
+  003 l.41: WRONG-SPACE khālity aṃ
+  003 l.50: WRONG-SPACE khālity aṃ
+  004 l.116: WRONG-SPACE paś cāc cikitsitam
+  004 l.118: WRONG-SPACE śaity amauṣṇyaṃ
+  004 l.143: WRONG-SPACE sattvād ibhir
+  004 l.150: WRONG-SPACE ādity agativaiśeṣyād
+  004 l.165: WRONG-SPACE śaity aṃ
+  005 l.34: WRONG-SPACE nity e
+  005 l.50: WRONG-SPACE deva kāyam
+  005 l.52: WRONG-SPACE strīvihāranity aḥ
+  005 l.54: WRONG-SPACE tvāt magurūṇāṃ
+  005 l.59: WRONG-SPACE abhis andhāya
+  005 l.60: WRONG-SPACE jīven a
+  005 l.65: WRONG-SPACE āśrity a
+  005 l.71: WRONG-SPACE parity akte
+  005 l.72: WRONG-SPACE cādity aś
+  005 l.101: WRONG-SPACE paś cāc
+  006 l.23: WRONG-SPACE yasyor dhvavātaḥ
+  006 l.51: WRONG-SPACE yasyor dhvakāye
+  006 l.112: WRONG-SPACE yasyor dhvaṃ
+  006 l.64: WRONG-SPACE ādity amardhacandraṃ
+  006 l.187: WRONG-SPACE staimity amaruciṃ
+  006 l.161: WRONG-SPACE yāt i
+  007 l.59: WRONG-SPACE nity ajugupsāluḥ
+  007 l.135: WRONG-SPACE khālity aṃ
+  007 l.138: WRONG-SPACE strīnity āḥ
+  008 l.6: WRONG-SPACE pītvāt yuṣṇamannaṃ (pītvā+atyuṣṇam)
+  008 l.71: WRONG-SPACE kaṣāyasnānanity asya
+  008 l.219: WRONG-SPACE ānūpaudakanity ānāṃ
+  008 l.224: WRONG-SPACE nity aśaḥ
+  008 l.226: WRONG-SPACE madhurakṣīranity ānāṃ
+  009 l.160: WRONG-SPACE atīvamuḥ draṃ
+  010 l.137: WRONG-SPACE ādity akaradūṣitam
+  010 l.139: WRONG-SPACE ādity oṣmasamuddhatam
+  010 l.214: WRONG-SPACE ādity araśmibhiḥ
+  010 l.237: WRONG-SPACE yavānnanity asevātha
+  011 l.63: WRONG-SPACE nity ānāhitakoṣṭhaś / nity odāvartapīḍitaḥ
+  011 l.209: WRONG-SPACE nity aśaḥ
+  011 l.130: WRONG-SPACE ati dhāvati
+  012 l.100: WRONG-SPACE adhiśrity a
+  012 l.196: WRONG-SPACE pālity e
+  013 l.150: WRONG-SPACE garhitā ssarva
+  014 l.36: WRONG-SPACE valīpalitakhālity aṃ
+
+## Other things in the source to look at
+
+- the header is not valid TEI: the <change when="2026-11-16"> in revisionDesc has a
+  <ptr> with text inside it (should be <ref>). Left unchanged; it is the only
+  validation error of the file.
+- the last <l> of the file is a row of dashes without xml:id or label.
+
+## Policy questions for the editor (counts in this text, after spacing)
+
+- kiñ ca: 1 (source); kiṃ ca: 1 (source "kiṃca", split by the agent as the
+  instructions say: "pathyaḥ kiṃ ca bhavaty ataḥ"); kiṃ vā: 0.
+- kin tarhi: 0; kiṃ tarhi: 1 (source spacing).
+- iti pad-: 0.
+- tat/tad before a word: split 184 times (51 of them already in the source), joined in
+  about 61 tokens, mostly compounds and adverbs: tadvidham ×5, tattadātmakam ×2, tadardhayā ×2, taccūrṇaṃ, taddrohiṇo, tadvidhāḥ, tadrucibhedataḥ, tadvidhena, tathobhayathā, tatprāptir, tadvidhā, tadbhajate, tadarthavijñānaṃ, tatprabhavāḥ, tadvijān, tadvīryād, tadvidhāni, tadvārijānāṃ, tathetarān, tadvidhānāṃ, tathonmādaṃ, tadviparītaiś, tadvidhenaiva, tadvacanaṃ, tadvikārān …
+- ityādi, ityantena, tadyathā (joined), yatkiñcit, punarukta-, prāgukta-, prāgeva: none
+  in this text (there is no commentary); tad yathā: 18.
+
+Joined/split pairs left as the agents had them (context decides, or the editor):
+  vātapittakaphāstrayaḥ                    vātapittakaphās trayaḥ                       joined×1 split×1
+  tatsiddhaṃ                               tat siddhaṃ                                  joined×1 split×9
+  tatsamam                                 tat samam                                    joined×1 split×1
+  taccūrṇaṃ                                tac cūrṇaṃ                                   joined×1 split×1
+  madhughṛtaṃ                              madhu ghṛtaṃ                                 joined×1 split×1
+
+## Uncertain spots reported by the agents
+
+001 l.77: surabhikṛt tad abhiṣyandanāśanam — could be one compound or segmented differently
+001 l.105: tad āpyānugataṃ — or tadāpy (tadā api) + garbled word
+001 l.90: samyag dhūmo niṣevitaḥ — samyak as adverb to niṣevitaḥ, or compound samyagdhūmo
+001 l.197: kāmerṣyā<note n="§142"/>lobhodvegād — left joined at note as one dvandva; may be two words
+001 l.10: gavedhukamakuṣṭhau — taken as dvandva (makuṣṭha), not gavedhukam akuṣṭhau
+002 l.21: kāmbhojādantajāḥ — perhaps "kāmbhojād antajāḥ" or corrupt; left joined
+002 l.121: viṣamatyeti — perhaps "viṣam atyeti"; reading unclear, left joined
+002 l.53: ' ntastarpayantaḥ — antas as separate adverb ("' ntas tarpayantaḥ")? left joined
+002 l.208: bhiṣaktāpair vamanaṃ — corrupt; "bhiṣak tāpair" not split
+002 l.195: nivātam adhvasantāpau — split as list items; could be one compound
+003 l.13: saṃprāptavamanādīni — probably saṃprāpte vamanādīni (cf. l.14), but left joined as a likely typo
+003 l.29: meḍhre muṣkaparītāpaḥ — split as locative + compound; could be meant as one compound
+003 l.99: cāścatarā meṣā — split as separate list items; could be a dvandva aśvataramesāḥ
+003 l.78: kaphakṛn mūlakaṃ — kaphakṛt taken as predicate adjective, split
+003 l.8: tailamāṣāṃs tilaghṛtaṃ — tailamāṣān kept as one compound
+004 l.111: vātan na — "vātanna" probably a typo (vātān/vātāt?); split before na
+004 l.129: prāg ātmanaḥ — could be a compound prāgātman-
+004 l.162: paścād vātasya — could be the compound paścādvāta "west wind" (cf. l.165 paścimo vāyuḥ)
+004 l.84: śākādaviṣkirāṇāṃ — unclear (śākāda viṣkirāṇāṃ?), left joined
+004 l.148: pūrṇādiṣṭān adiṣṭāṃś — obscure reading
+005 l.32: tat prathamaṃ — pronoun or compound "tatprathamaṃ"?
+005 l.4: ātmamanasos sannikarṣajñānam — could be read as one compound
+005 l.48: sapta divyāḥ sapta mānuṣāḥ — numeral possibly compounded
+005 l.29: iti cetta cāpy — "cet tat" with doubled t written once, left joined
+005 l.14: tadvac charīriṇāṃ — tadvat taken as separate adverb
+006 l.74: indriyārthānn adoṣajān — written "nn" after long ā; could be "indriyārthān na doṣajān"
+006 l.39: bahir ādhmāta — split as adverb + participle (bahiḥ pīno); could be a compound like antarglāno
+006 l.106: dīnamanātho / bhidyāmārogam āpnoti — garbled, left joined except before āpnoti
+006 l.157: tadvartma — left joined as compound; could be pronoun "tad vartma"
+006 l.140: taddivā — garbled line, left joined
+007 l.18: tat siddhaṃ — tat- taken as pronoun ("that, once cooked") here and at ll.97,109,129,173; could be compound "cooked with those"
+007 l.84: tat kaṣāyaṃ jalaṃ — pronoun vs compound tatkaṣāyaṃ ("decoction of those")
+007 l.83: mahad dhrasvaṃ — split as two adjectives; could be dvandva mahaddhrasvaṃ
+007 l.81: sarpirdroṇaṃ — left joined as measure compound (like ghṛtaprasthaṃ)
+007 l.121: param ṛtum ayanaṃ — split as three accusatives
+008 l.50: mahad vai <note n="§1403"/>pañcagavyaṃ — "mahadvai" may be a corruption (cf. l.239 "mahad yat pañcagavyaṃ"); split as mahad vai
+008 l.3: tvaṅmāṃsācchāsracāriṇām — possibly tvaṅmāṃsāc chāsra- (corrupt); left as one compound
+008 l.170: samaṅgā ceti tat samam — tat pronoun or compound "tatsamam"
+008 l.202: deheṣu viṣam āśritaḥ — could be compound viṣamāśritaḥ
+008 l.9: dūṣayanty ati — "ati" taken as separate adverb
+009 l.60: etatsamaṃ śarkarapādayuktaṃ — kept as compound "equal to this"; could be "etat samaṃ"
+009 l.73: siddhair imaisttulyaiḥ — typo (imais tulyaiḥ?), junction left joined
+009 l.122: tad abhyaṅgaṃ prakalpayet — split as pronoun; could be compound "tadabhyaṅgaṃ"
+009 l.195: param arśaḥ sukīrtitam — split; could be "paramarśaḥ"
+009 l.200: rāṭham eraṇḍamūlaṃ — split as separate list items
+010 l.25: tad uṣṭrīkṣīram — tad taken as pronoun; could be compound tad-uṣṭrīkṣīra
+010 l.77: pañcāśadabhayākalkaṃ — kept as compound; numeral could stand apart
+010 l.117: pippalyāmalakaṃ — kept joined as dvandva (also l.118)
+010 l.203: tvag vyāghranakham — tvak taken as separate list item
+010 l.228: evaṃkriyānnasaṃjñāni — corrupt-looking, left joined
+011 l.87: tat siddhaṃ cāpi pāyayet — tat taken as pronoun (also l.91 tat siddhaṃ); could be compound tatsiddhaṃ
+011 l.99: tiryag ākekarekṣaṇaḥ — tiryak taken as adverb; could be compound
+011 l.110: etaiś śakṛdrase siddhaṃ — "rasesiddhaṃ" split as two words without sandhi
+011 l.177: vidāhy añjananāvanam — vidāhi taken as separate adjective
+011 l.199: bhojan mṛdulaudanam — typo (bhojayen?) split at n/m junction
+012 l.49: etatsamaṃ — compound "equal to this" or pronoun "etat samaṃ"
+012 l.31: tac cūrṇaṃ — split as demonstrative "that powder" (also l.60 tac cūrṇam, l.39 tad vilepanam); could be compound "its powder"
+012 l.84: āmṛdgann atha — corrupt form, junction split at -nn atha
+012 l.89: dadhi <note n="§2330"/>pakvarasaṃ — taken as two list items, not dadhipakvarasa
+012 l.111: trivṛdakṣasamāyuktaṃ — kept as compound; could be "trivṛd akṣasamāyuktaṃ"
+013 l.33: tatsnehapītaṃ — left as compound; could be pronoun "tat snehapītaṃ"
+013 l.67: teṣāṃ tattaccikitsitam — "tattat" kept as compound member, not split as repeated word
+013 l.158: pṛthagbhāgān — kept as compound; could be adverb "pṛthag bhāgān"
+013 l.146: bahvavarodhasya — kept joined (bahuvrīhi "with many wives"?); could be "bahv avarodhasya"
+013 l.140: virecanādyudāvarte — kept as ādi-compound
+014 l.1: daśavyāpadām āsthāpanānuvāsanasiddhiṃ — gen. pl. split from title compound; could be meant as one title.
+014 l.9: tṛṣācchardiḥ — left joined as dvandva; could be list items "tṛṣā cchardiḥ".
+014 l.19: tat tailalavaṇena — tat taken as pronoun; could be compound member.
+014 l.32: tat siddhaṃ — pronoun reading ("that, cooked"); could be "tatsiddhaṃ" (cooked with those).
+014 l.36: vastir āpta <note n="§2801"/>āyurvivardhanaḥ — "āpta" read as āptaḥ in hiatus; text may be corrupt.
+
+## Consistency fixes applied (old => new; whole tokens)
+
+yassadā => yas sadā
+kṣīrairikṣurasena => kṣīrair ikṣurasena
+vātapittakaphāstrayaḥ => vātapittakaphās trayaḥ
+
+One split made by an agent was undone by hand: 7.1.16 "sādhu<note/>nā" (sādhunā, a note
+inside the word).
+
+## Proofreading
+
+40 random passages of the spaced text were read: no error found. This does not rule
+out missed junctions elsewhere; the consistency sweep found one (kṣīrair ikṣurasena).
