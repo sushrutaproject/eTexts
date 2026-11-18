@@ -16,8 +16,7 @@
      <p>
       <ref target="http://creativecommons.org/licenses/by-sa/3.0/" type="licence"
        >Distributed by <ref target="http://sarit.indology.info" type="url"
-        >SARIT</ref> under a Creative Commons Attribution-ShareAlike 3.0 Unported
-       License. </ref>
+        >SARIT</ref> under a Creative Commons Attribution-ShareAlike 3.0 Unported License. </ref>
      </p>
      <p>Under this licence, you are free<list>
        <item>to Share — to copy, distribute and transmit the work</item>
@@ -26,16 +25,11 @@
      <p>Under the following conditions:</p>
      <p>
       <list>
-       <item>Attribution — You must attribute the work in the manner specified by
-        the author or licensor (but not in any way that suggests that they endorse
-        you or your use of the work)|</item>
-       <item>Share Alike — If you alter, transform, or build upon this work, you
-        may distribute the resulting work only under the same or similar license
-        to this one|</item>
+       <item>Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work)|</item>
+       <item>Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one|</item>
       </list>
      </p>
-     <p>More information and fuller details of this license are given on the Creative
-      Commons website|</p>
+     <p>More information and fuller details of this license are given on the <ref target="https://creativecommons.org">Creative Commons website</ref>|</p>
      <p>SARIT assumes no responsibility for unauthorised use that infringes the
       rights of any copyright owners, known or unknown|</p>
     </availability>
@@ -64,20 +58,9 @@
 
   <encodingDesc>
    <editorialDecl>
-    <p>Word spaces have been added (2026-11) between words that the source still ran
-     together, in the text but not at the (empty) notes: sandhi forms are kept as they
-     are and only a space is inserted (tasminn eva, tac chāstram, ity eke); fused
-     vowels and compounds are not divided. Where a word boundary falls at a note, the
-     space stands before the note. Spaces already in the source were not removed, also
-     where they differ from the conventions used in the other texts of this collection
-     (the avagraha with a space on both sides: caturtho ' dhyāyaḥ; atha vā; a space
-     inside a word after -ity-: nity aṃ). No letter, punctuation mark or element of
+    <p>Word spaces have been added (2026-11) between words that the source still ran together, in the text but not at the (empty) notes: sandhi forms are kept as they are and only a space is inserted (tasminn eva, tac chāstram, ity eke); fused vowels and compounds are not divided. Where a word boundary falls at a note, the space stands before the note. Spaces already in the source were not removed, also where they differ from the conventions used in the other texts of this collection  (the avagraha with a space on both sides: caturtho ' dhyāyaḥ; atha vā; a space inside a word after -ity-: nity aṃ). No letter, punctuation mark or element of
      the source was changed.</p>
-    <p>The heading and opening formula of each chapter, which the source placed at the
-     end of the last verse of the preceding chapter, have been moved to the start of
-     the first l of the chapter they belong to (2026-11). The verse markup of the
-     source (one l with label and caesura per verse) is otherwise unchanged; verses
-     were not re-tagged by metre.</p>
+    <p>The heading and opening formula of each chapter, which the source placed at the end of the last verse of the preceding chapter, have been moved to the start of the first l of the chapter they belong to (2026-11). The verse markup of the source (one l with label and caesura per verse) is otherwise unchanged; verses were not re-tagged by metre.</p>
    </editorialDecl>
   </encodingDesc>
 
@@ -95,12 +78,8 @@
 <change who="Dominik Wujastyk" when="2023-04-19">Many word-breaks; updated xml:ids; added labels</change>
  <change who="Dominik Wujastyk" when="2026-11-16">Added the text to the 
     <ref target="https://sushrutaproject.github.io/eTexts/">eText search website</ref>.</change>
- <change when="2026-11-16">Chapter headings and opening formulas moved to the start of their own
-    chapters; word spacing completed (tools/spacing/).</change>
- <change when="2026-11-17">Corrections of typing errors taken over from Tsutomu Yamashita's
-    updated transcription (received 2026-11), found by comparing it with his first version
-    (Ver.1, August 2009); word spacing adjusted where a correction changed a word
-    boundary.</change>
+ <change  who="Dominik Wujastyk" when="2026-11-16">Chapter headings and opening formulas moved to the start of their own chapters; word spacing completed (tools/spacing/).</change>
+ <change  who="Dominik Wujastyk and Tsutomu Yamashita" when="2026-11-17">Corrections of typing errors taken over from Tsutomu Yamashita's updated transcription (received 2026-11), found by comparing it with his first version (Ver.1, August 2009); word spacing adjusted where a correction changed a word boundary.</change>
  </revisionDesc>
 
  </teiHeader>
