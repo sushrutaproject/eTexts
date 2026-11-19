@@ -830,5 +830,14 @@ main {
 .hit-list .reg-m { color: var(--paper); background: var(--link); border-color: var(--link); }
 .hit-list .reg-c { color: var(--accent); border-color: var(--accent); }
 
+/* Page of the printed edition, after a snippet (texts whose TEI file has <pb/>) */
+.hit-list .pg {
+  margin-left: 0.4rem;
+  font-family: var(--sans, sans-serif);
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 /* Long Sanskrit compounds must wrap on narrow screens */
 .hit-list li, .result-chapter h4 { overflow-wrap: anywhere; }

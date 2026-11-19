@@ -69,6 +69,14 @@ segments in reading order, tagged `m` (mūla: `<div class="mula">`), `c`
 mūla, commentaries and notes separately. The segments are made by
 `tools/tei-template/_includes/search-entry.json`.
 
+**Pages of the printed edition.** Where a TEI file has page breaks
+(`<pb n="…"/>`; so far the root text of e-Suśruta), each snippet in the
+search results ends with the page its hit begins on ("p. 5a"). A hit in a
+commentary is given the page of the root text before it; notes have no
+page. The page breaks travel inside the index text, each as its label
+between the characters U+E000 and U+E001; the search page takes them out
+before searching (`prepPages` in `portal/search.html`).
+
 Shared by every text and served from the portal: `assets/css/shared.css`
 (the collection's look: the Suśruta Project palette with its dark-mode
 values, fonts, header and footer, cards and buttons; also the search-hit
