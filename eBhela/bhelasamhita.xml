@@ -80,7 +80,8 @@
     <ref target="https://sushrutaproject.github.io/eTexts/">eText search website</ref>.</change>
  <change  who="Dominik Wujastyk" when="2026-11-16">Chapter headings and opening formulas moved to the start of their own chapters; word spacing completed (tools/spacing/).</change>
  <change  who="Dominik Wujastyk and Tsutomu Yamashita" when="2026-11-17">Corrections of typing errors taken over from Tsutomu Yamashita's updated transcription (received 2026-11), found by comparing it with his first version (Ver.1, August 2009); word spacing adjusted where a correction changed a word boundary.</change>
- </revisionDesc>
+<change who="Dominik Wujastyk" when="2026-11-19">Fixed header of Sūtrasthāna adhyāya 4.  Removed all the "note/" elements.</change>
+</revisionDesc>
 
  </teiHeader>
 
@@ -93,8 +94,6 @@
     <head>Sūtrasthānam</head>
     
     <div n="4" type="adhyāya">
-
-     <head>sūtrasthānanam || caturtho ' dhyāyaḥ || </head>
 
      <l xml:id="BS.1.4.1"><label>1.4.1</label> pippalyo dīpyakaś caiva tathā mūṣikakarṇikāḥ |
       <caesura/>
