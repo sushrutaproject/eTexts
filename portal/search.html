@@ -133,21 +133,65 @@ hide_header_search: true
     return names.length === 1 ? names[0] + " only" : names.join(" and ");
   }
 
+  // --- pages -----------------------------------------------------------
+  // Where a text records the page breaks of its printed edition (<pb/> in
+  // the TEI file), the index carries each one inside the segment text, as
+  // its label ("p. 12") between U+E000 and U+E001 (see search-entry.json).
+  // prepPages takes the marks out, so that they are never searched or
+  // shown, and keeps for every segment the page it starts on (seg[2]) and
+  // the breaks inside it (seg[3]: [[offset, label], ...]). A commentary
+  // segment is on the page of the root text before it; notes, which stand
+  // at the end of the chapter, have no page. The page runs on from one
+  // chapter to the next within a section.
+  var PB_MARK = /\uE000([^\uE000\uE001]*)\uE001/g;
+
+  function prepPages(data) {
+    var page = "";
+    data.forEach(function (chapter) {
+      if (chapter._pages) return;
+      chapter._pages = true;
+      chapter.segs.forEach(function (seg) {
+        var text = seg[1], isNote = seg[0] === "n";
+        if (text.indexOf("\uE000") < 0) { seg[2] = isNote ? "" : page; return; }
+        var breaks = [], out = "", last = 0, m;
+        seg[2] = isNote ? "" : page;
+        PB_MARK.lastIndex = 0;
+        while ((m = PB_MARK.exec(text)) !== null) {
+          out += text.slice(last, m.index);
+          last = m.index + m[0].length;
+          breaks.push([out.length, m[1]]);
+          if (!isNote) page = m[1];
+        }
+        seg[1] = out + text.slice(last);
+        if (!isNote) seg[3] = breaks;
+      });
+    });
+  }
+
+  function pageAt(seg, offset) {           // page of the character at offset in seg
+    var page = seg[2] || "", breaks = seg[3];
+    if (breaks) {
+      for (var i = 0; i < breaks.length && breaks[i][0] <= offset; i++) page = breaks[i][1];
+    }
+    return page;
+  }
+
   function hayOf(chapter, parts, fold) {
     var all = chapter._hay || (chapter._hay = {});
     var h = all[parts];
     if (!h) {
-      var texts = [], starts = [], ends = [], regs = [], pos = 0;
+      var texts = [], starts = [], ends = [], regs = [], segs = [], pos = 0;
       chapter.segs.forEach(function (seg) {
         if (parts.indexOf(seg[0]) < 0) return;
         if (texts.length) pos += 1;            // the joining space
         starts.push(pos);
         regs.push(seg[0]);
+        segs.push(seg);
         texts.push(seg[1]);
         pos += seg[1].length;
         ends.push(pos);
       });
-      h = all[parts] = { text: texts.join(" "), starts: starts, ends: ends, regs: regs };
+      h = all[parts] = { text: texts.join(" "), starts: starts, ends: ends, regs: regs, segs: segs };
     }
     if (fold && h.folded === undefined) h.folded = foldText(h.text);
     return h;
@@ -279,6 +323,7 @@ hide_header_search: true
       active++;
       (function (job) {
         fetchIndex(indexUrl(job.target)).then(function (data) {
+          prepPages(data);
           cache[job.key] = data;
           job.resolve(data);
         }, function (err) {
@@ -327,7 +372,7 @@ hide_header_search: true
     var before = (from > segStart ? "… " : "") + escapeHtml(text.slice(from, start));
     var hit = escapeHtml(text.slice(start, end));
     var after = escapeHtml(text.slice(end, to)) + (to < segEnd ? " …" : "");
-    return { reg: h.regs[k], html: before + "<mark>" + hit + "</mark>" + after };
+    return { reg: h.regs[k], page: pageAt(h.segs[k], start - segStart), html: before + "<mark>" + hit + "</mark>" + after };
   }
 
   function searchChapter(chapter, re, parts, fold, wantSnippets) {
@@ -407,7 +452,9 @@ hide_header_search: true
             c.snippets.forEach(function (s) {
               var tag = ctx.parts.length > 1
                 ? '<span class="reg reg-' + s.reg + '">' + PART_LABEL[s.reg] + "</span> " : "";
-              html += "<li>" + tag + s.html + "</li>";
+              var pg = s.page
+                ? ' <span class="pg" title="page of the printed edition">' + escapeHtml(s.page) + "</span>" : "";
+              html += "<li>" + tag + s.html + pg + "</li>";
             });
             if (c.total > c.snippets.length) {
               html += '<li class="more">… and ' + (c.total - c.snippets.length) +

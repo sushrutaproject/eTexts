@@ -16,9 +16,18 @@ and break phrase searches. Liquid has no regex, so we split on the
 <sup> markup and keep only what follows each closing tag (nothing, when
 two references stand side by side: `split` drops an empty last piece).
 
+Page breaks (<sup class="pb" title="page break">p. 12</sup>, made by
+tools/tei2site.py from <pb/>) are not dropped with the other <sup>s:
+each leaves its label in the text between the two private-use
+characters U+E000 and U+E001, at the place where it stood. The search
+page takes these marks out again and uses them to show the page of
+every hit (portal/search.html, "pages").
+
 tools/tei2site.py copies this file into every text it builds.
 {%- endcomment -%}
-{%- assign raw = include.chapter.content | split: '<sup' -%}
+{%- assign pbs = include.chapter.content | split: '<sup class="pb" title="page break">' -%}
+{%- capture marked -%}{{ pbs[0] }}{% for p in pbs offset:1 %}{% assign lab = p | split: '</sup>' | first %}{% capture head %}{{ lab }}</sup>{% endcapture %}{{ lab }}{{ p | remove_first: head }}{% endfor %}{%- endcapture -%}
+{%- assign raw = marked | split: '<sup' -%}
 {%- capture body -%}{{ raw[0] }}{% for p in raw offset:1 %}{% assign end6 = p | slice: -6, 6 %}{% unless end6 == '</sup>' %}{{ p | split: '</sup>' | last }}{% endunless %}{% endfor %}{%- endcapture -%}
 {%- assign halves = body | split: '<section class="notes"' -%}
 {%- capture segs -%}
