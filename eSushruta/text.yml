@@ -61,7 +61,7 @@ commentaries:
   nibandhasangraha:
     name: "Ḍalhaṇa's Nibandhasaṅgraha"
     toggle: "Show Ḍalhaṇa"
-    legend: "indented: Ḍalhaṇa's Nibandhasaṅgraha"
+    legend: "Ni. Saṃ.: Ḍalhaṇa's Nibandhasaṅgraha"
   nyayacandrika:
     name: "Gayadāsa's Nyāyacandrikā"
     toggle: "Show Gayadāsa"
@@ -74,8 +74,9 @@ extra_css: |
     font-style: italic;
     font-size: 0.82em;
     margin-right: 0.4em;
-    color: var(--accent);
   }
+  .chapter-text .comm-1 .commentator-label { color: var(--link); }
+  .chapter-text .comm-2 .commentator-label { color: var(--accent); }
 
 mula:
   file: susrutasamhita-mula.xml
