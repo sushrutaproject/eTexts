@@ -7,7 +7,7 @@ tei: susrutasamhita-full.xml
 
 site_title: "e-Suśruta"
 work: "Suśrutasaṃhitā"
-commentary: "with Ḍalhaṇa's Nibandhasaṅgraha"
+commentary: "with Ḍalhaṇa's Nibandhasaṅgraha and Gayadāsa's Nyāyacandrikā"
 tagline: "The Suśrutasaṃhitā, in IAST"
 home_subtitle: "A reading edition of the Suśrutasaṃhitā, in IAST"   # under the title on the home page
 blurb: >
@@ -26,7 +26,8 @@ intro: |
     The Suśrutasaṃhitā, a Sanskrit treatise on medicine and surgery, is
     organized into six sthānas (sections). It is read here alongside Ḍalhaṇa's
     twelfth-century commentary, the Nibandhasaṅgraha, with the two distinguished
-    typographically. Choose a sthāna below to browse its adhyāyas (chapters).
+    typographically. In the Nidānasthāna, Gayadāsa's Nyāyacandrikā is given as well,
+    as a separate commentary. Choose a sthāna below to browse its adhyāyas (chapters).
   </p>
   <p>
     The text below is based on the 1938 edition of the Suśrutasaṃhitā edited by
@@ -59,12 +60,26 @@ notes_heading: "pāṭhāntarāḥ"
 commentaries:
   nibandhasangraha:
     name: "Ḍalhaṇa's Nibandhasaṅgraha"
-    toggle: "Show commentary"
+    toggle: "Show Ḍalhaṇa"
     legend: "indented: Ḍalhaṇa's Nibandhasaṅgraha"
+  nyayacandrika:
+    name: "Gayadāsa's Nyāyacandrikā"
+    toggle: "Show Gayadāsa"
+    legend: "Nyā. Ca.: Gayadāsa's Nyāyacandrikā"
+
+extra_css: |
+  .bhasya.comm-2 { border-left-color: var(--accent); }
+  .chapter-text .commentator-label {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 0.82em;
+    margin-right: 0.4em;
+    color: var(--accent);
+  }
 
 mula:
   file: susrutasamhita-mula.xml
   label: "Mūla only"
-tei_label: "Mūla with Ḍalhaṇa's commentary"
-tei_label_short: "Mūla with commentary"   # on the collection home page
+tei_label: "Mūla with commentaries"
+tei_label_short: "Mūla with commentaries"   # on the collection home page
 download_note: "Download the complete text as a single, validating TEI&nbsp;P5 XML file:"

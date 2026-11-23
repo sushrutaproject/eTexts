@@ -28,9 +28,20 @@ source marks every word of the text as belonging to one register or the
 other, and that distinction has been carried through directly. The
 judgement about where the boundaries fall is NIIMH's.
 
-Other commentators — Cakrapāṇidatta, Gayadāsa, Bhāskara, Hāraṇacandra —
-are frequently named, but as **citations within** Ḍalhaṇa's commentary.
-Their own commentaries are not separate layers in this text.
+In the Nidānasthāna there is a second commentary: Gayadāsa's
+_Nyāyacandrikā_, which the printed edition gives after Ḍalhaṇa's comment on
+each passage, headed "Nyā. Ca.". The NIIMH source dropped that heading and
+ran the two commentaries together; here Gayadāsa's text has been separated
+out again from the structure of the source (each Nyāyacandrikā passage
+followed Ḍalhaṇa's on the same verse numbers). It is shown indented like
+Ḍalhaṇa's, with a coloured rule, and has its own show/hide control. Where
+the source has only a single comment on a passage it is taken as Ḍalhaṇa's;
+a few such places still need checking against the printed edition.
+
+Other commentators — Cakrapāṇidatta, Bhāskara, Hāraṇacandra, and Gayadāsa
+outside the Nidānasthāna — are frequently named, but as **citations within**
+Ḍalhaṇa's commentary. Their own commentaries are not separate layers in
+this text.
 
 The notes at the foot of each chapter (_pāṭhāntarāḥ_) record variant
 readings and comments from the source edition.
